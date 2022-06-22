@@ -19,7 +19,7 @@ Once PR is created you have to do the following things:
 
 ### Block 1
 | Day | Theme |
-| :- | :- | :- |
+| :- | :- |
 | June 22th | Internet Basics |
 | June 24th | HTML & CSS, Part 1 |
 | June 28th | Git |
