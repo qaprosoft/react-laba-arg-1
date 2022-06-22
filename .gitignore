@@ -1,0 +1,13 @@
+node_modules/
+.idea/
+*.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.vscode
+.history
+.cache
+lectures/09-js-part-5/practice/dist
+dist
