@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <!-- <input type="button">Text</input>
+      <input type="checkbox"/>
+      <input type="color"/>
+      <input type="date"/>
+      <input type="email"/>
+      <input type="file"/>
+      <input type="image"/> -->
+      <label>
+        First Name
+        <input type="text" name="firstName" required />
+      </label>
+      <br />
+      <br />
+      <label>
+        Last Name
+        <input type="text" name="lastName" required />
+      </label>
+      <br />
+      <br />
+      <label for="city">City</label>
+      <input id="city" type="text" name="city" />
+      <br />
+      <br />
+      <label>
+        Please confirm
+        <input type="checkbox" name="confirm" required />
+      </label>
+      <br />
+      <br />
+      <select name="cars">
+        <optgroup label="Cars">
+          <option>Audi</option>
+          <option>BMW</option>
+          <option>Mercedes</option>
+          <option>Opel</option>
+        </optgroup>
+        <optgroup label="Not Cars">
+          <option>Cat</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <textarea></textarea>
+      <br />
+      <br />
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option>Chrome</option>
+        <option>Opera</option>
+        <option>Safari</option>
+      </datalist>
+      <br />
+      <br />
+      <!-- <input type="range"/>
+      <input type="tel"/>
+      <input type="password"/> -->
+      <button type="submit">Submit type</button>
+      <br />
+      <br />
+      <button type="button" onclick="alert('Hello World');">Button type</button>
+      <br />
+      <br />
+      <button type="reset">Reset type</button>
+    </form>
+  </body>
+</html>
