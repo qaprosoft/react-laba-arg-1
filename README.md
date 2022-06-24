@@ -1,9 +1,9 @@
 # Solvd React Laba Argentina 2022
 
-This repository contain all information about the lectures and serve as central repository to submit all your class works.
+This repository contains all information about the lectures and serves as a central repository to submit all your class works.
 
 ## Structure
-You need to create a folder in the `homeworks` folder. The name should be `firstName-lastName`. E.g. for a developer Mykhailo Melnyk the name would be `mykhailo-melnyk`. Sub-folder should have the same name as a lecture name.
+You need to create a folder in the `homeworks` folder. The name should be `firstName-lastName`. E.g. for a developer Mykhailo Melnyk the name would be `mykhailo-melnyk`. The Sub-folder should have the same name as a lecture name.
 
 ## Pull Requests
 ### Naming
