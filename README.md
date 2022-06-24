@@ -21,8 +21,9 @@ Once PR is created you have to do the following things:
 | Day | Theme |
 | :- | :- |
 | June 22th | Internet Basics |
-| June 24th | HTML & CSS, Part 1 |
+| June 24th | HTML |
 | June 28th | Git |
-| July 1st | HTML & CSS, Part 2 |
-| July 5th | HTML & CSS, Part 3 |
+| July 1st | CSS Part 1 |
+| July 5th | CSS, Part 2 |
+| July 7th-9th | First block exam |
 
