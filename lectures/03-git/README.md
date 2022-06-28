@@ -5,7 +5,8 @@ Here's you can find materials about Git
 
 [Presentation](https://docs.google.com/presentation/d/1GsYhGkLCv3zFIVBvwerfO1FHxS6KOcwcLHg_Sl2dNM0/edit?usp=sharing)
 
-[Video](https://drive.google.com/file/d/1tyQfw2y68CJc1NNs_z6_7RflrjZ9YFrZ/view?usp=sharing)
+[Video (only audio)](https://drive.google.com/file/d/1tyQfw2y68CJc1NNs_z6_7RflrjZ9YFrZ/view?usp=sharing) I didn't record video correctly. Sorry :(
+[Another Video from Andrew](https://drive.google.com/file/d/1MAcU4jz5epbRpGjIyKgQDrz3TClUyrsS/view?usp=sharing)
 
 [Material](https://docs.google.com/document/d/1ICJd-7WS-kGWWVwsN0IS_ao7GSkFjeJ9y6JsxTFaLF0/edit?usp=sharing)
 
