@@ -21,6 +21,8 @@
                 <div>
                     <label>Full Name*</label>
                     <input
+                        autofocus
+                        autocomplete="name"
                         type="text"
                         required
                         name="firstname"
@@ -28,6 +30,7 @@
                     />
                     <input
                         type="text"
+                        autocomplete="family-name"
                         required
                         name="lastname"
                         placeholder="Your last name.."
@@ -46,12 +49,12 @@
                 <div>
                     <label for="country-select">Country</label>
                     <select id="country-select" name="country">
-                        <option>Australia</option>
-                        <option>Argentina</option>
-                        <option>Brazil</option>
-                        <option>Spain</option>
-                        <option>USA</option>
-                        <option>Ukraine</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Spain">Spain</option>
+                        <option value="USA">USA</option>
+                        <option value="Ukraine">Ukraine</option>
                     </select>
                 </div>
                 <div>
@@ -62,7 +65,7 @@
                         placeholder="Your message"
                     ></textarea>
                 </div>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </main>
         <footer>
