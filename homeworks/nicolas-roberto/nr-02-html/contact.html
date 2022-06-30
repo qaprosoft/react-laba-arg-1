@@ -17,39 +17,52 @@
     <section>
       <hr />
       <h2>Contact me</h2>
-      <label for="">
-        <strong>Full name*</strong>
-        <input type="text" placeholder="Your name.." />
-        <input type="text" placeholder="Your last name.." />
-      </label>
-      <br />
-      <label for="">
-        <strong>Phone number*</strong>
-        <input type="number" placeholder="Your phone.." />
+      <form>
+        <label for="name"><strong>Full name*</strong></label>
+        <input type="text" id="name" placeholder="Your name.." required />
+        <label for="lastName"></label>
+        <input
+          type="text"
+          id="lastName"
+          placeholder="Your last name.."
+          required
+        />
+
         <br />
-      </label>
-      <label for=""
-        ><strong>Country </strong
-        ><select name="country" id="">
-          <optgroup label="country">
+
+        <label for="phone"><strong>Phone number*</strong></label>
+        <input type="phone" id="phone" placeholder="Your phone.." required />
+        <br />
+
+        <label for="country"><strong>Country </strong></label
+        ><select name="country" id="country" required>
+          <optgroup label="Country">
             <option>Australia</option>
             <option>Argentina</option>
             <option>Italy</option>
             <option>Ukraine</option>
             <option>United States</option>
           </optgroup>
-        </select></label
-      >
-      <br />
-      <textarea
-        name=""
-        id=""
-        cols="22"
-        rows="14"
-        placeholder="Your message.."
-      ></textarea>
-      <br />
-      <input type="submit" value="Submit" />
+        </select>
+
+        <br />
+
+        <label for="message"></label>
+        <textarea
+          name=""
+          id=""
+          cols="22"
+          rows="14"
+          placeholder="Your message.."
+          id="message"
+          required
+        ></textarea>
+
+        <br />
+
+        <input type="submit" value="Submit" />
+      </form>
+
       <br />
       <hr />
     </section>
