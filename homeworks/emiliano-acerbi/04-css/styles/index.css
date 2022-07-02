@@ -1,12 +1,16 @@
 /* Variables */
 
 :root {
+	/* Font family */
 	--ff: "Poppins", sans-serif;
+
+	/* Font colors */
 	--text-primary-clr: #f1f2f4;
 	--text-secondary-clr: #a3abb2;
+	--text-btn-primary-clr: #3d3d3d;
 
+	/* Background colors */
 	--dark-bg-clr: #0c151d;
-
 	--primary-clr: #ffe071;
 	--secondary-clr: #171f26;
 }
@@ -34,7 +38,6 @@ dd {
 
 body {
 	min-height: 100vh;
-	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 }
 
@@ -49,15 +52,43 @@ picture {
 body {
 	font-family: var(--ff);
 	color: var(--text-secondary-clr);
+	font-weight: 500;
 }
 
 .header__title {
 	color: var(--text-primary-clr);
 	font-size: 2.875rem;
+	font-weight: 500;
 }
 
 .header__subtitle {
 	font-size: 1.375rem;
+}
+
+.btn {
+	font-size: 1.375rem;
+	font-weight: 500;
+	font-family: var(--ff);
+}
+
+.main__btn-primary {
+	color: var(--text-btn-primary-clr);
+}
+
+.main__btn-secondary {
+	color: var(--text-secondary-clr);
+}
+
+.project__description {
+	color: var(--text-btn-primary-clr);
+}
+
+.project__description > h2 {
+	font-size: 22px;
+}
+
+.project__description > p {
+	font-size: 14px;
 }
 
 /* Layout */
@@ -66,7 +97,10 @@ body {
 	background-color: var(--dark-bg-clr);
 }
 
+/* Header */
+
 .header {
+	padding-top: 2rem;
 	display: flex;
 	gap: 2rem;
 	align-items: center;
@@ -86,4 +120,140 @@ body {
 	gap: 1.5rem;
 	align-items: center;
 	padding: 0;
+}
+
+.header__list > li {
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.header__list > li:hover {
+	opacity: 0.7;
+}
+
+/* Main */
+
+.main {
+	padding-top: 2rem;
+}
+
+.main__info {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.main__item {
+	max-width: 15ch;
+	text-align: center;
+}
+
+.main__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.btn {
+	width: 290px;
+	height: 80px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.main__btn-primary {
+	background-color: var(--primary-clr);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.main__btn-primary::after {
+	content: url("../public/arrow-down.svg");
+	width: 18px;
+	height: 20px;
+	padding-bottom: 25px;
+}
+
+.main__btn-secondary {
+	background-color: var(--secondary-clr);
+}
+
+.main__breadcrumbs {
+	margin: 0 auto;
+	margin-top: 2rem;
+	background-color: var(--secondary-clr);
+	list-style: none;
+	padding: 0;
+	width: 756px;
+	height: 116px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.main__breadcrumb {
+	width: 350px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+}
+
+.main__breadcrumb:hover {
+	background-color: var(--dark-bg-clr);
+}
+
+.selected {
+	background-color: var(--dark-bg-clr);
+}
+
+.main__projects {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 2rem;
+	place-content: center;
+	margin-top: 2rem;
+}
+
+.main__project {
+	position: relative;
+}
+
+.project__description {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: grid;
+	gap: 0.25rem;
+	place-content: center;
+	text-align: center;
+	padding: 1.25rem;
+}
+
+.project__link {
+	margin: 1rem auto 0;
+	background-color: white;
+	padding: 0.75rem 0.5rem;
+	border-radius: 50%;
+}
+
+.project__cursor {
+	position: absolute;
+	bottom: 45px;
+	right: 70px;
 }
