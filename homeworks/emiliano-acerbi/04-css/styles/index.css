@@ -13,6 +13,11 @@
 	--dark-bg-clr: #0c151d;
 	--primary-clr: #ffe071;
 	--secondary-clr: #171f26;
+
+	/* Light mode */
+	--text-light-secondary-clr: #575757;
+	--light-bg-clr: #e9ebec;
+	--secondary-light-clr: #d7d7d7;
 }
 
 /* Reseting default styles */
@@ -61,17 +66,20 @@ body {
 	font-weight: 500;
 }
 
-.header__subtitle {
+.header__subtitle,
+.main__info,
+.main__breadcrumb {
 	font-size: 1.375rem;
 }
 
 .btn {
+	font-family: var(--ff);
 	font-size: 1.375rem;
 	font-weight: 500;
-	font-family: var(--ff);
 }
 
-.main__btn-primary {
+.main__btn-primary,
+.project__description {
 	color: var(--text-btn-primary-clr);
 }
 
@@ -79,16 +87,17 @@ body {
 	color: var(--text-secondary-clr);
 }
 
-.project__description {
-	color: var(--text-btn-primary-clr);
-}
-
 .project__description > h2 {
 	font-size: 22px;
+	font-weight: 500;
 }
 
 .project__description > p {
 	font-size: 14px;
+}
+
+.footer__text {
+	font-size: 22px;
 }
 
 /* Layout */
@@ -102,7 +111,7 @@ body {
 .header {
 	padding-top: 2rem;
 	display: flex;
-	gap: 2rem;
+	gap: 2.5rem;
 	align-items: center;
 	justify-content: center;
 }
@@ -117,7 +126,7 @@ body {
 .header__list {
 	display: flex;
 	list-style: none;
-	gap: 1.5rem;
+	gap: 2rem;
 	align-items: center;
 	padding: 0;
 }
@@ -134,25 +143,31 @@ body {
 /* Main */
 
 .main {
-	padding-top: 2rem;
+	padding-bottom: 3rem;
 }
+
+/* Info section */
 
 .main__info {
 	display: flex;
+	margin-top: 3rem;
 	justify-content: center;
-	gap: 2rem;
+	gap: 0.5rem;
 }
 
 .main__item {
 	max-width: 15ch;
+	padding: 1rem;
 	text-align: center;
 }
+
+/* Buttons section */
 
 .main__buttons {
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
-	margin-top: 2rem;
+	margin-top: 2.9375rem;
 }
 
 .btn {
@@ -187,9 +202,11 @@ body {
 	background-color: var(--secondary-clr);
 }
 
+/* Breadcrumbs section */
+
 .main__breadcrumbs {
 	margin: 0 auto;
-	margin-top: 2rem;
+	margin-top: 5rem;
 	background-color: var(--secondary-clr);
 	list-style: none;
 	padding: 0;
@@ -220,12 +237,14 @@ body {
 	background-color: var(--dark-bg-clr);
 }
 
+/* Projects section */
+
 .main__projects {
 	display: grid;
 	grid-template-columns: auto auto;
 	gap: 2rem;
 	place-content: center;
-	margin-top: 2rem;
+	margin-top: 4.5rem;
 }
 
 .main__project {
@@ -243,6 +262,14 @@ body {
 	place-content: center;
 	text-align: center;
 	padding: 1.25rem;
+	opacity: 0;
+	background-color: #ffe071dc;
+	border-radius: 1rem;
+	transition: 0.3s ease;
+}
+
+.project__description:hover {
+	opacity: 1;
 }
 
 .project__link {
@@ -250,10 +277,27 @@ body {
 	background-color: white;
 	padding: 0.75rem 0.5rem;
 	border-radius: 50%;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.project__link:hover {
+	background-color: lightgray;
 }
 
 .project__cursor {
 	position: absolute;
 	bottom: 45px;
 	right: 70px;
+}
+
+/* Footer */
+
+.footer {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.footer__text {
+	text-align: center;
 }
