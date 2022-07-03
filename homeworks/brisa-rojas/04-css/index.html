@@ -8,65 +8,88 @@
     <!--STYLES-->
     <link rel="stylesheet" href="./styles.css" />
     <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME ICONS--><script src="https://kit.fontawesome.com/118cb351c1.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <section class="settings">
+    <header class="settings">
       <div class="colorMode">
-        <img src="./Assets/Icons/colorMode.svg" alt=""/>
+        <img src="./Assets/Icons/colorMode.svg" alt="" />
       </div>
-    </section>
-    <section class="user">
-      <img class="pic" src="./Assets/Images/userImg.png" alt="profile picture"/>
-      <div class="info">
-        <h1>Victor Alvarado</h1>
-        <h2>Software Engineer</h2>
-        <div class="socialMedia">
-          <a href="https://github.com/" target="blank"><img src="./Assets/Icons/github.svg" alt="GitHub Icon"/></a>
-          <a href="https://twitter.com/" target="blank"><img src="./Assets/Icons/twitter.svg" alt="Twitter icon"/></a>
-          <a href="https://www.linkedin.com/home/?originalSubdomain=ar" target="blank"><img src="./Assets/Icons/linkedIn.svg" alt="Linked In icon"/></a>
-          <a href="https://www.youtube.com/" target="blank"><img src="./Assets/Icons/youtube.svg" alt="YouTube icon"/></a>
+    </header>
+
+    <section class="profile">
+        <div class="user">
+            <div class="img">
+                <img src="./Assets/Images/userImg.png" alt=""/>
+            </div>
+            <div class="info">
+                <h1>Victor Alvarado</h1>
+                <h2>Software Engineer</h2>
+                <div class="social_media">
+                    <a href="https://github.com/" target="blank">
+                    <img src="./Assets/Icons/github.svg" alt="GitHub Icon" />
+                    </a>
+                    <a href="https://twitter.com/" target="blank">
+                    <img src="./Assets/Icons/twitter.svg" alt="Twitter icon" />
+                    </a>
+                    <a
+                    href="https://www.linkedin.com/home/?originalSubdomain=ar"
+                    target="blank"
+                    >
+                    <img src="./Assets/Icons/linkedIn.svg" alt="Linked In icon" />
+                    </a>
+                    <a href="https://www.youtube.com/" target="blank">
+                    <img src="./Assets/Icons/youtube.svg" alt="YouTube icon" />
+                    </a>
+                </div>
+            </div>
         </div>
+
+      <div class="experience">
+        <p class="exp_item"><span>7</span><br />Years of work experience</p>
+        <p class="exp_item"><span>50+</span><br />Completed projects</p>
+        <p class="exp_item"><span>20+</span><br />Satisfied customers</p>
       </div>
-      <section class="experience">
-        <p class="expItem"><span>7</span><br>Years of work experience</p>
-        <p class="expItem"><span>50+</span><br>Completed
-          projects</p>
-        <p class="expItem"><span>20+</span><br>Satisfied
-          customers</p>
-      </section>
-      <section class="contact">
+
+      <div class="buttons">
         <div class="CV">
-          <p>Download CV</p>
-          <img src="./Assets/Icons/downloadArrow.svg" alt="Download icon"/>
+            <p>
+                Download CV 
+            </p>
+            <img src="./Assets/Icons/downloadArrow.png" alt="Download icon">
         </div>
-        <div class="contactInfo">
+        <div class="contact_info">
           <p>Contact me</p>
         </div>
-      </section>
+      </div>
     </section>
- 
+
     <main>
-      <div class="viewSelector">
-        <div class="viewOpt" id="active">
+      <div class="view_select">
+        <div class="view_option" id="active">
           <p>Portfolio</p>
         </div>
-        <div class="viewOpt">
+        <div class="view_option">
           <p>Skills</p>
         </div>
       </div>
+
       <section class="portfolio">
-        <img src="./Assets/Images/Rectangle 1.png" alt="pic1"/>
-        <img src="./Assets/Images/Rectangle 2.png" alt="pic2"/>
-        <img src="./Assets/Images/Rectangle 3.png" alt="pic3"/>
-        <img src="./Assets/Images/Rectangle 4.png" alt="pic4"/>
-        <img src="./Assets/Images/Rectangle 5.png" alt="pic5"/>
-        <img src="./Assets/Images/Rectangle 6.png" alt="pic6"/>
+        <img src="./Assets/Images/Project1.png" alt="pic1" />
+        <img src="./Assets/Images/Project2.png" alt="pic2" />
+        <img src="./Assets/Images/Project3.png" alt="pic3" />
+        <img src="./Assets/Images/Project4.png" alt="pic4" />
+        <img src="./Assets/Images/Project5.png" alt="pic5" />
+        <img src="./Assets/Images/Project6.png" alt="pic6" />
       </section>
     </main>
-
-    <footer>© Victor Alvarado. 2022 All rigths reserved</footer>
+    <footer><p>© Victor Alvarado. 2022 All rigths reserved</p></footer>
   </body>
 </html>
