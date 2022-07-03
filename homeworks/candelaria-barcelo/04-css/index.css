@@ -1,0 +1,172 @@
+/* general settings */
+
+body {
+  background-color: #e9ebec;
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* specific settings */
+
+/* light-dark-mode icon */
+.header__light-dark-mode-button {
+  width: 33.4px;
+  height: 33.35px;
+  padding: 23.32px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 33px 0 77px 0;
+}
+
+/* profile main info (picture, name, role) */
+
+.basic-info {
+  width: 700px;
+  margin: 0px auto;
+}
+
+.basic-info__div {
+  margin: 0px auto;
+  text-align: left;
+}
+
+.basic-info__profile-picture {
+  height: 192px;
+  width: 192px;
+  padding: 8px;
+  background-color: #ffffff;
+  border-color: #f7d039;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.basic-info__name {
+  font-weight: 500;
+  font-size: 46px;
+  color: #3d3d3d;
+  margin: 29.5px 0 0 0;
+}
+
+.basic-info__role {
+  font-weight: 500;
+  font-size: 22px;
+  color: #575757;
+  margin-top: 0;
+}
+
+/* social media icons */
+.basic-info__icons img {
+  height: 30px;
+  width: auto;
+  margin-right: 32px;
+}
+
+/* achievements (7 years of work experience, etc) */
+.achievements__individual-achievement {
+  margin: 68px 45px;
+  width: 155px;
+  height: auto;
+}
+
+.achievements__number {
+  color: #3a3a3a;
+}
+
+.achievements__feat {
+  color: #575757;
+}
+
+/* hiring info (download CV, contact me buttons) */
+
+.hiring-links__download-cv,
+.hiring-links__contact {
+  width: 290px;
+  height: 80px;
+  border-radius: 2.76% / 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 19px;
+  border-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: center;
+  font-size: 22px;
+}
+
+.hiring-links__download-cv:hover,
+.hiring-links__contact:hover {
+  cursor: pointer;
+}
+
+.hiring-links__contact {
+  background-color: #ffffff;
+}
+
+.hiring-links__download-cv {
+  background-color: #fbd144;
+}
+
+.hiring-links__download-cv-text {
+  margin: 0px 25px;
+}
+
+/* portfolio + skills buttons */
+
+.content {
+  width: 760px;
+  height: 110px;
+  border-radius: 2.9% / 20%;
+  background-color: #ffffff;
+  margin: 86px auto 76px auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content__skills-button,
+.content__portfolio-button {
+  width: 351.45px;
+  height: 80px;
+  border-radius: 2.34% / 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__portfolio-button {
+  background-color: #d7d7d7;
+}
+
+/* projects */
+
+.projects {
+  flex-wrap: wrap;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.projects__individual-project {
+  width: 362px;
+  height: 226px;
+  margin: 0 16px 48px 16px;
+}
+
+/* footer */
+
+.footer {
+  color: #575757;
+  margin: 130px auto 80px auto;
+}
