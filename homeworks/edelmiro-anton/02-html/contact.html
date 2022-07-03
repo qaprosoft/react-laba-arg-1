@@ -16,68 +16,68 @@
     </header>
 
     <hr />
+    <main>
+      <h1>Contact me</h1>
 
-    <h1>Contact me</h1>
+      <form action="#" method="POST">
+        <div>
+          <label for="name">
+            Full name*
+            <input type="text" placeholder="Your name..." id="name" required />
+          </label>
+          <label for="lastName">
+            <input
+              type="text"
+              placeholder="Your last name..."
+              id="lastName"
+              required
+            />
+          </label>
+        </div>
 
-    <form action="#" method="POST">
-      <div>
-        <label for="name">
-          Full name*
-          <input type="text" placeholder="Your name..." id="name" required />
+        <div>
+          <label for="phoneNumber">
+            Phone number*
+            <input
+              type="tel"
+              placeholder="Your phone..."
+              id="phoneNumber"
+              required
+            />
+          </label>
+        </div>
+        <label for="country">
+          Country
+          <select name="country" id="country">
+            <option value="select your country" selected disabled>
+              Select your country
+            </option>
+            <option value="argentina">Argentina</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="united kingdom">United Kingdom</option>
+            <option value="united states">United States</option>
+            <option value="zimbabwe">Zimbabwe</option>
+          </select>
         </label>
-        <label for="lastName">
-          <input
-            type="text"
-            placeholder="Your last name..."
-            id="lastName"
-            required
-          />
-        </label>
-      </div>
 
-      <div>
-        <label for="phoneNumber">
-          Phone number*
-          <input
-            type="tel"
-            placeholder="Your phone..."
-            id="phoneNumber"
-            required
-          />
-        </label>
-      </div>
-      <label for="country">
-        Country
-        <select name="country" id="country">
-          <option value="select your country" selected disabled>
-            Select your country
-          </option>
-          <option value="argentina">Argentina</option>
-          <option value="ukraine">Ukraine</option>
-          <option value="united kingdom">United Kingdom</option>
-          <option value="united states">United States</option>
-          <option value="Zimbabwe">Zimbabwe</option>
-        </select>
-      </label>
+        <br />
 
-      <br />
+        <div>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
 
-      <div>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your message..."
-        ></textarea>
-      </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
 
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-
-    <hr />
-
+      <hr />
+    </main>
     <footer>
       <a href="https://www.facebook.com">
         <img src="./icons/facebook_icon.svg" alt="facebook icon" width="50" />
