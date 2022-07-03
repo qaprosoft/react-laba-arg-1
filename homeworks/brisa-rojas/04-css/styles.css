@@ -91,7 +91,7 @@ section.profile .user .info{
     height: 156px;
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
+    justify-content: space-between;
 }
 section.profile .user .info > h2, section.profile .user .info >div{
     padding-top: 10px;
@@ -178,7 +178,7 @@ div.view_select .view_option{
     background-color: #0C151D;
 }
 
-section.portfolio{
+.portfolio{
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
@@ -190,7 +190,7 @@ section.portfolio{
     width: 757px;
     height: 826px;
 }
-section.portfolio img{
+.portfolio img{
     width: 362px;
     height: 226px;
     border-radius: 15px;
