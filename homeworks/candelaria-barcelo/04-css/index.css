@@ -24,6 +24,8 @@ body {
 
 }
 
+/* .dark class redefines colors for the dark theme. 
+this class will be added upon clicking the light/dark mode button. */
 .dark {
   --light-background: #0C151D;
   --non-changing-white: #ffffff;
@@ -59,56 +61,6 @@ a {
   background: var(--white);
   margin: 33px 0 77px 0;
 }
-
-/* .header__light-dark-mode-button-wrapper {
-  height: 80px;
-  width: 80px;
-  background: var(--white);
-  margin: 33px 0 77px 0;
-  border-radius: 50%;
-}
-
-.header__light-dark-mode-toggle {
-  opacity: 0;
-  width: 80px;
-  height: 80px;
-  box-sizing: border-box;
-  position: relative;
-  top: -3px;
-  left: -4px;
-  padding: 23.32px;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.header__light-dark-mode-visible-button {
-  width: 33.4px;
-  height: 33.35px;
-  padding: 23.32px;
-  position: relative;
-  top: -7px;
-  left: -32px;
-  background:url('./images/icons/light-dark-mode.svg') no-repeat;
-  z-index: 1;
-
-}
-
-.header__light-dark-mode-toggle:checked + .header__light-dark-mode-visible-button {
-  background:url('./images/icons/dark-mode.svg') no-repeat;
-  width: 33.4px;
-  height: 33.35px;
-  padding: 23.32px;
-  position: relative;
-  top: -7px;
-  left: -32px;
-  /* border-radius: 50%;
-  background: #171F26; *//*
-
-} 
-
-.header__light-dark-mode-button-wrapper:hover {
-  cursor: pointer;
-} */
 
 /* profile main info (picture, name, role) */
 
