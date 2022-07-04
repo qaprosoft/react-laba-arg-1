@@ -1,3 +1,4 @@
+// Elements
 const themeBtn = document.getElementById('themeBtn')
 const themeBtnLight = document.getElementById('themeBtn-light')
 const headerTitle = document.querySelector('.header__title')
@@ -7,12 +8,14 @@ const btn = document.querySelector('.main__btn-secondary')
 const headerListLight = document.querySelector('.header__list-light')
 const headerListDark = document.querySelector('.header__list')
 
+// Variables
 const BACKGROUND_COLOR_LIGHT = '#e9ebec'
 const BACKGROUND_COLOR_DARK = '#0c151d'
 const TEXT_COLOR_DARK = '#a3abb2'
 const TEXT_COLOR_LIGHT = '#575757'
 let darkMode = true
 
+// Logic
 themeBtn.addEventListener('click', () => toggleTheme())
 themeBtnLight.addEventListener('click', () => toggleTheme())
 

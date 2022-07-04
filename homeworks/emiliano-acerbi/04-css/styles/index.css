@@ -74,6 +74,10 @@ body {
 	font-size: 1.375rem;
 }
 
+.item__number {
+	font-size: 1.5rem;
+}
+
 .btn {
 	font-family: var(--ff);
 	font-size: 1.375rem;
