@@ -1,7 +1,7 @@
-/* general settings */
+/* GLOBAL STYLES */
 
 body {
-  /* definition of light colors */
+  /* definition of light theme colors */
   --light-background: #e9ebec;
   --non-changing-white: #ffffff;
   --white: #ffffff;
@@ -23,6 +23,15 @@ body {
   font-size: 22px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* .dark class redefines colors for the dark theme. 
 this class will be added upon clicking the light/dark mode button. */
 .dark {
@@ -40,16 +49,7 @@ this class will be added upon clicking the light/dark mode button. */
   --download-cv-dark-grey: #3d3d3d;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* specific settings */
+/* SPECIFIC STYLES */
 
 /* light-dark-mode icon */
 .header__light-dark-mode-button {
