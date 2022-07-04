@@ -13,9 +13,12 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
 			rel="stylesheet"
 		/>
-		<script src="index.js"></script>
 	</head>
 	<body>
+		<!-- Theme button -->
+		<button id="themeBtn" class="theme-btn">Btn</button>
+
+		<!-- Header -->
 		<header class="header">
 			<div class="header__profile">
 				<img
@@ -28,15 +31,26 @@
 			<div>
 				<h1 class="header__title">Victor Alvarado</h1>
 				<p class="header__subtitle">Software Engineer</p>
+
+				<!-- Icons for dark mode -->
 				<ul class="header__list">
 					<li><img src="public/github.svg" alt="github icon" /></li>
 					<li><img src="public/twitter.svg" alt="twitter icon" /></li>
 					<li><img src="public/linkedin.svg" alt="linkedin icon" /></li>
 					<li><img src="public/youtube.svg" alt="youtube icon" /></li>
 				</ul>
+
+				<!-- Icons for light mode -->
+				<ul class="header__list-light">
+					<li><img src="public/github-light.svg" alt="github icon" /></li>
+					<li><img src="public/twitter-light.svg" alt="twitter icon" /></li>
+					<li><img src="public/linkedin-light.svg" alt="linkedin icon" /></li>
+					<li><img src="public/youtube-light.svg" alt="youtube icon" /></li>
+				</ul>
 			</div>
 		</header>
 
+		<!-- Main -->
 		<main class="main">
 			<section class="main__info">
 				<article class="main__item">
@@ -115,8 +129,12 @@
 			</section>
 		</main>
 
+		<!-- Footer -->
 		<footer class="footer">
 			<p class="footer__text">© Victor Alvarado. 2022 All rigths reserved</p>
 		</footer>
+
+		<!-- Javascript -->
+		<script src="index.js"></script>
 	</body>
 </html>
