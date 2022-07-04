@@ -2,7 +2,7 @@
 
 :root {
 	/* Font family */
-	--ff: "Poppins", sans-serif;
+	--ff: 'Poppins', sans-serif;
 
 	/* Font colors */
 	--text-primary-clr: #f1f2f4;
@@ -112,12 +112,27 @@ body {
 	transition: 0.3s ease;
 }
 
-.theme-btn {
+.theme-btn,
+.theme-btn-light {
 	border: none;
 	margin-inline: auto;
-	margin-block: 2rem;
+	margin-top: 2rem;
 	cursor: pointer;
-	padding: 1rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	display: grid;
+	place-content: center;
+	transition: opacity 0.3s ease;
+}
+
+.theme-btn {
+	background-color: var(--secondary-clr);
+}
+
+.theme-btn-light {
+	display: none;
+	background-color: white;
 }
 
 /* Header */
@@ -212,7 +227,7 @@ body {
 }
 
 .main__btn-primary::after {
-	content: url("../public/arrow-down.svg");
+	content: url('../public/arrow-down.svg');
 	width: 18px;
 	height: 20px;
 	padding-bottom: 25px;
@@ -249,10 +264,6 @@ body {
 	transition: 0.3s ease;
 	cursor: pointer;
 }
-
-/* .main__breadcrumb:hover {
-	background-color: var(--dark-bg-clr);
-} */
 
 .selected {
 	background-color: var(--dark-bg-clr);
