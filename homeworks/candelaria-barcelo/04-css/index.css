@@ -61,6 +61,10 @@ this class will be added upon clicking the light/dark mode button. */
   margin: 33px 0 77px 0;
 }
 
+.header__light-dark-mode-button:hover {
+  cursor: pointer;
+}
+
 /* profile main info (picture, name, role) */
 
 .basic-info {
