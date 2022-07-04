@@ -1,0 +1,212 @@
+
+:root {
+	--main-bg-color:#E5E5E5;
+	--btn-bg-color: #FFFFFF;
+	--nav-txt-color: #19191B;;
+	--sub-txt-color: #575757;
+	--nav-btn-color: #D7D7D7;
+	--h1-color: #3D3D3D;
+	--prof-btn-color: #3D3D3D;
+	--brightness: 1;
+}
+
+body{
+	background: var(--main-bg-color) ;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 33px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div{
+	margin: 1rem;
+}
+
+button{
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	color: var(--sub-txt-color);
+}
+
+h1{	
+	color: var(--h1-color);
+	margin: 0;
+	font-size: 46px;
+	line-height: 69px;
+}
+
+h2{
+	color: var(--sub-txt-color);
+	margin: 0;
+	font-size: 22px;
+	line-height: 33px;
+	filter: brightness(var(--brightness));
+}
+
+/*THEME CHANGE BUTTON */
+#btn-change-theme{
+	width: 2rem;
+	border-radius: 50%;
+	background: var(--btn-bg-color);
+	padding: 1rem;
+	border: 1px solid var(--main-bg-color);
+	margin: 5vh;
+	filter: brightness(var(--brightness));
+}
+
+#btn-change-theme:hover {
+	cursor: pointer;
+	border: 1px solid var(--btn-bg-color);
+}
+
+/*PROFILE */
+.profile-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 631px;
+	height: 215px;
+}
+
+#avatar {
+	background: #FFFFFF;
+	border: 4px solid #F7D039;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0 2rem 0 0;
+}
+
+.socialmedia-icons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 26px;
+	margin: 12px 0;
+	filter: brightness(var(--brightness));
+}
+
+
+/*PROFILE FACTS*/
+.profile-facts{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	padding: 20px 2px;
+	width: 634px;
+	height: 142px;
+}
+
+strong{
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.profile-facts p {
+	width: 9rem;	
+	filter: brightness(var(--brightness));
+}
+
+
+/*PROFILE BUTTONS*/
+.profile-buttons-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	width: 618px;
+}
+
+.profile-buttons-container button{
+	color: var(--prof-btn-color);
+	background: var(--btn-bg-color);
+	border: none;
+	width: 290px;
+	height: 80px;
+	
+}
+
+.profile-buttons-container button:hover{
+	border: 1px solid var(--sub-txt-color);
+}
+
+#download-cv{
+	background: #FBD144;
+}
+
+#download-cv img {
+	height: 2 rem;
+	margin: 0.2rem 1rem;
+	vertical-align: bottom;
+}
+
+/* NAV BUTTONS */
+nav{
+	background: var(--btn-bg-color);
+	border-radius: 20px;
+	margin: 5rem ;
+}
+
+nav button {
+	height: 80px;
+	width: 351.45px;
+	border-radius: 10px;
+	margin: 15px 23.75px;
+	background: var(--btn-bg-color);
+	border: none;
+	color: var(--nav-txt-color);
+}
+
+nav button:hover{
+	background: var(--main-bg-color);
+}
+
+/*MAIN CONTENT GRID */
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+	margin: 0 auto;
+	grid-template-areas: "content content" 
+			     "content content"
+			     "content content";
+	
+	width: 757px;
+	height: 826px;
+}
+
+main > img{
+	width: 362px;
+	height: 226px;
+	margin: 0;
+}
+main > img:hover{
+	cursor: pointer;
+}
+footer{
+	text-align: center;
+	color: var(--sub-txt-color);
+	filter: brightness(var(--brightness));
+}

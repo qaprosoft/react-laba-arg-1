@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta
+	name="description"
+	content="This is my simply-Portfolio developed with css"
+	/>
+	<link rel="stylesheet" href="style.css">
+	<title>Victor Alvarado Simply-Portfolio</title>
+</head>
+<body>
+	<header>
+		<img id="btn-change-theme" onclick="changeTheme()" src="./images/icons/dark-light-theme-icon.svg" alt="dark-light icon">
+		<div class="profile-info">
+			<img id="avatar" src="./images/photo.png" alt="photo of Victor Alvarado" title="this is me!">
+			<div>
+				<h1>Victor Alvarado</h1>
+				<h2>Software Engineer</h2>
+				<div class="socialmedia-icons">
+					<a href="https://github.com/www" target="_blank">
+						<img src="./images/icons/github-icon.svg" alt="github icon">
+					</a>
+					<a href="https://twitter.com/" target="_blank">
+						<img src="./images/icons/twitter-icon.svg" alt="twitter icon">
+					</a>
+					<a href="https://www.linkedin.com/" target="_blank">
+						<img src="images/icons/linkedIn-icon.svg" alt="linkedin icon">
+					</a>
+					<a href="https://www.youtube.com/" target="_blank">
+						<img src="images/icons/youtube-icon.svg" alt="youtube icon">
+					</a>
+				</div>
+			</div>
+		</div>		
+		<div class="profile-facts">
+			<p>
+				<strong>7</strong><br>
+				Years of work experience
+			</p>
+			<p>
+				<strong>50+</strong><br>
+				Completed proyects
+			</p>
+			<p>
+				<strong>20+</strong><br>
+				Satisfied customers
+			</p>
+		</div>
+		<div class="profile-buttons-container">
+			<button id="download-cv" style="color: #3D3D3D">Download CV <img src="./images/icons/download-icon.svg" alt="download icon"></button>
+			<button>Contact me</button>
+		</div>
+		<nav>
+			<button>Portfolio</button>
+			<button>Skills</button>
+		</nav>
+	</header>
+	<main>
+		<img src="./images/rectangle-1.png" alt="first proyect">
+		<img src="./images/rectangle-2/Rectangle-2@2x.png" alt="second proyect" srcset=".\images\rectangle-2\Rectangle-2.png 800px">
+		<img src="./images/rectangle-3.png" alt="third proyect">
+		<img src="./images/rectangle-4.png" alt="fourth proyect">
+		<img src="./images/rectangle-5.png" alt="fifth proyect">
+		<img src="./images/rectangle-6.png" alt="sixth proyect">
+	</main>
+	<footer>
+		<p>&copy Victor Alvarado. 2022 All rigths reserved</p>
+	</footer>
+	<script>
+		const lightColor = '#E5E5E5'
+		const darkColor = '#0C151D'
+		const btnBgColor_darkMode = '#171F26'
+		const btnBgColor_lightMode = '#FFFFFF'
+		const txtColor_darkMode = '#A3ABB2'
+		const navTxtColor_lightMode = '#19191B'
+		const prfBtnTxtColor_lightMode = '#3D3D3D'
+		const subTitleTxtColor_lightMode = '#575757'
+		const h1Color_lightMode = '#3D3D3D'
+		const h1Color_darkMode = '#F1F2F4'
+		const brightness_lightMode = 1;
+		const brightness_darkMode = 2;
+
+		let r = document.querySelector(':root')
+		let rs = getComputedStyle(r)
+		
+
+		function changeTheme(){
+			let actualBgColor = rs.getPropertyValue('--main-bg-color')  
+			if(actualBgColor == lightColor){ 
+				r.style.setProperty('--main-bg-color', darkColor)
+				r.style.setProperty('--btn-bg-color', btnBgColor_darkMode)
+				r.style.setProperty('sub-txt-color', txtColor_darkMode)
+				r.style.setProperty('--nav-txt-color', txtColor_darkMode)
+				r.style.setProperty('--h1-color', h1Color_darkMode)	
+				r.style.setProperty('--prof-btn-color', txtColor_darkMode)
+				r.style.setProperty('--brightness', brightness_darkMode)				
+			}else{
+				r.style.setProperty('--main-bg-color', lightColor)
+				r.style.setProperty('--btn-bg-color', btnBgColor_lightMode)
+				r.style.setProperty('sub-txt-color', subTitleTxtColor_lightMode)
+				r.style.setProperty('--nav-txt-color', navTxtColor_lightMode)
+				r.style.setProperty('--h1-color', h1Color_lightMode)	
+				r.style.setProperty('--brightness', brightness_lightMode)
+				r.style.setProperty('--prof-btn-color', prfBtnTxtColor_lightMode)	
+			}
+			
+		}
+	</script>
+</body>
+</html>
