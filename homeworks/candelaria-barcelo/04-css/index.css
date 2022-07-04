@@ -1,11 +1,42 @@
 /* general settings */
 
 body {
-  background-color: #e9ebec;
+  /* definition of light colors */
+  --light-background: #e9ebec;
+  --non-changing-white: #ffffff;
+  --white: #ffffff;
+  --picture-yellow: #f7d039;
+  --button-yellow: #fbd144;
+  --black: #19191B;
+  --darker-grey: #3a3a3a;
+  --dark-grey: #3d3d3d;
+  --light-grey: #575757;
+  --very-light-grey: #d7d7d7;
+  --contact-dark-grey: #3d3d3d;
+  --download-cv-dark-grey: #3d3d3d;
+
+  /* other body styles */
+  background-color: var(--light-background);
   font-family: "Poppins";
   font-style: normal;
   text-align: center;
   font-size: 22px;
+
+}
+
+.dark {
+  --light-background: #0C151D;
+  --non-changing-white: #ffffff;
+  --white: #171F26;
+  --picture-yellow: #FFE071;
+  --button-yellow: #FFE071;
+  --black: #A3ABB2;
+  --darker-grey: #A3ABB2;
+  --dark-grey: #F1F2F4;
+  --light-grey: #A3ABB2;
+  --very-light-grey: #0C151D;
+  --contact-dark-grey: #A3ABB2;
+  --download-cv-dark-grey: #3d3d3d;
 }
 
 .container {
@@ -25,9 +56,59 @@ a {
   height: 33.35px;
   padding: 23.32px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--white);
   margin: 33px 0 77px 0;
 }
+
+/* .header__light-dark-mode-button-wrapper {
+  height: 80px;
+  width: 80px;
+  background: var(--white);
+  margin: 33px 0 77px 0;
+  border-radius: 50%;
+}
+
+.header__light-dark-mode-toggle {
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  position: relative;
+  top: -3px;
+  left: -4px;
+  padding: 23.32px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.header__light-dark-mode-visible-button {
+  width: 33.4px;
+  height: 33.35px;
+  padding: 23.32px;
+  position: relative;
+  top: -7px;
+  left: -32px;
+  background:url('./images/icons/light-dark-mode.svg') no-repeat;
+  z-index: 1;
+
+}
+
+.header__light-dark-mode-toggle:checked + .header__light-dark-mode-visible-button {
+  background:url('./images/icons/dark-mode.svg') no-repeat;
+  width: 33.4px;
+  height: 33.35px;
+  padding: 23.32px;
+  position: relative;
+  top: -7px;
+  left: -32px;
+  /* border-radius: 50%;
+  background: #171F26; *//*
+
+} 
+
+.header__light-dark-mode-button-wrapper:hover {
+  cursor: pointer;
+} */
 
 /* profile main info (picture, name, role) */
 
@@ -45,8 +126,8 @@ a {
   height: 192px;
   width: 192px;
   padding: 8px;
-  background-color: #ffffff;
-  border-color: #f7d039;
+  background-color: var(--non-changing-white);
+  border-color: var(--picture-yellow);
   border-style: solid;
   border-width: 4px;
   border-radius: 50%;
@@ -56,14 +137,14 @@ a {
 .basic-info__name {
   font-weight: 500;
   font-size: 46px;
-  color: #3d3d3d;
+  color: var(--dark-grey);
   margin: 29.5px 0 0 0;
 }
 
 .basic-info__role {
   font-weight: 500;
   font-size: 22px;
-  color: #575757;
+  color: var(--light-grey);
   margin-top: 0;
 }
 
@@ -82,11 +163,11 @@ a {
 }
 
 .achievements__number {
-  color: #3a3a3a;
+  color: var(--darker-grey);
 }
 
 .achievements__feat {
-  color: #575757;
+  color: var(--light-grey);
 }
 
 /* hiring info (download CV, contact me buttons) */
@@ -113,11 +194,13 @@ a {
 }
 
 .hiring-links__contact {
-  background-color: #ffffff;
+  background-color: var(--white);
+  color: var(--contact-dark-grey);
 }
 
 .hiring-links__download-cv {
-  background-color: #fbd144;
+  background-color: var(--button-yellow);
+  color: var(--download-cv-dark-grey);
 }
 
 .hiring-links__download-cv-text {
@@ -130,10 +213,11 @@ a {
   width: 760px;
   height: 110px;
   border-radius: 2.9% / 20%;
-  background-color: #ffffff;
+  background-color: var(--white);
   margin: 86px auto 76px auto;
   align-items: center;
   justify-content: space-around;
+  color: var(--black);
 }
 
 .content__skills-button,
@@ -147,7 +231,7 @@ a {
 }
 
 .content__portfolio-button {
-  background-color: #d7d7d7;
+  background-color: var(--very-light-grey);
 }
 
 /* projects */
@@ -167,6 +251,6 @@ a {
 /* footer */
 
 .footer {
-  color: #575757;
+  color: var(--light-grey);
   margin: 130px auto 80px auto;
 }
