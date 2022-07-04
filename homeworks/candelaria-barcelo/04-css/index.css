@@ -7,7 +7,7 @@ body {
   --white: #ffffff;
   --picture-yellow: #f7d039;
   --button-yellow: #fbd144;
-  --black: #19191B;
+  --black: #19191b;
   --darker-grey: #3a3a3a;
   --dark-grey: #3d3d3d;
   --light-grey: #575757;
@@ -21,23 +21,22 @@ body {
   font-style: normal;
   text-align: center;
   font-size: 22px;
-
 }
 
 /* .dark class redefines colors for the dark theme. 
 this class will be added upon clicking the light/dark mode button. */
 .dark {
-  --light-background: #0C151D;
+  --light-background: #0c151d;
   --non-changing-white: #ffffff;
-  --white: #171F26;
-  --picture-yellow: #FFE071;
-  --button-yellow: #FFE071;
-  --black: #A3ABB2;
-  --darker-grey: #A3ABB2;
-  --dark-grey: #F1F2F4;
-  --light-grey: #A3ABB2;
-  --very-light-grey: #0C151D;
-  --contact-dark-grey: #A3ABB2;
+  --white: #171f26;
+  --picture-yellow: #ffe071;
+  --button-yellow: #ffe071;
+  --black: #a3abb2;
+  --darker-grey: #a3abb2;
+  --dark-grey: #f1f2f4;
+  --light-grey: #a3abb2;
+  --very-light-grey: #0c151d;
+  --contact-dark-grey: #a3abb2;
   --download-cv-dark-grey: #3d3d3d;
 }
 
