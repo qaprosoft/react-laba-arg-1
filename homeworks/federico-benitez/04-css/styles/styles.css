@@ -15,8 +15,8 @@
   --active-button: var(--light-2);
   --active-button-dark: #0c151d;
   --inactive-button: #fff;
-  --tabs-background: #fff;
-  --tabs-background-dark: #171f26;
+  --light-background: #fff;
+  --background-dark: #171f26;
 }
 
 * {
@@ -36,6 +36,7 @@
   display: grid;
   justify-items: center;
   background-color: var(--background);
+  transition: background 0.3s ease-in-out;
 }
 
 .profile-info {
@@ -119,7 +120,7 @@
 }
 
 .btn--secondary {
-  background-color: var(--tabs-background);
+  background-color: var(--light-background);
 }
 
 .btn--yellow {
@@ -129,7 +130,7 @@
 
 .tabs {
   margin: 75px 0 65px;
-  background-color: var(--tabs-background);
+  background-color: var(--light-background);
   border-radius: 18px;
   display: flex;
   justify-content: center;
@@ -160,14 +161,6 @@
   justify-content: space-between;
 }
 
-#toggleMode {
-  background-color: white;
-  display: flex;
-  align-self: center;
-  border-radius: 50%;
-  margin: 33px 0 65px;
-}
-
 .portfolio__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -178,12 +171,15 @@
 .portfolio__item_image {
   width: 362px;
   height: 226px;
+  cursor: pointer;
   border-radius: 15px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .portfolio__item_image:hover {
-  transition: opacity 0.2s ease-in-out;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .footer {
@@ -197,13 +193,36 @@
   color: var(--text-1);
 }
 
+.header-mode {
+  width: 80px;
+  height: 80px;
+  background-color: var(--light-background);
+  border-radius: 50%;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 33px 0 65px;
+}
+
+.header-mode__button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--light-background);
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+
+.icon {
+  color: var(--text-2);
+}
+
 .dark {
-  --background: var(--dark-0);
   --name: var(--light-3);
-  --tabs-background: var(--tabs-background-dark);
-  --active-button: var(--active-button-dark);
-  --text-2: var(--light-1);
-  --inactive-button: var(--dark-3);
   --text-1: var(--light-1);
-  transition: background 0.3s ease-in-out;
+  --text-2: var(--light-1);
+  --active-button: var(--active-button-dark);
+  --inactive-button: var(--dark-3);
+  --background: var(--dark-0);
+  --light-background: var(--background-dark);
 }
