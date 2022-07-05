@@ -17,17 +17,17 @@
     <main id="page" class="page__container">
       <header class="header-mode">
         <button type="button" class="header-mode__button" id="toggleMode">
-          <img class="icon" src="./assets/mode-icon.svg" />
+          <img class="icon" src="./assets/mode-icon.svg" alt="toggle button" />
         </button>
       </header>
-      <article style="display: grid; justify-items: center">
+      <div class="porfolio">
         <section class="info__container">
           <header class="profile-info">
             <div class="profile-info__picture">
-              <img src="./assets/profile-picture.png" />
+              <img src="./assets/profile-picture.png" alt="profile picture" />
             </div>
             <div>
-              <h1 class="profile-info__name">Victor Alvarado</h1>
+              <h2 class="profile-info__name">Victor Alvarado</h2>
               <h5 class="profile-info__position">Software Engineer</h5>
               <nav class="profile-info__social">
                 <a href="//github.com"
@@ -45,7 +45,7 @@
               </nav>
             </div>
           </header>
-          <section class="profile-fact">
+          <div class="profile-fact">
             <div class="profile-fact__text">
               <p>7</p>
               <p>Years of work</p>
@@ -61,59 +61,65 @@
               <p>Satisfied</p>
               <p>customers</p>
             </div>
-          </section>
-          <section class="profile-buttons">
-            <a class="btn btn--download btn--yellow" href="//google.com"
+          </div>
+          <div class="profile-buttons">
+            <a class="btn btn--download btn--yellow" href="../02-html/cv.pdf"
               ><p>Download CV</p>
-              <img src="./assets/icons/download.svg"
+              <img src="./assets/icons/download.svg" alt="download cv"
             /></a>
             <a class="btn btn--secondary"><span>Contact me</span></a>
-          </section>
+          </div>
         </section>
 
-        <section>
-          <section class="tabs">
+        <div>
+          <div class="tabs">
             <a class="btn tabs__button tabs__button--active"
               ><span>Portfolio</span>
             </a>
-            <a
-              class="btn tabs__button tabs__button--inactive"
-            >
+            <a class="btn tabs__button tabs__button--inactive">
               <span>Skills</span>
             </a>
-          </section>
+          </div>
 
-          <section class="portfolio__items">
+          <div class="portfolio__items">
             <img
+              alt="project porfolio"
               src="./assets/portfolio/image-1.png"
               class="portfolio__item_image"
             />
             <img
+              alt="project porfolio"
               src="./assets/portfolio/image-2.png"
               class="portfolio__item_image"
             />
             <img
+              alt="project porfolio"
               src="./assets/portfolio/image-3.png"
               class="portfolio__item_image"
             />
             <img
+              alt="project porfolio"
               src="./assets/portfolio/image-4.png"
               class="portfolio__item_image"
             />
             <img
+              alt="project porfolio"
               src="./assets/portfolio/image-5.png"
               class="portfolio__item_image"
             />
             <img
+              alt="project porfolio"
               src="./assets/portfolio/image-6.png"
               class="portfolio__item_image"
             />
-          </section>
-        </section>
-      </article>
+          </div>
+        </div>
+      </div>
 
       <footer class="footer">
-        <small class="footer__copyright">&copy; Victor Alvarado. 2022 All rights reserved</small>
+        <small class="footer__copyright"
+          >&copy; Victor Alvarado. 2022 All rights reserved</small
+        >
       </footer>
     </main>
     <script type="module" src="./js/index.js"></script>

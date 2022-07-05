@@ -39,6 +39,11 @@
   transition: background 0.3s ease-in-out;
 }
 
+.porfolio {
+  display: grid;
+  justify-items: center;
+}
+
 .profile-info {
   display: grid;
   grid-template-columns: 1fr 4fr;
