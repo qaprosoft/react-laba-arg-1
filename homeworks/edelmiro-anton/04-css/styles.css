@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #e9ebec;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+  font-family: "Poppins";
+  margin: 0 auto;
+}
+
+/* BUTTON DARKMODE */
+
+.btnSwitch {
+  display: inline-block;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 60px;
+}
+
+.backgroundBtn {
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 47.86%;
+  right: 47.51%;
+  top: 33px;
+}
+
+.btnSwitch__img {
+  cursor: pointer;
+  cursor: pointer;
+  margin-top: 25.31%;
+}
+
+/* NAME & OCCUPATION */
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile {
+  width: 75%;
+  height: 156px;
+  display: flex;
+  flex-grow: 0;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.profile__name {
+  width: 372px;
+  height: 69px;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 69px;
+  color: #3d3d3d;
+}
+
+.profile__profession {
+  width: 372px;
+  height: 33px;
+  margin-left: -71px;
+  margin-top: -60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #575757;
+}
+
+/* PROFILE PHOTO */
+
+.photo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.photo__img {
+  border-radius: 50%;
+  transform: rotate(-0.07turn);
+  box-sizing: border-box;
+  padding: 5px;
+  margin-right: 43px;
+  margin-top: 33px;
+  height: 173px;
+  border: 4px solid #f7d039;
+}
+
+/* SOCIAL MEDIA */
+
+.socialMedia {
+  display: flex;
+  width: 222px;
+  height: 36px;
+  margin-top: -21px;
+  justify-content: space-between;
+  margin-left: -285px;
+  list-style: none;
+}
+
+a > img {
+  display: flex;
+  width: 30px;
+  height: 24.42px;
+  top: 5.77px;
+  left: 3px;
+  left: 8.33%;
+  right: 8.33%;
+  top: 16.04%;
+  bottom: 16.12%;
+}
+
+/* .socialMedia__icon-dark {
+  display: flex;
+  width: 30px;
+  height: 24.42px;
+  position: relative;
+  top: 5.77px;
+  left: 3px;
+  left: 8.33%;
+  right: 8.33%;
+  top: 16.04%;
+  bottom: 16.12%;
+} */
+
+/* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
+
+.facts {
+  display: flex;
+  position: relative;
+  width: 634px;
+  height: 142px;
+  left: 347px;
+  top: 6px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 2px;
+  gap: 90px;
+}
+
+.facts__title p:first-child {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+  color: #575757;
+  position: relative;
+  top: 22px;
+  font-weight: bold;
+}
+
+.facts__title p:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 22px;
+  color: #575757;
+}
+
+/* DOWNLOAD & CONTACT ME BUTTONS */
+
+.profileButtons {
+  display: flex;
+  margin-left: 20%;
+}
+
+.profileButtons__button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0;
+  background-color: #fbd144;
+  font-family: "Poppins";
+  height: 80px;
+  position: relative;
+  width: 290px;
+  left: 14.48%;
+  right: 5.65%;
+  top: calc(50% - 30px / 4 + 3.5px);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -0.531474px;
+  color: #3d3d3d;
+  justify-content: center;
+}
+
+.profileButtons__button:hover {
+  cursor: pointer;
+}
+
+.profileButtons__icon {
+  position: relative;
+  right: 16.67%;
+  bottom: 8.33%;
+  width: 17.99px;
+  height: 20px;
+  top: 2px;
+  left: 16.5px;
+}
+
+.profileButtons__button__contactMe {
+  left: 22%;
+  background: #ffffff;
+}
+
+/* PORTFOLIO & SKILLS */
+
+.container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  width: 50%;
+  height: 110px;
+  top: 101px;
+  left: 25%;
+  right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container__span {
+  background-color: #d7d7d7;
+  height: 80px;
+  border-radius: 20px;
+  width: 47%;
+  position: relative;
+  left: 0.12%;
+  right: 50.63%;
+  top: 15.7%;
+  bottom: 19.7%;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  cursor: pointer;
+}
+
+.container__span span {
+  position: relative;
+  top: 26%;
+}
+
+.container__span--colorSkills {
+  background-color: #ffffff;
+}
+
+/* ARTICLES */
+
+.projects {
+  height: 826px;
+  top: 149px;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 363px);
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.projects__article {
+  position: relative;
+  width: 362px;
+  height: 226px;
+  left: 1px;
+  top: 0px;
+  gap: 2;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.projects__article:hover {
+  opacity: 0.7;
+}
+
+.projects__article__first {
+  position: relative;
+}
+/* FOOTER */
+
+.footer {
+  height: 33px;
+  text-align: center;
+  margin-top: 183px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+/************* DARKMODE *************/
+
+/* body.dark .btnSwitch__img {
+  background-image: url(./icons/darkmode/dark.svg); 
+} */
+
+body.dark .backgroundBtn {
+  background-color: #171f26;
+}
+body.dark {
+  background: #0c151d;
+}
+
+/* testing  */
+
+/* body.dark .socialMedia__icon-light{
+  background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
+} */
+
+/* testing  */
+
+body.dark .profile__name {
+  color: #f1f2f4;
+}
+
+body.dark .profile__profession {
+  color: #a3abb2;
+}
+
+body.dark .facts__title p {
+  color: #a3abb2;
+}
+
+body.dark .profileButtons__button__contactMe {
+  color: #a3abb2;
+  background-color: #171f26;
+}
+
+body.dark .container {
+  background-color: #171f26;
+}
+
+body.dark .container__span--colorPortfolio {
+  background-color: #0c151d;
+  color: #a3abb2;
+}
+
+body.dark .container__span--colorSkills {
+  color: #a3abb2;
+  background-color: #171f26;
+}
+
+body.dark footer {
+  color: #a3abb2;
+}
