@@ -3,6 +3,9 @@ function addListener() {
   toggleButton.addEventListener("click", toggleUIMode, false);
 }
 
+/**
+ * Add or remove class on html document node to set as dark mode
+ */
 function changePageMode() {
   const pageElement = document.getElementById("page");
 
@@ -15,8 +18,8 @@ function changePageMode() {
 
 /**
  * Set on localstorage an item with key 'mode'
- * @params {modeSelected} 'dark' | 'light' 
-*/
+ * @param {'dark' | 'light'} modeSelected
+ */
 function setMode(modeSelected) {
   localStorage.setItem("mode", modeSelected);
 }
@@ -30,15 +33,16 @@ function setMode(modeSelected) {
  */
 function getMode() {
   const mode = localStorage.getItem("mode");
-  if (!mode) {
-    setMode("mode", "light");
-    return "light";
-  }
-  if (mode !== "dark" && mode !== "light") {
-    setMode("mode", "light");
+  if (shouldInitialize(mode)) {
+    setMode("light");
     return "light";
   }
   return mode;
+}
+
+function shouldInitialize(mode) {
+  if (!mode) return true;
+  if (mode !== "dark" && mode !== "light") return true;
 }
 
 function isDarkMode() {
@@ -52,8 +56,14 @@ function toggleUIMode() {
   } else {
     setMode("dark");
   }
-  changePageMode()
+  changePageMode();
 }
 
 document.addEventListener("DOMContentLoaded", addListener, false);
 
+function initialize() {
+  getMode();
+  changePageMode();
+}
+
+initialize();
