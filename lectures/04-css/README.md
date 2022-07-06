@@ -1,6 +1,6 @@
 # СSS
 
-Here's you can find materials about Git
+Here's you can find materials about CSS
 
 
 [Presentation](https://docs.google.com/presentation/d/1-r2TzfUxlq_WvBvZvannwn2O73iEbbodaPueZE0bVH8/edit?usp=sharing)
