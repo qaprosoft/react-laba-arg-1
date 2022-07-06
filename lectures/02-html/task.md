@@ -1,8 +1,9 @@
 # HTML practice
 
-Create HTML page using provided [Figma Design](https://www.figma.com/file/rDDQzjMzAjQL5NYzCQDiXd/Simple-portfolio-(only-HTML)).
+Create HTML page using provided [Figma Design](<https://www.figma.com/file/rDDQzjMzAjQL5NYzCQDiXd/Simple-portfolio-(only-HTML)>).
 
 ### Definition of done
+
 - You can use only HTML (no CSS or JS or something else)
 - HTML should pass W3C [HTML](https://validator.w3.org/#validate_by_uri) validations. HTML should be semantic.
 - Add work navigation between pages
