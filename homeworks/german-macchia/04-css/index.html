@@ -3,75 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="German Macchia" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="This is my simply-Portfolio developed with css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Victor Alvarado Simply-Portfolio</title>
   </head>
   <body>
     <header>
       <img
-        class="btn-change-theme-img"
+        class="theme-switcher"
         onclick="changeTheme()"
         src="./images/icons/dark-light-theme-icon.svg"
         alt="dark-light icon"
       />
-      <div class="profile-info">
+      <div class="card">
         <img
-          class="profile-info__avatar"
+          class="card__image"
           src="./images/photo.png"
           alt="photo of Victor Alvarado"
           title="this is me!"
         />
-        <div class="profile-info-title">
+        <div class="card__title">
           <h1>Victor Alvarado</h1>
           <h2>Software Engineer</h2>
-          <div class="socialmedia-icons">
+          <div class="card__actions">
             <a href="https://github.com/www" target="_blank">
-              <img src="./images/icons/github-icon.svg" alt="github icon" />
+              <img
+                class="icon"
+                src="./images/icons/github-icon.svg"
+                alt="github icon"
+              />
             </a>
             <a href="https://twitter.com/" target="_blank">
-              <img src="./images/icons/twitter-icon.svg" alt="twitter icon" />
+              <img
+                class="icon"
+                src="./images/icons/twitter-icon.svg"
+                alt="twitter icon"
+              />
             </a>
             <a href="https://www.linkedin.com/" target="_blank">
-              <img src="images/icons/linkedIn-icon.svg" alt="linkedin icon" />
+              <img
+                class="icon"
+                src="images/icons/linkedIn-icon.svg"
+                alt="linkedin icon"
+              />
             </a>
             <a href="https://www.youtube.com/" target="_blank">
-              <img src="images/icons/youtube-icon.svg" alt="youtube icon" />
+              <img
+                class="icon"
+                src="images/icons/youtube-icon.svg"
+                alt="youtube icon"
+              />
             </a>
           </div>
         </div>
       </div>
-      <div class="profile-facts">
-        <p class="profile-facts__p">
-          <strong>7</strong><br />
-          Years of work experience
-        </p>
-        <p class="profile-facts__p">
-          <strong>50+</strong><br />
-          Completed proyects
-        </p>
-        <p class="profile-facts__p">
-          <strong>20+</strong><br />
-          Satisfied customers
-        </p>
-      </div>
-      <div class="profile-container">
-        <button
-          class="profile-container__button"
-          style="color: #3d3d3d; background: #fbd144"
-        >
+      <li class="list">
+        <ul>
+          <strong>7</strong
+          ><br />
+          Years of work<br />experience
+        </ul>
+        <ul>
+          <strong>50+</strong
+          ><br />
+          Completed<br />proyects
+        </ul>
+        <ul class="list__item--desktop">
+          <strong>20+</strong
+          ><br />
+          Satisfied<br />customers
+        </ul>
+        <ul class="list__item--mobile">
+          <strong>20+</strong
+          ><br />
+          Personal side<br />proyects
+        </ul>
+      </li>
+      <div class="button-stack">
+        <button class="button" style="color: #3d3d3d; background: #fbd144">
           Download CV
           <img
-            class="profile-container_img"
+            class="button__img"
             src="./images/icons/download-icon.svg"
             alt="download icon"
           />
         </button>
-        <button class="profile-container__button">Contact me</button>
+        <button class="button">Contact me</button>
       </div>
       <nav>
         <button>Portfolio</button>
@@ -97,6 +119,6 @@
     <footer>
       <p>&copy; Victor Alvarado. 2022 All rigths reserved</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>

@@ -49,8 +49,9 @@ a {
   text-decoration: none;
 }
 
-p {
+ul {
   color: var(--sub-txt-color);
+  filter: brightness(var(--brightness));
 }
 
 h1 {
@@ -68,8 +69,7 @@ h2 {
   filter: brightness(var(--brightness));
 }
 
-/*THEME CHANGE BUTTON */
-.btn-change-theme-img {
+.theme-switcher {
   border-radius: 50%;
   background: var(--btn-bg-color);
   padding: 1rem;
@@ -80,13 +80,12 @@ h2 {
   width: 4rem;
 }
 
-.btn-change-theme-img:hover {
+.theme-switcher:hover {
   cursor: pointer;
   border: 1px solid var(--btn-bg-color);
 }
 
-/*PROFILE */
-.profile-info {
+.card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,7 +94,7 @@ h2 {
   height: 215px;
 }
 
-.profile-info__avatar {
+.card__image {
   background: #ffffff;
   border: 4px solid #f7d039;
   border-radius: 50%;
@@ -103,25 +102,26 @@ h2 {
   margin: 0 2rem 0 0;
 }
 
-.socialmedia-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 26px;
-  margin: 12px 0;
+.card__actions {
+  margin: 1rem 0;
   filter: brightness(var(--brightness));
 }
 
-/*PROFILE FACTS*/
-.profile-facts {
+.icon {
+  margin-right: 1.2rem;
+}
+
+.list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   text-align: center;
-  padding: 20px 2px;
+  margin: 3rem;
 
   width: 634px;
-  height: 142px;
+}
+
+.list__item--mobile {
+  display: none;
 }
 
 strong {
@@ -129,22 +129,15 @@ strong {
   line-height: 36px;
 }
 
-.profile-facts__p {
-  filter: brightness(var(--brightness));
-
-  width: 9rem;
-}
-
-/*PROFILE BUTTONS*/
-.profile-container {
+.button-stack {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  width: 618px;
+  width: 650px;
 }
 
-.profile-container__button {
+.button {
   color: var(--prof-btn-color);
   background: var(--btn-bg-color);
   border: none;
@@ -153,18 +146,17 @@ strong {
   height: 80px;
 }
 
-.profile-container__button:hover {
+.button:hover {
   border: 1px solid var(--sub-txt-color);
 }
 
-.profile-container__img {
+.button__img {
   vertical-align: bottom;
 
   height: 1.5rem;
   margin: 0.2rem 1rem;
 }
 
-/* NAV BUTTONS */
 nav {
   background: var(--btn-bg-color);
   border-radius: 20px;
@@ -186,7 +178,6 @@ nav button:hover {
   background: var(--main-bg-color);
 }
 
-/* MAIN CONTENT GRID */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -212,73 +203,59 @@ main > img:hover {
   cursor: pointer;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   color: var(--sub-txt-color);
   filter: brightness(var(--brightness));
 }
 
-/*MEDIA QUERYS*/
 @media (max-width: 375px) {
   * {
     max-width: 375px;
   }
 
-  .btn-change-theme-img:active {
-    border: 1px solid var(--btn-bg-color);
+  .theme-switcher:active {
+    background: var(--btn-bg-color);
   }
 
-  /*PROFILE */
-  .profile-info {
+  .card {
     flex-direction: column;
+    margin: 1rem;
   }
 
-  .profile-info-title {
+  .card__title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
   }
 
-  .profile-info__avatar {
+  .card__image {
     margin: 0;
-
-    width: 124px;
-    height: 124px;
+    background: var(--btn-bg-color);
+    padding: 5px;
+    width: 154px;
+    height: 154px;
   }
 
-  .socialmedia-icons {
-    margin: 1.5rem;
+  .icon {
+    margin: 1rem;
   }
 
-  /*PROFILE FACTS*/
-  .profile-facts {
-    justify-content: space-around;
-  }
-
-  .profile-facts {
+  .list {
     font-size: 14px;
     line-height: 21px;
-    margin-top: 8rem;
-
-    width: 375px;
-    height: 106px;
+    margin-top: 11rem;
   }
 
-  .profile-facts__p {
-    width: 80px;
-    height: 66px;
+  .list__item--mobile {
+    display: block;
+  }
+  .list__item--desktop {
+    display: none;
   }
 
-  /*PROFILE BUTTONS*/
-  .profile-container {
-    justify-content: space-evenly;
-
-    width: 375px;
-    height: 80px;
-  }
-
-  .profile-container__button {
+  .button {
     font-size: 12px;
     line-height: 18px;
 
@@ -286,23 +263,22 @@ footer {
     width: 158px;
   }
 
-  .profile-container__button:active {
+  .button:active {
     border: 1px solid var(--sub-txt-color);
   }
 
-  .profile-container__img {
+  .button__img {
     margin: 2px;
 
     height: 11.67px;
     width: 10.67px;
   }
 
-  /* NAV BUTTONS */
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0rem 0 3rem 0;
+    margin: 3rem;
 
     width: 330px;
     height: 64px;
@@ -321,13 +297,11 @@ footer {
     background: var(--main-bg-color);
   }
 
-  /*MAIN CONTENT GRID */
   main {
     margin: 0 0.3rem;
     display: block;
   }
 
-  /* FOOTER */
   footer {
     margin: 37rem 0 1rem 0;
     font-size: 14px;

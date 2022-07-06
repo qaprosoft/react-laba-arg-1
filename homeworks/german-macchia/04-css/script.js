@@ -1,37 +1,37 @@
 const lightColor = "#e5e5e5";
 const darkColor = "#0c151d";
-const btnBgColor_darkMode = "#171f26";
-const btnBgColor_lightMode = "#ffffff";
-const txtColor_darkMode = "#a3abb2";
-const navTxtColor_lightMode = "#19191b";
-const prfBtnTxtColor_lightMode = "#3d3d3d";
-const subTitleTxtColor_lightMode = "#575757";
-const h1Color_lightMode = "#3d3d3d";
-const h1Color_darkMode = "#f1f2f4";
-const brightness_lightMode = 1;
-const brightness_darkMode = 2;
+const btnBgColorDarkMode = "#171f26";
+const btnBgColorLightMode = "#ffffff";
+const txtColorDarkMode = "#a3abb2";
+const navTxtColorLightMode = "#19191b";
+const prfBtnTxtColorLightMode = "#3d3d3d";
+const subTitleTxtColorLightMode = "#575757";
+const h1ColorLightMode = "#3d3d3d";
+const h1ColorDarkMode = "#f1f2f4";
+const brightnessLightMode = 1;
+const brightnessDarkMode = 2;
 
-let r = document.querySelector(":root");
-let rs = getComputedStyle(r);
+let root = document.querySelector(":root");
+let rootStyle = getComputedStyle(root);
 
 function changeTheme() {
-  let actualBgColor = rs.getPropertyValue("--main-bg-color");
+  let actualBgColor = rootStyle.getPropertyValue("--main-bg-color");
 
   if (actualBgColor == lightColor) {
-    r.style.setProperty("--main-bg-color", darkColor);
-    r.style.setProperty("--btn-bg-color", btnBgColor_darkMode);
-    r.style.setProperty("sub-txt-color", txtColor_darkMode);
-    r.style.setProperty("--nav-txt-color", txtColor_darkMode);
-    r.style.setProperty("--h1-color", h1Color_darkMode);
-    r.style.setProperty("--prof-btn-color", txtColor_darkMode);
-    r.style.setProperty("--brightness", brightness_darkMode);
+    root.style.setProperty("--main-bg-color", darkColor);
+    root.style.setProperty("--btn-bg-color", btnBgColorDarkMode);
+    root.style.setProperty("sub-txt-color", txtColorDarkMode);
+    root.style.setProperty("--nav-txt-color", txtColorDarkMode);
+    root.style.setProperty("--h1-color", h1ColorDarkMode);
+    root.style.setProperty("--prof-btn-color", txtColorDarkMode);
+    root.style.setProperty("--brightness", brightnessDarkMode);
   } else {
-    r.style.setProperty("--main-bg-color", lightColor);
-    r.style.setProperty("--btn-bg-color", btnBgColor_lightMode);
-    r.style.setProperty("sub-txt-color", subTitleTxtColor_lightMode);
-    r.style.setProperty("--nav-txt-color", navTxtColor_lightMode);
-    r.style.setProperty("--h1-color", h1Color_lightMode);
-    r.style.setProperty("--brightness", brightness_lightMode);
-    r.style.setProperty("--prof-btn-color", prfBtnTxtColor_lightMode);
+    root.style.setProperty("--main-bg-color", lightColor);
+    root.style.setProperty("--btn-bg-color", btnBgColorLightMode);
+    root.style.setProperty("sub-txt-color", subTitleTxtColorLightMode);
+    root.style.setProperty("--nav-txt-color", navTxtColorLightMode);
+    root.style.setProperty("--h1-color", h1ColorLightMode);
+    root.style.setProperty("--brightness", brightnessLightMode);
+    root.style.setProperty("--prof-btn-color", prfBtnTxtColorLightMode);
   }
 }
