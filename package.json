@@ -1,0 +1,22 @@
+{
+  "name": "react-laba-arg-1",
+  "version": "1.0.0",
+  "description": "This repository contains all information about the lectures and serves as a central repository to submit all your class works.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write . --config ./.prettierrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qaprosoft/react-laba-arg-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qaprosoft/react-laba-arg-1/issues"
+  },
+  "homepage": "https://github.com/qaprosoft/react-laba-arg-1#readme",
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}
