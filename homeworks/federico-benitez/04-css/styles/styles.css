@@ -44,7 +44,7 @@
   justify-items: center;
 }
 
-.profile-info {
+.profile__info {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
@@ -53,7 +53,7 @@
   margin-bottom: 48px;
 }
 
-.profile-info__picture {
+.profile__info__picture {
   outline: 4px solid var(--yellow-1);
   border-radius: 50%;
   height: 215px;
@@ -65,7 +65,7 @@
   margin-right: 40px;
 }
 
-.profile-info__name {
+.profile__info__name {
   height: 69px;
   font-weight: 500;
   font-size: 46px;
@@ -73,7 +73,7 @@
   color: var(--name);
 }
 
-.profile-info__position {
+.profile__info__position {
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
@@ -82,7 +82,7 @@
   margin-bottom: 12px;
 }
 
-.profile-info__social {
+.profile__info__social {
   width: 222px;
   height: 36px;
   display: flex;
@@ -92,14 +92,14 @@
   gap: 26px;
 }
 
-.profile-fact {
+.profile__fact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 634px;
   height: 142px;
 }
 
-.profile-fact__text {
+.profile__fact__text {
   font-size: 22px;
   line-height: 33px;
   color: var(--text-2);
@@ -154,11 +154,11 @@
   background-color: var(--active-button);
 }
 
-.info__container {
+.profile {
   width: 618px;
 }
 
-.profile-buttons {
+.profile__buttons {
   height: 80px;
   margin-top: 42px;
   display: grid;
@@ -166,14 +166,14 @@
   justify-content: space-between;
 }
 
-.portfolio__items {
+.projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 32px;
   row-gap: 48px;
 }
 
-.portfolio__item_image {
+.project__item {
   width: 362px;
   height: 226px;
   cursor: pointer;
@@ -183,7 +183,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.portfolio__item_image:hover {
+.project__item:hover {
   opacity: 0.5;
 }
 
