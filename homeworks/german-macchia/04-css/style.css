@@ -17,12 +17,13 @@
 
 body {
   background: var(--main-bg-color);
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
 }
+
 
 header {
   display: flex;
@@ -47,11 +48,6 @@ button:hover {
 
 a {
   text-decoration: none;
-}
-
-ul {
-  color: var(--sub-txt-color);
-  filter: brightness(var(--brightness));
 }
 
 h1 {
@@ -108,14 +104,18 @@ h2 {
 }
 
 .icon {
-  margin-right: 1.2rem;
+  margin-right: 1.5rem;
 }
+
 
 .list {
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: 3rem;
+  color: var(--sub-txt-color);
+  filter: brightness(var(--brightness));
+  list-style: none;
 
   width: 634px;
 }
@@ -133,7 +133,6 @@ strong {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
   width: 650px;
 }
 
@@ -141,6 +140,7 @@ strong {
   color: var(--prof-btn-color);
   background: var(--btn-bg-color);
   border: none;
+  text-align: center;
 
   width: 290px;
   height: 80px;
@@ -150,11 +150,15 @@ strong {
   border: 1px solid var(--sub-txt-color);
 }
 
-.button__img {
+.button__text{
+  margin: 0;
+}
+
+.button__image {
   vertical-align: bottom;
 
-  height: 1.5rem;
-  margin: 0.2rem 1rem;
+  height: 1.4rem;
+  margin: 0.2rem 0rem 0.2rem 1rem;
 }
 
 nav {
@@ -201,6 +205,60 @@ main > img {
 
 main > img:hover {
   cursor: pointer;
+
+}
+
+.container{
+  margin: 0;
+  position: relative;
+  display: none;
+}
+
+.container__text{
+  z-index: 1;
+  position: absolute;
+  color: #3d3d3d;
+  text-align: center;
+}
+.container__text--big{
+  margin: 38px 0px 3px 70px;
+
+  width: 197px;
+  height: 33px;
+}
+
+.container__text--small{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;  
+  margin: 0px 0px 0 20px;
+
+  width: 287px;
+  height: 42px;
+}
+.container__image{
+  z-index: 0;
+}
+
+.container__icon{
+  z-index: 1;  
+  position: absolute;
+  margin: 155px 20px;
+}
+
+.link-icon{
+  padding: 13px 10px;
+  background:#ffffff;
+  border-radius: 50%;
+  margin: 0px 0px 0px 140px; 
+}
+
+.link-icon:hover{
+  cursor: pointer;
+}
+
+.arrow-icon{
+  margin: 0px 0 5px 50px;
 }
 
 footer {
@@ -209,7 +267,9 @@ footer {
   filter: brightness(var(--brightness));
 }
 
+
 @media (max-width: 375px) {
+  
   * {
     max-width: 375px;
   }
@@ -267,8 +327,8 @@ footer {
     border: 1px solid var(--sub-txt-color);
   }
 
-  .button__img {
-    margin: 2px;
+  .button__image {
+    margin: 0 0 2px 10px;
 
     height: 11.67px;
     width: 10.67px;
@@ -296,9 +356,9 @@ footer {
   nav button:active {
     background: var(--main-bg-color);
   }
-
-  main {
-    margin: 0 0.3rem;
+ 
+  main  {
+    margin: 0 .3rem;
     display: block;
   }
 
