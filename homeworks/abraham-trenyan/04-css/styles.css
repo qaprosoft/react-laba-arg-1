@@ -131,7 +131,7 @@
   margin-right: auto;
   margin-bottom: 76px;
 }
-.tabs__button{
+.tab__button{
   font-family: 'Poppins';
   font-size: 22px;
   font-weight: 500;
@@ -144,7 +144,7 @@
 .tabs__button--grey{
   background-color: #D7D7D7;
 }
-.main__projects{
+.projects{
   width: 757px;
   height: 826px;
   margin-left: auto;
@@ -155,7 +155,7 @@
   justify-content: space-between;
   align-content: space-around;
 }
-.project__img{
+.projects__img{
   width: 362px;
   height: 226px;
 }
