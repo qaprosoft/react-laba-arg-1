@@ -58,7 +58,7 @@ header {
   flex-direction: column;
 }
 
-.profile--information > h1 {
+.profile--name {
   font-size: 46px;
   color: #3d3d3d;
   line-height: 0;
@@ -70,7 +70,7 @@ header {
   line-height: 0;
 }
 
-.socialmedia--icons {
+.profile--socialMedia {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,19 +80,19 @@ header {
   height: 36px;
 }
 
-.socialmedia--icons > li > a > img {
+.profile--socialMedia__icon {
   width: 30px;
   height: auto;
 }
 
-/* Profile facts */
+/* Main information */
 
-.facts {
+.main--information {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.profile--facts {
+.main--information__profile {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,21 +101,21 @@ header {
   gap: 90px;
 }
 
-.facts--number {
+.main--information__number {
   color: #3a3a3a;
   font-size: 24px;
   line-height: 36px;
   margin: 0;
 }
 
-.facts--data {
+.main--information__data {
   font-size: 22px;
   line-height: 33px;
   color: #575757;
   margin: 0;
 }
 
-.buttons--container {
+.main--information__buttons {
   width: 618px;
   height: 80px;
   margin: 8px 0;
@@ -123,7 +123,7 @@ header {
   justify-content: space-between;
 }
 
-.container--btn {
+.main--information__btn {
   width: 290px;
   height: 80px;
   border: none;
@@ -133,7 +133,7 @@ header {
   font-weight: 600;
 }
 
-.container--btn > img {
+.main--information__cv > img {
   width: 17.99px;
   height: 20px;
 }
@@ -154,7 +154,7 @@ header {
 
 /* Projects */
 
-.projects--container {
+.main--projects__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,7 +194,7 @@ header {
   width: 351.45px;
 }
 
-.project-pictures {
+.project--container__pictures {
   width: 757px;
   height: 826px;
   display: flex;
@@ -206,7 +206,7 @@ header {
 
 /* Cards hover text */
 
-.overlay {
+.container--card__overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,29 +221,29 @@ header {
   border-radius: 15px;
 }
 
-.card:hover .overlay {
+.project--container__card:hover .container--card__overlay {
   opacity: 0.88;
 }
 
-.card {
+.project--container__card {
   position: relative;
   overflow: hidden;
 }
 
-.card--title {
+.overlay--card__title {
   font-size: 22px;
 }
 
-.card--img {
+.container--card__img {
   width: 362px;
   height: 226px;
 }
 
-.card--text {
+.overlay--card__text {
   font-size: 14px;
 }
 
-.card--link {
+.overlay--card__link {
   width: 38px;
   height: 38px;
   padding: 0;

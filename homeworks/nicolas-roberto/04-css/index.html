@@ -16,28 +16,44 @@
   <body>
     <header>
       <button class="btn-mode">
-        <img class="header--icon" src="./icon/mode.svg" alt="" />
+        <img
+          class="header--icon"
+          src="./icon/mode.svg"
+          alt="Dark mode button"
+        />
       </button>
     </header>
 
     <!-- presentation / social media start -->
     <nav class="profile--info">
-      <img class="profile--picture" src="./img/picture.png" alt="" />
+      <img
+        class="profile--picture"
+        src="./img/picture.png"
+        alt="Profile picture"
+      />
       <div class="profile--information">
-        <h1 class="light-title">Victor Alvarado</h1>
+        <h1 class="profile--name">Victor Alvarado</h1>
         <p>Software Enginieer</p>
-        <ul class="socialmedia--icons">
+        <ul class="profile--socialMedia">
           <li>
-            <a href=""><img src="./icon/github.svg" alt="" /></a>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/github.svg" alt="Open Github"
+            /></a>
           </li>
           <li>
-            <a href=""><img src="./icon/twitter.svg" alt="" /></a>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/twitter.svg" alt="Open Twitter"
+            /></a>
           </li>
           <li>
-            <a href=""><img src="./icon/linkedin.svg" alt="" /></a>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/linkedin.svg" alt="Open Linkedin"
+            /></a>
           </li>
           <li>
-            <a href=""><img src="./icon/youtube.svg" alt="" /></a>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/youtube.svg" alt="Open Youtube"
+            /></a>
           </li>
         </ul>
       </div>
@@ -45,133 +61,157 @@
     <!-- presentation / social media end -->
 
     <main>
-      <!-- facts-information start -->
-      <div class="facts">
-        <ul class="profile--facts">
+      <!-- Main-information start -->
+      <div class="main--information">
+        <ul class="main--information__profile">
           <li>
-            <p class="facts--number">7</p>
+            <p class="main--information__number">7</p>
 
-            <p class="facts--data">
+            <p class="main--information__data">
               Years of work <br />
               experience
             </p>
           </li>
           <li>
-            <p class="facts--number">50+</p>
+            <p class="main--information__number">50+</p>
 
-            <p class="facts--data">
+            <p class="main--information__data">
               Completed <br />
               projects
             </p>
           </li>
           <li>
-            <p class="facts--number">20+</p>
+            <p class="main--information__number">20+</p>
 
-            <p class="facts--data">Satisfied <br />customers</p>
+            <p class="main--information__data">Satisfied <br />customers</p>
           </li>
         </ul>
-        <div class="buttons--container">
-          <button class="container--btn btn--yellow">
-            Download CV <img src="./icon/download.svg" alt="" />
+        <div class="main--information__buttons">
+          <button class="main--information__btn btn--yellow">
+            Download CV <img src="./icon/download.svg" alt="Download CV" />
           </button>
-          <button class="container--btn btn--white">Contact me</button>
+          <button class="main--information__btn btn--white">Contact me</button>
         </div>
       </div>
 
-      <!-- facts-information end -->
+      <!-- Main-information end -->
 
       <!-- Portfolio div start-->
-      <div class="projects--container">
+      <div class="main--projects__container">
         <div class="projects--button">
           <button class="projects--btn">Portfolio</button>
           <p>Skills</p>
         </div>
-        <div class="project-pictures">
-          <div class="card">
-            <img class="card--img" src="./img/project1.png" alt="Project 1" />
-            <div class="overlay">
-              <span class="card--title">SmarterTrading411</span>
+        <div class="project--container__pictures">
+          <div class="project--container__card">
+            <img
+              class="container--card__img"
+              src="./img/project1.png"
+              alt="Project 1"
+            />
+            <div class="container--card__overlay">
+              <span class="overlay--card__title">SmarterTrading411</span>
 
-              <span class="card--text"
+              <span class="overlay--card__text"
                 >Landing page of SmarterTrading411 created <br />
                 using wordPress</span
               >
-              <a class="card--link" href="#"
-                ><img src="./icon/link.svg" alt=""
+              <a class="overlay--card__link" href="#"
+                ><img src="./icon/link.svg" alt="Open project 1"
               /></a>
             </div>
           </div>
 
-          <div class="card">
-            <img class="card--img" src="./img/project2.png" alt="Project 2" />
-            <div class="overlay">
-              <span class="card--title">SPFAIRVALUE</span>
+          <div class="project--container__card">
+            <img
+              class="container--card__img"
+              src="./img/project2.png"
+              alt="Project 2"
+            />
+            <div class="container--card__overlay">
+              <span class="overlay--card__title">SPFAIRVALUE</span>
 
-              <span class="card--text"
+              <span class="overlay--card__text"
                 >Landing page of SPFAIRVALUE created <br />
                 using wordPress</span
               >
-              <a class="card--link" href="#"
-                ><img src="./icon/link.svg" alt=""
+              <a class="overlay--card__link" href="#"
+                ><img src="./icon/link.svg" alt="Open project 2"
               /></a>
             </div>
           </div>
 
-          <div class="card">
-            <img class="card--img" src="./img/project3.png" alt="Project 3" />
-            <div class="overlay">
-              <span class="card--title">Art gallery</span>
+          <div class="project--container__card">
+            <img
+              class="container--card__img"
+              src="./img/project3.png"
+              alt="Project 3"
+            />
+            <div class="container--card__overlay">
+              <span class="overlay--card__title">Art gallery</span>
 
-              <span class="card--text"
+              <span class="overlay--card__text"
                 >Landing page of Art gallery created <br />
                 using wordPress</span
               >
-              <a class="card--link" href="#"
-                ><img src="./icon/link.svg" alt=""
+              <a class="overlay--card__link" href="#"
+                ><img src="./icon/link.svg" alt="Open project 3"
               /></a>
             </div>
           </div>
-          <div class="card">
-            <img class="card--img" src="./img/project4.png" alt="Project 4" />
-            <div class="overlay">
-              <span class="card--title">Friday Dinnes</span>
+          <div class="project--container__card">
+            <img
+              class="container--card__img"
+              src="./img/project4.png"
+              alt="Project 4"
+            />
+            <div class="container--card__overlay">
+              <span class="overlay--card__title">Friday Dinnes</span>
 
-              <span class="card--text"
+              <span class="overlay--card__text"
                 >Landing page of Friday Dinnes created <br />
                 using wordPress</span
               >
-              <a class="card--link" href="#"
-                ><img src="./icon/link.svg" alt=""
+              <a class="overlay--card__link" href="#"
+                ><img src="./icon/link.svg" alt="Open project 4"
               /></a>
             </div>
           </div>
 
-          <div class="card">
-            <img class="card--img" src="./img/project5.png" alt="Project 5" />
-            <div class="overlay">
-              <span class="card--title">Simply Papper</span>
+          <div class="project--container__card">
+            <img
+              class="container--card__img"
+              src="./img/project5.png"
+              alt="Project 5"
+            />
+            <div class="container--card__overlay">
+              <span class="overlay--card__title">Simply Papper</span>
 
-              <span class="card--text"
+              <span class="overlay--card__text"
                 >Landing page of Simply Papper created <br />
                 using wordPress</span
               >
-              <a class="card--link" href="#"
-                ><img src="./icon/link.svg" alt=""
+              <a class="overlay--card__link" href="#"
+                ><img src="./icon/link.svg" alt="Open project 5"
               /></a>
             </div>
           </div>
 
-          <div class="card">
-            <img class="card--img" src="./img/project6.png" alt="Project 6" />
-            <div class="overlay">
-              <span class="card--title">Issima</span>
+          <div class="project--container__card">
+            <img
+              class="container--card__img"
+              src="./img/project6.png"
+              alt="Project 6"
+            />
+            <div class="container--card__overlay">
+              <span class="overlay--card__title">Issima</span>
 
-              <span class="card--text"
+              <span class="overlay--card__text"
                 >Landing page of Issima created <br />
                 using wordPress</span
               >
-              <a class="card--link" href="#"
-                ><img src="./icon/link.svg" alt=""
+              <a class="overlay--card__link" href="#"
+                ><img src="./icon/link.svg" alt="Open project 6"
               /></a>
             </div>
           </div>
