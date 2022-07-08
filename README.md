@@ -29,5 +29,21 @@ Once PR is created you have to do the following things:
 | June 24th    | HTML             |
 | June 28th    | Git              |
 | July 1st     | CSS Part 1       |
-| July 5th     | CSS, Part 2      |
-| July 7th-9th | First block exam |
+| July 6th     | CSS, Part 2      |
+| July 7th-13th | First block exam |
+
+### Block 2
+
+| Day          | Theme              |
+| :----------- | :----------------- |
+| July 15th    | Javascript, Part 1 |
+| July 19th    | Javascript, Part 2 |
+| July 22th    | Javascript, Part 3 |
+| July 26th    | Javascript, Part 4 |
+| July 29th    | Javascript, Part 5 |
+| August 2nd   | Javascript, DOM    |
+| August 5th   | Data structures & algorithms |
+| August 9th   | Environment |
+| August 16th  | Principles |
+| August 19th  | Patterns |
+| August 22th-26th | Second block exam |
