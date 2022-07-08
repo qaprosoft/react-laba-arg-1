@@ -9,8 +9,6 @@
 /*TEXT FONTS AND COLOR*/
 .info_name {
   color: #f1f2f4;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-size: 46px;
   font-weight: 500;
   line-height: 69px;
@@ -22,15 +20,12 @@
 .footer_text,
 .info_position {
   color: #a3abb2;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
   font-size: 22px;
   line-height: 33px;
   background-color: transparent;
 }
 
-span {
+.exp_number {
   font-size: 24px;
 }
 
@@ -39,6 +34,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 /*SETTINGS SECTION*/
