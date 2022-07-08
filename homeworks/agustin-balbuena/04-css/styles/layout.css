@@ -1,0 +1,129 @@
+main {
+  margin-bottom: 100px;
+}
+#toggleMode {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 33px;
+}
+
+.header-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.name-info,
+.career-info,
+.social-info {
+  margin: 5px 0px;
+  letter-spacing: 1px;
+}
+.ellipse {
+  position: absolute;
+  z-index: -1;
+}
+.profile-picture {
+  position: relative;
+  left: 11px;
+  top: 11px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.img-info {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.name-info {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.career-info {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-left: 1px;
+}
+.social-info {
+  grid-area: 1 / 2 / 2 / 3;
+  margin-left: 0px;
+}
+.social-info > ul {
+  display: flex;
+  align-items: center;
+}
+.social-info > ul > li {
+  margin: 0px 13px 0px 0px;
+}
+
+.experience-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience-info li {
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.profile-btns a {
+  width: calc((100% - 100px) / 3 + 79px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 10px;
+  text-align: center;
+}
+.profile-btns a:first-child {
+  background-color: var(--yellow);
+}
+.profile-btns a img {
+  width: 12px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 46px;
+  grid-row-gap: 0px;
+
+  margin: 70px 0px;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+a.tablink {
+  text-align: center;
+  padding: 20px;
+  background: #d7d7d7;
+  border-radius: 10px;
+}
+a.tablink:last-child {
+  background: #ffffff;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.footer {
+  margin-bottom: 20px;
+}

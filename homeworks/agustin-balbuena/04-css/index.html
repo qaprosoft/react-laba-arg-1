@@ -4,42 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
     <title>Portfolio | Home</title>
   </head>
   <body>
-    <header>
-      <button><img src="media/icons/lightDark.svg" alt="" /></button>
-      <img src="media/images/profilePicture.png" alt="" />
-      <h1>Victor Alvarado</h1>
-      <h4>Software Engineer</h4>
-      <nav>
-        <ul>
-          <li>
-            <a href="" class=""
-              ><img src="media/icons/github.svg" alt="GitHub page"
-            /></a>
-          </li>
-          <li>
-            <a href="" class=""
-              ><img src="media/icons/twitter.svg" alt="Twitter profile"
-            /></a>
-          </li>
-          <li>
-            <a href="" class=""
-              ><img src="media/icons/linkedin.svg" alt="LinkedIn Profile"
-            /></a>
-          </li>
-          <li>
-            <a href="" class=""
-              ><img src="media/icons/youtube.svg" alt="Youtube channel"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+    <button id="toggleMode">
+      <img src="media/icons/lightDark.svg" alt="ligth to dark mode" />
+    </button>
+    <header class="header-info">
+      <div class="img-info">
+        <img
+          src="media/images/Ellipse.png"
+          alt="background ellipse image"
+          class="ellipse"
+        />
+        <img
+          src="media/images/profilePicture.png"
+          alt="profile picture"
+          class="profile-picture"
+        />
+      </div>
+      <div class="personal-info">
+        <div class="name-info"><h1>Victor Alvarado</h1></div>
+        <div class="career-info"><h4>Software Engineer</h4></div>
+        <div class="social-info">
+          <ul>
+            <li>
+              <a href="#" class=""
+                ><img src="media/icons/github.svg" alt="GitHub page"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class=""
+                ><img src="media/icons/twitter.svg" alt="Twitter profile"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class=""
+                ><img src="media/icons/linkedin.svg" alt="LinkedIn Profile"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class=""
+                ><img src="media/icons/youtube.svg" alt="Youtube channel"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <aside>
-        <ul>
+        <ul class="experience-info">
           <li>
             <p>7</p>
             <p>Years of work</p>
@@ -56,7 +79,7 @@
             <p>customers</p>
           </li>
         </ul>
-        <div>
+        <div class="profile-btns">
           <a href="#"
             >Download CV
             <img src="media/icons/arrowDownload.svg" alt="download cv" />
@@ -65,12 +88,12 @@
         </div>
       </aside>
       <section>
-        <div class="tab">
-          <button class="tablink">Portfolio</button>
-          <button class="tablink">Skills</button>
+        <div class="tabs">
+          <a class="tablink" href="#">Portfolio</a>
+          <a class="tablink" href="#">Skills</a>
         </div>
         <div class="tabcontent">
-          <ul>
+          <ul class="project-list">
             <li>
               <a href="#"
                 ><img
@@ -113,6 +136,6 @@
         </div>
       </section>
     </main>
-    <footer>© Victor Alvarado. 2022 All rights reserved</footer>
+    <footer class="footer">© Victor Alvarado. 2022 All rights reserved</footer>
   </body>
 </html>
