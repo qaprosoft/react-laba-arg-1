@@ -72,7 +72,7 @@ this class will be added upon clicking the light/dark mode button. */
   margin: 0px auto;
 }
 
-.basic-info__div {
+.basic-info__wrapper {
   margin: 0px auto;
   text-align: left;
 }
@@ -111,17 +111,17 @@ this class will be added upon clicking the light/dark mode button. */
 }
 
 /* achievements (7 years of work experience, etc) */
-.achievements__individual-achievement {
+.achievements__item {
   margin: 68px 45px;
   width: 155px;
   height: auto;
 }
 
-.achievements__number {
+.achievements__item__number {
   color: var(--darker-grey);
 }
 
-.achievements__feat {
+.achievements__item__feat {
   color: var(--light-grey);
 }
 
@@ -164,7 +164,7 @@ this class will be added upon clicking the light/dark mode button. */
 
 /* portfolio + skills buttons */
 
-.content {
+.content__buttons {
   width: 760px;
   height: 110px;
   border-radius: 2.9% / 20%;
@@ -175,8 +175,8 @@ this class will be added upon clicking the light/dark mode button. */
   color: var(--black);
 }
 
-.content__skills-button,
-.content__portfolio-button {
+.content__buttons__skills-button,
+.content__buttons__portfolio-button {
   width: 351.45px;
   height: 80px;
   border-radius: 2.34% / 10%;
@@ -185,19 +185,19 @@ this class will be added upon clicking the light/dark mode button. */
   justify-content: center;
 }
 
-.content__portfolio-button {
+.content__buttons__portfolio-button {
   background-color: var(--very-light-grey);
 }
 
 /* projects */
 
-.projects {
+.content__projects__list {
   flex-wrap: wrap;
   width: 900px;
   margin: 0 auto;
 }
 
-.projects__individual-project {
+.content__projects__item {
   width: 362px;
   height: 226px;
   margin: 0 16px 48px 16px;
