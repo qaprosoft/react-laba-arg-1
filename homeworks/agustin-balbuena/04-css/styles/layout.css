@@ -18,6 +18,8 @@ main {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-items: start;
+  font-size: 17px;
 }
 
 .name-info,
@@ -44,13 +46,16 @@ main {
 
 .img-info {
   grid-area: 1 / 1 / 2 / 2;
+  margin-left: 20px;
 }
 .name-info {
   grid-area: 1 / 2 / 2 / 3;
+  color: var(--dark-text-lm);
 }
 .career-info {
   grid-area: 1 / 2 / 2 / 3;
   margin-left: 1px;
+  color: var(--light-text-lm);
 }
 .social-info {
   grid-area: 1 / 2 / 2 / 3;
@@ -59,19 +64,25 @@ main {
 .social-info > ul {
   display: flex;
   align-items: center;
+  /*justify-content: space-between;*/
 }
 .social-info > ul > li {
-  margin: 0px 13px 0px 0px;
+  margin: 0px 40px 0px 0px;
 }
 
 .experience-info {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .experience-info li {
   padding: 2rem;
   text-align: center;
+  color: var(--light-text-lm);
+}
+ul.experience-info > li > p:first-child {
+  color: #3a3a3a;
 }
 
 .profile-btns {
@@ -103,7 +114,7 @@ main {
   grid-row-gap: 0px;
 
   margin: 70px 0px;
-  padding: 20px 25px;
+  padding: 15px 25px;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -124,6 +135,72 @@ a.tablink:last-child {
   grid-row-gap: 20px;
 }
 
+ul li {
+  position: relative;
+}
+.project-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--yellow);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+.overlay-info-title {
+  color: var(--dark-text-lm);
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-info-content {
+  color: var(--dark-text-lm);
+  font-size: 15px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.overlay-link {
+  color: var(--dark-text-lm);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-img {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.project-list a img {
+  width: 40px;
+  height: 40px;
+}
+.project-list li:hover .overlay {
+  opacity: 0.9;
+  height: 100%;
+}
 .footer {
   margin-bottom: 20px;
 }

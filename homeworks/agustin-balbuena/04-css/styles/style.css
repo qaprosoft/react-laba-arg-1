@@ -23,8 +23,8 @@ body {
   background-color: var(--bg-light-color);
   display: grid;
   justify-items: center;
-
   padding: 10rem 10rem 0 10rem;
+  font-size: 20px;
 }
 
 a {
