@@ -9,6 +9,9 @@ body {
   margin: 0 auto;
 }
 
+.transition__dark {
+  transition: all ease 0.3s;
+}
 /* BUTTON DARKMODE */
 
 .btnSwitch {
@@ -163,7 +166,8 @@ body {
 
 .profileButtons {
   display: flex;
-  margin-left: 20%;
+  margin-left: 204px;
+  margin-top: 45px;
 }
 
 .profileButtons__button {
@@ -172,10 +176,10 @@ body {
   padding: 0;
   background-color: #fbd144;
   font-family: "Poppins";
-  height: 80px;
+  height: 72px;
   position: relative;
-  width: 290px;
-  left: 14.48%;
+  width: 253px;
+  left: 16.48%;
   right: 5.65%;
   top: calc(50% - 30px / 4 + 3.5px);
   font-style: normal;
@@ -214,7 +218,7 @@ body {
   position: relative;
   width: 50%;
   height: 110px;
-  top: 101px;
+  top: 56px;
   left: 25%;
   right: auto;
   display: flex;
@@ -286,7 +290,7 @@ body {
   margin-top: 183px;
   font-weight: bold;
   font-size: 22px;
-  line-height: 33px;
+  line-height: 0px;
 }
 
 /************* DARKMODE *************/
