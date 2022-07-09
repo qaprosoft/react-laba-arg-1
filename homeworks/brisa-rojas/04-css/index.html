@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>br-04-css</title>
+    <!--STYLES-->
+    <link rel="stylesheet" href="./styles.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME ICONS-->
+    <script
+      src="https://kit.fontawesome.com/118cb351c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="settings">
+      <div class="colorMode">
+        <img src="./Assets/Icons/colorMode.svg" alt="" />
+      </div>
+    </header>
+
+    <section class="profile">
+      <div class="user">
+        <div class="img">
+          <img src="./Assets/Images/userImg.png" alt="" />
+        </div>
+        <div class="info">
+          <h1 class="info_name">Victor Alvarado</h1>
+          <h2 class="info_position">Software Engineer</h2>
+          <div class="social_media">
+            <a href="https://github.com/" target="blank">
+              <img src="./Assets/Icons/github.svg" alt="GitHub Icon" />
+            </a>
+            <a href="https://twitter.com/" target="blank">
+              <img src="./Assets/Icons/twitter.svg" alt="Twitter icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/home/?originalSubdomain=ar"
+              target="blank"
+            >
+              <img src="./Assets/Icons/linkedIn.svg" alt="Linked In icon" />
+            </a>
+            <a href="https://www.youtube.com/" target="blank">
+              <img src="./Assets/Icons/youtube.svg" alt="YouTube icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience">
+        <p class="exp_item"><span>7</span><br />Years of work experience</p>
+        <p class="exp_item"><span>50+</span><br />Completed projects</p>
+        <p class="exp_item"><span>20+</span><br />Satisfied customers</p>
+      </div>
+
+      <div class="buttons">
+        <div class="CV">
+          <p class="button_text">Download CV</p>
+          <img src="./Assets/Icons/downloadArrow.png" alt="Download icon" />
+        </div>
+        <div class="contact_info">
+          <p class="button_text">Contact me</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="view_select">
+        <div class="view_option" id="active">
+          <p class="view_select_text">Portfolio</p>
+        </div>
+        <div class="view_option">
+          <p class="view_select_text">Skills</p>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <img
+          class="portfolio_img"
+          src="./Assets/Images/Project2.png"
+          alt="pic2"
+        />
+        <img
+          class="portfolio_img"
+          src="./Assets/Images/Project1.png"
+          alt="pic1"
+        />
+        <img
+          class="portfolio_img"
+          src="./Assets/Images/Project3.png"
+          alt="pic3"
+        />
+        <img
+          class="portfolio_img"
+          src="./Assets/Images/Project4.png"
+          alt="pic4"
+        />
+        <img
+          class="portfolio_img"
+          src="./Assets/Images/Project5.png"
+          alt="pic5"
+        />
+        <img
+          class="portfolio_img"
+          src="./Assets/Images/Project6.png"
+          alt="pic6"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer_text">© Victor Alvarado. 2022 All rigths reserved</p>
+    </footer>
+  </body>
+</html>

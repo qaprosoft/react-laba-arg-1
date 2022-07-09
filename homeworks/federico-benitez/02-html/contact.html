@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <hr />
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Me</h1>
+
+      <form>
+        <div>
+          <label>Full Name*</label>
+          <input
+            autofocus
+            autocomplete="name"
+            type="text"
+            required
+            name="firstname"
+            placeholder="Your name.."
+          />
+          <input
+            type="text"
+            autocomplete="family-name"
+            required
+            name="lastname"
+            placeholder="Your last name.."
+          />
+        </div>
+        <div>
+          <label
+            >Phone number*
+            <input name="phone" required type="text" placeholder="Your phone" />
+          </label>
+        </div>
+        <div>
+          <label for="country-select">Country</label>
+          <select id="country-select" name="country">
+            <option value="Australia">Australia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Spain">Spain</option>
+            <option value="USA">USA</option>
+            <option value="Ukraine">Ukraine</option>
+          </select>
+        </div>
+        <div>
+          <textarea
+            name="message"
+            cols="15"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <hr />
+      <nav>
+        <a href="https://facebook.com"
+          ><img
+            src="./assets/facebook-icon.svg"
+            alt="Facebook Logo"
+            width="25"
+            height="25"
+        /></a>
+        <a href="https://instagram.com/"
+          ><img
+            src="./assets/instagram-icon.svg"
+            alt="instagram Logo"
+            width="25"
+            height="25"
+        /></a>
+        <a href="https://www.linkedin.com/in/federico-benitez-51428119b/"
+          ><img
+            src="./assets/linkedin-icon.svg"
+            alt="linkedin Logo"
+            width="25"
+            height="25"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="./assets/twitter.svg"
+            alt="twitter Logo"
+            width="25"
+            height="25"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
