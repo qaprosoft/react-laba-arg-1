@@ -69,15 +69,11 @@ this class will be added upon clicking the light/dark mode button. */
 
 .basic-info {
   width: auto;
-  /* margin: 0px auto; */
   display: block;
 }
 
 .basic-info__wrapper {
-  /* margin: 0px auto; */
   text-align: center;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .basic-info__profile-picture {
@@ -116,8 +112,6 @@ this class will be added upon clicking the light/dark mode button. */
 /* achievements (7 years of work experience, etc) */
 .achievements__list {
   margin: 0 20px;
-  /* display: flex;
-  justify-content: space-between; */
 }
 
 .achievements__item {
@@ -138,8 +132,6 @@ this class will be added upon clicking the light/dark mode button. */
 /* hiring info (download CV, contact me buttons) */
 .hiring-links__buttons {
   margin: 16px;
-  /* display: flex;
-  justify-content: space-around; */
 }
 
 .hiring-links__download-cv,
@@ -215,8 +207,6 @@ this class will be added upon clicking the light/dark mode button. */
   flex-wrap: wrap;
   margin: 0 18px;
   width: auto;
-  /* width: 900px; */
-  /* margin: 0 auto; */
 }
 
 .content__projects__item {
