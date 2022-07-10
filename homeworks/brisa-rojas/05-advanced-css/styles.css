@@ -30,6 +30,7 @@
   font-size: 24px;
 }
 
+/*MOBILE*/
 @media (max-width: 600px) {
   .info_name {
     font-size: 32px;
@@ -45,6 +46,25 @@
   }
   .exp_number {
     font-size: 16px;
+    line-height: 24px;
+  }
+}
+/*TABLET*/
+@media (max-width: 900px) {
+  .info_name {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .exp_item,
+  .view_select_text,
+  .button_text,
+  .footer_text,
+  .info_position {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .exp_number {
+    font-size: 22px;
     line-height: 24px;
   }
 }
@@ -78,16 +98,31 @@ body {
   height: 40px;
   width: 40px;
 }
+/*MOBILE*/
 @media (max-width: 600px) {
   .settings .colorMode {
     height: 48px;
     width: 48px;
+    margin-bottom: 30px;
   }
   .settings .colorMode .img img {
     height: 24px;
     width: 24px;
   }
 }
+/*TABLET*/
+@media (max-width: 1024px) {
+  .settings .colorMode {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 40px;
+  }
+  .settings .colorMode .img img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 /*PROFILE SECTION*/
 /*User section*/
 section.profile {
@@ -141,7 +176,7 @@ section.profile .user .info .social_media {
   width: 222px;
   height: 36px;
 }
-
+/*MOBILE*/
 @media (max-width: 600px) {
   /*User section*/
   section.profile .user {
@@ -176,6 +211,41 @@ section.profile .user .info .social_media {
   }
 
 }
+/*TABLET*/
+@media (max-width: 1024px){
+    /*User section*/
+    section.profile .user {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    section.profile .user .img {
+      height: 200px;
+      width: 200px;
+    }
+    section.profile .user .info {
+      align-items: center;
+      justify-items: flex-end;
+      height: 113px;
+      margin-top: 40px;
+    }
+  
+    section.profile .user .info > .info_position,
+    section.profile .user .info > .social_media {
+      padding: 0px;
+      margin: 0px;
+    }
+    section.profile .user .info .social_media {
+      justify-content: space-between;
+      width: 174px;
+      height: 24px;
+      padding-top: 5px;
+    }
+    section.profile .user .info .social_media .icon .icon_img {
+      width: 28px;
+      height: 28px;
+    }
+}
 
 /*Experience section*/
 section.profile .experience {
@@ -192,12 +262,23 @@ section.profile .experience > .exp_item {
   text-align: center;
 }
 
+/*MOBILE*/
 @media (max-width:600px) {
    /*Experience section*/
    section.profile .experience{
     width: 375px;
     height: auto;
     margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/*TABLET*/
+@media (max-width: 1024px) {
+  /*Experience section*/
+  section.profile .experience{
+    width: 90vw;
+    height: auto;
     align-items: center;
     justify-content: space-between;
   }
@@ -232,6 +313,7 @@ section.profile .buttons .CV > img {
 section.profile .buttons .contact_info {
   background-color: #171f26;
 }
+/*MOBILE*/
 @media (max-width:600px) {
   section.profile .buttons {
     margin-top: 30px;
@@ -244,7 +326,20 @@ section.profile .buttons .contact_info {
     height: 44px;
   }
 }
+/*TABLET*/	  
+@media (max-width: 1024px) {
+  section.profile .buttons {
+    margin-top: 30px;
+    width: 90vw;
+    padding: 18px 20px;
 
+  }
+  section.profile .buttons > .CV,
+  section.profile .buttons > .contact_info {
+    width: 45%;
+    height: 60px;
+  }
+}
 /*MAIN SECTION*/
 main div.view_select {
   margin-top: 75px;
@@ -272,6 +367,7 @@ div.view_select .view_option {
 #active {
   background-color: #0c151d;
 }
+/*MOBILE*/
 @media (max-width:600px) {
   main div.view_select {
     width: 330px;
@@ -287,6 +383,24 @@ div.view_select .view_option {
   .download_icon{
     width: 16px;
     height: 14px;
+  }
+}
+/*TABLET*/
+@media (max-width: 1024px) {
+  main div.view_select {
+    width: 90vw;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+  }
+  div.view_select .view_option {
+    width: 45%;
+    height: 60px;
+  }
+  .download_icon{
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -307,6 +421,7 @@ div.view_select .view_option {
   height: 226px;
   border-radius: 15px;
 }
+/*MOBILE*/
 @media (max-width:600px) {
   
   .portfolio {
@@ -325,6 +440,22 @@ div.view_select .view_option {
     margin-bottom: 30px;
   }
 }
+/*TABLET*/
+@media (max-width: 1024px){
+  .portfolio {
+    height: auto;
+    width: 90vw;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .portfolio .portfolio_img {
+    width: 80vw;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+}
+
 /*UP BUTTON*/
 .button_up{
   display: none;
