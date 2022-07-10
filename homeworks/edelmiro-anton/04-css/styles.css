@@ -115,17 +115,17 @@ body {
 }
 
 /* .socialMedia__icon-dark {
-  display: flex;
-  width: 30px;
-  height: 24.42px;
-  position: relative;
-  top: 5.77px;
-  left: 3px;
-  left: 8.33%;
-  right: 8.33%;
-  top: 16.04%;
-  bottom: 16.12%;
-} */
+    display: flex;
+    width: 30px;
+    height: 24.42px;
+    position: relative;
+    top: 5.77px;
+    left: 3px;
+    left: 8.33%;
+    right: 8.33%;
+    top: 16.04%;
+    bottom: 16.12%;
+  } */
 
 /* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
 
@@ -134,7 +134,7 @@ body {
   position: relative;
   width: 634px;
   height: 142px;
-  left: 347px;
+  left: 28%;
   top: 6px;
   flex-direction: row;
   justify-content: center;
@@ -296,8 +296,8 @@ body {
 /************* DARKMODE *************/
 
 /* body.dark .btnSwitch__img {
-  background-image: url(./icons/darkmode/dark.svg); 
-} */
+    background-image: url(./icons/darkmode/dark.svg); 
+  } */
 
 body.dark .backgroundBtn {
   background-color: #171f26;
@@ -309,8 +309,8 @@ body.dark {
 /* testing  */
 
 /* body.dark .socialMedia__icon-light{
-  background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
-} */
+    background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
+  } */
 
 /* testing  */
 
