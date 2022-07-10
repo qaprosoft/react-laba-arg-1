@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-CSS Acerbi</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Theme button -->
+      <div class="theme">
+        <button id="themeBtn" class="theme__btn">
+          <img src="public/icons/dark-btn.svg" alt="dark mode button" />
+        </button>
+        <button id="themeBtn-light" class="theme__btn-light">
+          <img src="public/icons/light-btn.svg" alt="light mode button" />
+        </button>
+      </div>
+
+      <div class="profile">
+        <div class="profile__before">
+          <img class="profile__img" src="public/images/profile-picture.png" alt="Victor Alvarado" />
+        </div>
+
+        <div class="profile__info">
+          <h1 class="profile__title">Victor Alvarado</h1>
+          <p class="profile__subtitle">Software Engineer</p>
+
+          <!-- Icons for dark mode -->
+          <ul class="profile__list">
+            <li><img src="public/icons/github.svg" alt="github icon" /></li>
+            <li><img src="public/icons/twitter.svg" alt="twitter icon" /></li>
+            <li><img src="public/icons/linkedin.svg" alt="linkedin icon" /></li>
+            <li><img src="public/icons/youtube.svg" alt="youtube icon" /></li>
+          </ul>
+
+          <!-- Icons for light mode -->
+          <ul class="profile__list-light">
+            <li>
+              <img src="public/icons/github-light.svg" alt="github icon" />
+            </li>
+            <li>
+              <img src="public/icons/twitter-light.svg" alt="twitter icon" />
+            </li>
+            <li>
+              <img src="public/icons/linkedin-light.svg" alt="linkedin icon" />
+            </li>
+            <li>
+              <img src="public/icons/youtube-light.svg" alt="youtube icon" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="info">
+        <article class="info__item">
+          <h2 class="info__number">7</h2>
+          <p>Years of work experience</p>
+        </article>
+        <article class="info__item">
+          <h2 class="info__number">50+</h2>
+          <p>Completed projects</p>
+        </article>
+        <article class="info__item">
+          <h2 class="info__number">20+</h2>
+          <p>Satisfied customers</p>
+        </article>
+      </div>
+
+      <div class="buttons">
+        <button class="buttons__btn-primary btn">Download CV</button>
+        <button class="buttons__btn-secondary btn">Contact Me</button>
+      </div>
+
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item selected">Portfolio</li>
+        <li class="breadcrumbs__item">Skills</li>
+      </ul>
+
+      <div class="projects">
+        <article class="project">
+          <img src="public/images/projects/project-a.png" alt="first project" />
+          <div class="project__description">
+            <h2>SmarterTrading411</h2>
+            <p>Landing page of SmarterTrading411 creataed using wordPress</p>
+            <img class="project__link" src="public/icons/link.svg" alt="link" />
+          </div>
+        </article>
+        <article class="project">
+          <img src="public/images/projects/project-b.png" alt="second project" />
+          <div class="project__description">
+            <h2>SmarterTrading411</h2>
+            <p>Landing page of SmarterTrading411 creataed using wordPress</p>
+            <img class="project__link" src="public/icons/link.svg" alt="link" />
+          </div>
+        </article>
+        <article class="project">
+          <img src="public/images/projects/project-c.png" alt="third project" />
+          <div class="project__description">
+            <h2>SmarterTrading411</h2>
+            <p>Landing page of SmarterTrading411 creataed using wordPress</p>
+            <img class="project__link" src="public/icons/link.svg" alt="link" />
+          </div>
+        </article>
+        <article class="project">
+          <img src="public/images/projects/project-d.png" alt="fourth project" />
+          <div class="project__description">
+            <h2>SmarterTrading411</h2>
+            <p>Landing page of SmarterTrading411 creataed using wordPress</p>
+            <img class="project__link" src="public/icons/link.svg" alt="link" />
+          </div>
+        </article>
+        <article class="project">
+          <img src="public/images/projects/project-e.png" alt="fifth project" />
+          <div class="project__description">
+            <h2>SmarterTrading411</h2>
+            <p>Landing page of SmarterTrading411 creataed using wordPress</p>
+            <img class="project__link" src="public/icons/link.svg" alt="link" />
+          </div>
+        </article>
+        <article class="project">
+          <img src="public/images/projects/project-f.png" alt="sixth project" />
+          <div class="project__description">
+            <h2>SmarterTrading411</h2>
+            <p>Landing page of SmarterTrading411 creataed using wordPress</p>
+            <img class="project__link" src="public/icons/link.svg" alt="link" />
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__text">© Victor Alvarado. 2022 All rigths reserved</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
