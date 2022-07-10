@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  cursor: url(./resources/imgs/001-cursor.png), auto;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #e5e5e5;
   text-align: center;
 
@@ -15,6 +17,7 @@ body {
 header {
   margin-top: 33px;
   margin-bottom: 65px;
+  height: 50px;
 }
 
 .buttonTheme {
@@ -28,6 +31,8 @@ header {
   padding: 23.32px;
   border-radius: 50%;
 }
+
+/* profile first info */
 
 .profileInfo {
   display: flex;
@@ -80,4 +85,125 @@ header {
   width: 30px;
   height: 30px;
   margin-right: 35px;
+}
+
+/* profile second info*/
+
+.profileFacts {
+  width: 100%;
+  height: 142px;
+  padding: 20px 2px;
+  gap: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #575757;
+}
+
+li {
+  list-style: none;
+}
+
+/* buttons */
+
+.button {
+  margin-bottom: 80px;
+}
+
+.button__primary {
+  width: 290px;
+  height: 80px;
+  font-size: 28px;
+  background: #fbd144;
+  border-radius: 10px;
+  border: none;
+
+  margin-right: 40px;
+}
+
+.button__primary--background {
+  width: 290px;
+  height: 80px;
+  font-size: 28px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+}
+
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 760px;
+  height: 110px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+
+.conteiner__portfolio {
+  width: 352px;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+
+  margin-left: 20px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.conteiner__skills {
+  width: 352px;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+
+  margin-right: 20px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+/* images */
+
+.tab {
+  width: 757px;
+  height: 826px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tab__card {
+  margin-bottom: 48px;
+  margin-right: 32px;
+}
+
+footer {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+button:hover {
+  border: 4px solid #575757;
+}
+
+.profileInformation__social:hover {
+  cursor: pointer;
 }
