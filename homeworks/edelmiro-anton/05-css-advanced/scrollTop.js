@@ -20,8 +20,7 @@ const screenWidth = () => {
 window.addEventListener("resize", screenWidth());
 
 // Event to scroll to top
-const arrow = document.querySelector(".arrow__img");
-arrow.addEventListener("click", () => scroll());
+arrowContainer.addEventListener("click", () => scroll());
 
 const scroll = () => {
   window.scrollTo({

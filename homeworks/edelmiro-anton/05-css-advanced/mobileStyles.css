@@ -2,11 +2,13 @@
   * {
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
   }
+
   body {
     background-color: #e9ebec;
     font-family: "Poppins";
-    margin: 0 auto;
+    width: 600px;
   }
 
   .transition__dark {
@@ -15,7 +17,8 @@
   /* BUTTON DARKMODE */
 
   .btnSwitch {
-    width: 600px;
+    /* max-width: 600px; */
+    width: 100%;
     height: 200px;
     position: relative;
   }
@@ -25,11 +28,12 @@
     border-radius: 50%;
     display: flex;
     align-items: center;
-    width: 80px;
     height: 80px;
+    /* justify-content: center; */
     cursor: pointer;
-    margin-left: 55px;
+    margin-left: auto;
     margin-top: 33px;
+    margin-right: auto;
   }
 
   .btnSwitch__img {
@@ -37,41 +41,49 @@
   }
 
   /* NAME & OCCUPATION */
-
+  .header {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+  }
   .intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    /* max-width: 375px; */
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
-    width: 600px;
-    margin-left: 16%;
-    /* margin-right: auto; */
-    position: relative;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    /* margin-left: auto; */
+    /* margin-right: auto;*/
   }
 
   .profile {
-    /* width: 100%;  */
-    /* margin-left: auto; */
-    /* margin-top: 2px; */
+    max-width: 375px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .profile__name {
     color: #3d3d3d;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 0;
     margin-top: 59px;
-    margin-bottom: 45px;
-    margin-right: auto;
+    margin-bottom: 39px;
     margin-left: auto;
+    margin-right: auto;
   }
 
   .profile__profession {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
+    margin-bottom: 15px;
     font-size: 17px;
     color: #575757;
     line-height: 0;
@@ -80,9 +92,8 @@
   /* PROFILE PHOTO */
 
   .photo {
-    /* width: auto;
-    display: flex; */
-    /* margin-left: auto; */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .photo__img {
@@ -99,10 +110,12 @@
   /* SOCIAL MEDIA */
 
   .socialMedia {
-    width: 217px;
-    margin-top: 21px;
-    justify-content: space-between;
+    display: flex;
+    width: 198px;
+    margin-top: 9px;
+    justify-content: space-evenly;
     margin-left: auto;
+    margin-right: auto;
   }
 
   .socialMedia .socialMedia__icon {
@@ -121,34 +134,39 @@
 
   .facts {
     display: flex;
-    position: relative;
-    max-width: 600px;
-    width: 600px;
+    /* position: relative; */
+    max-width: 37;
+    width: 100%;
     height: 142px;
-    top: 6px;
-    left: 25%;
+    margin-left: 9%;
+    margin-right: auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 2px;
-    gap: 90px;
+    gap: 25px;
   }
 
+  .facts__title {
+    width: 200px;
+  }
   .facts__title p:first-child {
     text-align: center;
     font-size: 22px;
-    line-height: 36px;
+    line-height: 68px;
     color: #575757;
-    position: relative;
+    /* position: relative; */
     top: 22px;
     font-weight: bold;
   }
 
+  .experience {
+    font-size: 20px;
+  }
   .facts__title p:nth-child(2) {
     text-align: center;
     font-weight: bold;
     font-style: normal;
-    font-weight: 500px;
+    /* font-weight: 500px; */
     font-size: 22px;
     color: #575757;
   }
@@ -157,10 +175,16 @@
 
   .profileButtons {
     max-width: 600px;
-    width: 600px;
+    width: 100%;
     display: flex;
-    margin-left: 7%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 8%;
+    margin-right: auto;
+    /* left: auto; */
     margin-top: 45px;
+    gap: 15px;
   }
 
   .profileButtons__button {
@@ -169,19 +193,20 @@
     padding: 0;
     background-color: #fbd144;
     font-family: "Poppins";
-    height: 72px;
-    position: relative;
-    width: 253px;
-    left: 16.48%;
-    right: 5.65%;
-    top: calc(50% - 30px / 4 + 3.5px);
+    height: 79px;
+    /* position: relative; */
+    width: 100%;
+    left: auto;
+    right: auto;
+    /* top: calc(50% - 30px / 4 + 3.5px); */
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 27px;
     text-align: center;
     letter-spacing: -0.531474px;
     color: #3d3d3d;
     justify-content: center;
+    padding: 0px 18px;
   }
 
   .profileButtons__button:hover {
@@ -190,16 +215,16 @@
 
   .profileButtons__icon {
     position: relative;
-    right: 16.67%;
+    right: auto;
     bottom: 8.33%;
-    width: 17.99px;
-    height: 20px;
+    width: 16.99px;
+    height: 21px;
     top: 2px;
-    left: 16.5px;
+    left: 7%;
   }
 
   .profileButtons__button__contactMe {
-    left: 22%;
+    /* left: 22%; */
     background: #ffffff;
   }
 
@@ -207,34 +232,37 @@
 
   .container {
     max-width: 600px;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 20px;
-    position: relative;
-    width: 600px;
-    height: 110px;
-    top: 56px;
-    left: 20%;
+    /* position: relative; */
+    /* width: 600px; */
+    height: 88px;
+    top: 83px;
+    left: 8%;
     right: auto;
+    margin-left: auto;
     display: flex;
     justify-content: center;
   }
 
   .container__span {
     background-color: #d7d7d7;
-    height: 80px;
+    height: 61px;
     border-radius: 20px;
-    width: 47%;
+    width: 48%;
     position: relative;
-    left: 0.12%;
-    right: 50.63%;
+    /* left: 0%; */
+    /* right: auto; */
     top: 15.7%;
     bottom: 19.7%;
     font-weight: bold;
     font-size: 22px;
     line-height: 33px;
     text-align: center;
-    letter-spacing: -0.500211px;
+    /* letter-spacing: -0.500211px; */
     cursor: pointer;
+    padding: 1px 1px;
   }
 
   .container__span span {
@@ -250,17 +278,18 @@
 
   .projects {
     max-width: 600px;
-    width: 600px;
-    height: 826px;
+    width: 100%;
+    /* height: 100vh; */
     top: 149px;
     display: grid;
     position: relative;
-    grid-template-columns: repeat(1, 363px);
-    row-gap: 30px;
-    left: 23%;
+    grid-template-columns: repeat(1, 600px);
+    row-gap: 137px;
+    left: 17%;
+    right: auto;
   }
 
-  .projects__article {
+  /* .projects__article {
     position: relative;
     width: 362px;
     height: 226px;
@@ -269,12 +298,15 @@
     gap: 2;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
-  }
+  } */
 
   .projects__article:hover {
     opacity: 0.7;
   }
 
+  .projects__article img {
+    width: 500px;
+  }
   .projects__article__first {
     position: relative;
   }
@@ -282,11 +314,13 @@
 
   .footer {
     max-width: 600px;
-    width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer p {
-    margin-top: 140%;
+    margin-top: 250%;
     font-weight: bold;
     font-size: 22px;
     margin-left: 16%;
@@ -301,7 +335,7 @@
   }
   .arrow__img {
     margin-left: 106%;
-    margin-top: 130%;
+    margin-top: 235%;
   }
 
   /************* DARKMODE *************/
