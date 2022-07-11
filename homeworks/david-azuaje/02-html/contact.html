@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./home.html">Home</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <hr />
+
+    <h2>Contact Me</h2>
+
+    <form>
+      <label for="fullname">
+        <strong>Full name*</strong>
+      </label>
+
+      <input type="text" placeholder="Your name..." required />
+      <input type="text" placeholder="Your last name..." required />
+      <br />
+      <label for="phone">
+        <strong>Phone*</strong>
+      </label>
+      <input type="number" placeholder="Your phone..." required />
+      <br />
+
+      <label for="country">
+        <strong>Country</strong>
+      </label>
+
+      <select name="country" id="country" required>
+        <optgroup label="Country">
+          <option>Venezuela</option>
+          <option>Argentina</option>
+          <option>Spain</option>
+          <option>Belarus</option>
+          <option>India</option>
+        </optgroup>
+      </select>
+      <br />
+      <textarea
+        name="message"
+        placeholder="Your message..."
+        required
+        id="message"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <hr />
+    <footer>
+      <!--I don't have a Facebook account-->
+      <img
+        src="./img/facebook_icon.svg"
+        alt="logo facebook"
+        width="40px"
+        height="40px"
+      />
+
+      <a href="https://www.instagram.com/davidazuaje01/?hl=en" target="_blank">
+        <img
+          src="./img/instagram_icon.svg"
+          alt="logo instagram"
+          width="40px"
+          height="40px"
+        />
+      </a>
+
+      <a href="http://" target="_blank"></a>
+      <img
+        src="./img/linkedin_icon.svg"
+        alt="logo linkedin"
+        width="40px"
+        height="40px"
+      />
+
+      <!--I don't have a Twitter account-->
+      <img
+        src="./img/twitter_icon.svg"
+        alt="logo twitter"
+        width="40px"
+        height="40px"
+      />
+    </footer>
+  </body>
+</html>
