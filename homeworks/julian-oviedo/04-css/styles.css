@@ -12,6 +12,12 @@ body {
   padding: 0;
 }
 
+.body--darktheme {
+  background-color: #0c151d;
+  padding: 0;
+  margin: 0;
+}
+
 header {
   margin-top: 33px;
   margin-bottom: 65px;
@@ -35,6 +41,12 @@ header {
   background-color: #ffffff;
   padding: 23.32px;
   border-radius: 50%;
+}
+.buttonTheme__Img--dark {
+  background-color: #ffffff;
+  padding: 23.32px;
+  border-radius: 50%;
+  filter: invert(1);
 }
 
 /* profile first info */
@@ -71,11 +83,24 @@ header {
   color: #3d3d3d;
   display: flex;
 }
+.profileInformation__title--dark {
+  font-size: 46px;
+  line-height: 69px;
+  color: #f1f2f4;
+  display: flex;
+}
 
 .profileInformation__subtitle {
   font-size: 22px;
   line-height: 33px;
   color: #575757;
+  display: flex;
+  margin-bottom: 12px;
+}
+.profileInformation__subtitle--dark {
+  font-size: 22px;
+  line-height: 33px;
+  color: #a3abb2;
   display: flex;
   margin-bottom: 12px;
 }
@@ -112,6 +137,24 @@ header {
   line-height: 33px;
   color: #575757;
 }
+.profileFacts--dark {
+  width: 100%;
+  height: 142px;
+  padding: 20px 2px;
+  gap: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #a3abb2;
+}
 
 li {
   list-style: none;
@@ -143,6 +186,15 @@ li {
   border-radius: 10px;
   border: none;
 }
+.button__primary--background--dark {
+  width: 290px;
+  height: 80px;
+  font-size: 28px;
+  background: #171f26;
+  border-radius: 10px;
+  border: none;
+  color: #f1f2f4;
+}
 
 .conteiner {
   display: flex;
@@ -155,15 +207,36 @@ li {
   border-radius: 20px;
   margin-bottom: 80px;
 }
+.conteiner--dark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 760px;
+  height: 110px;
+  margin: auto;
+  background-color: #171f26;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
 
 .conteiner__portfolio {
   width: 352px;
   height: 80px;
   border-radius: 10px;
   border: none;
-
   margin-left: 20px;
-
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+.conteiner__portfolio--dark {
+  width: 352px;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0c151d;
+  color: #f1f2f4;
+  margin-left: 20px;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
@@ -175,9 +248,19 @@ li {
   border-radius: 10px;
   border: none;
   background-color: #ffffff;
-
   margin-right: 20px;
-
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+.conteiner__skills--dark {
+  width: 352px;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  background-color: #171f26;
+  color: #ffffff;
+  margin-right: 20px;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
@@ -200,16 +283,24 @@ li {
   margin-right: 32px;
 }
 
-footer {
+.footer {
   margin-bottom: 50px;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
   text-align: center;
 }
+.footer--dark {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #ffffff;
+}
 
 button:hover {
-  border: 4px solid #575757;
+  border: 1px solid #575757;
 }
 
 .profileInformation__social:hover {
@@ -218,5 +309,5 @@ button:hover {
 
 .tab__card:hover {
   cursor: pointer;
-  border: 5px solid;
+  border: 5px solid #f7d039;
 }
