@@ -14,7 +14,7 @@ let profileInformationDark = document.querySelector(
 
 //Swith to dark mode
 switchMode.addEventListener("click", () => {
-  var element = document.body;
+  let element = document.body;
   element.classList.toggle("dark--mode");
   switchModeDark.style.display = "inline-block";
   switchMode.style.display = "none";
@@ -30,7 +30,7 @@ switchMode.addEventListener("click", () => {
 
 //Switch to light mode
 switchModeDark.addEventListener("click", () => {
-  var element = document.body;
+  let element = document.body;
   element.classList.toggle("dark--mode");
   switchModeDark.style.display = "none";
   switchMode.style.display = "inline-block";

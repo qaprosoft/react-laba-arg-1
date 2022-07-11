@@ -24,6 +24,7 @@ header {
   border: none;
   border-radius: 50px;
 }
+
 .btn-mode__dark {
   display: none;
   background: none;
@@ -50,7 +51,6 @@ header {
 }
 
 /* Profile information */
-
 .profile--info {
   display: flex;
   flex-direction: row;
@@ -122,12 +122,12 @@ header {
 }
 
 /* Main information */
-
 .main--information {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .main--information__profile {
   display: flex;
   flex-direction: row;
@@ -150,6 +150,7 @@ header {
   color: #575757;
   margin: 0;
 }
+
 /* Main information dark */
 .main--information__dark {
   color: #a3abb2;
@@ -214,7 +215,6 @@ header {
 }
 
 /* Projects */
-
 .main--projects__container {
   display: flex;
   flex-direction: column;
@@ -285,9 +285,11 @@ header {
 .projects--button > p {
   width: 351.45px;
 }
+
 .projects--buttonDark > p {
   width: 351.45px;
 }
+
 .project--container__pictures {
   max-width: 757px;
   display: flex;
@@ -299,7 +301,6 @@ header {
 }
 
 /* Cards hover text */
-
 .container--card__overlay {
   display: flex;
   flex-direction: column;
@@ -354,6 +355,7 @@ header {
 .btn--top {
   display: none;
 }
+
 .btn--scroll_top {
   background: none;
   border: none;
@@ -363,7 +365,6 @@ header {
 }
 
 /* Footer */
-
 footer {
   padding: 80px 0;
   font-size: 22px;
@@ -373,16 +374,17 @@ footer {
 .footer--white {
   color: #575757;
 }
+
 .footer--dark {
   display: none;
   color: #a3abb2;
 }
+
 footer > p {
   margin: 0;
 }
 
 /* Media queries section */
-
 @media only screen and (max-width: 600px) {
   /* HEADER */
   .header--icon {
@@ -390,6 +392,7 @@ footer > p {
     width: 20px;
     padding: 14px;
   }
+
   .header--icon__dark {
     height: 20px;
     width: 20px;
@@ -411,6 +414,7 @@ footer > p {
   .profile--information {
     align-items: center;
   }
+
   .profile--information__dark {
     align-items: center;
   }
@@ -418,6 +422,7 @@ footer > p {
   .profile--name {
     font-size: 32px;
   }
+
   .profile--name__dark {
     font-size: 32px;
   }
@@ -425,15 +430,16 @@ footer > p {
   .profile--information__p {
     font-size: 14px;
   }
+
   .profile--socialMedia {
     justify-content: center;
   }
+
   .profile--socialMedia__icon > img {
     width: 20px;
   }
 
   /* Main information */
-
   .main--information__profile {
     gap: 25.7px;
   }
@@ -479,7 +485,6 @@ footer > p {
   }
 
   /* Projects container */
-
   .main--projects__container {
     margin: 0;
   }
@@ -511,6 +516,7 @@ footer > p {
     margin: 40px 0;
     border-radius: 10px;
   }
+
   .projects--btn {
     font-size: 14px;
     line-height: 21px;
@@ -519,6 +525,7 @@ footer > p {
     height: 50px;
     margin: 0;
   }
+
   .projects--btnDark {
     font-size: 14px;
     line-height: 21px;
@@ -550,7 +557,6 @@ footer > p {
   }
 
   /* Cards hover text */
-
   .container--card__overlay {
     width: 340px;
     height: 210px;
@@ -590,7 +596,6 @@ footer > p {
   }
 
   /* Footer */
-
   footer {
     padding: 15px 0px 40px 0;
     font-size: 14px;
@@ -605,6 +610,7 @@ footer > p {
     width: 22px;
     padding: 16px;
   }
+
   .header--icon__dark {
     height: 22px;
     width: 22px;
@@ -627,6 +633,7 @@ footer > p {
   .profile--information {
     align-items: center;
   }
+
   .profile--information__dark {
     align-items: center;
   }
@@ -634,6 +641,7 @@ footer > p {
   .profile--name {
     font-size: 34px;
   }
+
   .profile--name__dark {
     font-size: 34px;
   }
@@ -641,15 +649,16 @@ footer > p {
   .profile--information__p {
     font-size: 16px;
   }
+
   .profile--socialMedia {
     justify-content: center;
   }
+
   .profile--socialMedia__icon > img {
     width: 22px;
   }
 
   /* Main information */
-
   .main--information__profile {
     gap: 30px;
   }
@@ -691,7 +700,6 @@ footer > p {
   }
 
   /* Projects container */
-
   .main--projects__container {
     margin: 0;
   }
@@ -722,6 +730,7 @@ footer > p {
     height: 64px;
     margin: 40px 0;
   }
+
   .projects--btn {
     font-size: 14px;
     line-height: 21px;
@@ -730,6 +739,7 @@ footer > p {
     height: 50px;
     margin: 0;
   }
+  
   .projects--btnDark {
     font-size: 14px;
     line-height: 21px;
