@@ -24,8 +24,8 @@ body{
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 18px;
-  bottom: 60px;
+  right: 8vw;
+  bottom: 15vh;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -58,6 +58,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .settings__color-mode-button{
   height: 48px;
@@ -76,7 +77,6 @@ body{
   .settings__color-mode-button{
     height: 80px;
     width: 80px;
-    margin-top: 40px;
   }
 }
 
@@ -85,24 +85,25 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  margin-top: 30px;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 @media (min-width: 1025px) {
   .profile-info{
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 50vw;
-    padding: 0;
-    margin-top: 65px;
+    justify-content: space-between;
+    margin: auto; 
+    width: 631px;
+    height: auto; 
   }
 }
 
 /*Profile-info pic*/
 .profile-info__img-container{
-  height: 30%;
-  width: 30%;
+  height: 124px;
+  width: 124px;
   padding-bottom: 40px;
 }
 .profile-info__img{
@@ -110,19 +111,27 @@ body{
   height: 100%;
   width: 100%;
 }
-
+@media (min-width: 600px){
+  .profile-info__img-container{
+    height: 200px;
+    width: 200px;
+  }
+}
 @media (min-width: 1025px) {
   .profile-info__img-container{
-    height: 100%;
-    width: 100%;
+    height: 215px;
+    width: 215px;
     padding-bottom: 0px;
-    padding-right: 20px;
+    padding-right: 40px;
   }
 }
 /*Profile user data*/
 .user-data{
-  width: 100vw;
+  width: 375px;
+  max-width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .user-data__name{
   font-size: 32px;
@@ -135,6 +144,9 @@ body{
   color: #A3ABB2;
 }
 @media (min-width: 600px) {
+  .user-data{
+    width: auto;
+  }
   .user-data__name{
     font-size: 38px;
   }
@@ -153,13 +165,14 @@ body{
     font-size: 22px;
   }
 }
-
 /*Social media*/
 .social-media{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-self:center;
+  width: 174px;
+  max-width: 100%;
 }
 .social-media__icon{
   display: flex;
@@ -181,6 +194,7 @@ body{
 @media (min-width: 1025px) {
   .social-media{
     justify-content: flex-start;
+    align-self: flex-start;
   }
   .social-media__icon{
     padding: 13px 26px 0 0;
@@ -189,10 +203,12 @@ body{
 /*PROFILE FACTS*/
 .profile-facts{
   display: flex;
-  width: 100vw;
-  align-items: center;
+  width: 375px;
+  align-items: flex-start;
   justify-content: space-around;
-  padding-top: 30px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .profile-facts__item{
   text-align: center;
@@ -207,6 +223,10 @@ body{
   color: #C3C7CB;
 }
 @media (min-width: 600px) {
+  .profile-facts{
+    width: auto;
+    max-width: 60vw;
+  }
   .profile-facts__item{
     font-size: 18px;
   }
@@ -217,7 +237,8 @@ body{
 
 @media (min-width: 1025px) {
   .profile-facts{
-    width: 50vw;
+    width: 634px;
+    height: auto;
     margin: auto;
     margin-top: 48px;
   }
@@ -231,14 +252,20 @@ body{
 /*PROFILE BUTTONS*/
 .profile-buttons{
   display: flex;
-  width: 80vw;
+  width: 375px;
   align-items: center;
   justify-content: space-around;
-  margin: 30px auto;
+  margin: 30px 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 600px){
   .profile-buttons{
-    width: 50vw;
+    max-width: 50vw;
+    margin: 30px auto;
+  }
+}
+@media (min-width: 1025px) {
+  .profile-buttons{
+    width: 618px;
     margin-top: 48px;
   }
 }
@@ -247,20 +274,22 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 100%;
+  width: 158px;
+  height: 44px;
+  max-height: 100%;
   background-color: #FFE071;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 7px;
+
 }
 .cv-button__text{
   background-color: #FFE071;
   font-size: 12px;
   font-weight: medium;
   color: #3D3D3D;
+  padding-top: 29px 13px;
 }
 .cv-button__download-icon{
   background-color: #FFE071;
@@ -269,7 +298,10 @@ body{
 }
 @media (min-width: 600px) {
   .cv-button{
-    height: 70px;
+    height: 80px;
+    max-height: 100%;
+    margin-right: 7px;
+    width: 100%;
   }
   .cv-button__text{
     font-size: 16px;
@@ -282,7 +314,8 @@ body{
 
 @media (min-width: 1025px) {
   .cv-button{
-    width: 90%;
+    width: 290px;
+    height: 80px;
   }
   .cv-button__text{
     font-size: 22px;
@@ -297,24 +330,29 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 100%;
+  height: 44px;
+  max-height: 100%;
+  width: 158px;
   background-color: #171F26;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 7px;
+
 }
 .contact-button__text{
   background-color: #171F26;
   font-size: 12px;
   font-weight: medium;
   color: #A3ABB2;
+  padding-top: 29px 13px;
 }
 @media (min-width: 600px) {
   .contact-button{
-    height: 70px;
+    height: 80px;
+    max-height: 100%;
+    margin-left: 7px;
+    width: 100%;
   }
   .contact-button__text{
     font-size: 16px;
@@ -322,7 +360,8 @@ body{
 }
 @media (min-width: 1025px) {
   .contact-button{
-    width: 90%;
+    width: 290px;
+    height: 80px;
   }
   .contact-button__text{
     font-size: 22px;
@@ -338,17 +377,22 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 80vw;
-  height: 70px;
+  width: 330px;
+  height: 64px;
+  max-height: 100%;
   border-radius: 10px;
   background-color: #171F26;
+  opacity: 0.36;
+  border: 1px solid #000000;
+  padding: 5px 2px;
 }
 .tabs-buttons__option{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80%;
-  width: 45%;
+  height: 50.3px;
+  max-height: 100%;
+  width: 158px;
   background-color: #171F26;
   border-radius: 10px;
 }
@@ -358,19 +402,35 @@ body{
   font-weight: medium;
   color: #A3ABB2;
 }
-#active, #active > .tabs-buttons__text {
+.tabs-buttons__selected, .buttons__text_selected{
   background-color: #0C151D;
 }
+
 @media (min-width: 600px) {
+  .tabs-buttons{
+    width: 60vw;
+    height: 64px;
+  }
+  .tabs-buttons__option{
+    height: 60px;
+    width: 80%;
+  }
   .tabs-buttons__text{
     font-size: 18px;
   }
 }
 @media (min-width: 1025px) {
+
   .tabs-buttons{
-    width: 70vw;
-    height: 100px;
+    width: 756px;
+    height: 132px;
+    max-height: 100%;
     margin-top: 30px;
+  }
+  .tabs-buttons__option{
+    height: 80px;
+    max-height: 100%;
+    width: 350px;
   }
   .tabs-buttons__text{
     font-size: 22px;
@@ -386,19 +446,30 @@ body{
   
 }
 .tab-content__img{
-  width: 90vw;
+  width: 340px;
+  height: 210px;
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 20px;
 }
+
 @media (min-width: 600px) {
+  .tab-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+  }
   .tab-content__img{
-    width: 80vw;
+    width: 362px;
+    height: auto;
+    margin: auto 16px;
   }
 }
 @media (min-width: 1025px) {
   .tab-content{
-    width: 80vw;
+    width: auto;
     margin: 30px auto;
     display: flex;
     flex-direction: row;
@@ -407,7 +478,7 @@ body{
   }
   .tab-content__img{
     width: 362px;
-    height: auto;
+    height: 226px;
     margin: 15px 7.5px;
     border-radius: 20px;
   }
