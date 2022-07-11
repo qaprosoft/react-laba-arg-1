@@ -1,0 +1,245 @@
+.page {
+  background-color: #e5e5e5;
+  font-family: "Poppins";
+}
+.button:hover {
+  cursor: pointer;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 33px;
+  padding-bottom: 65px;
+}
+.button--white {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+}
+.button--round {
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.button__icon-grey {
+  background-color: #3d3d3d;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.header__img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+  border: 4px solid #f7d039;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 26px;
+  width: 222px;
+  height: 36px;
+  padding-left: 0px;
+  display: flex;
+  margin-top: 12px;
+}
+.header__info {
+  color: #3d3d3d;
+  width: 372px;
+  height: 156px;
+}
+.header__heading {
+  font-weight: 500;
+  font-size: 46px;
+  margin: 0%;
+}
+.header__subheading {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #575757;
+  margin: 0;
+}
+.main__facts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px 2px;
+}
+.main__fact {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #575757;
+  max-width: 148px;
+  padding: 20px;
+}
+.fact__strong {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #3a3a3a;
+}
+.main__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.main__button {
+  width: 290px;
+  height: 80px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main__button--yellow {
+  background-color: #fbd144;
+}
+.main__button--white {
+  background-color: #ffffff;
+}
+.tabs__buttons-container {
+  display: flex;
+  justify-content: center;
+}
+.tabs__buttons-padding {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 110px;
+  width: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 76px;
+}
+.tab__button {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  width: 351.45px;
+  height: 80px;
+}
+.tabs__button--grey {
+  background-color: #d7d7d7;
+}
+.projects {
+  width: 757px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projects__img {
+  width: 362px;
+  height: 226px;
+  margin-bottom: 48px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 752px) {
+  .page {
+    display: block;
+  }
+  .btn-container {
+    min-width: 752px;
+  }
+  .button--round {
+    font-size: 1.25rem;
+  }
+  .button__icon-grey {
+    height: 20px;
+    width: 20px;
+  }
+  .header {
+    flex-direction: column;
+    width: 752px;
+    margin-top: 30px;
+  }
+  .header__subheading {
+    display: flex;
+    justify-content: center;
+  }
+  .header__icons {
+    display: flex;
+    justify-content: center;
+    width: 376px;
+    margin-top: 22px;
+  }
+  .header__icon {
+    width: 22px;
+    height: 22px;
+  }
+  .main__facts {
+    width: 752px;
+  }
+  .main__buttons {
+    width: 752px;
+    margin-top: 68px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .tabs__buttons-container {
+    width: 752px;
+    display: flex;
+    justify-content: center;
+  }
+  .tabs__buttons-padding {
+    width: 660px;
+    display: flex;
+    justify-content: center;
+  }
+  .tab__button {
+    width: 308px;
+  }
+  .projects {
+    display: block;
+    width: 752px;
+  }
+  .projects__img {
+    width: 670px;
+    height: 415px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 60px;
+  }
+  .footer {
+    width: 752px;
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    padding-top: 50px;
+    padding-bottom: 40px; 
+  }
+}
