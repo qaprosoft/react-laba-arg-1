@@ -45,10 +45,8 @@
   .intro {
     max-width: 1024px;
     width: 1024px;
-    /* height: 277px; */
     display: flex;
     margin-left: 30%;
-    /* margin-right: auto; */
     flex-direction: column;
     align-items: center;
   }
@@ -56,11 +54,8 @@
   .profile {
     max-width: 1024px;
     width: 1024px;
-    /* height: 156px; */
     margin-left: 95%;
     margin-top: 2px;
-    /* display: flex;
-          flex-direction: column; */
   }
 
   .profile__name {
@@ -71,7 +66,6 @@
     line-height: 0;
     margin-top: 59px;
     margin-bottom: 45px;
-    /* margin-left: 113px;*/
   }
 
   .profile__profession {
@@ -104,7 +98,6 @@
   /* SOCIAL MEDIA */
 
   .socialMedia {
-    /* display: flex; */
     width: 217px;
     margin-top: 21px;
     justify-content: space-between;
@@ -122,19 +115,6 @@
     top: 16.04%;
     bottom: 16.12%;
   }
-
-  /* .socialMedia__icon-dark {
-          display: flex;
-          width: 30px;
-          height: 24.42px;
-          position: relative;
-          top: 5.77px;
-          left: 3px;
-          left: 8.33%;
-          right: 8.33%;
-          top: 16.04%;
-          bottom: 16.12%;
-        } */
 
   /* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
 
@@ -313,24 +293,12 @@
 
   /************* DARKMODE *************/
 
-  /* body.dark .btnSwitch__img {
-          background-image: url(./icons/darkmode/dark.svg); 
-        } */
-
   body.dark .backgroundBtn {
     background-color: #171f26;
   }
   body.dark {
     background: #0c151d;
   }
-
-  /* testing  */
-
-  /* body.dark .socialMedia__icon-light{
-          background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
-        } */
-
-  /* testing  */
 
   body.dark .profile__name {
     color: #f1f2f4;
