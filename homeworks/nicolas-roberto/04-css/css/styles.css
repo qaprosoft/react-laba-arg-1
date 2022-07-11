@@ -5,16 +5,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.dark--mode {
+  background-color: #0c151d;
+}
+
 li {
   list-style: none;
 }
 /* Darkmode icon */
 header {
-  margin-top: 33px;
-  margin-bottom: 33px;
+  padding: 33px 0;
 }
 
 .btn-mode {
+  display: inline-block;
+  background: none;
+  border: none;
+  border-radius: 50px;
+}
+.btn-mode__dark {
+  display: none;
   background: none;
   border: none;
   border-radius: 50px;
@@ -25,6 +36,15 @@ header {
   width: 33.4px;
   color: #3d3d3d;
   background-color: #ffffff;
+  padding: 23.32px;
+  border-radius: 50%;
+}
+
+.header--icon__dark {
+  height: 33.35px;
+  width: 33.4px;
+  color: #3d3d3d;
+  background-color: #171f26;
   padding: 23.32px;
   border-radius: 50%;
 }
@@ -51,9 +71,13 @@ header {
 }
 
 .profile--information {
-  width: 372px;
-  height: 156px;
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.profile--information__dark {
+  display: none;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -64,9 +88,21 @@ header {
   line-height: 0;
 }
 
-.profile--information > p {
+.profile--name__dark {
+  font-size: 46px;
+  color: #f1f2f4;
+  line-height: 0;
+}
+
+.profile--information__p {
   font-size: 22px;
   color: #575757;
+  line-height: 0;
+}
+
+.profile--information__dark {
+  font-size: 22px;
+  color: #a3abb2;
   line-height: 0;
 }
 
@@ -80,7 +116,7 @@ header {
   height: 36px;
 }
 
-.profile--socialMedia__icon {
+.profile--socialMedia__icon > img {
   width: 30px;
   height: auto;
 }
@@ -114,6 +150,25 @@ header {
   color: #575757;
   margin: 0;
 }
+/* Main information dark */
+.main--information__dark {
+  color: #a3abb2;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main--information__numberDark {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.main--information__dataDark {
+  font-size: 22px;
+  line-height: 33px;
+  margin: 0;
+}
 
 .main--information__buttons {
   width: 618px;
@@ -129,18 +184,19 @@ header {
   border: none;
   font-size: 22px;
   line-height: 33px;
-  color: #3d3d3d;
   font-weight: 600;
+  border-radius: 10px;
 }
 
-.main--information__cv > img {
+.main--information__btn > img {
   width: 17.99px;
   height: 20px;
 }
 
 .btn--yellow {
+  color: #3d3d3d;
   background: #fbd144;
-  border-radius: 10px;
+
   display: flex;
   text-align: center;
   justify-content: center;
@@ -148,8 +204,13 @@ header {
 }
 
 .btn--white {
+  color: #3d3d3d;
   background: #ffffff;
-  border-radius: 10px;
+}
+
+.btn--grey {
+  color: #a3abb2;
+  background: #171f26;
 }
 
 /* Projects */
@@ -174,6 +235,23 @@ header {
   background: #ffffff;
   border-radius: 20px;
   margin: 50px 0;
+  color: #19191b;
+}
+
+.projects--buttonDark {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 600;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 760px;
+  height: 110px;
+  background: #171f26;
+  border-radius: 20px;
+  margin: 50px 0;
+  color: #a3abb2;
 }
 
 .projects--btn {
@@ -190,18 +268,34 @@ header {
   margin: 0 19px;
 }
 
+.projects--btnDark {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 600;
+  width: 351.45px;
+  height: 80px;
+  background-color: #0c151d;
+  color: #a3abb2;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  margin: 0 19px;
+}
+
 .projects--button > p {
   width: 351.45px;
 }
-
+.projects--buttonDark > p {
+  width: 351.45px;
+}
 .project--container__pictures {
-  width: 757px;
-  height: 826px;
+  max-width: 757px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-around;
+  align-content: space-between;
+  height: 780px;
 }
 
 /* Cards hover text */
@@ -256,15 +350,33 @@ header {
   margin-top: 18px;
 }
 
+/* Back to top button */
+.btn--top {
+  display: none;
+}
+.btn--scroll_top {
+  background: none;
+  border: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
 /* Footer */
 
 footer {
-  margin: 80px 0;
+  padding: 80px 0;
   font-size: 22px;
   line-height: 33px;
-  color: #575757;
 }
 
+.footer--white {
+  color: #575757;
+}
+.footer--dark {
+  display: none;
+  color: #a3abb2;
+}
 footer > p {
   margin: 0;
 }

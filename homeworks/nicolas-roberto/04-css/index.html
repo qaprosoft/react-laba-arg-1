@@ -22,6 +22,13 @@
           alt="Dark mode button"
         />
       </button>
+      <button class="btn-mode__dark">
+        <img
+          class="header--icon__dark"
+          src="./icon/mode-dark.svg"
+          alt="Light mode button"
+        />
+      </button>
     </header>
 
     <!-- presentation / social media start -->
@@ -33,7 +40,7 @@
       />
       <div class="profile--information">
         <h1 class="profile--name">Victor Alvarado</h1>
-        <p>Software Enginieer</p>
+        <p class="profile--information__p">Software Enginieer</p>
         <ul class="profile--socialMedia">
           <li>
             <a class="profile--socialMedia__icon" href="#"
@@ -53,6 +60,33 @@
           <li>
             <a class="profile--socialMedia__icon" href="#"
               ><img src="./icon/youtube.svg" alt="Open Youtube"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- DARKMODE -->
+      <div class="profile--information__dark">
+        <h1 class="profile--name__dark">Victor Alvarado</h1>
+        <p>Software Enginieer</p>
+        <ul class="profile--socialMedia">
+          <li>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/github-dark.svg" alt="Open Github"
+            /></a>
+          </li>
+          <li>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/twitter-dark.svg" alt="Open Twitter"
+            /></a>
+          </li>
+          <li>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/linkedin-dark.svg" alt="Open Linkedin"
+            /></a>
+          </li>
+          <li>
+            <a class="profile--socialMedia__icon" href="#"
+              ><img src="./icon/youtube-dark.svg" alt="Open Youtube"
             /></a>
           </li>
         </ul>
@@ -82,7 +116,6 @@
           </li>
           <li>
             <p class="main--information__number">20+</p>
-
             <p class="main--information__data">Satisfied <br />customers</p>
           </li>
         </ul>
@@ -96,10 +129,46 @@
 
       <!-- Main-information end -->
 
+      <!-- Main information dark -->
+      <div class="main--information__dark">
+        <ul class="main--information__profile">
+          <li>
+            <p class="main--information__numberDark">7</p>
+
+            <p class="main--information__dataDark">
+              Years of work <br />
+              experience
+            </p>
+          </li>
+          <li>
+            <p class="main--information__numberDark">50+</p>
+
+            <p class="main--information__dataDark">
+              Completed <br />
+              projects
+            </p>
+          </li>
+          <li>
+            <p class="main--information__numberDark">20+</p>
+            <p class="main--information__dataDark">Satisfied <br />customers</p>
+          </li>
+        </ul>
+        <div class="main--information__buttons">
+          <button class="main--information__btn btn--yellow">
+            Download CV <img src="./icon/download.svg" alt="Download CV" />
+          </button>
+          <button class="main--information__btn btn--grey">Contact me</button>
+        </div>
+      </div>
+
       <!-- Portfolio div start-->
       <div class="main--projects__container">
         <div class="projects--button">
           <button class="projects--btn">Portfolio</button>
+          <p>Skills</p>
+        </div>
+        <div class="projects--buttonDark">
+          <button class="projects--btnDark">Portfolio</button>
           <p>Skills</p>
         </div>
         <div class="project--container__pictures">
@@ -218,8 +287,25 @@
         </div>
       </div>
       <!-- Portfolio div end-->
+
+      <!-- Back-to-top button -->
+      <div class="btn--top">
+        <button class="btn--scroll_top">
+          <img
+            class="btn--top__img"
+            src="./icon/arrow-top.svg"
+            alt="Back to top button"
+          />
+        </button>
+      </div>
     </main>
 
-    <footer><p>© Victor Alvarado. 2022 All rigths reserved</p></footer>
+    <footer class="footer--white">
+      <p>© Victor Alvarado. 2022 All rigths reserved</p>
+    </footer>
+    <footer class="footer--dark">
+      <p>© Victor Alvarado. 2022 All rigths reserved</p>
+    </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
