@@ -209,3 +209,7 @@ this class will be added upon clicking the light/dark mode button. */
   color: var(--light-grey);
   margin: 130px auto 80px auto;
 }
+
+.footer__go-to-top-button {
+  display: none;
+}
