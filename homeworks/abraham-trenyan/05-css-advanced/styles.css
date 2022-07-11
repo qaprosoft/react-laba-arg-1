@@ -166,7 +166,7 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.footer__button{
+.footer__button {
   display: none;
 }
 
@@ -242,18 +242,18 @@
     justify-content: center;
     height: 21px;
     padding-top: 50px;
-    padding-bottom: 40px; 
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 1024px) {
-  .footer__button{
+  .footer__button {
     border: none;
     border-radius: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    bottom: 0px; 
+    bottom: 0px;
     right: 0px;
     width: 80px;
     height: 80px;
