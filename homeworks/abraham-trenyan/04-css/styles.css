@@ -2,6 +2,7 @@
   background-color: #e5e5e5;
   font-family: "Poppins";
 }
+
 .button:hover {
   cursor: pointer;
 }
@@ -166,4 +167,27 @@
   font-weight: 500;
   margin-top: 130px;
   margin-bottom: 80px;
+}
+/* Dark mode classes */
+.page--dark{
+  background-color: #0C151D;
+}
+.button--dark{
+  background-color: #171F26;
+  border: none;
+}
+.button__icon--dark{
+  color: #A3ABB2;
+}
+.text--dark{
+  color: #A3ABB2;
+}
+.header__heading--dark{
+  color: #F1F2F4;
+}
+.tabs__button--black{
+  background-color: #0C151D;
+}
+.btn-yellow--dark{
+  color: #3D3D3D;
 }
