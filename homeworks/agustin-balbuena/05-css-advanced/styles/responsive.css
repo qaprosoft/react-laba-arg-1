@@ -10,7 +10,7 @@
     text-align: center;
     margin-top: 30px;
   }
-  #toggleMode {
+  .toggleModeBtn {
     width: 60px;
     height: 60px;
     position: static;
@@ -37,13 +37,13 @@
     justify-content: space-evenly;
     margin: 42px 0px;
   }
-  .experience-info li {
+  .experience-info__list {
     padding: 14px;
   }
-  .profile-btns {
+  .profile {
     margin: 0px;
   }
-  .profile-btns a {
+  .profile__btn {
     padding: 12px 0px;
     width: 250px;
   }
@@ -53,13 +53,14 @@
     border-radius: 10px;
     grid-column-gap: 11px;
   }
-  a.tablink {
+  .tabs__portfolio,
+  .tabs__skills {
     padding: 10px;
   }
-  .overlay-info-title {
+  .overlay__info-title {
     font-size: 20px;
   }
-  .overlay-info-content {
+  .overlay__info-content {
     font-size: 12px;
   }
   .footer {
@@ -91,7 +92,7 @@
     .experience-info {
       margin: 30px 0px;
     }
-    .profile-btns a {
+    .profile__btn {
       width: 150px;
     }
     .project-list {
