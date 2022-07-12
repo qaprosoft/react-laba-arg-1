@@ -118,18 +118,6 @@
     display: flex;
     margin-left: auto;
     margin-top: 45px;
-    /* display: flex;
-    position: relative;
-    max-width: 1024px;
-    width: 1024px;
-    height: 142px;
-    top: 6px;
-    left: 46%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 2px;
-    gap: 90px; */
   }
 
   .facts__title p:first-child {
@@ -204,30 +192,9 @@
   /* PORTFOLIO & SKILLS */
 
   .container {
-    /* max-width: 1024px; */
-    /* background-color: #ffffff; */
-    /* border-radius: 20px; */
-    /* position: relative; */
-    width: 67%;
-    /* height: 110px; */
-    /* top: 56px; */
-    /* right: auto; */
-    /* left: auto; */
-    margin-left: auto;
+    width: 69%;
+    margin-left: 41%;
     margin-right: auto;
-    /* display: flex; */
-    /* justify-content: center;*/
-    /* max-width: 1024px; */
-    /* background-color: #ffffff; */
-    /* border-radius: 20px; */
-    /* position: relative; */
-    /* width: 1024px; */
-    /* height: 110px; */
-    /* top: 56px; */
-    /* left: a; */
-    /* right: auto; */
-    /* display: flex; */
-    /* justify-content: center; */
   }
 
   .container__span {

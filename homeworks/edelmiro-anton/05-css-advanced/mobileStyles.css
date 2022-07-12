@@ -31,7 +31,7 @@
     height: 80px;
     /* justify-content: center; */
     cursor: pointer;
-    margin-left: auto;
+    margin-left: 6%;
     margin-top: 33px;
     margin-right: auto;
   }
@@ -336,6 +336,14 @@
   .arrow__img {
     margin-left: 106%;
     margin-top: 235%;
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
+
+  .arrow__img:hover {
+    cursor: pointer;
+    animation-duration: 1s;
+    transform: rotate(160deg);
   }
 
   /************* DARKMODE *************/

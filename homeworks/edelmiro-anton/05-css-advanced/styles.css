@@ -222,7 +222,7 @@ body {
 /* PORTFOLIO & SKILLS */
 
 .container {
-  background-color: #ffffff;
+  /* background-color: #ffffff;
   border-radius: 20px;
   position: relative;
   width: 50%;
@@ -230,6 +230,17 @@ body {
   top: 56px;
   left: 25%;
   right: auto;
+  display: flex;
+  justify-content: center; */
+  max-width: 750px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 110px;
+  top: 78px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
 }
