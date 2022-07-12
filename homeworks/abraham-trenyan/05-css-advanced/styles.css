@@ -259,3 +259,26 @@
     height: 80px;
   }
 }
+/* Dark mode classes */
+.page--dark {
+  background-color: #0c151d;
+}
+.button--dark {
+  background-color: #171f26;
+  border: none;
+}
+.button__icon--dark {
+  color: #a3abb2;
+}
+.text--dark {
+  color: #a3abb2;
+}
+.header__heading--dark {
+  color: #f1f2f4;
+}
+.tabs__button--black {
+  background-color: #0c151d;
+}
+.btn-yellow--dark {
+  color: #3d3d3d;
+}
