@@ -224,11 +224,21 @@
   color: var(--text-2);
 }
 
-#scrollLoc {
+.scroll-button {
+  display: none;
   position: fixed;
-  font-size: 13px;
-  bottom: 3%;
+  font-size: 25px;
+  bottom: 40px;
   right: 5%;
+  background-color: var(--yellow-1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 0px -2px 28px -1px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 0px -2px 28px -1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px -2px 28px -1px rgba(0, 0, 0, 0.63);
 }
 
 .dark {
@@ -240,4 +250,3 @@
   --background: var(--dark-0);
   --light-background: var(--background-dark);
 }
-
