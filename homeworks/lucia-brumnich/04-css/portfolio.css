@@ -1,0 +1,257 @@
+body {
+  background: #0c151d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: #a3abb2;
+  font-family: Poppins, serif;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 33px;
+  height: 80px;
+}
+
+#theme-icon-bg {
+  position: absolute;
+  z-index: 1;
+}
+
+#theme-icon {
+  position: absolute;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  margin-top: 65px;
+  height: 215px;
+  width: 618px;
+}
+
+.profile {
+  display: inline-flex;
+  align-self: center;
+  margin-top: 65px;
+  height: 215px;
+}
+
+.profile-picture {
+  width: 215px;
+  height: 215px;
+}
+
+.profile-picture .bg {
+  position: absolute;
+  z-index: 1;
+}
+
+.profile-picture .photo {
+  position: absolute;
+  z-index: 2;
+  margin: 12px;
+}
+
+.profile-details {
+  margin-top: 25px;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+.profile-details h1 {
+  color: #f1f2f4;
+  margin-bottom: 3px;
+  font-size: 46px;
+}
+
+.profile-details h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.profile-details .social-media {
+  display: inline-flex;
+  align-self: center;
+  margin-top: 15px;
+  justify-content: flex-start;
+}
+
+.social-media img {
+  margin-right: 30px;
+}
+
+.personal-experience {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 68px;
+}
+
+.experience {
+  display: inline-flex;
+  align-self: center;
+  height: 120px;
+  font-size: 22px;
+  text-align: center;
+  width: 618px;
+}
+
+.experience p {
+  justify-content: space-between;
+  font-size: 22px;
+  margin: auto 35px;
+}
+
+.cv-contact {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 68px;
+}
+
+.cv-contact button {
+  border-radius: 10px;
+  width: 290px;
+  height: 80px;
+  font-size: 24px;
+}
+
+#cv-btn {
+  background-color: #ffe071;
+  color: #3d3d3d;
+  margin-right: 19px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cv-download {
+  width: 18px;
+  height: 20px;
+}
+
+#contact-btn {
+  background-color: #171f26;
+  color: #a3abb2;
+  margin-left: 19px;
+  border: none;
+}
+
+.container {
+  align-self: center;
+}
+
+.buttons {
+  display: inline-flex;
+  align-self: center;
+}
+
+.container .portfolio {
+  display: grid;
+  grid-template-columns: 362px 362px;
+  grid-template-rows: 226px 226px 226px;
+  column-gap: 32px;
+  row-gap: 48px;
+  margin-top: 73px;
+}
+
+.container .btns {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 756px;
+  height: 116px;
+  background-color: #171f26;
+  border-radius: 20px;
+  margin-top: 83px;
+}
+
+#portfolio-title {
+  width: 349.6px;
+  height: 80px;
+  background-color: #0c151d;
+  color: #a3abb2;
+  border: none;
+  border-radius: 10px;
+  margin-right: 19px;
+  margin-left: 24px;
+  padding: 0;
+  font-size: 22px;
+}
+
+#skills-title {
+  width: 349.6px;
+  height: 80px;
+  background-color: #171f26;
+  color: #a3abb2;
+  border: none;
+  border-radius: 10px;
+  margin-left: 19px;
+  margin-right: 24px;
+  padding: 0;
+  font-size: 22px;
+}
+
+.portfolio .item .details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1050px;
+  color: #3d3d3d;
+  width: 362px;
+  height: 150px;
+  text-align: center;
+  align-content: center;
+}
+
+.portfolio .item h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+.portfolio .item p {
+  font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.portfolio .item a {
+  align-self: center;
+}
+
+#assets-link-bg {
+  position: absolute;
+  z-index: 1;
+  align-self: center;
+  margin-top: 110px;
+}
+
+#assets-link {
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+  margin-top: 124px;
+  width: 17px;
+  height: 8px;
+}
+
+#assets-pointer {
+  position: absolute;
+  margin-top: 105px;
+  margin-left: 250px;
+  width: 38px;
+  height: 38px;
+}
+
+footer {
+  align-self: center;
+  font-size: 22px;
+  margin-top: 130px;
+}
