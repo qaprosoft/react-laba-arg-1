@@ -43,10 +43,7 @@
   list-style: none;
   gap: 26px;
   position: absolute;
-  width: 222px;
-  height: 36px;
   padding-left: 0px;
-  display: flex;
   margin-top: 12px;
 }
 .header__info {
