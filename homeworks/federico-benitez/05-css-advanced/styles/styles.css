@@ -58,7 +58,7 @@
   border-radius: 50%;
   height: 215px;
   width: 215px;
-  background-color: #fff;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;

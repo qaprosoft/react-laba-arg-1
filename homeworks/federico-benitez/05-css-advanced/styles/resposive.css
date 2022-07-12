@@ -39,7 +39,6 @@
   .profile__info {
     grid-template-columns: 1fr;
     justify-items: center;
-    align-items: flex-start;
     height: 277px;
     width: 100%;
   }
@@ -47,6 +46,7 @@
   .profile__info__picture__wrapper {
     width: 124px;
     height: 124px;
+    margin-right: 0;
   }
 
   .profile__info__picture {
