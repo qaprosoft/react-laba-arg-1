@@ -61,6 +61,17 @@ body {
 
 /* PH AND INFO PROFILE - CONTAINER */
 
+.container__div-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container__title--dark {
   color: #f1f2f4;
 }
