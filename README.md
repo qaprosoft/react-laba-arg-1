@@ -44,6 +44,6 @@ Once PR is created you have to do the following things:
 | August 2nd   | Javascript, DOM    |
 | August 5th   | Data structures & algorithms |
 | August 9th   | Environment |
-| August 16th  | Principles |
-| August 19th  | Patterns |
-| August 22th-26th | Second block exam |
+| August 12th  | Principles |
+| August 16th  | Patterns |
+| August 17th-22th | Second block exam |
