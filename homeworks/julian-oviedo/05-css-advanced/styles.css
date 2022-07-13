@@ -17,7 +17,14 @@ h2 {
 
 html {
   font-family: "Poppins", sans-serif;
+}
+
+body {
   background-color: #e9ebec;
+}
+
+.body--darktheme {
+  background-color: #0c151d;
 }
 
 /* HEADER - BUTTON CHANGE THEME */
@@ -35,11 +42,32 @@ html {
   height: 10vw;
 }
 
+.header__button--dark {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 10vw;
+  height: 10vw;
+  background-color: #171f26;
+}
+
 .header__button__img {
   height: 60%;
 }
 
+.header__button__img--dark {
+  height: 60%;
+  filter: invert(1);
+}
+
 /* PH AND INFO PROFILE - CONTAINER */
+
+.container__title--dark {
+  color: #f1f2f4;
+}
+
+.container__subtitle--dark {
+  color: #a3abb2;
+}
 
 .container {
   display: flex;
@@ -82,6 +110,16 @@ li {
   font-size: 4vw;
 }
 
+.profile-facts--dark {
+  display: flex;
+  text-align: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 10vw 0;
+  font-size: 4vw;
+  color: #a3abb2;
+}
+
 /* BUTTONS STYLES */
 
 .firstbttn-container {
@@ -113,6 +151,16 @@ li {
   font-size: 1.5vh;
 }
 
+.firstbttn-container__btn--bg--dark {
+  border-radius: 5px;
+  background-color: #171f26;
+  color: #fff;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+}
+
 .secondbttn-container {
   display: flex;
   width: 90%;
@@ -120,6 +168,18 @@ li {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondbttn-container--dark {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #171f26;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -134,10 +194,30 @@ li {
   background-color: #d7d7d7;
   margin: 10px 10px 10px 0px;
 }
+.secondbttn-container__btn--dark {
+  border-radius: 5px;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+  background-color: #0c151d;
+  color: #fff;
+  margin: 10px 10px 10px 0px;
+}
 
 .secondbttn-container__btn--bg {
   border-radius: 5px;
   background-color: #ffffff;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+  border: none;
+}
+.secondbttn-container__btn--bg--dark {
+  border-radius: 5px;
+  background-color: #171f26;
+  color: #fff;
   width: 45%;
   height: 5vh;
   font-family: inherit;
@@ -160,6 +240,12 @@ li {
 footer {
   text-align: center;
   font-size: 4vw;
+}
+
+.footer--dark {
+  text-align: center;
+  font-size: 4vw;
+  color: #fff;
 }
 
 /* GO TOP CONTAINER */
