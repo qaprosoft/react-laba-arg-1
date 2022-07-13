@@ -144,3 +144,94 @@ li {
   font-size: 1.5vh;
   border: none;
 }
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.tab__card {
+  margin-bottom: 10%;
+}
+
+footer {
+  text-align: center;
+  font-size: 4vw;
+}
+
+/* GO TOP CONTAINER */
+
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  background: #000;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 1.5 rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#scrollUp:hover {
+  background: white;
+  color: #000;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  .header__button {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .container__profile-photo {
+    width: 20%;
+    padding: 1vw;
+  }
+  .container__socialmedia__img {
+    margin-right: 8vw;
+    text-align: center;
+    width: 6vw;
+  }
+
+  .profile-facts {
+    width: 60%;
+    font-size: 3vw;
+  }
+
+  .firstbttn-container {
+    width: 100%;
+  }
+  .firstbttn-container__btn img {
+    height: 1.5vw;
+  }
+
+  .tab {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab__card {
+    margin-right: 20px;
+  }
+  .secondbttn-container {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    font-size: 3vw;
+  }
+}
