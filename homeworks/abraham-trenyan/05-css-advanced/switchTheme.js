@@ -24,13 +24,15 @@ switchTheme = () => {
   portfolio.classList.toggle("tabs__button--black");
   yellowText.classList.toggle("btn-yellow--dark");
 };
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 scrollFunction = () => {
-  btn = document.querySelector(".footer__button")
+  btn = document.querySelector(".footer__button");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     btn.style.display = "block";
   } else {
     btn.style.display = "none";
   }
-}
+};
