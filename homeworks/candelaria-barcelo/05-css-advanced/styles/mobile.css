@@ -1,68 +1,17 @@
-/* GLOBAL STYLES */
-
 body {
-  /* definition of light theme colors */
-  --light-background: #e9ebec;
-  --non-changing-white: #ffffff;
-  --white: #ffffff;
-  --picture-yellow: #f7d039;
-  --button-yellow: #fbd144;
-  --black: #19191b;
-  --darker-grey: #3a3a3a;
-  --dark-grey: #3d3d3d;
-  --light-grey: #575757;
-  --very-light-grey: #d7d7d7;
-  --contact-dark-grey: #3d3d3d;
-  --download-cv-dark-grey: #3d3d3d;
-
-  /* other body styles */
-  background-color: var(--light-background);
-  font-family: "Poppins";
-  font-style: normal;
-  text-align: center;
   font-size: 14px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* .dark class redefines colors for the dark theme. 
-this class will be added upon clicking the light/dark mode button. */
 .dark {
-  --light-background: #0c151d;
   --non-changing-white: #0c151d;
-  --white: #171f26;
-  --picture-yellow: #ffe071;
-  --button-yellow: #ffe071;
-  --black: #a3abb2;
-  --darker-grey: #a3abb2;
-  --dark-grey: #f1f2f4;
-  --light-grey: #a3abb2;
-  --very-light-grey: #0c151d;
-  --contact-dark-grey: #a3abb2;
-  --download-cv-dark-grey: #3d3d3d;
 }
-
-/* SPECIFIC STYLES */
 
 /* light-dark-mode icon */
 .header__light-dark-mode-button {
   width: 20.04px;
   height: 20.01px;
   padding: 13.99px;
-  border-radius: 50%;
-  background: var(--white);
   margin: 20px 0 30px 0;
-}
-
-.header__light-dark-mode-button:hover {
-  cursor: pointer;
 }
 
 /* profile main info (picture, name, role) */
@@ -80,32 +29,22 @@ this class will be added upon clicking the light/dark mode button. */
   height: 107px;
   width: 107px;
   padding: 4px;
-  background-color: var(--non-changing-white);
-  border-color: var(--picture-yellow);
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 50%;
   margin: 0;
 }
 
 .basic-info__name {
-  font-weight: 500;
   font-size: 32px;
-  color: var(--dark-grey);
   margin: 40px 0 0 0;
 }
 
 .basic-info__role {
-  font-weight: 500;
   font-size: 14px;
-  color: var(--light-grey);
   margin: 0 0 22px 0;
 }
 
 /* social media icons */
 .basic-info__icons img {
   height: 20px;
-  width: auto;
   margin: 0 15px;
 }
 
@@ -117,16 +56,10 @@ this class will be added upon clicking the light/dark mode button. */
 .achievements__item {
   margin: 52.25px 13.5px;
   width: 102px;
-  height: auto;
 }
 
 .achievements__item__number {
-  color: var(--darker-grey);
   font-size: 16px;
-}
-
-.achievements__item__feat {
-  color: var(--light-grey);
 }
 
 /* hiring info (download CV, contact me buttons) */
@@ -138,31 +71,13 @@ this class will be added upon clicking the light/dark mode button. */
 .hiring-links__contact {
   width: 158px;
   height: 44px;
-  border-radius: 2.76% / 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 16px 7px;
-  border-color: transparent;
-  font-family: "Poppins";
-  font-style: normal;
-  text-align: center;
   font-size: 12px;
-}
-
-.hiring-links__download-cv:hover,
-.hiring-links__contact:hover {
-  cursor: pointer;
 }
 
 .hiring-links__contact {
   background-color: var(--white);
   color: var(--contact-dark-grey);
-}
-
-.hiring-links__download-cv {
-  background-color: var(--button-yellow);
-  color: var(--download-cv-dark-grey);
 }
 
 .hiring-links__download-cv-text {
@@ -179,32 +94,18 @@ this class will be added upon clicking the light/dark mode button. */
 .content__buttons {
   width: 330px;
   height: 64px;
-  border-radius: 2.9% / 20%;
-  background-color: var(--white);
   margin: 41px auto;
-  align-items: center;
-  justify-content: space-around;
-  color: var(--black);
 }
 
 .content__buttons__skills-button,
 .content__buttons__portfolio-button {
   width: 154px;
   height: 50.3px;
-  border-radius: 2.34% / 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content__buttons__portfolio-button {
-  background-color: var(--very-light-grey);
 }
 
 /* projects */
 
 .content__projects__list {
-  flex-wrap: wrap;
   margin: 0 18px;
   width: auto;
 }
@@ -218,12 +119,10 @@ this class will be added upon clicking the light/dark mode button. */
 /* footer */
 
 .footer {
-  color: var(--light-grey);
   margin: 20px auto 90px auto;
 }
 
 .footer__go-to-top-button {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
