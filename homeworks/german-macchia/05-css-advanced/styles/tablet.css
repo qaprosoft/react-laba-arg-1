@@ -1,9 +1,15 @@
 @media (min-width: 600px) and (max-width: 1024px) {
 
+  /*------------------*
+  *       HEADER      *
+  * ------------------*/
+
   .theme-switcher:active {
     background: var(--btn-bg-color);
     color: #3d3d3d;
   }
+
+
 
   .card {
     flex-direction: column;
@@ -25,9 +31,13 @@
     height: 154px;
   }
 
+
+
   .icon {
     margin: 1rem;
   }
+
+
 
   .list {
     font-size: 18px;
@@ -42,6 +52,8 @@
   .list__item--desktop {
     display: none;
   }
+
+
 
   .button-stack {
     width: 30rem;
@@ -66,6 +78,8 @@
     width: 10.67px;
   }
 
+
+
   nav {
     display: flex;
     flex-direction: row;
@@ -88,11 +102,17 @@
     background: var(--main-bg-color);
   }
 
+  /*------------------*
+  *       MAIN        *
+  * ------------------*/
+
   main {
     margin: 0 auto;
     width: 80%;
     height: auto;
   }
+
+
 
   .imposter {
     gap: 2.5vh;
@@ -108,8 +128,9 @@
     text-align: left;
   }
 
-  .container__text--big {
 
+
+  .container__text--big {
     font-size: 1.2rem;
     margin: 0 auto 0 2vw;
     width: 170px;
@@ -125,11 +146,17 @@
     margin: 15vw 0;
   }
 
+
+
   .arrow-icon {
     margin: 0 0 1rem 0;
     width: 3vw;
     height: auto;
   }
+
+  /*------------------*
+  *       FOOTER      *
+  * ------------------*/
 
   footer {
     width: 282px;
@@ -137,4 +164,5 @@
     line-height: 21px;
     margin: 20px auto;
   }
+
 }
