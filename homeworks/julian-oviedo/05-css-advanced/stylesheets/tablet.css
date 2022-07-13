@@ -1,10 +1,11 @@
 @media screen and (min-width: 600px) {
   h1 {
-    font-size: 7vw;
+    font-size: 40px;
   }
 
   h2 {
-    font-size: 3vw;
+    font-size: 25px;
+    margin: 20px;
   }
 
   .header__button {
@@ -19,12 +20,13 @@
   .container__socialmedia__img {
     margin-right: 8vw;
     text-align: center;
-    width: 6vw;
+    width: 5vw;
   }
 
   .profile-facts {
     width: 60%;
-    font-size: 3vw;
+    font-size: 18px;
+    margin-top: 40px;
   }
 
   .firstbttn-container {
