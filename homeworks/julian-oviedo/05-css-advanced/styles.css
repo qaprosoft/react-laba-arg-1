@@ -3,6 +3,66 @@
   padding: 0;
 }
 
+h1 {
+  font-size: 8vw;
+  color: #3d3d3d;
+  margin-top: 2vh;
+}
+
+h2 {
+  font-size: 4vw;
+  color: #575757;
+  margin-bottom: 8vw;
+}
+
 html {
   font-family: "Poppins", sans-serif;
+  background-color: #e9ebec;
+}
+
+/* HEADER - BUTTON CHANGE THEME */
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.header__button {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 10vw;
+  height: 10vw;
+}
+
+.header__button__img {
+  height: 60%;
+}
+
+/* PH AND INFO PROFILE - CONTAINER */
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container__profile-photo {
+  border-radius: 50%;
+  width: 40%;
+  border: 1vw solid #f7d039;
+  background: #ffffff;
+  padding: 2vw;
+}
+
+.container__socialmedia {
+  display: flex;
+  align-items: baseline;
+  margin-left: 10vw;
+}
+
+.container__socialmedia__img {
+  margin-right: 10vw;
+  text-align: center;
+  width: 8vw;
 }
