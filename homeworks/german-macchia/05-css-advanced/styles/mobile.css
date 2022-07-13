@@ -1,5 +1,9 @@
 @media (max-width: 600px) {
 
+  /*------------------*
+  *       BASIC       *
+  * ------------------*/
+
   * {
     max-width: 375px;
     scroll-behavior: smooth;
@@ -9,13 +13,14 @@
   *       HEADER      *
   * ------------------*/
 
+  /* THEME SWITCHER */
   .theme-switcher:active {
     background: var(--btn-bg-color);
     color: #3d3d3d;
   }
 
 
-
+  /* CARD */
   .card {
     flex-direction: column;
     margin: 1rem;
@@ -37,13 +42,13 @@
   }
 
 
-
+  /* ICON */
   .icon {
     margin: 1rem;
   }
 
 
-
+  /* LIST */
   .list {
     font-size: 14px;
     line-height: 21px;
@@ -59,7 +64,7 @@
   }
 
 
-
+  /* BUTTON STACK */
   .button {
     font-size: 12px;
     line-height: 18px;
@@ -78,7 +83,7 @@
   }
 
 
-
+  /* NAV */
   nav {
     display: flex;
     flex-direction: row;
@@ -104,13 +109,14 @@
   *       MAIN        *
   * ------------------*/
 
+  /* IMPOSTER */
   .imposter {
     margin: 0 .3rem;
     display: block;
   }
 
 
-
+  /* ARROW TOP ICON */
   .arrow-top-icon {
     display: block;
     height: 40px;

@@ -4,13 +4,14 @@
   *       HEADER      *
   * ------------------*/
 
+  /* THEME SWITCHER */
   .theme-switcher:active {
     background: var(--btn-bg-color);
     color: #3d3d3d;
   }
 
 
-
+  /* CARD */
   .card {
     flex-direction: column;
     margin: 1rem;
@@ -32,13 +33,13 @@
   }
 
 
-
+  /* ICON */
   .icon {
     margin: 1rem;
   }
 
 
-
+  /* LIST */
   .list {
     font-size: 18px;
     line-height: 21px;
@@ -54,7 +55,7 @@
   }
 
 
-
+  /* BUTTON STACK */
   .button-stack {
     width: 30rem;
   }
@@ -79,7 +80,7 @@
   }
 
 
-
+  /* NAV */
   nav {
     display: flex;
     flex-direction: row;
@@ -113,7 +114,7 @@
   }
 
 
-
+  /* IMPOSTER */
   .imposter {
     gap: 2.5vh;
     margin: 0 20px;
@@ -129,7 +130,7 @@
   }
 
 
-
+  /* CONTAINER */
   .container__text--big {
     font-size: 1.2rem;
     margin: 0 auto 0 2vw;
@@ -147,7 +148,7 @@
   }
 
 
-
+  /* ARROW ICON */
   .arrow-icon {
     margin: 0 0 1rem 0;
     width: 3vw;

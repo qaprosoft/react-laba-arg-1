@@ -10,6 +10,10 @@
   --brightness: 1;
 }
 
+/*------------------*
+*       BASIC       *
+* ------------------*/
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -72,7 +76,7 @@ header {
 }
 
 
-
+/* THEME SWITCHER */
 .theme-switcher {
   border-radius: 50%;
   background: var(--btn-bg-color);
@@ -91,7 +95,7 @@ header {
 }
 
 
-
+/* CARD */
 .card {
   display: flex;
   flex-direction: row;
@@ -114,7 +118,7 @@ header {
 }
 
 
-
+/* ICON */
 .icon {
   margin-right: 1.5rem;
 }
@@ -125,7 +129,7 @@ header {
 }
 
 
-
+/* LIST */
 .list {
   display: flex;
   flex-direction: row;
@@ -147,7 +151,7 @@ strong {
 }
 
 
-
+/* BUTTON STACK */
 .button-stack {
   display: flex;
   flex-direction: row;
@@ -184,7 +188,7 @@ strong {
 }
 
 
-
+/* NAV */
 nav {
   background: var(--btn-bg-color);
   border-radius: 20px;
@@ -215,7 +219,7 @@ main {
 }
 
 
-
+/* IMPOSTER */
 .imposter {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -242,7 +246,7 @@ main {
 }
 
 
-
+/* CONTAINER */
 .container {
   margin: 0;
   position: relative;
@@ -280,7 +284,7 @@ main {
 }
 
 
-
+/* LINK ICON */
 .link-icon {
   padding: 13px 10px;
   background: #ffffff;
@@ -295,7 +299,7 @@ main {
 }
 
 
-
+/* ARROW ICON */
 .arrow-icon {
   margin: 0px 0 5px 50px;
 }
