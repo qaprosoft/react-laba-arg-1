@@ -66,3 +66,81 @@ html {
   text-align: center;
   width: 8vw;
 }
+
+/* PROFILE FACTS STYLES */
+
+li {
+  list-style: none;
+}
+
+.profile-facts {
+  display: flex;
+  text-align: center;
+  width: 80%;
+  justify-content: space-between;
+  margin: 10vw 0;
+  font-size: 4vw;
+}
+
+/* BUTTONS STYLES */
+
+.firstbttn-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.firstbttn-container__btn img {
+  height: 3vw;
+}
+
+.firstbttn-container__btn {
+  background-color: #fbd144;
+  border-radius: 5px;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+}
+
+.firstbttn-container__btn--bg {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+}
+
+.secondbttn-container {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondbttn-container__btn {
+  border-radius: 5px;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+  background-color: #d7d7d7;
+  margin: 10px 10px 10px 0px;
+}
+
+.secondbttn-container__btn--bg {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 45%;
+  height: 5vh;
+  font-family: inherit;
+  font-size: 1.5vh;
+  border: none;
+}
