@@ -247,11 +247,7 @@
 }
 @media (max-width: 1024px) {
   .footer__button {
-    border: none;
-    border-radius: 50%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     position: fixed;
     bottom: 0px;
     right: 0px;

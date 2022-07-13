@@ -6,7 +6,7 @@ switchTheme = () => {
     ".main__button, .tab__button, .footer__text, .main__fact, .fact__strong, .header__subheading, .header__icon"
   );
   let buttons = document.querySelectorAll(
-    ".main__button--white, .tabs__buttons-container, .tab__button"
+    ".main__button--white, .tabs__buttons-padding, .tab__button"
   );
   let title = document.querySelector(".header__heading");
   let portfolio = document.querySelector(".tabs__button--grey");
@@ -24,3 +24,13 @@ switchTheme = () => {
   portfolio.classList.toggle("tabs__button--black");
   yellowText.classList.toggle("btn-yellow--dark");
 };
+window.onscroll = function() {scrollFunction()};
+
+scrollFunction = () => {
+  btn = document.querySelector(".footer__button")
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
