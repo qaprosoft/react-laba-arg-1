@@ -1,0 +1,486 @@
+@media only screen and (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: #0c151d;
+    color: #a3abb2;
+    font-family: Poppins, serif;
+  }
+
+  /* nav */
+  .nav {
+    margin-top: 30px;
+  }
+
+  .nav__theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 48px;
+  }
+
+  #theme-icon-bg {
+    position: absolute;
+    z-index: 1;
+    width: 48px;
+  }
+
+  #theme-icon {
+    position: absolute;
+    z-index: 2;
+    width: 14px;
+  }
+
+  /* header */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 30px;
+  }
+
+  .profile__picture {
+    display: flex;
+    align-self: center;
+    width: 124px;
+  }
+
+  .profile__picture .bg {
+    position: absolute;
+    z-index: 1;
+    height: 124px;
+  }
+
+  .profile__picture .photo {
+    position: absolute;
+    z-index: 2;
+    margin: 8px;
+    height: 107px;
+  }
+
+  .profile__details {
+    text-align: center;
+  }
+
+  .profile__details h1 {
+    color: #f1f2f4;
+    font-size: 32px;
+    margin-top: 160px;
+  }
+
+  .profile__details h2 {
+    font-size: 18px;
+  }
+
+  .profile__details .profile__social-media {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .profile__social-media img {
+    width: 20px;
+    padding: 15px;
+  }
+
+  /* div - personal-experience */
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .personal-info__experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: center;
+    max-width: 340px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .personal-info__experience p {
+    font-size: 14px;
+  }
+
+  .personal-info__cv-contact {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 330px;
+    margin-top: 70px;
+  }
+
+  .personal-info__cv-contact button {
+    max-width: 150px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  #cv-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border: none;
+    background-color: #ffe071;
+    color: #3d3d3d;
+  }
+
+  #cv-download {
+    width: 10px;
+  }
+
+  #contact-btn {
+    background-color: #171f26;
+    color: #a3abb2;
+    margin-left: 10px;
+    border: none;
+  }
+
+  /* main */
+  .container {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .container__portfolio {
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 210px 210px 210px 210px 210px 210px;
+    row-gap: 30px;
+    margin-top: 40px;
+  }
+
+  .container__buttons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 58px;
+    width: 330px;
+    background-color: #171f26;
+    border-radius: 10px;
+  }
+
+  #portfolio-title {
+    max-width: 154px;
+    width: 100%;
+    padding: 20px;
+    margin: 7px;
+    background-color: #0c151d;
+    color: #a3abb2;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  #skills-title {
+    max-width: 154px;
+    width: 100%;
+    padding: 20px;
+    margin: 7px;
+    background-color: #171f26;
+    color: #a3abb2;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .container__portfolio-item {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .container__portfolio-item img {
+    width: 340px;
+  }
+
+  .container__portfolio-item .details {
+    display: none;
+  }
+
+  /* footer */
+  .footer {
+    align-self: center;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  body {
+    background: #0c151d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #a3abb2;
+    font-family: Poppins, serif;
+  }
+
+  /* nav */
+  .nav__theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+    height: 80px;
+  }
+
+  #theme-icon-bg {
+    position: absolute;
+    z-index: 1;
+  }
+
+  #theme-icon {
+    position: absolute;
+    z-index: 2;
+  }
+
+  /* header */
+  .profile {
+    display: flex;
+    align-self: center;
+    margin-top: 65px;
+    height: 215px;
+    width: 618px;
+  }
+
+  .profile__picture {
+    width: 215px;
+    height: 215px;
+  }
+
+  .profile__picture .bg {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .profile__picture .photo {
+    position: absolute;
+    z-index: 2;
+    margin: 12px;
+  }
+
+  .profile__details {
+    margin-top: 25px;
+    margin-left: 40px;
+    justify-content: center;
+  }
+
+  .profile__details h1 {
+    color: #f1f2f4;
+    margin-bottom: 3px;
+    font-size: 46px;
+  }
+
+  .profile__details h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+
+  .profile__details .profile__social-media {
+    display: inline-flex;
+    align-self: center;
+    align-items: baseline;
+    margin-top: 15px;
+    justify-content: flex-start;
+  }
+
+  .profile__social-media img {
+    margin-right: 30px;
+  }
+
+  /* div - personal-info */
+  .personal-info {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+  }
+
+  .personal-info__experience {
+    display: inline-flex;
+    align-self: center;
+    width: 618px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .personal-info__experience p {
+    justify-content: space-between;
+    font-size: 22px;
+    margin: auto 35px;
+  }
+
+  .personal-info__cv-contact {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 68px;
+    height: 80px;
+  }
+
+  .personal-info__cv-contact button {
+    border-radius: 10px;
+    width: 290px;
+    font-size: 24px;
+  }
+
+  #cv-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 19px;
+    background-color: #ffe071;
+    color: #3d3d3d;
+    border: none;
+  }
+
+  #cv-download {
+    width: 18px;
+  }
+
+  #contact-btn {
+    margin-left: 19px;
+    background-color: #171f26;
+    color: #a3abb2;
+    border: none;
+  }
+
+  /* main */
+  .container {
+    align-self: center;
+  }
+
+  .container__buttons {
+    display: inline-flex;
+    align-self: center;
+  }
+
+  .container__portfolio {
+    display: grid;
+    grid-template-columns: 362px 362px;
+    grid-template-rows: 226px 226px 226px;
+    column-gap: 32px;
+    row-gap: 48px;
+    margin-top: 73px;
+  }
+
+  .container__buttons {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 756px;
+    height: 116px;
+    background-color: #171f26;
+    border-radius: 20px;
+    margin-top: 83px;
+  }
+
+  #portfolio-title {
+    max-width: 349.6px;
+    width: 100%;
+    padding: 25px;
+    background-color: #0c151d;
+    color: #a3abb2;
+    border: none;
+    border-radius: 10px;
+    margin-right: 19px;
+    margin-left: 24px;
+    font-size: 22px;
+  }
+
+  #skills-title {
+    max-width: 349.6px;
+    width: 100%;
+    padding: 25px;
+    background-color: #171f26;
+    color: #a3abb2;
+    border: none;
+    border-radius: 10px;
+    margin-left: 19px;
+    margin-right: 24px;
+    font-size: 22px;
+  }
+
+  /* about .portfolio .item .details: I am sure there must be a better/optimal way to do this */
+  .container__portfolio-item .details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 988px;
+    color: #3d3d3d;
+    width: 362px;
+    height: 150px;
+    text-align: center;
+    align-content: center;
+    background-color: #ffe071;
+    opacity: 80%;
+    width: 340px;
+    height: 210px;
+    border-radius: 10px;
+  }
+
+  .container__portfolio-item h4 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 3px;
+  }
+
+  .container__portfolio-item p {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+  }
+
+  .container__portfolio-item a {
+    align-self: center;
+  }
+
+  #assets-link-bg {
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    margin-top: 135px;
+  }
+
+  #assets-link {
+    position: absolute;
+    z-index: 2;
+    align-self: center;
+    margin-top: 149px;
+    width: 17px;
+    height: 8px;
+  }
+
+  #assets-pointer {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 250px;
+    width: 38px;
+    height: 38px;
+  }
+
+  /* footer */
+  .footer {
+    align-self: center;
+    font-size: 22px;
+    margin-top: 130px;
+  }
+}
