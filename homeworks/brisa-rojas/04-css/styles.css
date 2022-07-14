@@ -1,0 +1,203 @@
+/*GLOBAL*/
+* {
+  background-color: #0c151d;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*TEXT FONTS AND COLOR*/
+.info_name {
+  color: #f1f2f4;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 69px;
+}
+/*p and h2 tags*/
+.exp_item,
+.view_select_text,
+.button_text,
+.footer_text,
+.info_position {
+  color: #a3abb2;
+  font-size: 22px;
+  line-height: 33px;
+  background-color: transparent;
+}
+
+.exp_number {
+  font-size: 24px;
+}
+
+/*BODY*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/*SETTINGS SECTION*/
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 33px;
+}
+.settings .colorMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171f26;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+.settings .colorMode .img img {
+  height: 40px;
+  width: 40px;
+}
+
+/*PROFILE SECTION*/
+/*User section*/
+section.profile {
+  display: flex;
+  flex-direction: column;
+}
+section.profile .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Profile pic*/
+section.profile .user .img {
+  height: 215px;
+  width: 215px;
+  display: flex;
+  align-items: flex-end;
+}
+section.profile .user .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*Info section*/
+section.profile .user .info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 372px;
+  height: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.profile .user .info > .info_position,
+section.profile .user .info > .social_media {
+  padding-top: 10px;
+}
+
+section.profile .user .info .social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 222px;
+  height: 36px;
+}
+/*Experience section*/
+section.profile .experience {
+  width: 634px;
+  height: 142px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.profile .experience > .exp_item {
+  text-align: center;
+}
+
+/*Buttons section*/
+section.profile .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 618px;
+  height: 80px;
+}
+section.profile .buttons > .CV,
+section.profile .buttons > .contact_info {
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+section.profile .buttons .CV {
+  background-color: #ffe071;
+}
+section.profile .buttons .CV > .button_text,
+section.profile .buttons .CV > img {
+  color: #3d3d3d;
+  background-color: #ffe071;
+}
+section.profile .buttons .contact_info {
+  background-color: #171f26;
+}
+
+/*MAIN SECTION*/
+main div.view_select {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 756px;
+  height: 132px;
+  border-radius: 20px;
+  background-color: #171f26;
+}
+
+div.view_select .view_option {
+  width: 349.6px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #171f26;
+}
+
+#active {
+  background-color: #0c151d;
+}
+
+.portfolio {
+  margin-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 757px;
+  height: 826px;
+}
+.portfolio .portfolio_img {
+  width: 362px;
+  height: 226px;
+  border-radius: 15px;
+}
+
+.footer {
+  width: 463px;
+  height: 33px;
+  margin-bottom: 80px;
+}
