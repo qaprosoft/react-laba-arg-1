@@ -100,7 +100,7 @@ header {
   line-height: 0;
 }
 
-.profile--information__dark {
+.profile--information__pDark {
   font-size: 22px;
   color: #a3abb2;
   line-height: 0;
@@ -431,6 +431,10 @@ footer > p {
     font-size: 14px;
   }
 
+  .profile--information__pDark {
+    font-size: 14px;
+  }
+
   .profile--socialMedia {
     justify-content: center;
   }
@@ -647,6 +651,10 @@ footer > p {
   }
 
   .profile--information__p {
+    font-size: 16px;
+  }
+
+  .profile--information__pDark {
     font-size: 16px;
   }
 
