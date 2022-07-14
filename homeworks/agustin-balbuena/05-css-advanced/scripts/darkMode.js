@@ -1,6 +1,6 @@
 //Primero: selecciono todos los elementos a los que le voy a aplicar la clase "dark-mode"
 let body = document.body;
-let toggleMode = document.getElementById("toggleMode");
+let toggleMode = document.getElementById("toggle-mode");
 let nameInfo = document.querySelector(".name-info");
 let carrerInfo = document.querySelector(".career-info");
 let experienceInfo_li = document.querySelectorAll(".experience-info__list");
@@ -27,6 +27,6 @@ function toggleDarkMode() {
 }
 
 //Selecciono el boton toggle y le invoco la funcion
-let toggleDarkModeBtn = document.getElementById("toggleMode");
+let toggleDarkModeBtn = document.getElementById("toggle-mode");
 
 toggleDarkModeBtn.addEventListener("click", toggleDarkMode);
