@@ -6,7 +6,7 @@
 h1 {
   font-size: 8vw;
   color: #3d3d3d;
-  margin-top: 2vh;
+  margin-top: 20px;
 }
 
 h2 {
@@ -148,18 +148,18 @@ li {
   background-color: #fbd144;
   border-radius: 5px;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
 }
 
 .firstbttn-container__btn--bg {
   border-radius: 5px;
   background-color: #ffffff;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
 }
 
 .firstbttn-container__btn--bg--dark {
@@ -167,9 +167,9 @@ li {
   background-color: #171f26;
   color: #fff;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
 }
 
 .secondbttn-container {
@@ -199,18 +199,18 @@ li {
 .secondbttn-container__btn {
   border-radius: 5px;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
   background-color: #d7d7d7;
   margin: 10px 10px 10px 0px;
 }
 .secondbttn-container__btn--dark {
   border-radius: 5px;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
   background-color: #0c151d;
   color: #fff;
   margin: 10px 10px 10px 0px;
@@ -220,9 +220,9 @@ li {
   border-radius: 5px;
   background-color: #ffffff;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
   border: none;
 }
 .secondbttn-container__btn--bg--dark {
@@ -230,9 +230,9 @@ li {
   background-color: #171f26;
   color: #fff;
   width: 45%;
-  height: 5vh;
+  height: 60px;
   font-family: inherit;
-  font-size: 1.5vh;
+  font-size: 0.8rem;
   border: none;
 }
 
