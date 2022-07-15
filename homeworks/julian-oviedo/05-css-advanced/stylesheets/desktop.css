@@ -10,12 +10,12 @@
     padding: 10px;
   }
 
-  .container__div-1 {
+  .container__profile-img {
     flex-direction: row;
     width: 630px;
     height: 215px;
   }
-  .container__div-2 {
+  .container__profile-info {
     width: 450px;
   }
 
@@ -29,11 +29,11 @@
     line-height: 33px;
     margin-bottom: 40px;
   }
-  .container__socialmedia {
+  .container-social-media {
     margin-left: 20px;
   }
 
-  .container__socialmedia__img {
+  .container-social-media__img {
     width: auto;
     margin-right: 50px;
   }

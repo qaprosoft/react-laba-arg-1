@@ -61,12 +61,12 @@ body {
 
 /* PH AND INFO PROFILE - CONTAINER */
 
-.container__div-1 {
+.container__profile-img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container__div-2 {
+.container__profile-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,13 +94,13 @@ body {
   padding: 2vw;
 }
 
-.container__socialmedia {
+.container-social-media {
   display: flex;
   align-items: baseline;
   margin-left: 10vw;
 }
 
-.container__socialmedia__img {
+.container-social-media__img {
   margin-right: 10vw;
   text-align: center;
   width: 8vw;
