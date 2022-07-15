@@ -1,0 +1,34 @@
+.dark-mode__body {
+  background-color: var(--bg-dark-color);
+}
+.dark-mode__toggleMode {
+  background: var(--bg-dark-light);
+  border: none;
+}
+.dark-mode__name-info {
+  color: var(--light-text-dm);
+}
+.dark-mode__career-info {
+  color: var(--light-text-dm);
+}
+.dark-mode__experience-info-list {
+  color: var(--light-text-dm);
+}
+.dark-mode__profile-contact-me {
+  background-color: var(--bg-dark-light);
+  color: var(--dark-text-dm);
+}
+.dark-mode__tabs {
+  background-color: var(--bg-dark-light);
+}
+.dark-mode__tabs-portfolio {
+  background: var(--bg-dark-color);
+  color: var(--dark-text-dm);
+}
+.dark-mode__tabs-skills {
+  background: var(--bg-dark-light);
+  color: var(--dark-text-dm);
+}
+.dark-mode__footer {
+  color: var(--dark-text-dm);
+}
