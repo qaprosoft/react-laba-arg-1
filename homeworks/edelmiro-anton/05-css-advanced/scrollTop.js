@@ -5,7 +5,6 @@ const width = screen.width;
 const screenWidth = () => {
   if (width <= 600) {
     console.log(width);
-    arrowContainer.classList.add("container__scrollTop");
     const imgArrow = document.createElement("img");
     // imgArrow.className = "arrowUp";
     imgArrow.src = "./img/arrow.png";

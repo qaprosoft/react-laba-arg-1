@@ -8,7 +8,6 @@
   body {
     background-color: #e9ebec;
     font-family: "Poppins";
-    width: 600px;
   }
 
   .transition__dark {
@@ -16,77 +15,32 @@
   }
   /* BUTTON DARKMODE */
 
-  .btnSwitch {
-    /* max-width: 600px; */
-    width: 100%;
-    height: 200px;
-    position: relative;
-  }
+ 
 
   .backgroundBtn {
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    height: 80px;
-    /* justify-content: center; */
-    cursor: pointer;
-    margin-left: 6%;
     margin-top: 33px;
-    margin-right: auto;
-  }
-
-  .btnSwitch__img {
-    margin: auto;
   }
 
   /* NAME & OCCUPATION */
   .header {
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     margin-left: auto;
   }
   .intro {
-    /* max-width: 375px; */
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    /* height: 100%; */
-    /* margin-left: auto; */
-    /* margin-right: auto;*/
   }
 
   .profile {
-    max-width: 375px;
+    max-width: 600px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  .profile__name {
-    color: #3d3d3d;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 0;
-    margin-top: 59px;
-    margin-bottom: 39px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
 
   .profile__profession {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
     margin-bottom: 15px;
-    font-size: 17px;
-    color: #575757;
-    line-height: 0;
   }
 
   /* PROFILE PHOTO */
@@ -110,10 +64,9 @@
   /* SOCIAL MEDIA */
 
   .socialMedia {
-    display: flex;
-    width: 198px;
-    margin-top: 9px;
-    justify-content: space-evenly;
+    max-width: 600px;
+    margin-top: 16px;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }
@@ -133,17 +86,13 @@
   /* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
 
   .facts {
-    display: flex;
-    /* position: relative; */
-    max-width: 37;
+    max-width: 600px;
     width: 100%;
-    height: 142px;
-    margin-left: 9%;
+    margin-left: auto;
     margin-right: auto;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 25px;
+    gap: 0px;
   }
 
   .facts__title {
@@ -166,7 +115,6 @@
     text-align: center;
     font-weight: bold;
     font-style: normal;
-    /* font-weight: 500px; */
     font-size: 22px;
     color: #575757;
   }
@@ -174,39 +122,17 @@
   /* DOWNLOAD & CONTACT ME BUTTONS */
 
   .profileButtons {
-    max-width: 600px;
-    width: 100%;
+    max-width: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-left: 8%;
+    flex-wrap: wrap;
+    margin-left: auto;
     margin-right: auto;
-    /* left: auto; */
-    margin-top: 45px;
-    gap: 15px;
+    padding: 0 20px;
+    gap: 21px;
   }
 
   .profileButtons__button {
-    border: 0;
-    border-radius: 10px;
-    padding: 0;
-    background-color: #fbd144;
-    font-family: "Poppins";
-    height: 79px;
-    /* position: relative; */
     width: 100%;
-    left: auto;
-    right: auto;
-    /* top: calc(50% - 30px / 4 + 3.5px); */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 27px;
-    text-align: center;
-    letter-spacing: -0.531474px;
-    color: #3d3d3d;
-    justify-content: center;
-    padding: 0px 18px;
   }
 
   .profileButtons__button:hover {
@@ -224,45 +150,24 @@
   }
 
   .profileButtons__button__contactMe {
-    /* left: 22%; */
     background: #ffffff;
   }
 
   /* PORTFOLIO & SKILLS */
-
+.sectionPortfolio{
+  padding: 0 20px;
+}
   .container {
-    max-width: 600px;
+    max-width: 350px;
     width: 100%;
-    background-color: #ffffff;
-    border-radius: 20px;
-    /* position: relative; */
-    /* width: 600px; */
-    height: 88px;
-    top: 83px;
-    left: 8%;
-    right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+    padding: 1px 1px;
   }
 
   .container__span {
-    background-color: #d7d7d7;
+    padding: 1px 1px; 
     height: 61px;
-    border-radius: 20px;
-    width: 48%;
-    position: relative;
-    /* left: 0%; */
-    /* right: auto; */
-    top: 15.7%;
-    bottom: 19.7%;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-    /* letter-spacing: -0.500211px; */
-    cursor: pointer;
-    padding: 1px 1px;
   }
 
   .container__span span {
@@ -277,65 +182,31 @@
   /* ARTICLES */
 
   .projects {
-    max-width: 600px;
-    width: 100%;
-    /* height: 100vh; */
-    top: 149px;
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(1, 600px);
-    row-gap: 137px;
-    left: 17%;
-    right: auto;
+    padding: 20px;
+    grid-template-columns: repeat(1, auto);
   }
 
-  /* .projects__article {
-    position: relative;
-    width: 362px;
-    height: 226px;
-    left: 1px;
-    top: 0px;
-    gap: 2;
+  .projects__article {
     cursor: pointer;
     transition: 0.3s all ease-in-out;
-  } */
+  }
 
   .projects__article:hover {
     opacity: 0.7;
   }
 
   .projects__article img {
-    width: 500px;
+    width: 100%;
   }
   .projects__article__first {
     position: relative;
   }
-  /* FOOTER */
-
-  .footer {
-    max-width: 600px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer p {
-    margin-top: 250%;
-    font-weight: bold;
-    font-size: 22px;
-    margin-left: 16%;
-  }
 
   /* Scroll to top Arrow */
-  .container__scrollTop {
-    border-style: none;
-    max-width: 600px;
-    width: 600px;
-    height: 50px;
-  }
+  
   .arrow__img {
-    margin-left: 106%;
-    margin-top: 235%;
+    /* margin-left: 106%;
+    margin-top: 235%; */
     transform: rotate(180deg);
     transition: all 0.5s ease;
   }
@@ -343,7 +214,7 @@
   .arrow__img:hover {
     cursor: pointer;
     animation-duration: 1s;
-    transform: rotate(160deg);
+    transform: rotate(360deg);
   }
 
   /************* DARKMODE *************/
