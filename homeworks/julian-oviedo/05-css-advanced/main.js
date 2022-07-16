@@ -12,7 +12,7 @@ btn.addEventListener('click', () => {
 const btnSwitch = document.querySelector('.header__button')
 
 
-const buttonThemeImg = document.querySelector('.header__button__img')
+const buttonThemeImg = document.querySelector('.header__button-img')
 const buttonThemeConteiner = document.querySelector('.header__button')
 const profileh1 = document.querySelector('h1')
 const profileh2 = document.querySelector('h2')
@@ -27,7 +27,7 @@ const footer = document.querySelector('footer')
 
 btnSwitch.addEventListener('click', () => {
     document.body.classList.toggle('body--darktheme');
-    buttonThemeImg.classList.toggle('header__button__img--dark')
+    buttonThemeImg.classList.toggle('header__button-img--dark')
     buttonThemeConteiner.classList.toggle('header__button--dark')
     profileh1.classList.toggle('container__title--dark')
     profileh2.classList.toggle('container__subtitle--dark')

@@ -63,6 +63,10 @@
     height: 80%;
     font-size: 22px;
   }
+
+  .firstbttn-container__btn img {
+    height: 20px;
+  }
   .secondbttn-container {
     width: 50%;
     height: 80px;

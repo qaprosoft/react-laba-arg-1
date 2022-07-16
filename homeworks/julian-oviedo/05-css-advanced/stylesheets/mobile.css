@@ -1,3 +1,10 @@
+/* RESET DEFAULT VALUES OF BUTTONS*/
+button {
+  padding: 0;
+  border: 0;
+}
+/* RESET DEFAULT VALUES OF BUTTONS*/
+
 * {
   margin: 0;
   padding: 0;
@@ -37,24 +44,22 @@ body {
 
 .header__button {
   border-radius: 50%;
-  border: 2px solid black;
   width: 10vw;
   height: 10vw;
 }
 
 .header__button--dark {
   border-radius: 50%;
-  border: 2px solid black;
   width: 10vw;
   height: 10vw;
   background-color: #171f26;
 }
 
-.header__button__img {
+.header__button-img {
   height: 60%;
 }
 
-.header__button__img--dark {
+.header__button-img--dark {
   height: 60%;
   filter: invert(1);
 }
@@ -223,7 +228,6 @@ li {
   height: 60px;
   font-family: inherit;
   font-size: 0.8rem;
-  border: none;
 }
 .secondbttn-container__btn--bg--dark {
   border-radius: 5px;
@@ -233,7 +237,6 @@ li {
   height: 60px;
   font-family: inherit;
   font-size: 0.8rem;
-  border: none;
 }
 
 .tab {
