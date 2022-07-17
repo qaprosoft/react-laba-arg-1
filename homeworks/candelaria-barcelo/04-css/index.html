@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Candelaria Barcelo | Portfolio</title>
+  </head>
+  <body>
+    <header class="container header">
+      <img
+        class="header__light-dark-mode-button"
+        id="toggle"
+        src="./images/icons/light-dark-mode.svg"
+        alt="Light/Dark mode"
+      />
+    </header>
+    <main>
+      <section>
+        <section class="container basic-info">
+          <div class="basic-info__wrapper">
+            <img
+              class="basic-info__profile-picture"
+              src="./images/profile-pictures/my-picture.jpg"
+              alt="Candelaria Barcelo's picture"
+            />
+          </div>
+          <div class="basic-info__wrapper">
+            <h1 class="basic-info__name">Candelaria Barcelo</h1>
+            <h2 class="basic-info__role">Software Engineer</h2>
+            <div class="basic-info__icons">
+              <a href="https://github.com/candebarcelo"
+                ><img
+                  src="./images/icons/github-icon.svg"
+                  id="github-icon"
+                  alt="GitHub"
+              /></a>
+              <img
+                src="./images/icons/twitter-icon.svg"
+                id="twitter-icon"
+                alt="Twitter"
+              />
+              <a href="https://www.linkedin.com/in/candelaria-barcelo/"
+                ><img
+                  src="./images/icons/linkedin-icon.svg"
+                  id="linkedin-icon"
+                  alt="LinkedIn"
+              /></a>
+              <img
+                src="./images/icons/youtube-icon.svg"
+                id="youtube-icon"
+                alt="YouTube"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="achievements">
+          <div class="container achievements__list">
+            <div class="achievements__item">
+              <span class="achievements__item__number">7</span> <br />
+              <span class="achievements__item__feat">Years of work experience</span>
+            </div>
+            <div class="achievements__item">
+              <span class="achievements__item__number">50+</span> <br />
+              <span class="achievements__item__feat">Completed projects</span>
+            </div>
+            <div class="achievements__item">
+              <span class="achievements__item__number">20+</span> <br />
+              <span class="achievements__item__feat">Satisfied customers</span>
+            </div>
+          </div>
+        </section>
+        <section class="container hiring-links">
+          <form class="container hiring-links__buttons">
+            <button
+              class="hiring-links__download-cv"
+              formaction="./docs/CV_Candelaria_Barcelo.pdf"
+            >
+              <span class="hiring-links__download-cv-text">Download CV</span>
+              <img src="./images/icons/download-icon.svg" alt="Download CV" />
+            </button>
+            <button
+              class="hiring-links__contact"
+              formaction="mailto:barcelo.candelaria@gmail.com"
+            >
+              <span>Contact me</span>
+            </button>
+          </form>
+        </section>
+      </section>
+      <section class="content">
+        <div class="container content__buttons">
+          <div class="content__buttons__portfolio-button"><span>Portfolio</span></div>
+          <div class="content__buttons__skills-button"><span>Skills</span></div>
+        </div>
+        <div class="content__projects">
+          <div class="container content__projects__list">
+            <article class="content__projects__item">
+              <img src="./images/projects/project1.png" alt="Project 1" />
+            </article>
+            <article class="content__projects__item">
+              <img src="./images/projects/project2.png" alt="Project 2" />
+            </article>
+            <article class="content__projects__item">
+              <img src="./images/projects/project3.png" alt="Project 3" />
+            </article>
+            <article class="content__projects__item">
+              <img src="./images/projects/project4.png" alt="Project 4" />
+            </article>
+            <article class="content__projects__item">
+              <img src="./images/projects/project5.png" alt="Project 5" />
+            </article>
+            <article class="content__projects__item">
+              <img src="./images/projects/project6.png" alt="Project 6" />
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      © Candelaria Barcelo. 2022 All rights reserved
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
