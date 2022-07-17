@@ -143,4 +143,6 @@ let findMiddleLetter = function (word){
     
 }
 
-console.log(findMiddleLetter("test"))
+//console.log(findMiddleLetter("test"))
+
+// 7 kata https://www.codewars.com/kata/partition-on
