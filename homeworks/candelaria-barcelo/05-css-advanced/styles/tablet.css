@@ -1,0 +1,106 @@
+body {
+  font-size: 18px;
+}
+
+.dark {
+  --non-changing-white: #0c151d;
+}
+
+/* light-dark-mode icon */
+.header__light-dark-mode-button {
+  width: 27px;
+  height: 27px;
+  padding: 19px;
+  margin: 27px 0 52px 0;
+}
+
+/* profile main info (picture, name, role) */
+
+.basic-info {
+  width: auto;
+  display: block;
+}
+
+.basic-info__wrapper {
+  text-align: center;
+}
+
+.basic-info__profile-picture {
+  height: 150px;
+  width: 150px;
+  padding: 6px;
+  margin: 0;
+}
+
+.basic-info__name {
+  margin: 60px 0 0 0;
+}
+
+.basic-info__role {
+  margin: 0 0 40px 0;
+}
+
+/* social media icons */
+.basic-info__icons img {
+  height: 25px;
+  margin: 0 25px;
+}
+
+/* achievements (7 years of work experience, etc) */
+.achievements__item {
+  margin: 60px 30px;
+  width: 134px;
+}
+
+/* hiring info (download CV, contact me buttons) */
+.hiring-links__buttons {
+  margin: 16px;
+}
+
+.hiring-links__download-cv,
+.hiring-links__contact {
+  width: 235px;
+  height: 62px;
+  margin: 16px 14px;
+  font-size: 18px;
+}
+
+.hiring-links__download-cv-text {
+  margin: 0px 15px;
+}
+
+.hiring-links__download-cv-icon {
+  width: 15px;
+  height: 17px;
+}
+
+/* portfolio + skills buttons */
+
+.content__buttons {
+  width: 550px;
+  height: 88px;
+  margin: 68px auto;
+}
+
+.content__buttons__skills-button,
+.content__buttons__portfolio-button {
+  width: 255px;
+  height: 65px;
+}
+
+/* projects */
+
+.content__projects__list {
+  margin: 0 18px;
+  width: auto;
+}
+
+.content__projects__item {
+  margin: 0 12px 39px 12px;
+}
+
+/* footer */
+
+.footer {
+  margin: 70px auto 60px auto;
+}
