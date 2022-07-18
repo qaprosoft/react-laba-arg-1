@@ -66,6 +66,7 @@
 
   .profile__info__social {
     justify-content: space-between;
+    width: 100%;
   }
 
   .profile__info__social__icon {
@@ -136,7 +137,6 @@
   }
 }
 
-
 @media only screen and (max-width: 370px) {
   .profile__buttons {
     grid-template-columns: 1fr;
@@ -145,11 +145,11 @@
     justify-items: center;
   }
 
-  .btn{
+  .btn {
     width: 100%;
   }
 
-  .profile__fact{
+  .profile__fact {
     padding: 0;
     height: min-content;
     flex-direction: column;
