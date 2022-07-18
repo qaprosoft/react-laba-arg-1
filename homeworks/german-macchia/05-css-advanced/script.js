@@ -8,15 +8,13 @@ const prfBtnTxtColorLightMode = "#3d3d3d";
 const subTitleTxtColorLightMode = "#575757";
 const h1ColorLightMode = "#3d3d3d";
 const h1ColorDarkMode = "#f1f2f4";
-const buttonColorDarkMode = '#FFE071';
-const buttonColorLightMode = '#fbd144';
+const buttonColorDarkMode = "#FFE071";
+const buttonColorLightMode = "#fbd144";
 const brightnessLightMode = 1;
 const brightnessDarkMode = 2;
 
 let root = document.querySelector(":root");
 let rootStyle = getComputedStyle(root);
-let originalImageSwitching = document.querySelector('.imposter > img:first-of-type')
-let alternativeImageContainer = document.querySelector(".container")
 
 function changeTheme() {
   let actualBgColor = rootStyle.getPropertyValue("--main-bg-color");
@@ -29,10 +27,7 @@ function changeTheme() {
     root.style.setProperty("--h1-color", h1ColorDarkMode);
     root.style.setProperty("--prof-btn-color", txtColorDarkMode);
     root.style.setProperty("--brightness", brightnessDarkMode);
-    root.style.setProperty("--yellow-btn-tone", buttonColorDarkMode)
-
-    originalImageSwitching.style.setProperty('display', 'none')
-    alternativeImageContainer.style.setProperty('display', "block");
+    root.style.setProperty("--yellow-btn-tone", buttonColorDarkMode);
   } else {
     root.style.setProperty("--main-bg-color", lightColor);
     root.style.setProperty("--btn-bg-color", btnBgColorLightMode);
@@ -41,9 +36,6 @@ function changeTheme() {
     root.style.setProperty("--h1-color", h1ColorLightMode);
     root.style.setProperty("--brightness", brightnessLightMode);
     root.style.setProperty("--prof-btn-color", prfBtnTxtColorLightMode);
-    root.style.setProperty("--yellow-btn-tone", buttonColorLightMode)
-
-    originalImageSwitching.style.setProperty('display', 'grid')
-    alternativeImageContainer.style.setProperty('display', "none");
+    root.style.setProperty("--yellow-btn-tone", buttonColorLightMode);
   }
 }
