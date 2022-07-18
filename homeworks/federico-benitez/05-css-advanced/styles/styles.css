@@ -93,8 +93,9 @@
 }
 
 .profile__fact {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 634px;
   height: 142px;
 }

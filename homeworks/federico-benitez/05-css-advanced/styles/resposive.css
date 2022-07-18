@@ -74,7 +74,7 @@
   }
 
   .profile__fact {
-    margin-top: 52px;
+    padding-top: 52px;
     width: 100%;
   }
 
@@ -149,4 +149,13 @@
     width: 100%;
   }
 
+  .profile__fact{
+    padding: 0;
+    height: min-content;
+    flex-direction: column;
+  }
+
+  .profile__fact__text {
+    padding: 1rem 0;
+  }
 }
