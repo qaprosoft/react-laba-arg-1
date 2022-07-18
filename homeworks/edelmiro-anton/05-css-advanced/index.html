@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mobileStyles.css" />
     <link rel="stylesheet" href="tabletStyles.css" />
-
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +17,7 @@
     />
     <!-- GOOGLE FONTS -->
   </head>
-
+  <main>
   <body id="dark">
     <div class="btnSwitch">
       <span class="backgroundBtn"
@@ -28,19 +27,17 @@
           class="btnSwitch__img"
       /></span>
     </div>
-    <main>
-      <header>
+
+    <!-- <main> -->
+      <header class="header">
         <div class="intro">
           <div class="photo">
             <img src="./img/photo.png" alt="" class="photo__img" />
           </div>
-
           <div class="profile">
             <p class="profile__name">Victor Alvarado</p>
             <p class="profile__profession">Software Engineer</p>
             <div class="socialMedia">
-              <!-- Icons for LIGHT mode -->
-
               <a href="#"
                 ><img
                   src="./icons/github_icon.svg"
@@ -65,40 +62,11 @@
                   alt="you"
                   class="socialMedia__icon socialMedia__icon-light"
               /></a>
-
-              <!-- Icons for DARK mode -->
-
-              <!-- <a href="#"
-                ><img
-                  src="./icons/darkmode/github_darkmode.svg"
-                  alt="github_icon"
-                  class="socialMedia__icon-dark"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./icons/darkmode/twitter_darkmode.svg"
-                  alt="twitter_icon"
-                  class="socialMedia__icon-dark"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./icons/darkmode/linkedin_darkmode.svg"
-                  alt="linkedin_icon"
-                  class="socialMedia__icon-dark"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./icons/darkmode/youtube_darkmode.svg"
-                  alt="you"
-                  class="socialMedia__icon-dark"
-              /></a> -->
             </div>
           </div>
         </div>
       </header>
-
-      <section class="facts">
-        <!-- <div class="facts"> -->
+      <div class="facts">
         <div class="facts__title">
           <p class="years">7</p>
           <p class="experience">
@@ -120,26 +88,25 @@
             customers
           </p>
         </div>
-        <!-- </div> -->
-      </section>
+      </div>
 
-        <div class="profileButtons">
-          <button class="profileButtons__button">
-            Download CV
-            <img
-              src="./icons/arrow.svg"
-              alt="download_icon"
-              class="profileButtons__icon"
-            />
-          </button>
-          <button
-            class="profileButtons__button profileButtons__button__contactMe"
-          >
-            Contact me
-          </button>
-        </div>
-      </section>
-      <section>
+      <div class="profileButtons">
+        <button class="profileButtons__button">
+          Download CV
+          <img
+            src="./icons/arrow.svg"
+            alt="download_icon"
+            class="profileButtons__icon"
+          />
+        </button>
+        <button
+          class="profileButtons__button profileButtons__button__contactMe"
+        >
+          Contact me
+        </button>
+      </div>
+
+      <section class="sectionPortfolio">
         <div class="container">
           <div class="container__span container__span--colorPortfolio">
             <span>Portfolio</span>
@@ -178,11 +145,14 @@
         </article>
       </section>
 
+      <div id="arrow" class="container__scrollTop"></div>
+
       <footer class="footer">
         <p>© Edelmiro Anton. 2022 All rigths reserved</p>
       </footer>
     </main>
 
     <script src="./darkmode.js"></script>
+    <script src="./scrollTop.js"></script>
   </body>
 </html>

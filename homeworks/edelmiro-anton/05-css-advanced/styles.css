@@ -6,7 +6,6 @@
 body {
   background-color: #e9ebec;
   font-family: "Poppins";
-  margin: 0 auto;
 }
 
 .transition__dark {
@@ -15,7 +14,7 @@ body {
 /* BUTTON DARKMODE */
 
 .btnSwitch {
-  height: 100px;
+  margin: 20px auto;
 }
 
 .backgroundBtn {
@@ -23,12 +22,12 @@ body {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  position: absolute;
+  justify-content: center;
+  /* position: absolute; */
   width: 80px;
   height: 80px;
-  left: 47%;
-  right: 47%;
-  top: 33px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
 }
 
@@ -42,16 +41,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .profile {
-  /* width: 75%;
-  height: 156px;
-  margin: 20px 20px; */
   display: flex;
   flex-direction: column;
 }
@@ -78,11 +74,6 @@ body {
 
 /* PROFILE PHOTO */
 
-/* .photo {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-} */
 
 .photo__img {
   border-radius: 50%;
@@ -117,33 +108,15 @@ body {
   bottom: 16.12%;
 }
 
-/* .socialMedia__icon-dark {
-    display: flex;
-    width: 30px;
-    height: 24.42px;
-    position: relative;
-    top: 5.77px;
-    left: 3px;
-    left: 8.33%;
-    right: 8.33%;
-    top: 16.04%;
-    bottom: 16.12%;
-  } */
 
 /* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
 
 .facts {
   display: flex;
-  position: relative;
-  width: 100%;
-  height: 142px;
-  left: auto;
-  top: auto;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 2px;
-  gap: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 2px;
+    gap: 90px;
 }
 
 .facts__title p:first-child {
@@ -174,30 +147,23 @@ body {
   flex-direction: row;
   justify-content: center;
   top: 20px;
-  /* left: auto; */
-  /* right: 5; */
   gap: 70px;
 }
 
 .profileButtons__button {
   border: 0;
-  border-radius: 10px;
-  padding: 0;
-  background-color: #fbd144;
-  font-family: "Poppins";
-  height: 72px;
-  /* position: relative; */
-  width: 253px;
-  left: 16.48%;
-  right: 5.65%;
-  top: calc(50% - 30px / 4 + 3.5px);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: center;
-  letter-spacing: -0.531474px;
-  color: #3d3d3d;
-  justify-content: center;
+    border-radius: 10px;
+    padding: 0px;
+    background-color: #fbd144;
+    font-family: "Poppins";
+    height: 72px;
+    width: 255px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #3d3d3d;
+    justify-content: center;
 }
 
 .profileButtons__button:hover {
@@ -222,34 +188,28 @@ body {
 /* PORTFOLIO & SKILLS */
 
 .container {
-  background-color: #ffffff;
-  border-radius: 20px;
-  position: relative;
-  width: 50%;
-  height: 110px;
-  top: 56px;
-  left: 25%;
-  right: auto;
-  display: flex;
-  justify-content: center;
+  max-width: 750px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .container__span {
   background-color: #d7d7d7;
-  height: 80px;
-  border-radius: 20px;
-  width: 47%;
-  position: relative;
-  left: 0.12%;
-  right: 50.63%;
-  top: 15.7%;
-  bottom: 19.7%;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: -0.500211px;
-  cursor: pointer;
+    height: 80px;
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .container__span span {
@@ -264,22 +224,17 @@ body {
 /* ARTICLES */
 
 .projects {
-  height: 826px;
-  top: 149px;
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(2, 363px);
-  column-gap: 30px;
-  justify-content: center;
+    display: grid;
+    margin-top: 38px;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+    row-gap: 15px;
+    justify-content: center;
 }
 
+
 .projects__article {
-  position: relative;
-  width: 362px;
-  height: 226px;
-  left: 1px;
-  top: 0px;
-  gap: 2;
+  width: 100%;
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
@@ -291,23 +246,20 @@ body {
 .projects__article__first {
   position: relative;
 }
-
 /* FOOTER */
 
 .footer {
-  height: 33px;
-  text-align: center;
-  margin-top: 183px;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 0px;
+    height: 33px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 /************* DARKMODE *************/
 
 /* body.dark .btnSwitch__img {
-    background-image: url(./icons/darkmode/dark.svg); 
-  } */
+      background-image: url(./icons/darkmode/dark.svg); 
+    } */
 
 body.dark .backgroundBtn {
   background-color: #171f26;
@@ -319,8 +271,8 @@ body.dark {
 /* testing  */
 
 /* body.dark .socialMedia__icon-light{
-    background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
-  } */
+      background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
+    } */
 
 /* testing  */
 

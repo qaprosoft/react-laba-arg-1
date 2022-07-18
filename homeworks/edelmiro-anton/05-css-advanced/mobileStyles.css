@@ -1,0 +1,263 @@
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-color: #e9ebec;
+    font-family: "Poppins";
+  }
+
+  .transition__dark {
+    transition: all ease 0.3s;
+  }
+  /* BUTTON DARKMODE */
+
+ 
+
+  .backgroundBtn {
+    margin-top: 33px;
+  }
+
+  /* NAME & OCCUPATION */
+  .header {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+  }
+  .intro {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .profile {
+    max-width: 600px;
+    width: 100%;
+  }
+
+ 
+
+  .profile__profession {
+    margin-bottom: 15px;
+  }
+
+  /* PROFILE PHOTO */
+
+  .photo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photo__img {
+    border-radius: 50%;
+    transform: rotate(0.02turn);
+    box-sizing: border-box;
+    padding: 5px;
+    margin-right: auto;
+    margin-top: 33px;
+    height: 173px;
+    border: 4px solid #f7d039;
+  }
+
+  /* SOCIAL MEDIA */
+
+  .socialMedia {
+    max-width: 600px;
+    margin-top: 16px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .socialMedia .socialMedia__icon {
+    display: flex;
+    width: 30px;
+    height: 24.42px;
+    top: 5.77px;
+    left: 3px;
+    left: 8.33%;
+    right: 8.33%;
+    top: 16.04%;
+    bottom: 16.12%;
+  }
+
+  /* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
+
+  .facts {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .facts__title {
+    width: 200px;
+  }
+  .facts__title p:first-child {
+    text-align: center;
+    font-size: 22px;
+    line-height: 68px;
+    color: #575757;
+    /* position: relative; */
+    top: 22px;
+    font-weight: bold;
+  }
+
+  .experience {
+    font-size: 20px;
+  }
+  .facts__title p:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    color: #575757;
+  }
+
+  /* DOWNLOAD & CONTACT ME BUTTONS */
+
+  .profileButtons {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    gap: 21px;
+  }
+
+  .profileButtons__button {
+    width: 100%;
+  }
+
+  .profileButtons__button:hover {
+    cursor: pointer;
+  }
+
+  .profileButtons__icon {
+    position: relative;
+    right: auto;
+    bottom: 8.33%;
+    width: 16.99px;
+    height: 21px;
+    top: 2px;
+    left: 7%;
+  }
+
+  .profileButtons__button__contactMe {
+    background: #ffffff;
+  }
+
+  /* PORTFOLIO & SKILLS */
+.sectionPortfolio{
+  padding: 0 20px;
+}
+  .container {
+    max-width: 350px;
+    width: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+    padding: 1px 1px;
+  }
+
+  .container__span {
+    padding: 1px 1px; 
+    height: 61px;
+  }
+
+  .container__span span {
+    position: relative;
+    top: 26%;
+  }
+
+  .container__span--colorSkills {
+    background-color: #ffffff;
+  }
+
+  /* ARTICLES */
+
+  .projects {
+    padding: 20px;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .projects__article {
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .projects__article:hover {
+    opacity: 0.7;
+  }
+
+  .projects__article img {
+    width: 100%;
+  }
+  .projects__article__first {
+    position: relative;
+  }
+
+  /* Scroll to top Arrow */
+  
+  .arrow__img {
+    /* margin-left: 106%;
+    margin-top: 235%; */
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
+
+  .arrow__img:hover {
+    cursor: pointer;
+    animation-duration: 1s;
+    transform: rotate(360deg);
+  }
+
+  /************* DARKMODE *************/
+
+  body.dark .backgroundBtn {
+    background-color: #171f26;
+  }
+  body.dark {
+    background: #0c151d;
+  }
+
+  body.dark .profile__name {
+    color: #f1f2f4;
+  }
+
+  body.dark .profile__profession {
+    color: #a3abb2;
+  }
+
+  body.dark .facts__title p {
+    color: #a3abb2;
+  }
+
+  body.dark .profileButtons__button__contactMe {
+    color: #a3abb2;
+    background-color: #171f26;
+  }
+
+  body.dark .container {
+    background-color: #171f26;
+  }
+
+  body.dark .container__span--colorPortfolio {
+    background-color: #0c151d;
+    color: #a3abb2;
+  }
+
+  body.dark .container__span--colorSkills {
+    color: #a3abb2;
+    background-color: #171f26;
+  }
+
+  body.dark footer {
+    color: #a3abb2;
+  }
+}

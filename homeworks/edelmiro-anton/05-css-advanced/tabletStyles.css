@@ -1,0 +1,150 @@
+@media (min-width: 601px) and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  body {
+    background-color: #e9ebec;
+    font-family: "Poppins";
+  }
+
+  .transition__dark {
+    transition: all ease 0.3s;
+  }
+  /* BUTTON DARKMODE */
+
+  .btnSwitch__img {
+    margin: auto;
+  }
+
+  /* NAME & OCCUPATION */
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .profile__name {
+    font-size: 36px;
+  }
+  /* PROFILE PHOTO */
+
+  .photo__img {
+    margin-right: auto;
+  }
+
+  /* SOCIAL MEDIA */
+
+  .socialMedia {
+    width: 100%;
+    margin-top: 21px;
+    justify-content: space-around;
+    margin-left: auto;
+  }
+
+  /* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
+
+  /* DOWNLOAD & CONTACT ME BUTTONS */
+.profileButtons{
+gap: 40px;
+}
+  .profileButtons__button:hover {
+    cursor: pointer;
+  }
+  /* PORTFOLIO & SKILLS */
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .container__span{
+    height: 67px;
+  }
+  .container__span--colorSkills {
+    background-color: #ffffff;
+  }
+
+  /* ARTICLES */
+
+  .projects {
+    max-width: 600px;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+
+  .projects__article {
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .projects__article img {
+    width: 100%;
+  }
+  .projects__article:hover {
+    opacity: 0.7;
+  }
+
+  .projects__article__first {
+    position: relative;
+  }
+  /* FOOTER */
+
+  .footer {
+    max-width: 1024px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .footer p {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  /************* DARKMODE *************/
+
+  body.dark .backgroundBtn {
+    background-color: #171f26;
+  }
+  body.dark {
+    background: #0c151d;
+  }
+
+  body.dark .profile__name {
+    color: #f1f2f4;
+  }
+
+  body.dark .profile__profession {
+    color: #a3abb2;
+  }
+
+  body.dark .facts__title p {
+    color: #a3abb2;
+  }
+
+  body.dark .profileButtons__button__contactMe {
+    color: #a3abb2;
+    background-color: #171f26;
+  }
+
+  body.dark .container {
+    background-color: #171f26;
+  }
+
+  body.dark .container__span--colorPortfolio {
+    background-color: #0c151d;
+    color: #a3abb2;
+  }
+
+  body.dark .container__span--colorSkills {
+    color: #a3abb2;
+    background-color: #171f26;
+  }
+
+  body.dark footer {
+    color: #a3abb2;
+  }
+}
