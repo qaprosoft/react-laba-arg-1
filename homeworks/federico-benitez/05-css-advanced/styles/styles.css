@@ -134,6 +134,11 @@
   background-color: var(--yellow-2);
 }
 
+.works{
+  display: grid;
+  justify-items: center;
+}
+
 .tabs {
   margin: 75px 0 65px;
   background-color: var(--light-background);

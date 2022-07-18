@@ -165,4 +165,14 @@
   .profile__fact__text {
     padding: 1rem 0;
   }
+
+  .tabs{
+    margin-top: 40px;
+  }
+
+  .project__item{
+    height: 60vw;
+    width: 100%
+  }
+
 }
