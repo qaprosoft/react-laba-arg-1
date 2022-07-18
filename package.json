@@ -16,7 +16,7 @@
     "url": "https://github.com/qaprosoft/react-laba-arg-1/issues"
   },
   "homepage": "https://github.com/qaprosoft/react-laba-arg-1#readme",
-  "dependencies": {
-    "prettier": "^2.7.1"
+  "devDependencies": {
+    "prettier": "2.7.1"
   }
 }
