@@ -138,6 +138,13 @@
 }
 
 @media only screen and (max-width: 370px) {
+  .profile__info__name {
+    padding-top: 10px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+  }
+
   .profile__buttons {
     grid-template-columns: 1fr;
     row-gap: 10px;
