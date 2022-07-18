@@ -75,7 +75,6 @@
 
   .profile__fact {
     margin-top: 52px;
-    height: 106px;
     width: 100%;
   }
 
@@ -87,13 +86,13 @@
   .profile__buttons {
     padding: 0 23px;
     grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
     height: 44px;
   }
 
   .btn {
     font-size: 12px;
     line-height: 18px;
-    width: 158px;
   }
 
   .btn--download {
@@ -106,13 +105,13 @@
   }
 
   .tabs {
-    width: 330px;
+    width: 100%;
     height: 64px;
   }
 
   .tabs__button {
     font-size: 14px;
-    width: 154px;
+    width: 100%;
     height: 50.3px;
   }
 
@@ -135,4 +134,19 @@
     font-size: 14px;
     line-height: 21px;
   }
+}
+
+
+@media only screen and (max-width: 370px) {
+  .profile__buttons {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    height: 100px;
+    justify-items: center;
+  }
+
+  .btn{
+    width: 100%;
+  }
+
 }
