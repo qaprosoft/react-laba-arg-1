@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/resposive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+    <title>Victor Alvarado</title>
+  </head>
+  <body>
+    <main id="page" class="page__container">
+      <header class="header-mode">
+        <button type="button" class="header-mode__button" id="toggleMode">
+          <img class="icon" src="./assets/mode-icon.svg" class="header-mode__button__image" alt="toggle button" />
+        </button>
+      </header>
+      <div class="porfolio">
+        <section class="profile">
+          <header class="profile__info">
+            <div class="profile__info__picture__wrapper">
+              <img
+                src="./assets/profile-picture.png"
+                sizes="fill"
+                class="profile__info__picture"
+                alt="profile picture"
+              />
+            </div>
+            <div>
+              <h2 class="profile__info__name">Victor Alvarado</h2>
+              <h5 class="profile__info__position">Software Engineer</h5>
+              <nav class="profile__info__social">
+                <a href="https://github.com"
+                  ><img class="profile__info__social__icon" src="./assets/icons/github.svg" alt="github-icon"
+                /></a>
+                <a href="https://twitter.com"
+                  ><img class="profile__info__social__icon" src="./assets/icons/twitter.svg" alt="twitter-icon"
+                /></a>
+                <a href="https://linkedin.com"
+                  ><img class="profile__info__social__icon" src="./assets/icons/linkedin.svg" alt="linkedin-icon"
+                /></a>
+                <a href="https://youtube.com"
+                  ><img class="profile__info__social__icon" src="./assets/icons/youtube.svg" alt="youtube-icon"
+                /></a>
+              </nav>
+            </div>
+          </header>
+          <div class="profile__fact">
+            <div class="profile__fact__text">
+              <p>7</p>
+              <p>Years of work</p>
+              <p>experience</p>
+            </div>
+            <div class="profile__fact__text">
+              <p>50+</p>
+              <p>Completed</p>
+              <p>projects</p>
+            </div>
+            <div class="profile__fact__text">
+              <p>20+</p>
+              <p>Satisfied</p>
+              <p>customers</p>
+            </div>
+          </div>
+          <div class="profile__buttons">
+            <a class="btn btn--download btn--yellow" href="../02-html/resume.pdf"
+              ><p>Download CV</p>
+              <img class="btn--download__icon" src="./assets/icons/download.svg" alt="download cv"
+            /></a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/federico-benitez-51428119b/"
+              ><span>Contact me</span></a
+            >
+          </div>
+        </section>
+
+        <div class="works">
+          <div class="tabs">
+            <a class="btn tabs__button tabs__button--active"><span>Portfolio</span> </a>
+            <a class="btn tabs__button tabs__button--inactive">
+              <span>Skills</span>
+            </a>
+          </div>
+
+          <div class="projects">
+            <img alt="project porfolio" src="./assets/portfolio/image-1.png" class="project__item" />
+            <img alt="project porfolio" src="./assets/portfolio/image-2.png" class="project__item" />
+            <img alt="project porfolio" src="./assets/portfolio/image-3.png" class="project__item" />
+            <img alt="project porfolio" src="./assets/portfolio/image-4.png" class="project__item" />
+            <img alt="project porfolio" src="./assets/portfolio/image-5.png" class="project__item" />
+            <img alt="project porfolio" src="./assets/portfolio/image-6.png" class="project__item" />
+          </div>
+        </div>
+      </div>
+      <button id="scrollButton" class="scroll-button">↑</button>
+
+      <footer class="footer">
+        <small class="footer__copyright">&copy; Victor Alvarado. 2022 All rights reserved</small>
+      </footer>
+    </main>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/scroll.js"></script>
+  </body>
+</html>
