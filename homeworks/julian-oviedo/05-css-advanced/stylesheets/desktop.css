@@ -1,0 +1,117 @@
+@media screen and (min-width: 1024px) {
+  .header__button {
+    width: 60px;
+    height: 60px;
+  }
+  .container__profile-photo {
+    width: 190px;
+    height: 190px;
+    border: 5px solid #f7d039;
+    padding: 10px;
+  }
+
+  .container__profile-img {
+    flex-direction: row;
+    width: 630px;
+    height: 215px;
+  }
+  .container__profile-info {
+    width: 450px;
+  }
+
+  h1 {
+    font-size: 46px;
+    line-height: 69px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+  .container-social-media {
+    margin-left: 20px;
+  }
+
+  .container-social-media__img {
+    width: auto;
+    margin-right: 50px;
+  }
+
+  .profile-facts {
+    font-size: 22px;
+    line-height: 33px;
+    margin: 50px;
+    justify-content: center;
+  }
+  li {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .firstbttn-container {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 80px;
+    font-size: 22px;
+  }
+  .firstbttn-container__btn {
+    height: 80%;
+    font-size: 22px;
+  }
+  .firstbttn-container__btn--bg {
+    height: 80%;
+    font-size: 22px;
+  }
+
+  .firstbttn-container__btn img {
+    height: 20px;
+  }
+  .secondbttn-container {
+    width: 50%;
+    height: 80px;
+  }
+
+  .secondbttn-container__btn {
+    height: 80%;
+    font-size: 22px;
+  }
+  .secondbttn-container__btn--bg {
+    height: 80%;
+    font-size: 22px;
+  }
+
+  .tab {
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 900px;
+    margin: auto;
+  }
+
+  .tab__card {
+    margin-bottom: 20px;
+    width: 362px;
+    height: 226px;
+  }
+
+  footer {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .footer--dark {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .tab {
+    flex-wrap: nowrap;
+  }
+  .tab__card {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+} ;

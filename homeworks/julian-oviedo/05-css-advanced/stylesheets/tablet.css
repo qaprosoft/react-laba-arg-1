@@ -1,0 +1,56 @@
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  .header__button {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .container__profile-photo {
+    width: 20%;
+    padding: 1vw;
+  }
+  .container-social-media__img {
+    margin-right: 8vw;
+    text-align: center;
+    width: 5vw;
+  }
+
+  .profile-facts {
+    width: 60%;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .firstbttn-container {
+    width: 100%;
+  }
+  .firstbttn-container__btn img {
+    height: 1.5vw;
+  }
+
+  .tab {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab__card {
+    margin-right: 20px;
+  }
+  .secondbttn-container {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    font-size: 3vw;
+  }
+}
