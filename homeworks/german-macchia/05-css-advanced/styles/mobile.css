@@ -1,12 +1,18 @@
 @media (max-width: 600px) {
-
   /*------------------*
   *       BASIC       *
   * ------------------*/
 
   * {
-    max-width: 375px;
     scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  li {
+    min-width: 0;
   }
 
   /*------------------*
@@ -19,40 +25,33 @@
     color: #3d3d3d;
   }
 
-
   /* CARD */
   .card {
     flex-direction: column;
-    margin: 1rem;
-  }
-
-  .card__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
   }
 
   .card__image {
-    margin: 0;
+    margin: 1%;
     background: var(--btn-bg-color);
     padding: 5px;
-    width: 154px;
-    height: 154px;
+    width: 50%;
   }
-
 
   /* ICON */
   .icon {
     margin: 1rem;
+    height: 40%;
   }
-
 
   /* LIST */
   .list {
     font-size: 14px;
     line-height: 21px;
-    margin-top: 11rem;
+    width: 100%;
+    justify-content: space-evenly;
+    min-width: 0;
   }
 
   .list__item--mobile {
@@ -63,42 +62,25 @@
     display: none;
   }
 
-
   /* BUTTON STACK */
+  .button-stack {
+    justify-content: center;
+    margin: 0 10%;
+  }
+
   .button {
-    font-size: 12px;
-    line-height: 18px;
-    height: 44px;
-    width: 158px;
+    font-size: 70%;
+    height: 6vh;
   }
 
   .button:active {
     border: 1px solid var(--sub-txt-color);
   }
 
-  .button__image {
-    margin: 0 0 2px 10px;
-    height: 11.67px;
-    width: 10.67px;
-  }
-
-
   /* NAV */
   nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 3rem;
-    width: 330px;
-    height: 64px;
-  }
-
-  nav button {
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 21px;
-    height: 50.31px;
-    width: 354px;
+    width: 90%;
+    height: 7vh;
   }
 
   nav button:active {
@@ -111,10 +93,19 @@
 
   /* IMPOSTER */
   .imposter {
-    margin: 0 .3rem;
+    width: 80%;
     display: block;
+    margin: 5% auto;
   }
 
+  .container {
+    width: 100%;
+    margin: 0 0 5%;
+  }
+
+  .overlay__text{
+    font-size: 90%;
+  }
 
   /* ARROW TOP ICON */
   .arrow-top-icon {
@@ -123,8 +114,9 @@
     padding: 5px;
     border-radius: 50%;
     position: fixed;
-    top: 94.7vh;
-    right: 3vw;
+    top: 94%;
+    right: 1vw;
+    background-color: var(--yellow-btn-tone);
   }
 
   /*------------------*
@@ -132,10 +124,6 @@
   * ------------------*/
 
   footer {
-    width: 282px;
-    margin: 37rem 0 .8rem 2rem;
     font-size: 14px;
-    line-height: 21px;
   }
-
 }
