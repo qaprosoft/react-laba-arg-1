@@ -162,4 +162,51 @@ function getMiddle(word) {
   return returnChunk;
 }
 
-// katas 7  
+// katas 7  https://www.codewars.com/kata/partition-on
+
+function partitionOn(predicate, arr) {
+  let indexOfFalse = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    let evaluation = predicate(arr[i]);
+    if (!evaluation) {
+      let numberEvaluated = arr.splice(i, 1)[0];
+      arr.splice(indexOfFalse, 0, numberEvaluated);
+      indexOfFalse++;
+    }
+  }
+
+  return indexOfFalse;
+}
+
+// katas 8 http://www.codewars.com/kata/word-count
+
+function findOdd(arr) {
+  let oddNumber;
+  let i = 0;
+
+  while (i < arr.length) {
+    let auxArr = [];
+    auxArr = arr.filter((element) => arr[i] === element);
+    if (auxArr.length % 2 !== 0) {
+      oddNumber = arr[i];
+      break;
+    }
+    i++;
+  }
+
+  return oddNumber;
+}
+
+// katas 9 https://www.codewars.com/kata/find-the-odd-int/
+// katas 10 https://www.codewars.com/kata/find-the-parity-outlier
+// katas 11 https://www.codewars.com/kata/zipwith
+// katas 12 https://www.codewars.com/kata/filter-the-number
+// katas 13 https://www.codewars.com/kata/n-th-fibonacci
+// katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
+// katas 15 https://www.codewars.com/kata/duplicate-encoder
+// katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
+// katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+// katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+// katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
+// katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
