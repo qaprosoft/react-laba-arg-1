@@ -3,7 +3,7 @@ function oppositeNumber(number) {
   return number * -1;
 }
 
-// katas 2 https://www.codewars.com/kata/opposite-number
+// katas 2 https://www.codewars.com/kata/basic-mathematical-operations
 function mathematicOperation(sign, number1, number2) {
   return eval(number1 + sign + number2);
 }
@@ -146,7 +146,7 @@ function dividedBy(number) {
   return `/ ${number}`;
 }
 
-// katas 6 https://www.codewars.com/kata/partition-on
+// katas 6 https://www.codewars.com/kata/get-the-middle-character
 function getMiddle(word) {
   let wordLength = word.length;
   let itsEven = wordLength % 2 === 0;
@@ -163,7 +163,6 @@ function getMiddle(word) {
 }
 
 // katas 7  https://www.codewars.com/kata/partition-on
-
 function partitionOn(predicate, arr) {
   let indexOfFalse = 0;
 
@@ -181,6 +180,9 @@ function partitionOn(predicate, arr) {
 
 // katas 8 http://www.codewars.com/kata/word-count
 
+/*************** Status Code 404!! ***************/
+
+// katas 9 https://www.codewars.com/kata/find-the-odd-int/
 function findOdd(arr) {
   let oddNumber;
   let i = 0;
@@ -198,8 +200,40 @@ function findOdd(arr) {
   return oddNumber;
 }
 
-// katas 9 https://www.codewars.com/kata/find-the-odd-int/
 // katas 10 https://www.codewars.com/kata/find-the-parity-outlier
+function findOutlier(integers) {
+  const isEven = (number) => number % 2 === 0;
+  const isOdd = (number) => number % 2 !== 0;
+  const MIN_VALUE = 3;
+  let count = 0;
+  let i = 0;
+  let outlier = null;
+
+  for (let i = 0; i < MIN_VALUE; i++) {
+    if (isEven(integers[i])) {
+      count++;
+    }
+  }
+
+  if (count <= 1) {
+    while (outlier === null && i < integers.length) {
+      if (isEven(integers[i])) {
+        outlier = integers[i];
+      }
+      i++;
+    }
+  } else {
+    while (outlier === null && i < integers.length) {
+      if (isOdd(integers[i])) {
+        outlier = integers[i];
+      }
+      i++;
+    }
+  }
+
+  return outlier;
+}
+
 // katas 11 https://www.codewars.com/kata/zipwith
 // katas 12 https://www.codewars.com/kata/filter-the-number
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
