@@ -235,6 +235,19 @@ function findOutlier(integers) {
 }
 
 // katas 11 https://www.codewars.com/kata/zipwith
+function zipWith(fn, a0, a1) {
+  const MIN_LENGTH_INDEX = 0;
+  let lengths = [a0.length, a1.length].sort((a, b) => a - b);
+  let loops = lengths[MIN_LENGTH_INDEX];
+  let arr = [];
+
+  for (let i = 0; i < loops; i++) {
+    arr[i] = fn(a0[i], a1[i]);
+  }
+
+  return arr;
+}
+
 // katas 12 https://www.codewars.com/kata/filter-the-number
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
