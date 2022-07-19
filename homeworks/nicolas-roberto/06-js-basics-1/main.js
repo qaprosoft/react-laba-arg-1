@@ -145,3 +145,24 @@ let findMiddleLetter = function (word) {
 //console.log(findMiddleLetter("test"))
 
 // 7 kata https://www.codewars.com/kata/partition-on
+
+let numbers = [1, 2, 3, 4, 5, 6];
+
+let evenNumbers = numbers.filter(function (element) {
+  return element % 2 == 0;
+});
+
+let notEvenNumbers = numbers.filter(function (elements) {
+  return elements % 2 != 0;
+});
+
+let partitionOn = function () {
+  numbers = [];
+  newPartition = notEvenNumbers.concat(evenNumbers);
+  numbers = newPartition;
+  return numbers;
+};
+
+//console.log(partitionOn())
+
+// 9 kata https://www.codewars.com/kata/find-the-odd-int/
