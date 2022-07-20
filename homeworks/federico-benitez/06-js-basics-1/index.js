@@ -54,3 +54,85 @@ function rentalCarCost(days) {
 
   return price;
 }
+
+/**
+ * Exercise 5 - Calculating with functions
+ * http://www.codewars.com/kata/calculating-with-functions
+ */
+
+function zero(operation) {
+  return getResult(operation, 0);
+}
+function one(operation) {
+  return getResult(operation, 1);
+}
+function two(operation) {
+  return getResult(operation, 2);
+}
+function three(operation) {
+  return getResult(operation, 3);
+}
+function four(operation) {
+  return getResult(operation, 4);
+}
+
+function five(operation) {
+  return getResult(operation, 5);
+}
+
+function six(operation) {
+  return getResult(operation, 6);
+}
+
+function seven(operation) {
+  return getResult(operation, 7);
+}
+
+function eight(operation) {
+  return getResult(operation, 8);
+}
+function nine(operation) {
+  return getResult(operation, 9);
+}
+
+function plus(value) {
+  return value;
+}
+function minus(value) {
+  return value * -1;
+}
+function times(value) {
+  return [...Array(value)].map(() => value);
+}
+function dividedBy(value) {
+  return times(value).map((n) => n * -1);
+}
+
+function getResult(operation, VALUE) {
+  if (!operation) return VALUE;
+
+  if (Array.isArray(operation)) {
+    if (operation[0] < 0) {
+      return divide(operation, VALUE);
+    }
+    return multiply(operation, VALUE);
+  } else {
+    return VALUE + operation;
+  }
+}
+
+function divide(array, initial) {
+  let result = 0;
+  let operator = initial;
+
+  while (operator > array[0]) {
+    if (operator < array[0] * -1) break;
+    operator = operator + array[0];
+    result++;
+  }
+  return result;
+}
+
+function multiply(array, value) {
+  return value * array.length;
+}
