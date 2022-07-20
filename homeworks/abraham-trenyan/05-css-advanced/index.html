@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Alvarado - Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <div class="btn-container" id="top">
+      <button
+        class="button button--white button--round"
+        type="button"
+        onclick="switchTheme()"
+      >
+        <img
+          class="button__icon button__icon--grey"
+          src="img/icons/dark-light.svg"
+          alt="dark-light mode switch"
+        />
+      </button>
+    </div>
+    <header class="header">
+      <div class="header__avatar">
+        <img
+          class="header__img"
+          src="img/Alvarado.png"
+          alt="image of Victor Alvarado"
+        />
+      </div>
+      <div class="header__info">
+        <h1 class="header__heading">Victor Alvarado</h1>
+        <h2 class="header__subheading">Software Engineer</h2>
+        <ul class="header__icons">
+          <li>
+            <a class="header__icon" href="https://www.github.com"
+              ><img src="img/icons/github.svg" alt="GitHub icon"
+            /></a>
+          </li>
+          <li>
+            <a class="header__icon" href="https://www.twitter.com"
+              ><img src="img/icons/twitter.svg" alt="Twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a class="header__icon" href="https://www.linkedin.com"
+              ><img src="img/icons/linkedin.svg" alt="Linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a class="header__icon" href="https://www.youtube.com"
+              ><img src="img/icons/youtube.svg" alt="Youtube icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__facts__container">
+        <div class="main__facts">
+          <p class="main__fact">
+            <strong class="fact__strong">7</strong><br />Years of work
+            experience
+          </p>
+          <p class="main__fact">
+            <strong class="fact__strong">50+</strong><br />Completed projects
+          </p>
+          <p class="main__fact">
+            <strong class="fact__strong">20+</strong><br />Satisfied costumers
+          </p>
+        </div>
+      </div>
+      <div class="main__buttons__container">
+        <div class="main__buttons">
+          <button class="main__button main__button--yellow">
+            Download CV<img src="img/icons/download.svg" alt="download icon" />
+          </button>
+          <button class="main__button main__button--white">Contact me</button>
+        </div>
+      </div>
+
+      <div class="tabs__buttons-container">
+        <div class="tabs__buttons-padding">
+          <button class="tab__button tabs__button--grey">Portfolio</button>
+          <button class="tab__button">Skills</button>
+        </div>
+      </div>
+      <div class="projects__container">
+        <div class="projects">
+          <img
+            class="projects__img"
+            src="img/project1.png"
+            alt="image of project"
+          />
+          <img
+            class="projects__img"
+            src="img/project2.png"
+            alt="image of project"
+          />
+          <img
+            class="projects__img"
+            src="img/project3.png"
+            alt="image of project"
+          />
+          <img
+            class="projects__img"
+            src="img/project4.png"
+            alt="image of project"
+          />
+          <img
+            class="projects__img"
+            src="img/project5.png"
+            alt="image of project"
+          />
+          <img
+            class="projects__img"
+            src="img/project6.png"
+            alt="image of project"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">© Victor Alvarado. 2022 All rigths reserved</p>
+      <a class="footer__button" href="#top">
+        <img class="footer__button" src="img/icons/arrow-up-circle.svg" />
+      </a>
+    </footer>
+  </body>
+  <script src="switchTheme.js"></script>
+</html>

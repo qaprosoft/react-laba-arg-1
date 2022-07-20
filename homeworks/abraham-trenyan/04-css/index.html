@@ -12,14 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body class="page">
     <div class="btn-container">
-      <button
-        class="button button--white button--round"
-        type="button"
-        onclick="switchTheme()"
-      >
+      <button class="button button--white button--round" id="switch"type="button" onclick="switchTheme(
+      )">
         <img
           class="button__icon button__icon--grey"
           src="img/icons/dark-light.svg"
@@ -120,6 +118,7 @@
     <footer class="footer">
       <p class="footer__text">© Victor Alvarado. 2022 All rigths reserved</p>
     </footer>
+    <script src="switchTheme.js"></script>
   </body>
   <script src="script.js"></script>
 </html>
