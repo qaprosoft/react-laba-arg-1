@@ -24,19 +24,7 @@ function basicOperations(operator, value1, value2) {
 
 // KATA 3. http://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
 //From my understanding, this kata is asking for the string only, not for me to print it out.
-function printArrayOption1(array){
-  out='';
-  addLettersLoop: for (index in array){
-    out += array[index];
-    if (index == array.length-1){
-      break addLettersLoop;
-    }
-    out += ",";
-  }
-  return out;
-}
-// can also be done with .toString() method like the following
-function printArrayOption2(array){
+function printArray(array){
   return array.toString();
 }
 
@@ -86,7 +74,7 @@ function zipWith(fn,a0,a1) {
 // KATA 12: https://www.codewars.com/kata/filter-the-number
 function FilterString (str) {
   let filtered='';
-  for ( i in str){
+  for (i in str){
     if (str.charCodeAt(i) <= 57 && str.charCodeAt(i) >= 48){
       filtered += str[i];
     }
@@ -149,17 +137,37 @@ function catMouse(map,moves){
 }
 
 // KATA 15.	https://www.codewars.com/kata/duplicate-encoder
+function duplicateEncode(word){
+  let encoded;
+  let repeated = {};
+  
+  word = word.toUpperCase();
+  word = word.split('');
+  
+  
+  word.forEach(function(letter){
+  repeated[letter] = (repeated[letter] || 0) + 1; // if letter is not in repeated, it wil be initialized  
+  });
+
+  encoded = word.map(function(letter){
+    if (!(repeated[letter]-1)){return "(";}
+    return ")";
+  });
+  encoded = encoded.join('');
+  return encoded;
+}
+
 // KATA 16.	https://www.codewars.com/kata/5693239fb761dc8670000001
 // KATA 17.	https://www.codewars.com/kata/576757b1df89ecf5bd00073b
 // KATA 18.	https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
 function makeLetterStand(word, pos){
   //pos is index of the letter that's going to be uppercase
   word = word.split('')
-  if (word[pos] == ' ' || word[pos]== "\n" || word[pos] == ''){
-    return "?"; //arbitrary symbol 
+  if (word[pos] == ' ' || word[pos]== "\n" || word[pos] == ''){ // if character is not a letter (there may be other cases)
+    return "?"; //arbitrary symbol to represent non-letter
   }
   word[pos] = word[pos].toUpperCase();
-  word= word.join('');
+  word = word.join('');
   return word;
 }
 function wave(str){
