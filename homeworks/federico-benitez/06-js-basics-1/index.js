@@ -148,3 +148,21 @@ function getMiddle(s) {
   const middle = s.length / 2;
   return `${s[middle - 1]}${s[middle]}`;
 }
+
+/**
+ * Exercise 7
+ * http://www.codewars.com/kata/partition-on
+ */
+function partitionOn(pred, items) {
+  items.sort((a, b) => {
+    if (pred(a) > pred(b)) {
+      return 1;
+    } else if (pred(b) > pred(a)) {
+      return -1;
+    }
+
+    return 0;
+  });
+
+  return items.findIndex(pred);
+}
