@@ -136,3 +136,15 @@ function divide(array, initial) {
 function multiply(array, value) {
   return value * array.length;
 }
+
+/**
+ * Exercise 6
+ * https://www.codewars.com/kata/get-the-middle-character
+ */
+
+function getMiddle(s) {
+  if (s.length % 2 === 1) return s[Math.floor(s.length / 2)];
+
+  const middle = s.length / 2;
+  return `${s[middle - 1]}${s[middle]}`;
+}
