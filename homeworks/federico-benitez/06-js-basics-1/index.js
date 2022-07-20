@@ -230,3 +230,17 @@ function zipWith(fn, a0, a1) {
 
   return shorter.map((_, i) => fn(a0[i], a1[i]));
 }
+
+/**
+ * Exercise 12 Filter the number
+ * https://www.codewars.com/kata/filter-the-number
+ */
+
+function FilterString(value) {
+  return Number(
+    value
+      .split('')
+      .filter((v) => !isNaN(v))
+      .join(''),
+  );
+}
