@@ -26,3 +26,12 @@ function basicOp(operation, a, b) {
       throw new Error(`Operator ${operation} not implemented `);
   }
 }
+
+/**
+ * Exercise 3 - Printing Array elements with Comma delimiters
+ * https://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
+ */
+
+function printArray(array) {
+  return array.join(',');
+}
