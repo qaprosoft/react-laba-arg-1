@@ -174,3 +174,34 @@ function partitionOn(pred, items) {
  */
 
 /* ----- 404 not found ---- */
+
+/**
+ * Exercise 9 - Find the odd int
+ * https://www.codewars.com/kata/find-the-odd-int/
+ */
+function findOdd(A) {
+  //happy coding!
+  let odd = {};
+
+  A.forEach((v) => {
+    let coincidences = A.map((x) => {
+      if (x === v) {
+        return x;
+      }
+    }).filter(Boolean);
+
+    if (!odd.count) {
+      odd = {
+        count: coincidences.length,
+        value: coincidences[0],
+      };
+    } else if (coincidences.length < odd.count) {
+      odd = {
+        count: coincidences.length,
+        value: coincidences[0],
+      };
+    }
+  });
+
+  return odd.value;
+}
