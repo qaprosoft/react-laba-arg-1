@@ -219,3 +219,14 @@ function findOutlier(integers) {
 
   return odds[0];
 }
+
+/**
+ * Exercise 11 - zipWith
+ * https://www.codewars.com/kata/zipwith
+ */
+
+function zipWith(fn, a0, a1) {
+  const shorter = a0.length < a1.length ? a0 : a1;
+
+  return shorter.map((_, i) => fn(a0[i], a1[i]));
+}
