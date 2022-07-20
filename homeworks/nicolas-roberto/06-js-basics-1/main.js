@@ -1,50 +1,50 @@
 // 1 katas http://www.codewars.com/kata/opposite-number
 
-let oppositeNumber = function (number) {
+function opposite(number) {
   return number * -1;
-};
+}
 
-//console.log (oppositeNumber(15))
-//console.log (oppositeNumber(-15))
+//console.log (opposite(15))
+//console.log (opposite(-15))
 
 // 2 katas http://www.codewars.com/kata/basic-mathematical-operations
 
-let mathematicalOperations = function (operator, value1, value2) {
-  if (operator === '+') {
+function basicOp(operation, value1, value2) {
+  if (operation === '+') {
     return value1 + value2;
-  } else if (operator === '-') {
+  } else if (operation === '-') {
     return value1 - value2;
-  } else if (operator === '*') {
+  } else if (operation === '*') {
     return value1 * value2;
-  } else if (operator === '/') {
+  } else if (operation === '/') {
     return value1 / value2;
+  } else {
+    return 'Operation error.';
   }
-};
+}
 
-//console.log (mathematicalOperations("+", 3, 2))
+//console.log (basicOp("+", 3, 2))
 
 // 3 katas http://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
 
-let arrayWithComma = [];
-let arrayOfElements = ['h', 'o', 'l', 'a'];
-arrayWithComma = arrayOfElements.join(',');
-
-//console.log(arrayWithComma)
+function printArray(array) {
+  return array.join(',');
+}
 
 // 4 katas http://www.codewars.com/kata/transportation-on-vacation
 
-let carRent = function (days) {
+function rentalCarCost(d) {
   let dayPrice = 40;
-  if (days > 7) {
-    return days * dayPrice - 50;
-  } else if (days > 3) {
-    return days * dayPrice - 20;
+  if (d >= 7) {
+    return d * dayPrice - 50;
+  } else if (d >= 3) {
+    return d * dayPrice - 20;
   } else {
-    return days * dayPrice;
+    return d * dayPrice;
   }
-};
+}
 
-//console.log(carRent(8))
+//console.log(rentalCarCost(8));
 
 // 5 katas https://www.codewars.com/kata/calculating-with-functions
 
@@ -120,49 +120,32 @@ let result = function (leftOperand, operation, rigthOperand) {
 
 // 6 kata https://www.codewars.com/kata/get-the-middle-character
 
-let middleLetter = [];
-let twoMiddleLetter = [];
-let position = 0;
-let findMiddleLetter = function (word) {
-  //if the word has one middle letter
-  if (word.length % 2 === 1) {
-    position = Math.round(word.length / 2);
-    middleLetter = word[position - 1];
-    //it returns the middle letter
-    return middleLetter;
+function getMiddle(s) {
+  let middleIndex = s.length / 2;
+  if (s.length % 2 == 0) {
+    return s.slice(middleIndex - 1, middleIndex + 1);
   } else {
-    //if the word has two letters in the middle
-    position = word.length / 2;
-    //it pushes both middle letters into an array
-    middleLetter.push(word[position - 1]);
-    middleLetter.push(word[position]);
-    //then joins both letters so they won't be two elements of an array
-    //and erases the comma
-    return (twoMiddleLetter = middleLetter.join(''));
+    return s.charAt(middleIndex);
   }
-};
+}
 
-//console.log(findMiddleLetter("test"))
+//console.log(getMiddle('test'));
 
 // 7 kata https://www.codewars.com/kata/partition-on
 
-let numbers = [1, 2, 3, 4, 5, 6];
-
-let evenNumbers = numbers.filter(function (element) {
-  return element % 2 == 0;
-});
-
-let notEvenNumbers = numbers.filter(function (elements) {
-  return elements % 2 != 0;
-});
-
-let partitionOn = function () {
-  numbers = [];
-  newPartition = notEvenNumbers.concat(evenNumbers);
-  numbers = newPartition;
-  return numbers;
+let partitionOn = (pair, items) => {
+  let iterations = items.length;
+  for (let index = 0; index < iterations; ) {
+    if (!pair(items[index])) {
+      index++;
+    } else if (pair(items[index])) {
+      let indexOfCurrentIteration = items[index];
+      items.splice(index, 1);
+      items.push(indexOfCurrentIteration);
+      iterations--;
+    }
+  }
+  return iterations;
 };
-
-//console.log(partitionOn())
 
 // 9 kata https://www.codewars.com/kata/find-the-odd-int/
