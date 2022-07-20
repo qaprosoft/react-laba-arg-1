@@ -166,3 +166,11 @@ function partitionOn(pred, items) {
 
   return items.findIndex(pred);
 }
+
+/**
+ * Exercise 8
+ * https://www.codewars.com/kata/word-count
+ * TODO: resolve
+ */
+
+/* ----- 404 not found ---- */
