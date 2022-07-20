@@ -35,3 +35,22 @@ function basicOp(operation, a, b) {
 function printArray(array) {
   return array.join(',');
 }
+
+/**
+ * Exercise 4 - Transportation on vacation
+ * https://www.codewars.com/kata/transportation-on-vacation
+ */
+
+function rentalCarCost(days) {
+  const COST_PER_DAY = 40;
+  const SMALL_DISCOUNT = 20;
+  const BIG_DISCOUNT = 50;
+
+  let price = days * COST_PER_DAY;
+
+  if (days >= 3 && days < 7) price -= SMALL_DISCOUNT;
+
+  if (days >= 7) price -= BIG_DISCOUNT;
+
+  return price;
+}
