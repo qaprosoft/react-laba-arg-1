@@ -249,6 +249,18 @@ function zipWith(fn, a0, a1) {
 }
 
 // katas 12 https://www.codewars.com/kata/filter-the-number
+let FilterString = function (value) {
+  let number = "";
+  let regex = /[0-9]/;
+
+  for (element of value) {
+    if (regex.test(element)) {
+      number += element;
+    }
+  }
+  return +number;
+};
+
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
 // katas 15 https://www.codewars.com/kata/duplicate-encoder
