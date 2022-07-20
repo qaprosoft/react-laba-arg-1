@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="German Macchia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my simply-Portfolio developed with css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Victor Alvarado Simply-Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="theme-switcher"
+        onclick="changeTheme()"
+        src="./images/icons/dark-light-theme-icon.svg"
+        alt="dark-light icon"
+      />
+      <div class="card">
+        <img
+          class="card__image"
+          src="./images/photo.png"
+          alt="photo of Victor Alvarado"
+          title="this is me!"
+        />
+        <div class="card__title">
+          <h1>Victor Alvarado</h1>
+          <h2>Software Engineer</h2>
+          <div class="card__actions">
+            <a href="https://github.com/www" target="_blank">
+              <img
+                class="icon"
+                src="./images/icons/github-icon.svg"
+                alt="github icon"
+              />
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <img
+                class="icon"
+                src="./images/icons/twitter-icon.svg"
+                alt="twitter icon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img
+                class="icon"
+                src="images/icons/linkedIn-icon.svg"
+                alt="linkedin icon"
+              />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <img
+                class="icon"
+                src="images/icons/youtube-icon.svg"
+                alt="youtube icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="list">
+        <li>
+          <strong>7</strong>
+          <p>Years of work</p>
+          <p>experience</p>
+        </li>
+        <li>
+          <strong>50+</strong>
+          <p>Completed</p>
+          <p>proyects</p>
+        </li>
+        <li class="list__item--desktop">
+          <strong>20+</strong>
+          <p>Satisfied</p>
+          <p>customers</p>
+        </li>
+        <li class="list__item--mobile">
+          <strong>20+</strong>
+          <p>Personal side</p>
+          <p>proyects</p>
+        </li>
+      </ul>
+      <div class="button-stack">
+        <button class="button" style="color: #3d3d3d; background: #fbd144">
+          Download CV
+          <img
+            class="button__image"
+            src="./images/icons/download-icon.svg"
+            alt="download icon"
+          />
+        </button>
+        <button class="button">Contact me</button>
+      </div>
+      <nav>
+        <button>Portfolio</button>
+        <button>Skills</button>
+      </nav>
+    </header>
+    <main>
+      <img style="margin-bottom: 0.3rem" src="./images/rectangle-1/Rectangle-1.png" alt="first proyect" />
+      <div class="container">   
+        <div class="container__text">    
+          <p class="container__text--big">SmarterTrading 411</p>
+          <p class="container__text container__text--small">Landing page of SmarterTrading411 created using wordPress</p>
+        </div> 
+        <div class="container__icon">
+          <img class="link-icon" src="./images/icons/link-icon.svg" alt="link icon" />
+          <img class="arrow-icon" src="./images/icons/arrow-icon.svg" alt="arrow icon"/>
+        </div>
+        <img class="container__image" src="./images/rectangle-1/Rectangle-1@2.png" alt="smarter trading" />   
+      </div>
+      <img
+        srcset="
+          ./images/rectangle-2/Rectangle-2.png    500w,
+          ./images/rectangle-2/Rectangle-2@2x.png 800w
+        "
+        sizes="(max-width: 700px) 500px, 800px"
+        alt="second proyect"
+        src="./images/rectangle-2/Rectangle-2@2x.png"
+      />
+      <img src="./images/rectangle-3.png" alt="third proyect" />
+      <img src="./images/rectangle-4.png" alt="fourth proyect" />
+      <img src="./images/rectangle-5.png" alt="fifth proyect" />
+      <img src="./images/rectangle-6.png" alt="sixth proyect" />
+    </main>
+    <footer>
+      <p>&copy; Victor Alvarado. 2022 All rigths reserved</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

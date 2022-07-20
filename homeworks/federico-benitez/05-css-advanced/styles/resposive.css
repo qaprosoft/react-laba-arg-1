@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1024px) {
+  .tabs {
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+  }
+
+  .tabs__button {
+    font-size: 14px;
+    width: 154px;
+    height: 50.3px;
+    border-radius: 10px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 30px;
+  }
+
+  .project__item {
+    width: 340px;
+    height: 210px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-mode {
+    height: 48px;
+    width: 48px;
+  }
+
+  .profile {
+    width: 100vw;
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  .profile__info {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 277px;
+    width: 100%;
+  }
+
+  .profile__info__picture__wrapper {
+    width: 124px;
+    height: 124px;
+    margin-right: 0;
+  }
+
+  .profile__info__picture {
+    width: 107px;
+    height: 107px;
+  }
+
+  .profile__info__name {
+    font-size: 32px;
+  }
+
+  .profile__info__position {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .profile__info__social {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .profile__info__social__icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .profile__fact {
+    padding-top: 52px;
+    width: 100%;
+  }
+
+  .profile__fact__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .profile__buttons {
+    padding: 0 23px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    height: 44px;
+  }
+
+  .btn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .btn--download {
+    grid-template-columns: 99px 5px;
+  }
+
+  .btn--download__icon {
+    height: 11.67px;
+    width: 10.67px;
+  }
+
+  .tabs {
+    width: 100%;
+    height: 64px;
+  }
+
+  .tabs__button {
+    font-size: 14px;
+    width: 100%;
+    height: 50.3px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 30px;
+  }
+
+  .project__item {
+    width: 340px;
+    height: 210px;
+  }
+
+  .footer {
+    margin: 50px 0 40px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .profile__info__name {
+    padding-top: 10px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .profile__buttons {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    height: 100px;
+    justify-items: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .profile__fact {
+    padding: 0;
+    height: min-content;
+    flex-direction: column;
+  }
+
+  .profile__fact__text {
+    padding: 1rem 0;
+  }
+
+  .tabs{
+    margin-top: 40px;
+  }
+
+  .project__item{
+    height: 60vw;
+    width: 100%
+  }
+
+}

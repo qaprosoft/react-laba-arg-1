@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #e9ebec;
+  font-family: "Poppins";
+}
+
+.transition__dark {
+  transition: all ease 0.3s;
+}
+/* BUTTON DARKMODE */
+
+.btnSwitch {
+  margin: 20px auto;
+}
+
+.backgroundBtn {
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.btnSwitch__img {
+  margin: auto;
+}
+
+/* NAME & OCCUPATION */
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  color: #3d3d3d;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 0;
+  margin-top: 59px;
+  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile__profession {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  font-size: 22px;
+  color: #575757;
+  line-height: 0;
+}
+
+/* PROFILE PHOTO */
+
+
+.photo__img {
+  border-radius: 50%;
+  transform: rotate(0.02turn);
+  box-sizing: border-box;
+  padding: 5px;
+  margin-right: 43px;
+  margin-top: 33px;
+  height: 173px;
+  border: 4px solid #f7d039;
+}
+
+/* SOCIAL MEDIA */
+
+.socialMedia {
+  display: flex;
+  width: 198px;
+  margin-top: 9px;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+
+.socialMedia .socialMedia__icon {
+  display: flex;
+  width: 30px;
+  height: 24.42px;
+  top: 5.77px;
+  left: 3px;
+  left: 8.33%;
+  right: 8.33%;
+  top: 16.04%;
+  bottom: 16.12%;
+}
+
+
+/* WORK EXPERIENCE - PROJECTS - CUSTOMERS  */
+
+.facts {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 2px;
+    gap: 90px;
+}
+
+.facts__title p:first-child {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+  color: #575757;
+  position: relative;
+  top: 22px;
+  font-weight: bold;
+}
+
+.facts__title p:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 22px;
+  color: #575757;
+}
+
+/* DOWNLOAD & CONTACT ME BUTTONS */
+
+.profileButtons {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  top: 20px;
+  gap: 70px;
+}
+
+.profileButtons__button {
+  border: 0;
+    border-radius: 10px;
+    padding: 0px;
+    background-color: #fbd144;
+    font-family: "Poppins";
+    height: 72px;
+    width: 255px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #3d3d3d;
+    justify-content: center;
+}
+
+.profileButtons__button:hover {
+  cursor: pointer;
+}
+
+.profileButtons__icon {
+  position: relative;
+  right: 16.67%;
+  bottom: 8.33%;
+  width: 17.99px;
+  height: 20px;
+  top: 2px;
+  left: 16.5px;
+}
+
+.profileButtons__button__contactMe {
+  left: 22%;
+  background: #ffffff;
+}
+
+/* PORTFOLIO & SKILLS */
+
+.container {
+  max-width: 750px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container__span {
+  background-color: #d7d7d7;
+    height: 80px;
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container__span span {
+  position: relative;
+  top: 26%;
+}
+
+.container__span--colorSkills {
+  background-color: #ffffff;
+}
+
+/* ARTICLES */
+
+.projects {
+    display: grid;
+    margin-top: 38px;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+
+.projects__article {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.projects__article:hover {
+  opacity: 0.7;
+}
+
+.projects__article__first {
+  position: relative;
+}
+/* FOOTER */
+
+.footer {
+    height: 33px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/************* DARKMODE *************/
+
+/* body.dark .btnSwitch__img {
+      background-image: url(./icons/darkmode/dark.svg); 
+    } */
+
+body.dark .backgroundBtn {
+  background-color: #171f26;
+}
+body.dark {
+  background: #0c151d;
+}
+
+/* testing  */
+
+/* body.dark .socialMedia__icon-light{
+      background-image: url(../04-css/icons/darkmode/github_darkmode.svg);
+    } */
+
+/* testing  */
+
+body.dark .profile__name {
+  color: #f1f2f4;
+}
+
+body.dark .profile__profession {
+  color: #a3abb2;
+}
+
+body.dark .facts__title p {
+  color: #a3abb2;
+}
+
+body.dark .profileButtons__button__contactMe {
+  color: #a3abb2;
+  background-color: #171f26;
+}
+
+body.dark .container {
+  background-color: #171f26;
+}
+
+body.dark .container__span--colorPortfolio {
+  background-color: #0c151d;
+  color: #a3abb2;
+}
+
+body.dark .container__span--colorSkills {
+  color: #a3abb2;
+  background-color: #171f26;
+}
+
+body.dark footer {
+  color: #a3abb2;
+}

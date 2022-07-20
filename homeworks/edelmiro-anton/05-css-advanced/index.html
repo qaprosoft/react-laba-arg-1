@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobileStyles.css" />
+    <link rel="stylesheet" href="tabletStyles.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS -->
+  </head>
+  <main>
+  <body id="dark">
+    <div class="btnSwitch">
+      <span class="backgroundBtn"
+        ><img
+          src="./icons/darkmode/light.svg"
+          alt="icon_darkmode"
+          class="btnSwitch__img"
+      /></span>
+    </div>
+
+    <!-- <main> -->
+      <header class="header">
+        <div class="intro">
+          <div class="photo">
+            <img src="./img/photo.png" alt="" class="photo__img" />
+          </div>
+          <div class="profile">
+            <p class="profile__name">Victor Alvarado</p>
+            <p class="profile__profession">Software Engineer</p>
+            <div class="socialMedia">
+              <a href="#"
+                ><img
+                  src="./icons/github_icon.svg"
+                  alt="github_icon"
+                  class="socialMedia__icon socialMedia__icon-light"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./icons/twitter_icon.svg"
+                  alt="twitter_icon"
+                  class="socialMedia__icon socialMedia__icon-light"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./icons/linkedin_icon.svg"
+                  alt="linkedin_icon"
+                  class="socialMedia__icon socialMedia__icon-light"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./icons/youtube_icon.svg"
+                  alt="you"
+                  class="socialMedia__icon socialMedia__icon-light"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="facts">
+        <div class="facts__title">
+          <p class="years">7</p>
+          <p class="experience">
+            Years of work <br />
+            experience
+          </p>
+        </div>
+        <div class="facts__title">
+          <p>50+</p>
+          <p>
+            Completed <br />
+            projects
+          </p>
+        </div>
+        <div class="facts__title">
+          <p class="adssad">20+</p>
+          <p class="experience">
+            Satisfied <br />
+            customers
+          </p>
+        </div>
+      </div>
+
+      <div class="profileButtons">
+        <button class="profileButtons__button">
+          Download CV
+          <img
+            src="./icons/arrow.svg"
+            alt="download_icon"
+            class="profileButtons__icon"
+          />
+        </button>
+        <button
+          class="profileButtons__button profileButtons__button__contactMe"
+        >
+          Contact me
+        </button>
+      </div>
+
+      <section class="sectionPortfolio">
+        <div class="container">
+          <div class="container__span container__span--colorPortfolio">
+            <span>Portfolio</span>
+          </div>
+          <div class="container__span container__span--colorSkills">
+            <span>Skills</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <article class="projects__article">
+          <img
+            src="./img/projects/project_1.png"
+            alt=""
+            class="projects__article__first"
+          />
+        </article>
+        <!-- <article >
+          <img class="yellowImg">
+        </article> -->
+        <article class="projects__article">
+          <img src="./img/projects/project_2.png" alt="" />
+        </article>
+        <article class="projects__article">
+          <img src="./img/projects/project_3.png" alt="" />
+        </article>
+        <article class="projects__article">
+          <img src="./img/projects/project_4.png" alt="" />
+        </article>
+        <article class="projects__article">
+          <img src="./img/projects/project_5.png" alt="" />
+        </article>
+        <article class="projects__article">
+          <img src="./img/projects/project_6.png" alt="" />
+        </article>
+      </section>
+
+      <div id="arrow" class="container__scrollTop"></div>
+
+      <footer class="footer">
+        <p>© Edelmiro Anton. 2022 All rigths reserved</p>
+      </footer>
+    </main>
+
+    <script src="./darkmode.js"></script>
+    <script src="./scrollTop.js"></script>
+  </body>
+</html>

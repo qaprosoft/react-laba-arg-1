@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <hr />
+      <nav><a href="./home.html">Home</a> <a href="./contact.html">Contact</a></nav>
+      <hr />
+    </header>
+    <section>
+      <h1>Contact Me</h1>
+
+      <form action="" id="contactForm">
+        <div>
+          <label for="fullName">Full Name * </label>
+          <input name="first" id="fullName" type="text" placeholder="Your Name..." required />
+          <input name="last" id="fullName" type="text" placeholder="Your last name..." required />
+          <br />
+        </div>
+
+        <div>
+          <label name="phone" for="phoneNumber">Phone Number * </label>
+          <input id="phoneNumber" placeholder="Your phone..." type="tel" required />
+          <br />
+        </div>
+
+        <div>
+          <label for="country">Country</label>
+          <select id="country" name="country" form="contactForm">
+            <option value="Arg">Argentina</option>
+            <option value="Ucr">Ucrania</option>
+            <option value="Pol">Polonia</option>
+            <option value="Aus">Australia</option>
+          </select>
+        </div>
+
+        <div>
+          <textarea placeholder="Your message.." name="textArea" form="contactForm" cols="30" rows="10"></textarea>
+          <br />
+        </div>
+
+        <div>
+          <button type="submit" name="submitted">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <hr />
+
+    <footer>
+      <a href="https://www.facebook.com/julian.oviedo.7/">
+        <img src="../resources/icons8-facebook.svg" alt="facebook" />
+      </a>
+
+      <a href="https://www.linkedin.com/in/julian-oviedo-17b605136/">
+        <img src="../resources/icons8-linkedin.svg" alt="linkedin" />
+      </a>
+
+      <a href="https://www.instagram.com/julian.oviedo.7/">
+        <img src="../resources/icons8-instagram.svg" alt="instagram" />
+      </a>
+
+      <a href="https://twitter.com/JulianOviedos">
+        <img src="../resources/icons8-twitter.svg" alt="twitter" />
+      </a>
+    </footer>
+  </body>
+</html>

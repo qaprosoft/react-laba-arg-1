@@ -1,0 +1,137 @@
+body {
+  font-size: 14px;
+}
+
+.dark {
+  --non-changing-white: #0c151d;
+}
+
+/* light-dark-mode icon */
+.header__light-dark-mode-button {
+  width: 20.04px;
+  height: 20.01px;
+  padding: 13.99px;
+  margin: 20px 0 30px 0;
+}
+
+/* profile main info (picture, name, role) */
+
+.basic-info {
+  width: auto;
+  display: block;
+}
+
+.basic-info__wrapper {
+  text-align: center;
+}
+
+.basic-info__profile-picture {
+  height: 107px;
+  width: 107px;
+  padding: 4px;
+  margin: 0;
+}
+
+.basic-info__name {
+  font-size: 32px;
+  margin: 40px 0 0 0;
+}
+
+.basic-info__role {
+  font-size: 14px;
+  margin: 0 0 22px 0;
+}
+
+/* social media icons */
+.basic-info__icons img {
+  height: 20px;
+  margin: 0 15px;
+}
+
+/* achievements (7 years of work experience, etc) */
+.achievements__list {
+  margin: 0 20px;
+}
+
+.achievements__item {
+  margin: 52.25px 13.5px;
+  width: 102px;
+}
+
+.achievements__item__number {
+  font-size: 16px;
+}
+
+/* hiring info (download CV, contact me buttons) */
+.hiring-links__buttons {
+  margin: 16px;
+}
+
+.hiring-links__download-cv,
+.hiring-links__contact {
+  width: 158px;
+  height: 44px;
+  margin: 16px 7px;
+  font-size: 12px;
+}
+
+.hiring-links__contact {
+  background-color: var(--white);
+  color: var(--contact-dark-grey);
+}
+
+.hiring-links__download-cv-text {
+  margin: 0px 9.67px;
+}
+
+.hiring-links__download-cv-icon {
+  width: 10.67px;
+  height: 11.67px;
+}
+
+/* portfolio + skills buttons */
+
+.content__buttons {
+  width: 330px;
+  height: 64px;
+  margin: 41px auto;
+}
+
+.content__buttons__skills-button,
+.content__buttons__portfolio-button {
+  width: 154px;
+  height: 50.3px;
+}
+
+/* projects */
+
+.content__projects__list {
+  margin: 0 18px;
+  width: auto;
+}
+
+.content__projects__item {
+  width: 340px;
+  height: 210px;
+  margin: 0 9px 30px 9px;
+}
+
+/* footer */
+
+.footer {
+  margin: 20px auto 90px auto;
+}
+
+.footer__go-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  background-color: var(--white);
+  color: var(--contact-dark-grey);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+}

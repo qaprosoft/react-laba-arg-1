@@ -1,0 +1,43 @@
+:root {
+  --bg-light-color: #e5e5e5;
+  --bg-dark-color: #0c151d;
+  --yellow: #fbd144;
+
+  /*light mode*/
+  --light-text-lm: #575757;
+  --dark-text-lm: #3d3d3d;
+
+  /*dark mode*/
+  --light-text-dm: #f1f2f4;
+  --dark-text-dm: #a3abb2;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: var(--bg-light-color);
+  display: grid;
+  justify-items: center;
+  padding: 10rem 10rem 0 10rem;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
