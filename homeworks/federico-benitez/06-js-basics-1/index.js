@@ -205,3 +205,17 @@ function findOdd(A) {
 
   return odd.value;
 }
+
+/**
+ * Exercise 10
+ * https://www.codewars.com/kata/find-the-parity-outlier
+ */
+
+function findOutlier(integers) {
+  const evens = integers.filter((n) => n % 2 === 0);
+  const odds = integers.filter((n) => n % 2 !== 0);
+
+  if (evens.length === 1) return evens[0];
+
+  return odds[0];
+}
