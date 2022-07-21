@@ -266,7 +266,32 @@ function duplicateEncode(word){
 }
 
 // KATA 16.	https://www.codewars.com/kata/5693239fb761dc8670000001
+
 // KATA 17.	https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+function rowBuilder(floorNumber, nFloors){
+  //floorNumber is the current floor being built
+  //nFloor is the total floors in tower
+  let row='';
+  let blocksAdded = 0;
+  let spaces=  nFloors - (floorNumber);  //spaces per side
+  
+  row += " ".repeat(spaces)
+  while (blocksAdded < 2* floorNumber -1){
+    row += "*";
+    blocksAdded++;
+  }
+  row += " ".repeat(spaces)
+  return row;
+}
+
+function towerBuilder(nFloors) {
+  let tower = [];
+  for ( let i=1 ; i <= nFloors; i++){
+    tower.push(rowBuilder(i, nFloors));
+  }
+  return tower;
+}
+
 // KATA 18.	https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
 function makeLetterStand(word, pos){
   //pos is index of the letter that's going to be uppercase
@@ -306,7 +331,7 @@ function stringBreakers(n, string){
       brokenParts.push('\n');      
     }
   }
-  // for remainder characters}
+  // for remainder characters
   if (string.length % n){
     brokenParts.push('\n');
     brokenParts.push(string.slice(n*numberOfBrokenParts));
