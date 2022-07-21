@@ -1,0 +1,134 @@
+@media (min-width: 601px) and (max-width: 1024px) {
+  /*------------------*
+  *       HEADER      *
+  * ------------------*/
+
+  /* CARD */
+  .card {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__image {
+    background: var(--btn-bg-color);
+  }
+
+  /* ICON */
+  .icon {
+    margin: 0 2rem;
+  }
+
+  /* LIST */
+  .list {
+    font-size: 100%;
+    line-height: 21px;
+    width: 50%;
+  }
+
+  .list__item--mobile {
+    display: block;
+  }
+
+  .list__item--desktop {
+    display: none;
+  }
+
+  /* BUTTON STACK */
+  .button-stack {
+    width: 70%;
+  }
+
+  .button:active {
+    border: 1px solid var(--sub-txt-color);
+  }
+
+  .button__image {
+    margin: 0 0 2px 10px;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    width: 70%;
+  }
+
+  nav button {
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  nav button:active {
+    background: var(--main-bg-color);
+  }
+
+  /*------------------*
+  *       MAIN        *
+  * ------------------*/
+
+  /* IMPOSTER */
+  .imposter {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* CONTAINER */
+  .container__img {
+    width: 30vw;
+    height: 100%;
+    margin-left: 5%;
+  }
+
+  /* OVERLAY */
+  .overlay {
+    width: 30vw;
+    height: 100%;
+    top: 0;
+    left: 5%;
+    text-align: center;
+  }
+
+  .overlay__text {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 100%;
+    line-height: 150%;
+  }
+
+  .overlay__text--big {
+    font-size: 1rem;
+  }
+
+  /* LINK ICON */
+  .link-icon {
+    margin: 3%;
+  }
+
+  /* ARROW ICON */
+  .arrow-icon {
+    margin: 0 0 1rem 0;
+    width: 3vw;
+    height: auto;
+  }
+
+  /*------------------*
+  *       FOOTER      *
+  * ------------------*/
+
+  footer {
+    width: 282px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px auto;
+  }
+}

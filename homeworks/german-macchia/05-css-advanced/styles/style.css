@@ -1,0 +1,111 @@
+:root {
+  --main-bg-color: #e5e5e5;
+  --btn-bg-color: #ffffff;
+  --nav-txt-color: #19191b;
+  --sub-txt-color: #575757;
+  --nav-btn-color: #d7d7d7;
+  --h1-color: #3d3d3d;
+  --prof-btn-color: #3d3d3d;
+  --yellow-btn-tone: #fbd144;
+  --brightness: 1;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------------*
+*       BASIC       *
+* ------------------*/
+
+body {
+  background: var(--main-bg-color);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 130%;
+  line-height: 130%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  background: var(--btn-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 5%;
+  height: 10vh;
+  width: 50%;
+  display: flex;
+}
+
+nav button {
+  border-radius: 10px;
+  min-width: 150px;
+  background: var(--btn-bg-color);
+  border: none;
+  color: var(--nav-txt-color);
+  margin: 1%;
+  width: 50%;
+}
+
+nav button:hover {
+  background: var(--main-bg-color);
+  border: solid 2px var(--btn-bg-color);
+}
+
+footer {
+  text-align: center;
+  color: var(--sub-txt-color);
+  filter: brightness(var(--brightness));
+  margin: 2% 0 1%;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  color: var(--h1-color);
+  margin: 0;
+  font-size: 2.5em;
+  line-height: 169%;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  color: var(--sub-txt-color);
+  margin: 0;
+  font-size: 1.3em;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  filter: brightness(var(--brightness));
+}
+
+strong {
+  font-size: 1.2em;
+  line-height: 136%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin: 5% 0;
+  min-width: 150px;
+}
