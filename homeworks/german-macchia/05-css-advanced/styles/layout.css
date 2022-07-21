@@ -131,10 +131,6 @@
   margin: 0 auto;
 }
 
-.container__img {
-  width: 100%;
-}
-
 /* CONTAINER */
 .container {
   position: relative;
@@ -143,6 +139,11 @@
   margin: 0 10% 0 9%;
 }
 
+.container__img {
+  width: 100%;
+}
+
+/* OVERLAY */
 .overlay {
   position: absolute;
   text-align: center;

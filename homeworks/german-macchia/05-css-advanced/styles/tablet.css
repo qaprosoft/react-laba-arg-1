@@ -82,12 +82,14 @@
     align-content: center;
   }
 
+  /* CONTAINER */
   .container__img {
     width: 30vw;
     height: 100%;
     margin-left: 5%;
   }
 
+  /* OVERLAY */
   .overlay {
     width: 30vw;
     height: 100%;
@@ -97,7 +99,6 @@
     text-align: center;
   }
 
-  /* CONTAINER */
   .overlay__text {
     font-size: 0.8rem;
     text-align: center;

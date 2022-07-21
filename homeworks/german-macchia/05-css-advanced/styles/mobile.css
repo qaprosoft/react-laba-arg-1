@@ -98,12 +98,14 @@
     margin: 5% auto;
   }
 
+  /* CONTAINER */
   .container {
     width: 100%;
     margin: 0 0 5%;
   }
 
-  .overlay__text{
+  /* OVERLAY */
+  .overlay__text {
     font-size: 90%;
   }
 
