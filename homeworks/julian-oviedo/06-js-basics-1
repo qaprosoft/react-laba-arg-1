@@ -1,0 +1,68 @@
+// katas 1 https://www.codewars.com/kata/opposite-number
+function oppositeNumber(num) {
+    return num * -1;
+}
+
+
+// katas 2 http://www.codewars.com/kata/basic-mathematical-operations
+function mathematicOperation(sign, number1, number2) {
+    return number1 + sign + number2
+}
+
+// katas 3 http://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
+
+function printArray(array){
+    return array.toString();
+  }
+
+// katas 4 http://www.codewars.com/kata/transportation-on-vacation
+
+function rentalCarCost(d) {
+    let payment = 40
+    if( d > 0 && d <= 2){ 
+    return payment * d} 
+    else if ( d >= 3 && d < 7) {
+        return (payment * d) -20
+    } else if (d >= 7 ) {
+        return (payment * d) -50
+    } 
+}
+
+//katas 5 http://www.codewars.com/kata/calculating-with-functions
+
+
+
+
+
+
+// katas 6 http://www.codewars.com/kata/get-the-middle-character
+
+function getMiddle(s)
+{
+   if ( s.length%2 == 0) {
+        return s.substring(((s.length/2)-1),((s.length/2)+1))
+    } else {
+        return s[(s.length/2)-0.5]
+    }
+}
+
+// katas 7 http://www.codewars.com/kata/partition-on
+
+
+
+
+
+
+// katas 8 http://www.codewars.com/kata/word-count
+// katas 9 https://www.codewars.com/kata/find-the-odd-int/
+// katas 10 https://www.codewars.com/kata/find-the-parity-outlier
+// katas 11 https://www.codewars.com/kata/zipwith
+// katas 12 https://www.codewars.com/kata/filter-the-number
+// katas 13 https://www.codewars.com/kata/n-th-fibonacci
+// katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
+// katas 15 https://www.codewars.com/kata/duplicate-encoder
+// katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
+// katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+// katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+// katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
+// katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
