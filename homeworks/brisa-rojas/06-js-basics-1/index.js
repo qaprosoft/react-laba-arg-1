@@ -289,6 +289,34 @@ function wave(str){
   return wavedWord;
 }
 // KATA 19.	https://www.codewars.com/kata/59d398bb86a6fdf100000031
+function stringBreakers(n, string){
+  let brokenParts = [];
+  let numberOfBrokenParts;
+
+  string = string.split(/\s/); //removes all spaces
+  string= string.join(''); // cast into string again
+  
+  
+  numberOfBrokenParts =  Math.floor(string.length / n) ; 
+  
+  // for "whole" parts
+  for (let i = 0 ; i < numberOfBrokenParts ; i++){
+    brokenParts.push(string.slice( n*i , n*(i+1)));
+    if (i !== (numberOfBrokenParts-1)){ //if it's not last iteration
+      brokenParts.push('\n');      
+    }
+  }
+  // for remainder characters}
+  if (string.length % n){
+    brokenParts.push('\n');
+    brokenParts.push(string.slice(n*numberOfBrokenParts));
+  }  
+  
+  
+  brokenParts = brokenParts.join('');
+  return brokenParts;
+  
+}
 // KATA 20.	https://www.codewars.com/kata/514a024011ea4fb54200004b
 
 
