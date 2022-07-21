@@ -199,7 +199,7 @@ function duplicateEncode(string) {
   return string
     .toLowerCase()
     .split('')
-    .map(function (elem, index, array) {
+    .map(function (elem, _, array) {
       if (array.indexOf(elem) === array.lastIndexOf(elem)) {
         return '(';
       } else {
@@ -207,4 +207,22 @@ function duplicateEncode(string) {
       }
     })
     .join('');
+}
+
+// 19. https://www.codewars.com/kata/59d398bb86a6fdf100000031
+
+function stringBreakers(n, string) {
+  return string
+    .replace(/\s/g, '')
+    .replace(new RegExp('.{' + n + '}', 'g'), '$&\n')
+    .trim();
+}
+
+// 20. https://www.codewars.com/kata/514a024011ea4fb54200004b
+
+function domainName(url) {
+  url = url.replace('http://', '');
+  url = url.replace('https://', '');
+  url = url.replace('www.', '');
+  return url.split('.')[0];
 }
