@@ -209,6 +209,21 @@ function duplicateEncode(string) {
     .join('');
 }
 
+// 18. https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+
+function wave(string) {
+  let waveArray = [];
+  for (let i = 0; i < string.length; i++) {
+    let letter = string[i];
+    if (letter === ' ') {
+      continue;
+    } else {
+      waveArray.push(string.slice(0, i) + letter.toUpperCase() + string.slice(i + 1));
+    }
+  }
+  return waveArray;
+}
+
 // 19. https://www.codewars.com/kata/59d398bb86a6fdf100000031
 
 function stringBreakers(n, string) {
