@@ -56,8 +56,95 @@ function getMiddle(s) {
 }
 
 // KATA 7. https://www.codewars.com/kata/partition-on
+function partitionOn(pred, items) {
+  
+  let mapped = items.map(pred); // items mapped to T and F 
+  items, mapped = order(items, mapped);
+  return mapped.indexOf(true); 
+}
+
+function order(arr, arrBoolean){
+  let numberOfFalses = 0;
+  
+  for (let i=0; i < arr.length; i++ ){
+    if (!arrBoolean[i]){numberOfFalses++;}
+  }
+  
+  if(numberOfFalses){
+    while(numberOfFalses){   
+    
+      let index = arrBoolean.lastIndexOf(false);
+      // adds "false" element to the start
+      arr.unshift(arr[index]);    
+      arrBoolean.unshift(arrBoolean[index]);
+
+      // deletes original appeareance of "false" element
+      index++; // index has incremented because of the addition at the beggining
+      arr.splice(index, 1);
+      arrBoolean.splice( index , 1);
+    
+      numberOfFalses--; 
+    }
+    
+  }
+  
+  return arr, arrBoolean;
+}
+// a faster version (because of the use of push instead of unshift is the following), it follows the same logic as 
+//the previous one but adds the numbers to the end of the array instead
+function partitionOn(pred, items) {
+  
+  let mapped = items.map(pred); // items mapped to T and F 
+  items, mapped = order(items, mapped);
+  return mapped.indexOf(true); 
+}
+
+function order(arr, arrBoolean){
+  let numberOfTrues = 0;
+  
+  for (let i=0; i < arr.length; i++ ){
+    if (arrBoolean[i]){numberOfTrues++;}
+  }
+  
+  if(numberOfTrues){
+    while(numberOfTrues){   
+    
+      let index = arrBoolean.indexOf(true);
+      // adds "true" element to the end
+      arr.push(arr[index]);    
+      arrBoolean.push(arrBoolean[index]);
+
+      // deletes original appeareance of "true" element
+      arr.splice(index , 1);
+      arrBoolean.splice(index , 1);
+    
+      numberOfTrues--; 
+    }
+    
+  }
+  
+  return arr, arrBoolean;
+}
+
+
 // KATA 8.	http://www.codewars.com/kata/word-count
+// https://www.codewars.com/kata/570cc83df616a85944001315 -- the provided link is broken, I replaced it with the one below;
+
 // KATA 9.	https://www.codewars.com/kata/find-the-odd-int/
+function findOdd(A) {
+  appearances = {};
+  
+  A.forEach(function(num){
+  appearances[num] = (appearances[num] || 0) + 1;
+  });
+
+  for (num in appearances){
+    if(appearances[num]%2){
+      return parseInt(num); //parsed to an int
+    }
+  }
+}
+
 // KATA 10.	https://www.codewars.com/kata/find-the-parity-outlier
 
 // KATA 11: https://www.codewars.com/kata/zipwith
