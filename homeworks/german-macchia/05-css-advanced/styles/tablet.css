@@ -95,19 +95,23 @@
     height: 100%;
     top: 0;
     left: 5%;
-    border-radius: 10px;
     text-align: center;
   }
 
   .overlay__text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
-    width: 11rem;
     width: 100%;
+    line-height: 150%;
   }
 
   .overlay__text--big {
     font-size: 1rem;
+  }
+
+  /* LINK ICON */
+  .link-icon {
+    margin: 3%;
   }
 
   /* ARROW ICON */
