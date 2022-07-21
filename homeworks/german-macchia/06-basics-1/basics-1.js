@@ -262,6 +262,21 @@ let FilterString = function (value) {
 };
 
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
+function nthFibo(n) {
+  const FIRST_NUM = 0;
+  const SECOND_NUM = 1;
+  const LAST_INDEX = n - 1;
+  let numbers = [FIRST_NUM, SECOND_NUM];
+
+  if (n > 2) {
+    for (let i = 1; i < LAST_INDEX; i++) {
+      numbers.push(numbers[i - 1] + numbers[i]);
+    }
+  }
+
+  return numbers[LAST_INDEX];
+}
+
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
 // katas 15 https://www.codewars.com/kata/duplicate-encoder
 // katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
