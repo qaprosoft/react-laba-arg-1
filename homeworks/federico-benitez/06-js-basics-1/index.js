@@ -260,3 +260,40 @@ function nthFibo(n) {
 
   return fib[n - 1];
 }
+
+/**
+ * Exercise 14 - Cat and Mouse - 2D Version
+ * https://www.codewars.com/kata/cat-and-mouse-2d-version/
+ */
+
+function catMouse(map, moves) {
+  const mouseCoords = findCoordinates(map, 'm');
+  const catCoords = findCoordinates(map, 'C');
+
+  if (!mouseCoords || !catCoords) return 'boring without two animals';
+
+  if (areCloser(catCoords, mouseCoords, moves)) return 'Caught!';
+
+  return 'Escaped!';
+}
+
+function areCloser(cat, mouse, moves) {
+  const { x: x1, y: y1 } = cat;
+  const { x: x2, y: y2 } = mouse;
+  return Math.hypot(Math.abs(x2 - x1), Math.abs(y2 - y1)) <= moves;
+}
+
+function findCoordinates(map, animal) {
+  const array2d = map.split(/\r?\n/);
+  let cords;
+  array2d.forEach((line, index) => {
+    const x = line.split('').findIndex((char) => char === animal);
+    if (x !== -1) {
+      cords = {
+        x,
+        y: index,
+      };
+    }
+  });
+  return cords;
+}
