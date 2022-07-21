@@ -132,20 +132,41 @@ function order(arr, arrBoolean){
 
 // KATA 9.	https://www.codewars.com/kata/find-the-odd-int/
 function findOdd(A) {
-  appearances = {};
+  let appearances = {};
   
   A.forEach(function(num){
   appearances[num] = (appearances[num] || 0) + 1;
   });
 
   for (num in appearances){
-    if(appearances[num]%2){
+    if(appearances[num]%2){ 
       return parseInt(num); //parsed to an int
     }
   }
 }
 
 // KATA 10.	https://www.codewars.com/kata/find-the-parity-outlier
+function findOutlier(integers){
+  let even = [];
+  let odd = [];
+  let outlier ;
+  
+  //separate in odd and even integers
+  integers.forEach( function(num){
+    if(num % 2){ odd.push(num); }
+    else { even.push(num) };
+  })
+  
+  //there will be only 1 array with length = 1
+  if (even.length - 1) { // even.length should be more than 2 to be true
+    outlier = odd[0];
+  }
+  else { 
+    outlier = even[0];
+  }
+  
+  return outlier;
+}
 
 // KATA 11: https://www.codewars.com/kata/zipwith
 function zipWith(fn,a0,a1) {
