@@ -96,10 +96,18 @@ function findOutlier(arr){
 
 
 
-
-
-
 // katas 11 https://www.codewars.com/kata/zipwith
+
+function zipWith(fn,a0,a1) {
+    let newArr = []
+    for(let i = 0; i < Math.min(a0.length,a1.length); i++) {
+     newArr.push(fn(a0[i],a1[i]))
+    } 
+    return newArr;
+  }
+
+
+
 // katas 12 https://www.codewars.com/kata/filter-the-number
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
