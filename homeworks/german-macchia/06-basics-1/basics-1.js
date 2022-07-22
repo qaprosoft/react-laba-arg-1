@@ -178,7 +178,7 @@ function partitionOn(predicate, arr) {
   return indexOfFalse;
 }
 
-// katas 8 http://www.codewars.com/kata/word-count
+// katas 8 http://www.codewars.com/kata/
 
 /*************** Status Code 404!! ***************/
 
@@ -318,8 +318,8 @@ function catMouse(map, moves) {
 function duplicateEncode(word) {
   const ONCE = "(";
   const MORE_THAN_ONCE = ")";
-  word = word.toLowerCase();
   let newWord = "";
+  word = word.toLowerCase();
 
   for (letter of word) {
     if (word.indexOf(letter) === word.lastIndexOf(letter)) {
@@ -333,7 +333,26 @@ function duplicateEncode(word) {
 }
 
 // katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
+
+//TO DO
+
 // katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+function towerBuilder(nFloors) {
+  const ASTERIC = "*";
+  let spaces = nFloors - 1;
+  let arr = [];
+  let cantAsteric = 1;
+
+  for (let i = 0; i < nFloors; i++) {
+    let base =
+      " ".repeat(spaces) + ASTERIC.repeat(cantAsteric + i) + " ".repeat(spaces);
+    arr.push(base);
+    cantAsteric++;
+    spaces--;
+  }
+  return arr;
+}
+
 // katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
 // katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
