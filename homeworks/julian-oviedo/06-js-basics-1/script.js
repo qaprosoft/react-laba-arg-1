@@ -81,6 +81,24 @@ function findOdd(A) {
 
 
 // katas 10 https://www.codewars.com/kata/find-the-parity-outlier
+
+
+function findOutlier(arr){
+    let oddRare = arr.filter (x => x % 2 !== 0)
+    console.log( oddRare);
+    let evenRare = arr.filter (x => x % 2 === 0)
+    console.log(evenRare);
+
+    if (oddRare.length > evenRare.length ){
+      return evenRare[0]
+    } else { return oddRare[0]}
+}
+
+
+
+
+
+
 // katas 11 https://www.codewars.com/kata/zipwith
 // katas 12 https://www.codewars.com/kata/filter-the-number
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
