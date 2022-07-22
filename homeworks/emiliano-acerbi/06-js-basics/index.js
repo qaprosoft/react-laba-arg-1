@@ -101,9 +101,35 @@ function getMiddle(s) {
   return s[Math.floor(s.length / 2)];
 }
 
-// 7. Not done
+// 7. http://www.codewars.com/kata/partition-on
 
-// 8. Not done
+function partitionOn(pred, items) {
+  // Array of false statements
+  let f = items.filter(function (e) {
+    return !pred(e);
+  });
+
+  // Array of true statements
+  let t = items.filter(pred);
+
+  // Cleans the array ( items = [] )
+  items.length = 0;
+
+  // Pushes the false and true statements as different arrays in items[]
+  for (let i = 0; i < f.length; i++) {
+    items.push(f[i]);
+  }
+
+  for (let i = 0; i < t.length; i++) {
+    items.push(t[i]);
+  }
+
+  // The result is items = [[...false statements], [...true statements]]]
+
+  return f.length;
+}
+
+// 8. Link doesn't work
 
 // 9. https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript
 
@@ -177,7 +203,7 @@ const FilterString = function (value) {
   return parseInt(value.match(regex).join(''));
 };
 
-// 13.
+// 13. https://www.codewars.com/kata/n-th-fibonacci
 
 function nthFibo(number) {
   const fiboArray = [0, 1];
