@@ -5,8 +5,11 @@ function oppositeNumber(num) {
 
 
 // katas 2 http://www.codewars.com/kata/basic-mathematical-operations
-function mathematicOperation(sign, number1, number2) {
-    return number1 + sign + number2
+function basicOp(operation, value1, value2){
+    if(operation === '+') return value1 + value2;
+     else if(operation === '-') return value1 - value2;
+     else if(operation === '*') return value1 * value2;
+     else if(operation === '/') return value1 / value2;
 }
 
 // katas 3 http://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
@@ -48,8 +51,12 @@ function getMiddle(s)
 
 // katas 7 http://www.codewars.com/kata/partition-on
 
-
-
+function partitionOn(pred, items) {
+    let falses = items.filter(v => !pred(v));
+    let trues = items.filter(v =>  pred(v));
+    items.splice(0); items.push(...falses); items.push(...trues);
+    return falses.length;
+  }
 
 
 
