@@ -152,3 +152,24 @@ function compare(a, b){
     else if (a>b) { return 1; }
     else {return 0;}
 }
+
+// OPTIONALS
+// https://www.codewars.com/kata/52597aa56021e91c93000cb0/javascript
+function moveZeros(arr) {
+    let zeros = 0;
+    
+    //delete zeros in the middle
+    while(arr.includes(0)){
+      arr.splice(arr.indexOf(0),1);
+      zeros += 1;
+    }
+     
+    console.log("out");
+    //add zeros at the end
+    while(zeros){
+      arr.push(0);
+      zeros -= 1;
+    }
+  
+    return arr;
+  }
