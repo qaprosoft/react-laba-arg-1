@@ -23,7 +23,6 @@ function basicOperations(operator, value1, value2) {
 }
 
 // KATA 3. http://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
-//From my understanding, this kata is asking for the string only, not for me to print it out.
 function printArray(array){
   return array.toString();
 }
@@ -55,32 +54,34 @@ function nine(mathOperator) { return mathExpression(9, mathOperator); }
 
 // MATH OPERATOR FUNCTIONS
 function plus(b) {
-	return function(a) {
-		return a + b;
-	}
+  return function(a) {
+    return a + b;
+  }
 }
 function minus(b) {
-	return function(a) {
-		return a - b;
-	}
+  return function(a) {
+    return a - b;
+  }
 }
 function times(b) {
-	return function(a) {
-		return a * b;
-	}
+  return function(a) {
+    return a * b;
+  }
 }
 function dividedBy(b) {
-	return function(a) {
-		return Math.floor(a / b);
-	}
+  return function(a) {
+    return Math.floor(a / b);
+  }
 }
 
 // AUXILIAR FUNCTION
 function mathExpression(number, mathOperator){
-	if(!mathOperator)
-		return number;
-	return mathOperator(number);
+  if(!mathOperator)
+    return number;
+  return mathOperator(number);
 }
+
+
 // KATA 6. http://www.codewars.com/kata/get-the-middle-character
 function getMiddle(s) {
   let middleChar = ""; //initialize empty string
