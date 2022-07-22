@@ -9,6 +9,28 @@ function positiveSum(arr) {
 }
 
 // 2 - https://www.codewars.com/kata/5a3e1319b6486ac96f000049
+function pairs(arr){
+    let consecutivePairs = 0;
+    let n1;
+    let n2;
+    
+    
+    if (arr.length % 2) { // odd length, number with no pair at the end
+        arr.pop();
+    }
+  
+    
+    for ( let i = 0 ; i < arr.length ; i += 2 ){
+        n1 = arr[i];
+        n2 = arr [i+1];
+        
+        if ( n1 == n2+1 || n2 == n1+1 ){
+            consecutivePairs++;
+        }
+    }
+    
+    return consecutivePairs;
+}
 // 3 - https://www.codewars.com/kata/5aba780a6a176b029800041c
 function maxMultiple(divisor, bound){
     return divisor * Math.floor(bound/divisor);
@@ -40,6 +62,7 @@ function solve(arr){
     
     return solved; 
 }
+
 function compare(a,b){
     if(a > b) return 1;
     if(a < b) return -1;
