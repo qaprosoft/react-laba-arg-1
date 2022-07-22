@@ -41,6 +41,46 @@ function rentalCarCost(d) {
 }
 
 // KATA 5. http://www.codewars.com/kata/calculating-with-functions
+// NUMERICAL FUNCTIONS
+function zero(mathOperator) { return mathExpression(0, mathOperator); }
+function one(mathOperator) { return mathExpression(1, mathOperator); }
+function two(mathOperator) { return mathExpression(2, mathOperator); }
+function three(mathOperator) { return mathExpression(3, mathOperator); }
+function four(mathOperator) { return mathExpression(4, mathOperator); }
+function five(mathOperator) { return mathExpression(5, mathOperator); }
+function six(mathOperator) { return mathExpression(6, mathOperator); }
+function seven(mathOperator) { return mathExpression(7, mathOperator); }
+function eight(mathOperator) { return mathExpression(8, mathOperator); }
+function nine(mathOperator) { return mathExpression(9, mathOperator); }
+
+// MATH OPERATOR FUNCTIONS
+function plus(b) {
+	return function(a) {
+		return a + b;
+	}
+}
+function minus(b) {
+	return function(a) {
+		return a - b;
+	}
+}
+function times(b) {
+	return function(a) {
+		return a * b;
+	}
+}
+function dividedBy(b) {
+	return function(a) {
+		return Math.floor(a / b);
+	}
+}
+
+// AUXILIAR FUNCTION
+function mathExpression(number, mathOperator){
+	if(!mathOperator)
+		return number;
+	return mathOperator(number);
+}
 // KATA 6. http://www.codewars.com/kata/get-the-middle-character
 function getMiddle(s) {
   let middleChar = ""; //initialize empty string
