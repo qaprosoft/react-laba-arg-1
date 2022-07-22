@@ -217,7 +217,20 @@ function nthFibo(number) {
   return fiboArray[fiboArray.length - 1];
 }
 
-// 14.
+// 14. https://www.codewars.com/kata/cat-and-mouse-2d-version/
+
+function catMouse(map, moves) {
+  map = map.split('\n');
+
+  if (!map.some((v) => v.includes('C')) || !map.some((v) => v.includes('m'))) return 'boring without two animals';
+
+  let catX = map.map((v) => v.indexOf('C')).filter((v) => v > -1) * 1;
+  let catY = map.map((v) => v.includes('C')).indexOf(true) + 1;
+  let mX = map.map((v) => v.indexOf('m')).filter((v) => v > -1) * 1;
+  let mY = map.map((v) => v.includes('m')).indexOf(true) + 1;
+
+  return Math.abs(catX - mX) + Math.abs(catY - mY) <= moves ? 'Caught!' : 'Escaped!';
+}
 
 // 15.
 
