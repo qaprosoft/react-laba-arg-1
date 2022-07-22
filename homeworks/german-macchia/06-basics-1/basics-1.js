@@ -278,7 +278,60 @@ function nthFibo(n) {
 }
 
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
+function catMouse(map, moves) {
+  const CAT = "C";
+  const MOUSE = "m";
+  const COUGHT = "Caught!";
+  const ESCAPED = "Escaped!";
+  const NO_ANIMALS = "boring without two animals";
+  const NOT_FOUND = -1;
+  let matrix = map.split("\n");
+  let places = [];
+  let levels = [];
+  let sideMoves, verticalMoves, response;
+
+  for (let i = 0; i < matrix.length; i++) {
+    if (matrix[i].indexOf(CAT) !== NOT_FOUND) {
+      places.push(matrix[i].indexOf(CAT));
+      levels.push(i);
+    }
+    if (matrix[i].indexOf(MOUSE) !== NOT_FOUND) {
+      places.push(matrix[i].indexOf(MOUSE));
+      levels.push(i);
+    }
+  }
+
+  if (places.length !== 2) {
+    response = NO_ANIMALS;
+  } else {
+    sideMoves = Math.abs(places.reduce((prev, curr) => prev - curr));
+    verticalMoves = Math.abs(levels.reduce((prev, curr) => prev - curr));
+    sideMoves + verticalMoves <= moves
+      ? (response = COUGHT)
+      : (response = ESCAPED);
+  }
+
+  return response;
+}
+
 // katas 15 https://www.codewars.com/kata/duplicate-encoder
+function duplicateEncode(word) {
+  const ONCE = "(";
+  const MORE_THAN_ONCE = ")";
+  word = word.toLowerCase();
+  let newWord = "";
+
+  for (letter of word) {
+    if (word.indexOf(letter) === word.lastIndexOf(letter)) {
+      newWord += ONCE;
+    } else {
+      newWord += MORE_THAN_ONCE;
+    }
+  }
+
+  return newWord;
+}
+
 // katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
 // katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
 // katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
