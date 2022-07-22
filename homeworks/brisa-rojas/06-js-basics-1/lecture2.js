@@ -43,6 +43,21 @@ function compare(a,b){
 
 
 // KATA 6 https://www.codewars.com/kata/566044325f8fddc1c000002c
+function evenChars(string) {
+  let even = [];
+
+  //check length
+  if (string.length > 100 || string.length < 2){
+    return "invalid string";
+  }
+  string.toLowerCase();
+  string.split('');
+  for (let i = 1; i<string.length; i +=2){
+    even.push(string[i]);
+  }
+  
+  return even;   
+}
 // KATA 7 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 // KATA 8 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 // KATA 9 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
