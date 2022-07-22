@@ -354,5 +354,22 @@ function towerBuilder(nFloors) {
 }
 
 // katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+function wave(str) {
+  let arr = [];
+
+  for (let i = 0; i < str.length; i++) {
+    let firstPart = str.substring(i, 0);
+    let letter = str[i];
+    let lastPart = str.slice(i + 1);
+
+    if (!letter.includes(" ")) {
+      let newWord = firstPart + letter.toUpperCase() + lastPart;
+      arr.push(newWord);
+    }
+  }
+
+  return arr;
+}
+
 // katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
