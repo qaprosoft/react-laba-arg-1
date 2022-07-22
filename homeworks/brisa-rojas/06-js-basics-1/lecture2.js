@@ -19,9 +19,7 @@ function solve(arr){
   let maximum;
   let minimum;
   
-  arr.sort(compare); //ordered from min to max
-//  console.log(arr);
-  
+  arr.sort(compare); //ordered from min to max  
   
   while (arr.length){
     maximum = arr[arr.length-1];
@@ -33,7 +31,7 @@ function solve(arr){
       arr.shift();  
     }
   }
-  
+
   return solved; 
 }
 function compare(a,b){
@@ -41,7 +39,6 @@ function compare(a,b){
   if(a < b) return -1;
   return 0;  
 }
-
 
 // KATA 6 https://www.codewars.com/kata/566044325f8fddc1c000002c
 function evenChars(string) {
@@ -75,6 +72,9 @@ function gimme (triplet) {
 }
 
 // KATA 8 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
+const binaryArrayToNumber = arr => {
+  return parseInt(arr.join(''),2);
+};
 // KATA 9 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
 // KATA 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
 // KATA 11 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
