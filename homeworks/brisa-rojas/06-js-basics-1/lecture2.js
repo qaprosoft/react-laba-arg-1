@@ -6,9 +6,42 @@ function positiveSum(arr) {
     return accumulator;
   }
 // KATA 2 https://www.codewars.com/kata/5a3e1319b6486ac96f000049
+
 // KATA 3 https://www.codewars.com/kata/5aba780a6a176b029800041c
 // KATA 4 https://www.codewars.com/kata/514a6336889283a3d2000001
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter(number => !(number%2));
+}
 // KATA 5 https://www.codewars.com/kata/5a090c4e697598d0b9000004
+function solve(arr){
+  let solved = [];
+  let maximum;
+  let minimum;
+  
+  arr.sort(compare); //ordered from min to max
+//  console.log(arr);
+  
+  
+  while (arr.length){
+    maximum = arr[arr.length-1];
+    solved.push(maximum);
+    arr.pop();
+    if (arr.length){
+      minimum = arr[0];
+      solved.push(minimum);
+      arr.shift();  
+    }
+  }
+  
+  return solved; 
+}
+function compare(a,b){
+  if(a > b) return 1;
+  if(a < b) return -1;
+  return 0;  
+}
+
+
 // KATA 6 https://www.codewars.com/kata/566044325f8fddc1c000002c
 // KATA 7 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 // KATA 8 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
