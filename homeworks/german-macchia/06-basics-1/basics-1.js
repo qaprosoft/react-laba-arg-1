@@ -372,4 +372,21 @@ function wave(str) {
 }
 
 // katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
+function stringBreakers(n, string) {
+  let stringToReturn = "";
+  string = string.split(" ").join().replace(/,/g, "");
+
+  for (let i = 0; i < string.length; i++) {
+    let wordRange = i + n;
+
+    stringToReturn += string.substring(i, wordRange);
+    i = wordRange - 1;
+
+    if (wordRange < string.length) {
+      stringToReturn += "\n";
+    }
+  }
+  return stringToReturn;
+}
+
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
