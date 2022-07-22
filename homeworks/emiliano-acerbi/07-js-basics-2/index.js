@@ -63,3 +63,36 @@ function solve(arr) {
   }
   return res;
 }
+
+// 6. https://www.codewars.com/kata/566044325f8fddc1c000002c
+
+function evenChars(string) {
+  if (!string) return 'invalid string';
+  if (string.length === 1 || string.length > 100) return 'invalid string';
+
+  const splitted = string.split('');
+  const res = [];
+
+  for (let i = 0; i < splitted.length; i++) {
+    if (i % 2 === 1) {
+      res.push(splitted[i]);
+    }
+  }
+
+  return res;
+}
+
+// 7. https://www.codewars.com/kata/545a4c5a61aa4c6916000755
+
+function gimme(array) {
+  const max = Math.max(...array);
+  const min = Math.min(...array);
+  const middle = array.filter((el) => el !== max && el !== min);
+  return array.indexOf(middle[0]);
+}
+
+// 8. https://www.codewars.com/kata/578553c3a1b8d5c40300037c
+
+function binaryArrayToNumber(arr) {
+  return parseInt(arr.join(''), 2);
+}
