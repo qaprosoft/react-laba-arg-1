@@ -232,7 +232,7 @@ function catMouse(map, moves) {
   return Math.abs(catX - mX) + Math.abs(catY - mY) <= moves ? 'Caught!' : 'Escaped!';
 }
 
-// 15.
+// 15. https://www.codewars.com/kata/duplicate-encoder
 
 function duplicateEncode(string) {
   return string
@@ -246,6 +246,22 @@ function duplicateEncode(string) {
       }
     })
     .join('');
+}
+
+// 16. Couldn't do it
+
+// 17. https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+
+function towerBuilder(floors) {
+  let space = null;
+  let star = null;
+  let tower = [];
+  for (i = 1; i <= floors; i++) {
+    space = ' '.repeat(floors - i);
+    star = '*'.repeat(2 * i - 1);
+    tower.push(`${space}${star}${space}`);
+  }
+  return tower;
 }
 
 // 18. https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
