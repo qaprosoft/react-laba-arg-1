@@ -63,6 +63,57 @@ function getMiddle(s) {
 
 // Task 7 - http://www.codewars.com/kata/partition-on
 
+// Task 8 - https://www.codewars.com/kata/570cc83df616a85944001315/train/javascript
+
+let string = 'HelloWordls';
+
+function countWords(str) {
+  let toRemove = '';
+  let counter = 0;
+  let counterSepareteWords = 0;
+  let regex2 = /([a-z])([A-Z])/g; //Numbers counting as lowercase characters
+  let isCamelCase = /[\s_-]/g; //Check if the string has whitespaces, "-" or "_"
+
+  // Function for non-whitespace
+  function nonWhitespace(str) {
+    let separateWords = str.replace(regex2, '$1 $2');
+    let finalResult = separateWords.charAt(0).toUpperCase() + separateWords.slice(1);
+
+    let arrSeparetaWords = finalResult.split(' ');
+    console.log(finalResult.split(' '));
+    console.log(arrSeparetaWords.length);
+
+    arrSeparetaWords = arrSeparetaWords.filter((el) => {
+      return el != toRemove;
+    });
+    for (let i = 0; i < arrSeparetaWords.length; i++) {
+      counterSepareteWords++;
+    }
+    //     return counterSepareteWords;
+  }
+
+  if (!str.match(isCamelCase)) {
+    nonWhitespace(str);
+    return counterSepareteWords;
+  } else {
+    //   Convert the string into an array
+    let arrString = str.split(' ');
+
+    //   Filter method to delete white spaces
+    arrString = arrString.filter((el) => {
+      return el != toRemove;
+    });
+
+    //   Strings counter
+    for (let i = 0; i < arrString.length; i++) {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+console.log(countWords(string));
+
 // Task 9 - https://www.codewars.com/kata/find-the-odd-int/
 
 function findOdd(A) {
@@ -132,3 +183,110 @@ var FilterString = function (value) {
   // console.log(numbers)
   return parseInt(numbers.join(''));
 };
+
+// Task 20 - https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript
+
+let pagina = 'https://www.codewars.com';
+let spliteado = pagina.split('');
+spliteado;
+console.log(spliteado.splice());
+
+if (spliteado.includes('h')) {
+  console.log('contiene');
+}
+
+// function domainName(url){
+//   let http = "http://"
+//   let www = "www."
+
+//   if (url.includes(http)){
+//     console.log("incluye 'http://'")
+//   }
+//   return dominio
+// }
+
+// console.log(domainName(dominio))
+
+// funcion que elimina el "HTTPS://" O "HTTP://" O "WWW."
+let link = 'https://www.prueba.comfdfds';
+
+let regexWWW = /\bwww\b/g;
+let regexHttp = /\bhttp:\b/g;
+let regexHttps = /\bhttps:\b/g;
+let regexCom = /\b.com\b/g;
+
+function deleteProtocol(link) {
+  let withoutHttp = link.split(regexHttps).join('');
+  console.log(withoutHttp);
+  link = withoutHttp;
+  let withoutWWW = link.split('www.').join('');
+  withoutWWW;
+}
+
+deleteProtocol(link);
+
+function deleteWWW(link) {
+  let withoutWWW = link.split('www.').join('');
+  console.log(withoutWWW);
+}
+
+deleteWWW(link);
+
+let url = 'http://www.prueba.com';
+console.log(url.slice(0, 7));
+
+function obtainDomine(url) {
+  if (url.includes('http://')) {
+    let replaceHTTP = url.replace('http://', '');
+    return replaceHTTP;
+  }
+
+  if (url.includes('www.')) {
+    let replaceWWW = url.replace('www.', '');
+    return replaceWWW;
+  }
+
+  if (url.includes('.com')) {
+    let replaceWWW = url.replace('.com', '');
+    return replaceWWW;
+  }
+}
+
+console.log(obtainDomine(url));
+
+if (arr.toString().includes('http://')) {
+  let replaceHTTP = url.replace('http://', '');
+  replaceHTTP;
+}
+
+// if (url.includes("http://")){
+//   let replaceHTTP = url.replace("http://", "")
+//   replaceHTTP
+
+// **********************************************************
+function eliminaWWW(www) {
+  // separo los caracteres de mi url
+  let split = www.split('');
+  split;
+
+  let splice = split.splice(0, 4); //obtengo un array con mis elementos eliminados
+  let join = splice.join(''); // uno los elementos del array y lo transformo a un string
+
+  if (www.includes(join)) {
+    // compruebo que mi url tenga los elementos de mi array por splice
+    console.log('incluye el www');
+
+    let eliminoWWW = www.replace(join, '');
+    eliminoWWW; //elimino mi join de mi url y obtengo la url sin el WWWW
+  }
+}
+eliminaWWW(url);
+
+// funcion para eliminar el ".COM"
+function eliminoCom(com) {
+  console.log(com.split(''));
+}
+
+eliminoCom(url);
+
+// console.log(prueba.substring(4))
