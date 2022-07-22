@@ -76,5 +76,17 @@ const binaryArrayToNumber = arr => {
   return parseInt(arr.join(''),2);
 };
 // KATA 9 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+function findUniq(arr) {
+  let unique;
+  
+  for (let i = 0; i < arr.length; i++){
+    if (arr.indexOf(arr[i])==arr.lastIndexOf(arr[i])){
+      unique = arr[i];
+    }
+  }
+  
+  return unique;
+}
+
 // KATA 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
 // KATA 11 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
