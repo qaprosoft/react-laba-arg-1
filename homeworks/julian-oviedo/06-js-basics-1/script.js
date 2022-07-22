@@ -61,7 +61,25 @@ function partitionOn(pred, items) {
 
 
 // katas 8 http://www.codewars.com/kata/word-count
+
+
+/* broken link ? */
+
+
 // katas 9 https://www.codewars.com/kata/find-the-odd-int/
+
+function findOdd(A) {
+    for (let i = 0; i <= A.length-1; i += 1) {
+      
+      let arrLength = A.filter((elm) => elm === A[i]).length;
+      
+      if (arrLength % 2 !== 0) {
+        return A[i];
+      }
+    }
+  }
+
+
 // katas 10 https://www.codewars.com/kata/find-the-parity-outlier
 // katas 11 https://www.codewars.com/kata/zipwith
 // katas 12 https://www.codewars.com/kata/filter-the-number
