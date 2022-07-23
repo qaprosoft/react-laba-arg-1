@@ -96,7 +96,20 @@ function decipherThis(str) {
   }; 
 
 // task 11 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
-
+function sortArray(array) {
+    const sortedOddNumbers = array.filter(number => number % 2 !== 0).sort((a,b) => a-b)
+    const answer = [];
+    let indexOfSortedOddNumbers = 0
+    for (let i=0; i < array.length; i++) {
+      if (array[i] % 2 === 0) {
+        answer.push(array[i])
+      } else {
+        answer.push(sortedOddNumbers[indexOfSortedOddNumbers]);
+        indexOfSortedOddNumbers++
+      }
+    }
+    return answer
+  }
 
 // OPTIONAL ADVANCED task 1 https://www.codewars.com/kata/515bb423de843ea99400000a
 
