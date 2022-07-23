@@ -178,7 +178,7 @@ function partitionOn(predicate, arr) {
   return indexOfFalse;
 }
 
-// katas 8 http://www.codewars.com/kata/
+// katas 8 http://www.codewars.com/kata/word-count
 
 /*************** Status Code 404!! ***************/
 
@@ -374,7 +374,7 @@ function wave(str) {
 // katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
 function stringBreakers(n, string) {
   let stringToReturn = "";
-  string = string.split(" ").join().replace(/,/g, "");
+  string = string.replace(/\W/g, "");
 
   for (let i = 0; i < string.length; i++) {
     let wordRange = i + n;
@@ -390,3 +390,11 @@ function stringBreakers(n, string) {
 }
 
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
+function domainName(url) {
+  let domain = url
+    .replace("http://", "")
+    .replace("https://", "")
+    .replace("www.", "")
+    .split(".")[0];
+  return domain;
+}
