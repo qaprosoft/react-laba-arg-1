@@ -28,7 +28,18 @@ function getEvenNumbers(numbersArray){
   }
 
 // task 5 https://www.codewars.com/kata/5a090c4e697598d0b9000004
-
+function solve(arr){
+    let input = arr;
+    let result = [];
+    while (input.length > 0) {
+      result.push(Math.max.apply(Math, input))
+      input = input.filter(number => number !== Math.max.apply(Math, input))
+      result.push(Math.min.apply(Math, input))
+      input = input.filter(number => number !== Math.min.apply(Math, input))
+    }
+    return result.filter(num => num !== Infinity) /* filter Infinity, which was added when there were an odd 
+                                                    number of results in the input array. */
+  };
 
 // task 6 https://www.codewars.com/kata/566044325f8fddc1c000002c
 
