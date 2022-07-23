@@ -67,7 +67,20 @@ const binaryArrayToNumber = arr => {
   };
 
 // task 9 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
-
+function findUniq(array) {
+    const counts = {};
+      for (let i=0; i < array.length; i++) {
+        counts[array[i]] = (counts[array[i]] || 0) + 1; 
+      } 
+    let answer = 0
+      Object.entries(counts).forEach(entry => {
+        if (entry[1] === 1) {
+          answer = entry[0]
+        }
+      })
+      return parseFloat(answer)
+  }
+  
 
 // task 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
 
