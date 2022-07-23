@@ -22,7 +22,10 @@ function maxMultiple(divisor, bound){
   }
 
 // task 4 https://www.codewars.com/kata/514a6336889283a3d2000001
- 
+function getEvenNumbers(numbersArray){
+    const answer = numbersArray.filter(number => number % 2 === 0);
+    return answer
+  }
 
 // task 5 https://www.codewars.com/kata/5a090c4e697598d0b9000004
 
