@@ -182,6 +182,21 @@ function partitionOn(predicate, arr) {
 
 /*************** Status Code 404!! ***************/
 
+// kastas 8 BIS https://www.codewars.com/kata/56b3b27cadd4ad275500000c
+
+function wordCount(longString) {
+  const EXCLUDED = ["a", "the", "on", "at", "of", "upon", "in", "as"];
+  const REGEX = /[\W\d_*¿?&%ç`'¡!$]/g;
+
+  longString = longString.toLowerCase().split(REGEX);
+
+  for (let i = 0; i < EXCLUDED.length; i++) {
+    longString = longString.filter((word) => word !== EXCLUDED[i] && word);
+  }
+
+  return longString.length;
+}
+
 // katas 9 https://www.codewars.com/kata/find-the-odd-int/
 function findOdd(arr) {
   let oddNumber;
