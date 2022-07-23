@@ -81,9 +81,19 @@ function findUniq(array) {
       return parseFloat(answer)
   }
   
-
 // task 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
-
+function decipherThis(str) {
+    let array = str.split(" ")
+    const answer = array.map(word => {
+      let realWord = word.replace(word.match(/\d+/), String.fromCharCode(word.match(/\d+/)))
+      if (realWord.length > 2) {                      
+        return realWord.slice(0, 1) + realWord.slice(realWord.length-1, realWord.length) + realWord.slice(2, realWord.length-1) + realWord.slice(1, 2)
+      } else {
+        return realWord
+      }
+    })
+    return answer.join(" ")
+  }; 
 
 // task 11 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 
