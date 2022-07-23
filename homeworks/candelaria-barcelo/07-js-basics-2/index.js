@@ -61,7 +61,10 @@ function gimme (triplet) {
   }
 
 // task 8 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
-
+const binaryArrayToNumber = arr => {
+    const binary = arr.join().replace(/,/g, "")
+    return parseInt(binary, 2)
+  };
 
 // task 9 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
 
