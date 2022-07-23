@@ -42,7 +42,15 @@ function solve(arr){
   };
 
 // task 6 https://www.codewars.com/kata/566044325f8fddc1c000002c
-
+function evenChars(string) {
+    if (string.length < 2 || string.length > 100) { 
+      return "invalid string" 
+    } else {
+      const array = string.split("")
+      const result = array.filter((char, i) => i % 2 !== 0);
+      return result
+    }
+  }
 
 // task 7 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 
