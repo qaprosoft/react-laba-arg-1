@@ -8,7 +8,19 @@ function positiveSum(arr) {
   }
 
 // task 2 https://www.codewars.com/kata/5a3e1319b6486ac96f000049
-
+function pairs(array){
+    let lengthOfLoop = array.length
+    if (array.length % 2 !== 0) {
+      lengthOfLoop = array.length - 1
+    }
+    let count = 0;
+    for (let i=0; i < lengthOfLoop; i = i+2) {
+      if (array[i+1] - array[i] === 1 || array[i+1] - array[i] === -1) {
+        count++
+      } 
+    }
+    return count
+  };
 
 // task 3 https://www.codewars.com/kata/5aba780a6a176b029800041c
 function maxMultiple(divisor, bound){
