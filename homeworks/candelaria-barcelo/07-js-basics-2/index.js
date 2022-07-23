@@ -11,7 +11,15 @@ function positiveSum(arr) {
 
 
 // task 3 https://www.codewars.com/kata/5aba780a6a176b029800041c
-
+function maxMultiple(divisor, bound){
+    let N = bound;
+    while (N > 0) {
+      if (N % divisor === 0) {
+        return N
+      } 
+      N--
+    }
+  }
 
 // task 4 https://www.codewars.com/kata/514a6336889283a3d2000001
  
