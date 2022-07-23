@@ -96,3 +96,60 @@ function gimme(array) {
 function binaryArrayToNumber(arr) {
   return parseInt(arr.join(''), 2);
 }
+
+// 9. https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+
+function findUniq(array) {
+  const count = {};
+
+  for (number of array) {
+    count[number] ? (count[number] = count[number] + 1) : (count[number] = 1);
+  }
+
+  for (key in count) {
+    if (count[key] === 1) return parseFloat(key);
+  }
+}
+
+// 10. https://www.codewars.com/kata/581e014b55f2c52bb00000f8
+
+function decipherThis(str) {
+  return str
+    .split(' ')
+    .map((word) => {
+      // Splits the string into an array
+
+      return (
+        word
+          // Replaces the numbers in each element. Example: extracts 72 in "72eva" and fromCharCode() returns the character of number 72
+          .replace(/\d+/, (char) => String.fromCharCode(char))
+
+          // Matches each letter of string, then reorders it, the * makes it optional in case there are three letter words.
+          .replace(/^(.)(.)(.*)(.)$/, '$1$4$3$2')
+      );
+    })
+    .join(' ');
+}
+
+// 11. https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+
+function sortArray(array) {
+  // Returns array with the same length but with "" placeholders of odd numbers
+  const even = array.map((elm) => (elm % 2 === 0 ? elm : ''));
+
+  // Returns array with sorted odd numbers
+  const odd = array.filter((elm) => elm % 2 !== 0).sort((a, b) => a - b);
+  const result = [];
+
+  // We iterate over the even array, if the element is "", the odd number is pushed to the result array at the same position
+  for (let i = 0, j = 0; i < array.length; i += 1) {
+    if (even[i] === '') {
+      result.push(odd[j]);
+      j += 1;
+    } else {
+      result.push(even[i]);
+    }
+  }
+
+  return result;
+}
