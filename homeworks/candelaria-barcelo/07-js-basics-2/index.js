@@ -53,7 +53,12 @@ function evenChars(string) {
   }
 
 // task 7 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
-
+function gimme (triplet) {
+    const sortedArray = [];
+    Object.assign(sortedArray, triplet)
+    sortedArray.sort((a,b) => a-b);
+    return triplet.indexOf(sortedArray[1])
+  }
 
 // task 8 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 
