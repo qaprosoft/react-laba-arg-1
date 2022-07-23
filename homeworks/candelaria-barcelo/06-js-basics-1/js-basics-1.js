@@ -169,8 +169,22 @@ function partitionOn(pred, items) {
   return items.length - trueIndexes.length
 }
 
-// task 8 http://www.codewars.com/kata/word-count DOESN'T WORK
+// task 8 (8 kyu) https://www.codewars.com/kata/570cc83df616a85944001315
+function countWords(str) {
+  if (str) { 
+    const array = str.trim().split(/[\s\n\t]+/g); 
+    if (array[0].length > 0) { return array.length; }
+  }
+  return 0
+}
 
+// task 8, part II (6 kyu) https://www.codewars.com/kata/56b3b27cadd4ad275500000c 
+function wordCount(str) {
+  let array = str.toLowerCase().split(/[^a-zA-Z]+/g); 
+  const wordsToExclude = ["a", "the", "on", "at", "of", "upon", "in", "as", ""]
+  array = array.filter((word) => !wordsToExclude.includes(word))
+  return array.length
+}
 
 // task 9 https://www.codewars.com/kata/find-the-odd-int/ 
 function findOdd(array) {
