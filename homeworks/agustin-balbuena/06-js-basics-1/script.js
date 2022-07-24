@@ -1,5 +1,5 @@
 /*
-faltan la 5, 7, 8(esta esta bien pero le falta eso de los non-whitespaces), 11, 13
+To do ->  5, 7, 8(check about non-whitespaces), 11, 13, 16
 */
 
 //1.
@@ -32,7 +32,7 @@ function rentalCarCost(d) {
     return d * 40;
 }
 
-//5.    LATER
+//5 ->  http://www.codewars.com/kata/calculating-with-functions
 function zero() {}
 function one() {}
 function two() {}
@@ -62,7 +62,7 @@ function getMiddle(s)
 function partitionOn(pred, items) {
 }
 
-//8.   VER SI ES ESTA PORQUE EL LINK QUE PASARON DA 404
+//8 ->   https://www.codewars.com/kata/570cc83df616a85944001315
 function countWords(str) {
     str.trim();
     let wordCounter = 0;
@@ -90,7 +90,7 @@ function countWords(str) {
     return wordCounter;
 }
 
-//9.
+//9 -> https://www.codewars.com/kata/find-the-odd-int/
 function findOdd(A) {
     let counter = 0;
     for (let i = 0; i < A.length; i++) {
@@ -104,7 +104,7 @@ function findOdd(A) {
     return 0;
 }
 
-//10.
+//10 -> https://www.codewars.com/kata/find-the-parity-outlier
 function findOutlier(integers){
     let odd = 0;
     let even = 0;
@@ -147,7 +147,7 @@ function nthFibo(n) {
 //14.
 
 
-//15.  REHACER
+//15.  To Do again
 function duplicateEncode(word){
     let result = "";
     for (let i = 0; i < word.length; i++) {
@@ -168,3 +168,40 @@ function duplicateEncode(word){
     }
     return result;
 }
+
+
+function duplicate(word){
+    word.map()
+} 
+
+//16 -> https://www.codewars.com/kata/5693239fb761dc8670000001
+function findAdditiveNumbers(num) {
+
+}
+
+//17 -> https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+function towerBuilder(floors){
+    let space,star, tower = [];
+    for(i = 1; i <= floors; i++){
+      space = " ".repeat(floors - i);
+      star  = "*".repeat((2*i) - 1);
+      tower.push(`${space}${star}${space}`);
+    }
+    return tower;
+}
+
+//18 -> https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+function wave(str){
+    result = []
+    for(let i = 0; i < str.length; i++) {
+      if (str[i] === " ") {
+        continue;
+      } 
+      else {
+        result.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1))
+      } 
+    }
+    return result;
+  }
+  
+//19 -> 
