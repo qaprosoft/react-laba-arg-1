@@ -77,6 +77,14 @@ function evenChars(string) {
 }
 
 // katas 7 - https://www.codewars.com/kata/545a4c5a61aa4c6916000755
+function gimme(triplet) {
+  let indexes = [0, 1, 2];
+  let max = triplet.indexOf(Math.max(...triplet));
+  let min = triplet.indexOf(Math.min(...triplet));
+  indexes = indexes.filter((a) => a !== min && a !== max);
+
+  return indexes[0];
+}
 
 // katas 8 - https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 // katas 9 - https://www.codewars.com/kata/585d7d5adb20cf33cb000235
