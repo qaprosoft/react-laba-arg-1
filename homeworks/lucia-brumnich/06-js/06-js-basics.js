@@ -129,6 +129,12 @@ function getMiddle(s) {
 
 //task 13 https://www.codewars.com/kata/n-th-fibonacci
 
+function nthFibo(n) {
+    if (n === 1) return 0
+    else if (n === 2) return 1
+    else return nthFibo(n-1) + nthFibo(n-2)
+}
+
 //task 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
 
 //task 15 https://www.codewars.com/kata/duplicate-encoder
