@@ -107,6 +107,7 @@ function calculateExpA(a, calculateExpB) {
   }
 
 
+
 //task 6 http://www.codewars.com/kata/get-the-middle-character
 
 function getMiddle(s) {
@@ -115,9 +116,11 @@ function getMiddle(s) {
     else return s[Math.floor(s.length/2)]
 }
 
+
+
 //task 7 http://www.codewars.com/kata/partition-on
 
-//task 8 http://www.codewars.com/kata/word-count
+//task 8 https://www.codewars.com/kata/56b3b27cadd4ad275500000c
 
 //task 9 https://www.codewars.com/kata/find-the-odd-int/
 
@@ -149,6 +152,17 @@ function nthFibo(n) {
 //task 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
 
 //task 15 https://www.codewars.com/kata/duplicate-encoder
+
+function duplicateEncode(word){
+  
+    let letter = word.toLowerCase().split("")
+    let coded = []
+  
+    letter.map(i => letter.indexOf(i) === letter.lastIndexOf(i) ? coded.push('(') : coded.push(')'))
+    
+    return coded.join("")
+    
+}
 
 //task 16 https://www.codewars.com/kata/5693239fb761dc8670000001
 
