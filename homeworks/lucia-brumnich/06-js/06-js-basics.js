@@ -127,6 +127,15 @@ function getMiddle(s) {
 
 //task 12 https://www.codewars.com/kata/filter-the-number
 
+var FilterString = function(value) {
+    
+    let regex = /[0-9]/g
+    
+    return Number(value.match(regex).join(""))
+}
+
+
+
 //task 13 https://www.codewars.com/kata/n-th-fibonacci
 
 function nthFibo(n) {
@@ -134,6 +143,8 @@ function nthFibo(n) {
     else if (n === 2) return 1
     else return nthFibo(n-1) + nthFibo(n-2)
 }
+
+
 
 //task 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
 
