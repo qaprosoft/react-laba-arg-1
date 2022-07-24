@@ -199,13 +199,19 @@ var FilterString = function (value) {
 // Task 13 - https://www.codewars.com/kata/n-th-fibonacci
 
 // the n number should return the n-th number of the sequence
-// function nthFibo(n) {
+function nthFibo(n) {
+  let fibo = [0, 1];
+  let length = n;
+  fibo.length = length;
 
-//   let fibo = [0, 1]
+  for (let i = 2; i < fibo.length; i++) {
+    if (fibo[i] == undefined) {
+      fibo[i] = fibo[i - 2] + fibo[i - 1];
+    }
+  }
 
-//   for (let i = 0; i<fibo.length)
-
-// }
+  return fibo[n - 1];
+}
 
 // Task 15 - https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript
 
