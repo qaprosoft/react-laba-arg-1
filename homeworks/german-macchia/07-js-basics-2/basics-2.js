@@ -57,7 +57,27 @@ function solve(arr) {
 }
 
 // katas 6 - https://www.codewars.com/kata/566044325f8fddc1c000002c
+function evenChars(string) {
+  const NO_STRING = "invalid string";
+  let res;
+  let arr = [];
+  let i = 1;
+
+  if (string.length < 2 || string.length > 100) {
+    res = NO_STRING;
+  } else {
+    while (i < string.length) {
+      arr.push(string.charAt(i));
+      i += 2;
+      res = arr;
+    }
+  }
+
+  return res;
+}
+
 // katas 7 - https://www.codewars.com/kata/545a4c5a61aa4c6916000755
+
 // katas 8 - https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 // katas 9 - https://www.codewars.com/kata/585d7d5adb20cf33cb000235
 // katas 10 - https://www.codewars.com/kata/581e014b55f2c52bb00000f8
