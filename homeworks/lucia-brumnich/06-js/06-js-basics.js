@@ -126,6 +126,18 @@ function getMiddle(s) {
 
 //task 10 https://www.codewars.com/kata/find-the-parity-outlier
 
+function findOutlier(integers){
+        
+    let odd = []
+    let even = []
+
+    for (let i = 0; i < integers.length; i++) {
+        (integers[i] % 2 === 0) ? even.push(integers[i]) : odd.push(integers[i])
+    } 
+  
+    return (odd.length === 1 ? odd[0] : even[0])
+}
+
 //task 11 https://www.codewars.com/kata/zipwith
 
 //task 12 https://www.codewars.com/kata/filter-the-number
