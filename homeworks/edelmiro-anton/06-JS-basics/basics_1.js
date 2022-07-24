@@ -245,6 +245,27 @@ function duplicateEncode(word) {
   return newWord;
 }
 
+// Task 18 - https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/train/javascript
+// Mexican Wave
+
+let str = 'hola';
+let strLower = str.toLowerCase(); // To convert all characters in lower case in case there are some upper
+strLower.trim();
+let arr = [];
+
+for (let i = 0; i < strLower.length; i++) {
+  let substring = strLower.substring(i, 0); // empty string when substring(0,0)
+  let char = strLower[i];
+  let slice = strLower.slice(i + 1);
+
+  if (!char.includes(' ')) {
+    let newStr = substring + char.toUpperCase() + slice;
+    arr.push(newStr);
+  }
+}
+
+console.log(arr);
+
 // Task 20 - https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript
 
 const protocol1 = 'http://';
