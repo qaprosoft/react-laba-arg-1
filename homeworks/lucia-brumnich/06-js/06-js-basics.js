@@ -110,9 +110,10 @@ function calculateExpA(a, calculateExpB) {
 //task 6 http://www.codewars.com/kata/get-the-middle-character
 
 function getMiddle(s) {
-    if (s.length % 2 === 0) return (s[(s.length/2)-1]+s[s.length/2])
+
+    if (s.length % 2 === 0) return (s[(s.length/2)-1] + s[s.length/2])
     else return s[Math.floor(s.length/2)]
-  }
+}
 
 //task 7 http://www.codewars.com/kata/partition-on
 
@@ -135,6 +136,19 @@ function getMiddle(s) {
 //task 16 https://www.codewars.com/kata/5693239fb761dc8670000001
 
 //task 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+
+function towerBuilder(nFloors) {
+    const tower = []
+    const stars = []
+    const spaces = []
+
+    for (let i = 1; i <= nFloors; i++){
+        stars = '*'.repeat((2 * i) - 1)
+        spaces = ' '.repeat(nFloors - i)
+        tower.push(`${spaces}${stars}${spaces}`)
+    } 
+    return tower
+}
 
 //task 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
 
