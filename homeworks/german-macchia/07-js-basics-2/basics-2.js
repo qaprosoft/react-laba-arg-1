@@ -100,6 +100,23 @@ const binaryArrayToNumber = (arr) => {
 };
 
 // katas 9 - https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+function findUniq(arr) {
+  let number = arr[0];
+  let count = 0;
+
+  for (auxNumber of arr) {
+    if (auxNumber === number) {
+      count++;
+    }
+  }
+
+  count !== 1
+    ? (arr = arr.filter((a) => a !== number))
+    : (arr = arr.filter((a) => a === number));
+
+  return arr[0];
+}
+
 // katas 10 - https://www.codewars.com/kata/581e014b55f2c52bb00000f8
 // katas 11 - https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 
