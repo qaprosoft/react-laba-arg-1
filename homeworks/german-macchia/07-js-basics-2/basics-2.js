@@ -32,6 +32,10 @@ function maxMultiple(divisor, bound) {
 }
 
 // katas 4 - https://www.codewars.com/kata/514a6336889283a3d2000001
+function getEvenNumbers(numbersArray) {
+  return numbersArray.filter((a) => a % 2 === 0);
+}
+
 // katas 5 - https://www.codewars.com/kata/5a090c4e697598d0b9000004
 // katas 6 - https://www.codewars.com/kata/566044325f8fddc1c000002c
 // katas 7 - https://www.codewars.com/kata/545a4c5a61aa4c6916000755
