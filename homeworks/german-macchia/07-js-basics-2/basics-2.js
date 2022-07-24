@@ -46,7 +46,7 @@ function solve(arr) {
     let max = Math.max(...arr);
 
     auxArr.push(max, min);
-    arr = arr.filter((a) => a !== min).filter((a) => a !== max);
+    arr = arr.filter((a) => a !== min && a !== max);
 
     if (arr.length < 2) {
       flag = true;
@@ -87,6 +87,18 @@ function gimme(triplet) {
 }
 
 // katas 8 - https://www.codewars.com/kata/578553c3a1b8d5c40300037c
+const binaryArrayToNumber = (arr) => {
+  const baseNumeric = 2;
+  let sum = 0;
+  arr.reverse();
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    sum += arr[i] * Math.pow(baseNumeric, i);
+  }
+
+  return sum;
+};
+
 // katas 9 - https://www.codewars.com/kata/585d7d5adb20cf33cb000235
 // katas 10 - https://www.codewars.com/kata/581e014b55f2c52bb00000f8
 // katas 11 - https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
