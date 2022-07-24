@@ -5,6 +5,19 @@ function positiveSum(arr) {
 }
 
 // katas 2 - https://www.codewars.com/kata/5a3e1319b6486ac96f000049
+function pairs(ar) {
+  const consecutive = (a, b) => a + 1 === b || a - 1 === b;
+  let count = 0;
+
+  for (let i = 0; i < ar.length; i++) {
+    if (consecutive(ar[i], ar[i + 1])) {
+      count++;
+    }
+    i++;
+  }
+  
+  return count;
+}
 // katas 3 - https://www.codewars.com/kata/5aba780a6a176b029800041c
 // katas 4 - https://www.codewars.com/kata/514a6336889283a3d2000001
 // katas 5 - https://www.codewars.com/kata/5a090c4e697598d0b9000004
