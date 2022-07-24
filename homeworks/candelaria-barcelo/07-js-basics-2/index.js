@@ -127,7 +127,20 @@ function sortArray(array) {
 
 
 // OPTIONAL ADVANCED task 2 https://www.codewars.com/kata/52597aa56021e91c93000cb0
-
+function moveZeros(arr) {
+    const trueIndexes = []
+    arr.forEach(function(item, i) {
+      if (item === 0) { 
+        arr.push(item) 
+        trueIndexes.push(i)
+      }
+    })
+    trueIndexes.reverse(); // reversing so that the splice will work, otherwise indexes would be moved
+    trueIndexes.forEach(function(index) {
+      arr.splice(index, 1);
+    })
+    return arr
+  }
 
 // OPTIONAL ADVANCED task 3 https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3
 
