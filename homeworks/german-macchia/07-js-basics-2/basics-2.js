@@ -37,6 +37,25 @@ function getEvenNumbers(numbersArray) {
 }
 
 // katas 5 - https://www.codewars.com/kata/5a090c4e697598d0b9000004
+function solve(arr) {
+  let auxArr = [];
+  let flag = false;
+
+  while (!flag) {
+    let min = Math.min(...arr);
+    let max = Math.max(...arr);
+
+    auxArr.push(max, min);
+    arr = arr.filter((a) => a !== min).filter((a) => a !== max);
+
+    if (arr.length < 2) {
+      flag = true;
+    }
+  }
+
+  return auxArr.concat(arr);
+}
+
 // katas 6 - https://www.codewars.com/kata/566044325f8fddc1c000002c
 // katas 7 - https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 // katas 8 - https://www.codewars.com/kata/578553c3a1b8d5c40300037c
