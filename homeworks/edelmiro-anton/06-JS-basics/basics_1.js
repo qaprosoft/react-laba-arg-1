@@ -49,62 +49,70 @@ function rentalCarCost(d) {
 
 function getMiddle(s) {
   if (s.length % 2 === 0) {
+    //Check if is the length of the string is even
     const evenLength = s.length;
+    // Divide the length in half
     const evenHalfLength = evenLength / 2;
+    //1st param: index start. 2nd param: the length of characters I want to select.
     const evenIndex = s.substr(evenHalfLength - 1, 2);
-    return console.log(evenIndex);
+    return evenIndex;
   } else {
+    //The same above but for odd
     const oddLength = s.length;
     const oddHalfLength = Math.trunc(oddLength / 2);
     const oddIndex = s.charAt(oddHalfLength);
-    return console.log(oddIndex);
+    return oddIndex;
   }
 }
 
 // Task 7 - http://www.codewars.com/kata/partition-on
 
 // Task 8 - https://www.codewars.com/kata/570cc83df616a85944001315/train/javascript
-
-let string = 'HelloWordls';
-
+let string = 'HolaMundo';
 function countWords(str) {
   let toRemove = '';
   let counter = 0;
   let counterSepareteWords = 0;
-  let regex2 = /([a-z])([A-Z])/g; //Numbers counting as lowercase characters
-  let isCamelCase = /[\s_-]/g; //Check if the string has whitespaces, "-" or "_"
+  //Numbers counting as lowercase characters
+  let regex2 = /([a-z])([A-Z])/g;
+  //Check if the string has whitespaces, "-" or "_"
+  let isPascalCase = /[\s_-]/g;
 
   // Function for non-whitespace
   function nonWhitespace(str) {
+    //Apply regex to separate words with spaces between them
     let separateWords = str.replace(regex2, '$1 $2');
+
+    //Uppercase the first character and with slice, return the rest of the string
     let finalResult = separateWords.charAt(0).toUpperCase() + separateWords.slice(1);
-
     let arrSeparetaWords = finalResult.split(' ');
-    console.log(finalResult.split(' '));
-    console.log(arrSeparetaWords.length);
 
+    // Remove white spaces
     arrSeparetaWords = arrSeparetaWords.filter((el) => {
-      return el != toRemove;
-    });
-    for (let i = 0; i < arrSeparetaWords.length; i++) {
-      counterSepareteWords++;
-    }
-    //     return counterSepareteWords;
-  }
-
-  if (!str.match(isCamelCase)) {
-    nonWhitespace(str);
-    return counterSepareteWords;
-  } else {
-    //   Convert the string into an array
-    let arrString = str.split(' ');
-
-    //   Filter method to delete white spaces
-    arrString = arrString.filter((el) => {
       return el != toRemove;
     });
 
     //   Strings counter
+    for (let i = 0; i < arrSeparetaWords.length; i++) {
+      counterSepareteWords++;
+    }
+  }
+
+  if (!str.match(isPascalCase)) {
+    //If the param has no "-", "_" or whitespaces, execute the function and return counterSepareteWords
+    nonWhitespace(str);
+    return counterSepareteWords;
+  } else {
+    //if above is false:
+
+    //   Convert the string into an array
+    let arrString = str.split(' ');
+    arrString = arrString.filter((el) => {
+      //Filter method to delete white spaces
+      return el != toRemove;
+    });
+
+    //   String counter
     for (let i = 0; i < arrString.length; i++) {
       counter++;
     }
@@ -112,7 +120,7 @@ function countWords(str) {
   return counter;
 }
 
-console.log(countWords(string));
+// console.log(countWords(string));
 
 // Task 9 - https://www.codewars.com/kata/find-the-odd-int/
 
@@ -150,8 +158,12 @@ function findOutlier(integers) {
 
   for (let i = 0; i < integers.length; i++) {
     if (integers[i] % 2 === 0) {
+      //Check through the arr if an item is even
+
+      //if it is, is pushed into the evenArray
       evenArr.push(integers[i]);
     } else {
+      //if is odd, is pushed into the oddArray
       oddArr.push(integers[i]);
     }
   }
@@ -166,127 +178,77 @@ function findOutlier(integers) {
 // Task 12 - https://www.codewars.com/kata/filter-the-number
 
 var FilterString = function (value) {
+  //Array of each character of the string
   let split = value.split('');
-  // console.log(split)
 
   let map = split.map((el) => {
+    // Map each el of the arr and check if there is a number and is parsed
     if (!isNaN(parseInt(el))) {
-      // console.log(el)
       return el;
     }
   });
 
   let numbers = map.filter((el) => {
+    // Removes undefined from array
     return el != undefined;
   });
 
-  // console.log(numbers)
   return parseInt(numbers.join(''));
 };
 
-// Task 20 - https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript
+// Task 13 - https://www.codewars.com/kata/n-th-fibonacci
 
-let pagina = 'https://www.codewars.com';
-let spliteado = pagina.split('');
-spliteado;
-console.log(spliteado.splice());
+// the n number should return the n-th number of the sequence
+// function nthFibo(n) {
 
-if (spliteado.includes('h')) {
-  console.log('contiene');
-}
+//   let fibo = [0, 1]
 
-// function domainName(url){
-//   let http = "http://"
-//   let www = "www."
+//   for (let i = 0; i<fibo.length)
 
-//   if (url.includes(http)){
-//     console.log("incluye 'http://'")
-//   }
-//   return dominio
 // }
 
-// console.log(domainName(dominio))
+// Task 15 - https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript
 
-// funcion que elimina el "HTTPS://" O "HTTP://" O "WWW."
-let link = 'https://www.prueba.comfdfds';
+function duplicateEncode(word) {
+  // repeted char = ")"
+  // new char = "("
 
-let regexWWW = /\bwww\b/g;
-let regexHttp = /\bhttp:\b/g;
-let regexHttps = /\bhttps:\b/g;
-let regexCom = /\b.com\b/g;
-
-function deleteProtocol(link) {
-  let withoutHttp = link.split(regexHttps).join('');
-  console.log(withoutHttp);
-  link = withoutHttp;
-  let withoutWWW = link.split('www.').join('');
-  withoutWWW;
-}
-
-deleteProtocol(link);
-
-function deleteWWW(link) {
-  let withoutWWW = link.split('www.').join('');
-  console.log(withoutWWW);
-}
-
-deleteWWW(link);
-
-let url = 'http://www.prueba.com';
-console.log(url.slice(0, 7));
-
-function obtainDomine(url) {
-  if (url.includes('http://')) {
-    let replaceHTTP = url.replace('http://', '');
-    return replaceHTTP;
+  let arr = [];
+  let newWord = '';
+  //Character counter
+  for (i = 0; i < word.length; i++) {
+    let char = word[i].toLowerCase();
+    if (arr[char] == undefined) {
+      arr[char] = 1;
+      console.log(arr[1]);
+    } else {
+      arr[char] += 1;
+      console.log(arr[char]);
+    }
   }
 
-  if (url.includes('www.')) {
-    let replaceWWW = url.replace('www.', '');
-    return replaceWWW;
+  // check if the char is more than one time. If yes, add ")" to "newWord". If not, add "("
+  for (i = 0; i < word.length; i++) {
+    let char = word[i].toLowerCase();
+    if (arr[char] > 1) {
+      newWord += ')';
+    } else {
+      newWord += '(';
+    }
   }
-
-  if (url.includes('.com')) {
-    let replaceWWW = url.replace('.com', '');
-    return replaceWWW;
-  }
+  return newWord;
 }
 
-console.log(obtainDomine(url));
+// Task 20 - https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript
 
-if (arr.toString().includes('http://')) {
-  let replaceHTTP = url.replace('http://', '');
-  replaceHTTP;
+const protocol1 = 'http://';
+const protocol2 = 'https://';
+const www = 'www.';
+
+function domainName(url) {
+  url = url.replace(protocol1, '');
+  url = url.replace(protocol2, '');
+  url = url.replace(www, '');
+
+  return url.split('.')[0];
 }
-
-// if (url.includes("http://")){
-//   let replaceHTTP = url.replace("http://", "")
-//   replaceHTTP
-
-// **********************************************************
-function eliminaWWW(www) {
-  // separo los caracteres de mi url
-  let split = www.split('');
-  split;
-
-  let splice = split.splice(0, 4); //obtengo un array con mis elementos eliminados
-  let join = splice.join(''); // uno los elementos del array y lo transformo a un string
-
-  if (www.includes(join)) {
-    // compruebo que mi url tenga los elementos de mi array por splice
-    console.log('incluye el www');
-
-    let eliminoWWW = www.replace(join, '');
-    eliminoWWW; //elimino mi join de mi url y obtengo la url sin el WWWW
-  }
-}
-eliminaWWW(url);
-
-// funcion para eliminar el ".COM"
-function eliminoCom(com) {
-  console.log(com.split(''));
-}
-
-eliminoCom(url);
-
-// console.log(prueba.substring(4))
