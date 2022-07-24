@@ -143,7 +143,47 @@ function moveZeros(arr) {
   }
 
 // OPTIONAL ADVANCED task 3 https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3
-
+function findUniq(arr) {
+    let newArray = []
+    // for each word in the array
+    for (let i=0; i < arr.length; i++) {
+      // convert it to lower case and split into an array for each letter
+      const lowerCaseItem = arr[i].toLowerCase().split("")
+      let uniqueCharacters = new Set();
+      // add each character of the word to a set, to find unique characters
+      const findUniqueCharacters = lowerCaseItem.filter(letter => {
+        if (uniqueCharacters.has(letter)) { 
+          return false 
+        } else if (letter !== ' ' && letter !== '') {
+          uniqueCharacters.add(letter)
+        }
+      }); 
+      // push each unique character to an array: wordArray
+      let wordArray = []
+      for (let value of uniqueCharacters) {
+        wordArray.push(value)
+      }
+      // sort each character so that each word with = characters will seem identical
+      wordArray.sort(); 
+      // join each character into a word and push each word to the newArray
+      newArray.push(wordArray.join('')); 
+    }
+    // now we will check for unique / repeated words
+    let uniqueWords = new Set();
+    let repeatedWord = []
+    // add each unique word to the set, if it's repeated push to repeatedWord
+    const findUniqueWords = newArray.filter(word => {
+      return uniqueWords.has(word) ? repeatedWord.push(word) : uniqueWords.add(word)
+    }); 
+    
+    let indexOfAnswer = 0
+    // find the word which is not the repeatedWord and return its index
+    const findUniqueWord = newArray.map((word, index) => {
+      if (word !== repeatedWord[0]) { indexOfAnswer = index } 
+    }); 
+    return arr[indexOfAnswer]
+  }
+  
 
 // OPTIONAL ADVANCED task 4 https://www.codewars.com/kata/5296bc77afba8baa690002d7
 
