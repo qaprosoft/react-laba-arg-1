@@ -109,6 +109,14 @@ function zipWith(fn,a0,a1) {
 
 
 // katas 12 https://www.codewars.com/kata/filter-the-number
+
+function FilterString (value) {
+  let parsed = value.match(/[0-9]/g)
+  return parseInt(parsed.join(''))
+}
+
+
+
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
 // katas 15 https://www.codewars.com/kata/duplicate-encoder
