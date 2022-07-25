@@ -203,5 +203,24 @@ function wave(str){
     }
     return result;
   }
-  
-//19 -> 
+
+//19 -> https://www.codewars.com/kata/59d398bb86a6fdf100000031
+function stringBreakers(n, string){
+    let newString = string.replace(/\s+/g, '');
+    let result = "";
+    let counter = 0;
+    for(let i = 0; i < newString.length; i++){
+      result += newString[i];
+      
+      counter++;
+      
+      if(counter === n){
+        if(newString.length -1 != i){
+        result += '\n';
+      }
+      counter = 0;
+        
+      }
+    }
+    return result
+  }
