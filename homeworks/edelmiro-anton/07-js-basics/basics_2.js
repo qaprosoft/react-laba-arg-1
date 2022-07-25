@@ -55,3 +55,33 @@ function getEvenNumbers(numbersArray) {
   });
   return evenArr;
 }
+
+// Task 5 - https://www.codewars.com/kata/5a090c4e697598d0b9000004
+
+function solve(arr) {
+  let maxArr = [];
+  let minArr = [];
+
+  for (i = 0; i < arr.length; i++) {
+    maxArr.push(arr[i]);
+    minArr.push(arr[i]);
+  }
+
+  maxArr.sort((a, b) => {
+    return b - a;
+  });
+
+  minArr.sort((a, b) => {
+    return a - b;
+  });
+
+  let arrOrder = [];
+
+  for (i = 0; i < arr.length; i++) {
+    arrOrder.push(maxArr[i], minArr[i]);
+    arrOrder.push();
+  }
+
+  let length = arr.length;
+  return arrOrder.slice(0, length);
+}
