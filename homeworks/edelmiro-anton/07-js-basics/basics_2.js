@@ -109,3 +109,19 @@ function evenChars(string) {
 
   return even;
 }
+
+// Task 7 - https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/javascript
+
+function gimme(triplet) {
+  let max = Math.max(...triplet);
+  let min = Math.min(...triplet);
+  let middleNumber = [];
+
+  for (let i = 0; i < triplet.length; i++) {
+    if (triplet[i] != max && triplet[i] != min) {
+      middleNumber.push(triplet[i]);
+    }
+  }
+
+  return triplet.indexOf(middleNumber[0]);
+}
