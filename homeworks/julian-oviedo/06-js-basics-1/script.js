@@ -118,7 +118,61 @@ function FilterString (value) {
 
 
 // katas 13 https://www.codewars.com/kata/n-th-fibonacci
+
+
+
+function nthFibo(n) {
+  let fibo = [0, 1]
+  if (n > 2) {
+    for (let i = 1; i < n-1; i++) {
+      fibo.push(fibo[i - 1] + fibo[i]);
+    }
+  }
+
+  return fibo[n-1];
+}
+
+
+
 // katas 14 https://www.codewars.com/kata/cat-and-mouse-2d-version/
+
+const msgEscaped = 'Escaped!'
+const msgCaugth = 'Caught!'
+const msgBoring = 'boring without two animals'
+
+function catMouse(map, moves){
+    const mapped = map.split('\n')
+    if (!map.match(/c/mi) || !map.match(/m/mi)) return msgBoring
+
+    function catCol () {
+    for(i=0; i <= mapped.length; i++){
+        if(mapped[i].lastIndexOf('C') != -1){
+            return i
+        }
+    }
+}
+    function mCol () {
+    for(i=0; i <= mapped.length; i++){
+        if(mapped[i].indexOf('m') != -1){
+            return i
+        }
+    }
+}
+
+let catRow = mapped[catCol()].indexOf('C')
+let mRow = mapped[mCol()].indexOf('m')
+
+     if((Math.abs(catCol()-mCol())) + (Math.abs(catRow-mRow)) > moves  ){
+        return msgEscaped
+    } else if ((Math.abs(catCol()-mCol())) + (Math.abs(catRow-mRow)) < moves  ) {
+        return msgCaugth
+    } 
+
+  } 
+
+
+
+
 // katas 15 https://www.codewars.com/kata/duplicate-encoder
 // katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
 // katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
