@@ -190,3 +190,34 @@ PaginationHelper.prototype.pageIndex = function (itemIndex) {
   const res = Math.floor(itemIndex / this.itemsPerPage);
   return 0 <= res && res < this.pageCount() ? res : -1;
 };
+
+// 13. https://www.codewars.com/kata/52597aa56021e91c93000cb0
+
+function moveZeros(array) {
+  let noZeroes = [];
+  let zeroes = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] !== 0) {
+      noZeroes.push(array[i]);
+    } else {
+      zeroes.push(array[i]);
+    }
+  }
+
+  return [...noZeroes, ...zeroes];
+}
+
+// 14. https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3
+
+function findUniq(array) {
+  let newArray = array.map((string) => [...new Set(string.toLowerCase())].sort().join(''));
+
+  for (let i = 0; i < newArray.length; i++) {
+    if (newArray.indexOf(newArray[i]) === newArray.lastIndexOf(newArray[i])) return array[i];
+  }
+}
+
+// 15. https://www.codewars.com/kata/5296bc77afba8baa690002d7
+
+// Couldn't do it
