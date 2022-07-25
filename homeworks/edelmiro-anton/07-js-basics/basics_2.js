@@ -85,3 +85,27 @@ function solve(arr) {
   let length = arr.length;
   return arrOrder.slice(0, length);
 }
+
+// Task 6  - https://www.codewars.com/kata/566044325f8fddc1c000002c/train/javascript
+
+function evenChars(string) {
+  let index = [];
+  let even = [];
+
+  if (string.length < 2 || string.length > 100) {
+    return 'invalid string';
+  }
+
+  for (let i = 0; i < string.length; i++) {
+    let char = string[i];
+    index.push(string.indexOf(char, i));
+  }
+
+  for (i = 0; i < string.length; i++) {
+    if (index[i] % 2 === 1) {
+      even.push(string[i]);
+    }
+  }
+
+  return even;
+}
