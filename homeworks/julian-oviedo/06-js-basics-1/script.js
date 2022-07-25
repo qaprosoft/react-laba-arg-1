@@ -170,10 +170,24 @@ let mRow = mapped[mCol()].indexOf('m')
 
   } 
 
-
-
-
 // katas 15 https://www.codewars.com/kata/duplicate-encoder
+
+function duplicateEncode(word){
+  newWord = ''
+  const wordLower = word.toLowerCase()
+
+  for(letter of wordLower){
+    if(wordLower.indexOf(letter) === wordLower.lastIndexOf(letter)){
+      newWord+= '('
+    } else {
+      newWord+= ')'
+    }
+  }
+  return newWord
+}
+
+
+
 // katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
 // katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
 // katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
