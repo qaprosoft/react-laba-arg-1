@@ -125,3 +125,23 @@ function gimme(triplet) {
 
   return triplet.indexOf(middleNumber[0]);
 }
+
+// Task 8 - https://www.codewars.com/kata/578553c3a1b8d5c40300037c
+
+const binaryArrayToNumber = (arr) => {
+  arr = arr.reverse();
+  let count = [];
+  let finalSum = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] == 0) {
+      continue;
+    } else {
+      count.push((arr[i] = 2 ** [i]));
+    }
+  }
+
+  count.forEach((el) => {
+    finalSum += el;
+  });
+  return finalSum;
+};
