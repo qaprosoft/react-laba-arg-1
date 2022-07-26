@@ -18,3 +18,9 @@ function pluck(obj, key) {
 
   return searchedValue;
 }
+
+//2. Deep Clone
+function clone(obj) {
+  let stringOfObject = JSON.stringify(obj);
+  return JSON.parse(stringOfObject);
+}
