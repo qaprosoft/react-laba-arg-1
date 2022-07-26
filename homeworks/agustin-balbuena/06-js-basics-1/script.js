@@ -223,4 +223,18 @@ function stringBreakers(n, string){
       }
     }
     return result
-  }
+}
+
+//20 -> https://www.codewars.com/kata/514a024011ea4fb54200004b
+function domainName(url){
+    
+    url = url.replace(/(https?:\/\/)?(www.)?/i, '');
+  
+    url = url.split('.');
+  
+    if (url.indexOf('/') !== -1) {
+        return url.split('.')[0];
+    }
+  
+    return url[0];        
+}
