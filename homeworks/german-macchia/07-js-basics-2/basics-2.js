@@ -118,6 +118,33 @@ function findUniq(arr) {
 }
 
 // katas 10 - https://www.codewars.com/kata/581e014b55f2c52bb00000f8
+function decipherThis(str) {
+  let arr = str.split(" ");
+  let auxArr = [];
+  let wordNoNumbers, firstLetter, secondLetter, middleLetters, lastLetter;
+
+  for (word of arr) {
+    wordNoNumbers = word.replace(/\d/g, "");
+    firstLetter = String.fromCharCode(word.replace(/\D/g, ""));
+    lastLetter = wordNoNumbers.charAt(0);
+    secondLetter = wordNoNumbers.substr(-1);
+    middleLetters = wordNoNumbers.slice(1, -1);
+
+    switch (wordNoNumbers.length) {
+      case 1:
+        auxArr.push(firstLetter + lastLetter);
+        break;
+      case 2:
+        auxArr.push(firstLetter + secondLetter + lastLetter);
+        break;
+      default:
+        auxArr.push(firstLetter + secondLetter + middleLetters + lastLetter);
+        break;
+    }
+  }
+  return auxArr.join().replace(/,/g, " ");
+}
+
 // katas 11 - https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 
 // Optional (advanced)
