@@ -1,13 +1,13 @@
 /*
-To do ->  5, 7, 8(check about non-whitespaces), 11, 13, 16
+
 */
 
-//1.
+//1 -> http://www.codewars.com/kata/opposite-number
 function opposite(number){
     return - number;
 }
 
-//2. 
+//2 -> http://www.codewars.com/kata/basic-mathematical-operations
 function basicOp(operation, value1, value2){
    if(operation === '+') return value1 + value2;
     else if(operation === '-') return value1 - value2;
@@ -16,12 +16,12 @@ function basicOp(operation, value1, value2){
     else return console.error("operator error");
 }
 
-//3.
+//3 -> http://www.codewars.com/kata/printing-array-elements-with-comma-delimiters
 function printArray(array){
     return array.toString();    
 }
 
-//4.
+//4 -> http://www.codewars.com/kata/transportation-on-vacation
 function rentalCarCost(d) {
     if(d >= 7){
         return d * 40 - 50;
@@ -49,7 +49,7 @@ function minus() {}
 function times() {}
 function dividedBy() {}
 
-//6.
+//6 -> http://www.codewars.com/kata/get-the-middle-character
 function getMiddle(s)
 {
   const middle = Math.floor(s.length / 2);
@@ -58,7 +58,7 @@ function getMiddle(s)
   else return s[middle];
 }
 
-//7.
+//7 -> http://www.codewars.com/kata/partition-on
 function partitionOn(pred, items) {
 }
 
@@ -126,12 +126,12 @@ function findOutlier(integers){
     else return outlierOdd;
 }
 
-//11.
+//11 -> https://www.codewars.com/kata/zipwith
 function zipWith(fn,a0,a1) {
     return [];
 }
 
-//12.
+//12 -> https://www.codewars.com/kata/filter-the-number
 var FilterString = function(value) {
     let numbers = ""; 
     for (let i = 0; i < value.length; i++) {
@@ -140,14 +140,14 @@ var FilterString = function(value) {
     return +numbers;  
 }
 
-//13.
+//13 -> https://www.codewars.com/kata/n-th-fibonacci
 function nthFibo(n) {
 }
 
-//14.
+//14 -> https://www.codewars.com/kata/cat-and-mouse-2d-version/
 
 
-//15.  To Do again
+//15 -> https://www.codewars.com/kata/duplicate-encoder   TO DO again
 function duplicateEncode(word){
     let result = "";
     for (let i = 0; i < word.length; i++) {
