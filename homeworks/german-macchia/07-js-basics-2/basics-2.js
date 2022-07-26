@@ -146,6 +146,19 @@ function decipherThis(str) {
 }
 
 // katas 11 - https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+function sortArray(array) {
+  let sortedArray = array.filter((num) => num % 2 !== 0).sort((a, b) => a - b);
+  let auxArray = [];
+
+  for (num of array) {
+    if (num % 2 !== 0) {
+      auxArray.push(sortedArray.shift());
+    } else {
+      auxArray.push(num);
+    }
+  }
+  return auxArray;
+}
 
 // Optional (advanced)
 // katas 12 - https://www.codewars.com/kata/515bb423de843ea99400000a
