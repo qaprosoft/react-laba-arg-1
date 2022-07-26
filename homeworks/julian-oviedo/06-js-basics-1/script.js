@@ -189,7 +189,33 @@ function duplicateEncode(word){
 
 
 // katas 16 https://www.codewars.com/kata/5693239fb761dc8670000001
+
+/* can't do it */
+
 // katas 17 https://www.codewars.com/kata/576757b1df89ecf5bd00073b
+
+
+function towerBuilder(nFloors) {
+  let tower = [];
+  let bricks = 1;
+  for (i=1; i<=nFloors; i++) {
+    tower[i-1] = " ".repeat(nFloors-i) + "*".repeat(bricks) + " ".repeat(nFloors-i);
+    bricks += 2;
+  }
+  return tower;
+}
+
 // katas 18 https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+
+
+function wave(str){
+  let waveArr=[]
+  for(let i=0;i<str.length;i++){
+    waveArr.push(str.substring(0,i)+str[i].toUpperCase()+str.slice(i+1))
+  }
+  return waveArr.filter(x=>x != str);
+  // kick the str unmodifyed by the spaces
+}
+
 // katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
