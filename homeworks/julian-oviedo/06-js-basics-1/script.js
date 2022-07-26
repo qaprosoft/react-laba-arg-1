@@ -218,4 +218,19 @@ function wave(str){
 }
 
 // katas 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
+
+function stringBreakers(n, string){
+  let arr = [];
+  string = string.replace(/\s/g, "");
+  
+  for (let i = 0; i < string.length; i += n) {
+    arr.push(string.substr(i, n));
+  }
+
+  return arr.join("\n");
+}
+
+
+
+
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
