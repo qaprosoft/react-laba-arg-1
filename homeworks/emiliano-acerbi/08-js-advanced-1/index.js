@@ -90,19 +90,21 @@ function howLong(firstDate, secondDate) {
   return `${difference}ago`;
 }
 
+// Test
+
 let date1 = new Date(2021, 2, 23, 14, 0, 0); // Test date
 
-let date2 = new Date(2021, 2, 24, 10, 30, 0);
+let date2 = new Date(2021, 2, 23, 13, 30, 0);
 console.log(howLong(date1, date2)); // 30 minutes ago
 
 let date3 = new Date(2021, 2, 23, 13, 0, 0);
 console.log(howLong(date1, date2)); // 1 hour ago
 
-console.log(offset(moment('23/02/2021 11:30:00', 'DD/MM/YYYY hh:mm:ss')));
-// 2 hours 30 minutes ago
+let date4 = new Date(2021, 2, 23, 11, 30, 0);
+console.log(howLong(date1, date2)); // 2 hours 30 minutes ago
 
-console.log(offset(moment('22/02/2021 14:00:00', 'DD/MM/YYYY hh:mm:ss')));
-// 1 day ago
+let date5 = new Date(2021, 2, 22, 14, 0, 0);
+console.log(howLong(date1, date2)); // 1 day ago
 
-console.log(offset(moment('23/02/2020 10:00:00', 'DD/MM/YYYY hh:mm:ss')));
-// 366 days ago
+let date6 = new Date(2020, 2, 23, 10, 0, 0);
+console.log(howLong(date1, date2)); // 366 days ago
