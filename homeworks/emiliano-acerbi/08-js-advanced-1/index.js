@@ -142,6 +142,7 @@ function objConcat(array) {
 }
 
 // 6. https://www.codewars.com/kata/547f1a8d4a437abdf800055c
+
 class NamedOne {
   constructor(first, last) {
     this.firstName = first;
@@ -156,4 +157,52 @@ class NamedOne {
     // Checks if there are two words with one space in between
     if (fullName.match(/\w+ \w+/)) [this.firstName, this.lastName] = fullName.split(' ');
   }
+}
+
+// 7. https://www.codewars.com/kata/54834b3559e638b39d0009a2
+
+class OnceNamedOne {
+  constructor(firstName, lastName) {
+    this.first = firstName;
+    this.last = lastName;
+  }
+
+  get fullName() {
+    return this.first + ' ' + this.last;
+  }
+
+  get firstName() {
+    return this.first;
+  }
+
+  get lastName() {
+    return this.last;
+  }
+}
+
+// 8. https://www.codewars.com/kata/partial-keys
+
+function partialKeys(obj) {
+  return new Proxy(obj, {
+    get: (obj, prop) => {
+      const key = Object.keys(obj)
+        .sort()
+        .find((x) => x.startsWith(prop));
+      return key ? obj[key] : undefined;
+    },
+  });
+}
+
+// 9. https://www.codewars.com/kata/human-readable-time
+
+function humanReadable(argSeconds) {
+  let seconds = argSeconds % 60;
+  let minutes = parseInt(argSeconds / 60) % 60;
+  let hours = parseInt(argSeconds / 3600);
+
+  function hasZero(time) {
+    return time < 10 ? '0' + time : time;
+  }
+
+  return hasZero(hours) + ':' + hasZero(minutes) + ':' + hasZero(seconds);
 }
