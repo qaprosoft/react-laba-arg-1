@@ -39,6 +39,26 @@ function pairs(array) {
 }
 
 // kata 03 https://www.codewars.com/kata/5aba780a6a176b029800041c
+
+function maxMultiple(divisor, bound) {
+  //We create a variable result
+  let result = 0;
+  //This for will continue while result is smaller than bound
+  //This time index starts in 1 to save a useless iteration
+  for (let index = 1; result < bound; index++) {
+    //Result equals divisor value multiplied by index value
+    result = divisor * index;
+  }
+  //If the result's value is higher than bound value
+  if (result > bound) {
+    //Returns result minus divisor
+    return result - divisor;
+  } else {
+    //If result is still a lower value, returns result
+    return result;
+  }
+}
+
 // kata 04 https://www.codewars.com/kata/514a6336889283a3d2000001
 // kata 05 https://www.codewars.com/kata/5a090c4e697598d0b9000004
 // kata 06 https://www.codewars.com/kata/566044325f8fddc1c000002c
