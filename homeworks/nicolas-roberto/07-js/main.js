@@ -69,6 +69,35 @@ function getEvenNumbers(numbersArray) {
 }
 
 // kata 05 https://www.codewars.com/kata/5a090c4e697598d0b9000004
+
+function solve(array) {
+  //Empty array where all elements will be pushed
+  let newArray = [];
+  let sortArray = array;
+  //Sorts the array from higher to lowest numbers
+  sortArray.sort(function (a, b) {
+    return b - a;
+  });
+  //This loop will work until array length becomes 0
+  while (sortArray.length > 0) {
+    //We push the shifted value (index = 0) which is the biggest number
+    newArray.push(sortArray.shift());
+    //Here we push the "popped" value (index -1) which is the lowest number
+    newArray.push(sortArray.pop());
+  }
+  //This push(shift) and push(pop) will work on each iteration,
+  //This means that the last value could end up being undefined if the array length was uneven
+  //So, if the array includes undefined (it will be at the end of the array)
+  if (newArray.includes(undefined)) {
+    //It gets erased
+    let popped = newArray.pop();
+    //And finally, return the final array
+    return newArray;
+  } else {
+    return newArray;
+  }
+}
+
 // kata 06 https://www.codewars.com/kata/566044325f8fddc1c000002c
 // kata 07 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 // kata 08 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
