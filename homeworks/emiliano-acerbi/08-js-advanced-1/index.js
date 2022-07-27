@@ -29,7 +29,7 @@ function pluck(obj, props) {
   return cur;
 }
 
-// Test
+// Pluck test
 
 const randomValue = Math.random();
 const nullValue = null;
@@ -45,7 +45,7 @@ function clone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 
-// Test
+// Deep Clone test
 
 const clonedUser = clone(user);
 
@@ -53,7 +53,7 @@ clonedUser.preferences.sound.maxValue = 70;
 
 console.log(user.preferences.sound.maxValue === clonedUser.preferences.sound.maxValue); // false
 
-// 3.
+// 3. A long time ago
 
 function howLong(firstDate, secondDate) {
   let diffInSeconds = (firstDate.getTime() - secondDate.getTime()) / 1000;
@@ -90,7 +90,7 @@ function howLong(firstDate, secondDate) {
   return `${difference}ago`;
 }
 
-// Test
+// A long time ago test
 
 let date1 = new Date(2021, 2, 23, 14, 0, 0); // Test date
 
@@ -108,3 +108,19 @@ console.log(howLong(date1, date2)); // 1 day ago
 
 let date6 = new Date(2020, 2, 23, 10, 0, 0);
 console.log(howLong(date1, date2)); // 366 days ago
+
+// 4. Random dates
+
+function randomDate(date1, date2) {
+  function randomValueBetween(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  date1 = new Date(date1).getTime();
+  date2 = new Date(date2).getTime();
+
+  if (date1 > date2) return new Date(randomValueBetween(date2, date1)).toLocaleDateString();
+  if (date2 > date1) return new Date(randomValueBetween(date1, date2)).toLocaleDateString();
+}
+
+// Random dates test
