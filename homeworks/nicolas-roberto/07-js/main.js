@@ -60,6 +60,14 @@ function maxMultiple(divisor, bound) {
 }
 
 // kata 04 https://www.codewars.com/kata/514a6336889283a3d2000001
+
+function getEvenNumbers(numbersArray) {
+  //We filter the numbersArray with the pair/even values
+  let result = numbersArray.filter((number) => number % 2 == 0);
+  //And return
+  return result;
+}
+
 // kata 05 https://www.codewars.com/kata/5a090c4e697598d0b9000004
 // kata 06 https://www.codewars.com/kata/566044325f8fddc1c000002c
 // kata 07 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
