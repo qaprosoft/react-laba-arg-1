@@ -56,6 +56,13 @@ function partitionOn(pred, items) {
 // katas 8 http://www.codewars.com/kata/word-count   //BROKEN LINK ! REPLACE BY NEXT ONE
 //  https://www.codewars.com/kata/56b3b27cadd4ad275500000c
 
+const dangerWords = ['a', 'the', 'on', 'at', 'of', 'upon', 'in', 'as'];
+
+function wordCount(s) {
+  let onlyLetters = s.toLowerCase().match(/[a-z]+/g);
+  return onlyLetters.filter((x) => !dangerWords.includes(x)).length;
+}
+
 // katas 9 https://www.codewars.com/kata/find-the-odd-int/
 
 function findOdd(A) {
