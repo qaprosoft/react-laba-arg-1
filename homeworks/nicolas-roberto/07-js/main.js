@@ -120,6 +120,24 @@ function evenChars(string) {
 }
 
 // kata 07 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
+
+function gimme(triplet) {
+  let newArray = triplet;
+  let sortArray = newArray.sort(function (a, b) {
+    return b - a;
+  });
+  let middleNumber = sortArray.slice(1, 2).toString();
+  let toInt = Math.floor(middleNumber);
+  let tripletNumber = newArray.indexOf(toInt);
+  middleNumber;
+  sortArray;
+  newArray;
+  triplet;
+  return tripletNumber;
+}
+
+let arrayTriplet = [2, 3, 1];
+console.log(gimme(arrayTriplet));
 // kata 08 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 // kata 09 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
 // kata 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
