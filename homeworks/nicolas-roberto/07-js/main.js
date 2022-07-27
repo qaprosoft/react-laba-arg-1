@@ -131,9 +131,7 @@ function evenChars(string) {
   let tripletNumber = newArray.indexOf(toInt);
   return tripletNumber;
 }
-
-let arrayTriplet = [5.9, 10.4, 14.2];
-console.log(gimme(arrayTriplet)); */
+*/
 
 // kata 08 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 
@@ -163,11 +161,48 @@ function findUniq(array) {
 }
 
 // kata 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
-
-let cadena = 'Esto es una cadena';
-let array = cadena.split(' ');
-array;
 // kata 11 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+
+function sortArray(array) {
+  //Array for odd numbers
+  let odd = [];
+  //Counter for future use
+  let oddIndex = 0;
+  //array of even numbers
+  let even = [];
+  //Counter for future use
+  let evenIndex = 0;
+  //Final array to push the sorted elements
+  let newArray = [];
+  //We create a condition to push the elements in the new odd/even arrays
+  //depending if the elemet value is even or not
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] % 2 === 0) {
+      even.push(array[index]);
+    } else if (array[index] % 2 !== 0) {
+      odd.push(array[index]);
+    }
+  }
+  //Create a function to sort the elements in the "odd" array
+  odd.sort(function (a, b) {
+    return a - b;
+  });
+  //In a new loop, we push the elements depending if the current index of the
+  //original array is even or not. The only difference is that the odd elements
+  //are sorted in ascending order.
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] % 2 === 0) {
+      newArray.push(even[evenIndex]);
+      //every time an element is pushed, the even index is +1
+      evenIndex++;
+    } else if (array[index] % 2 !== 0) {
+      newArray.push(odd[oddIndex]);
+      //every time an element is pushed, the odd index is +1
+      oddIndex++;
+    }
+  } //Returns the final array
+  return newArray;
+}
 
 //Optional (advanced)
 // kata 01 https://www.codewars.com/kata/515bb423de843ea99400000a
