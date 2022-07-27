@@ -212,3 +212,7 @@ function stringBreakers(n, string) {
 }
 
 // katas 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
+
+function domainName(url) {
+  return url.replace(/(https?:\/\/)?(www\.)?/, '').split('.')[0];
+}
