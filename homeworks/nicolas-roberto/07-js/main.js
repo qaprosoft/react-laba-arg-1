@@ -121,7 +121,7 @@ function evenChars(string) {
 
 // kata 07 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 
-function gimme(triplet) {
+/* function gimme(triplet) {
   let newArray = triplet;
   let sortArray = newArray.sort(function (a, b) {
     return b - a;
@@ -129,18 +129,44 @@ function gimme(triplet) {
   let middleNumber = sortArray.slice(1, 2).toString();
   let toInt = Math.floor(middleNumber);
   let tripletNumber = newArray.indexOf(toInt);
-  middleNumber;
-  sortArray;
-  newArray;
-  triplet;
   return tripletNumber;
 }
 
-let arrayTriplet = [2, 3, 1];
-console.log(gimme(arrayTriplet));
+let arrayTriplet = [5.9, 10.4, 14.2];
+console.log(gimme(arrayTriplet)); */
+
 // kata 08 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
+
+const binaryArrayToNumber = (arrayNumbers) => {
+  //We join the array into a string with no commas
+  let binaryString = arrayNumbers.join('');
+  //Then transform it into integer with parseInt
+  //Passing two arguments, the string and 2 (the base of binary numbers)
+  let binaryInt = parseInt(binaryString, 2);
+  return binaryInt;
+};
+
 // kata 09 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+
+function findUniq(array) {
+  //We define number
+  let number;
+  //Create a loop for array length
+  for (let index = 0; index < array.length; index++) {
+    //And compare the first time the actual index appear (indexOf), with the last time
+    //the index appear (lastIndexOf).
+    if (array.indexOf(array[index]) === array.lastIndexOf(array[index])) {
+      //If they are the same index, return number with the array (index position)
+      return (number = array[index]);
+    }
+  }
+}
+
 // kata 10 https://www.codewars.com/kata/581e014b55f2c52bb00000f8
+
+let cadena = 'Esto es una cadena';
+let array = cadena.split(' ');
+array;
 // kata 11 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 
 //Optional (advanced)
