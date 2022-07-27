@@ -124,3 +124,36 @@ function randomDate(date1, date2) {
 }
 
 // Random dates test
+
+// 5. https://www.codewars.com/kata/merged-objects
+
+function objConcat(array) {
+  let result = {};
+
+  // Iterates over the whole array
+  for (object of array) {
+    // For each object in the array, it iterates over each key and adds the key value pair to result
+    for (key in object) {
+      result[key] = object[key];
+    }
+  }
+
+  return result;
+}
+
+// 6. https://www.codewars.com/kata/547f1a8d4a437abdf800055c
+class NamedOne {
+  constructor(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+  }
+
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  set fullName(fullName) {
+    // Checks if there are two words with one space in between
+    if (fullName.match(/\w+ \w+/)) [this.firstName, this.lastName] = fullName.split(' ');
+  }
+}
