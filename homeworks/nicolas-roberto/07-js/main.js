@@ -99,6 +99,26 @@ function solve(array) {
 }
 
 // kata 06 https://www.codewars.com/kata/566044325f8fddc1c000002c
+
+function evenChars(string) {
+  //New empty array to push the desired elements
+  let evenNumbers = [];
+  //First condition, the array length has to be longer than 1 and smaller than 101
+  if (string.length < 2 || string.length > 100) {
+    //Otherwise it will return "invalid string"
+    return 'invalid string';
+  } //We create an index for the loop control over the array length
+  for (let index = 1; index < string.length; index++) {
+    //If the actual index is even
+    if (index % 2 !== 0) {
+      //We push the actual string index(even) to the empty array
+      evenNumbers.push(string[index]);
+    }
+  }
+  //Once the loop is over, returns the new array
+  return evenNumbers;
+}
+
 // kata 07 https://www.codewars.com/kata/545a4c5a61aa4c6916000755
 // kata 08 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 // kata 09 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
