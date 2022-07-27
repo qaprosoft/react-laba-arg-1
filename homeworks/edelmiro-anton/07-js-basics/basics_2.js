@@ -141,3 +141,15 @@ const binaryArrayToNumber = (arr) => {
   }
   return count;
 };
+
+//  Task 9 - https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+function findUniq(arr) {
+  let unique = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (arr.indexOf(arr[i]) == arr.lastIndexOf(arr[i])) {
+      unique += arr[i];
+    }
+  }
+
+  return unique;
+}
