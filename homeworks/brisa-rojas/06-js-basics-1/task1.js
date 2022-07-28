@@ -265,17 +265,17 @@ function catMouse(map,moves){
     return "boring without two animals"
   }
   
-  let C; // [cat row,  cat col]
-  let m; // [mouse row, mouse col]
+  let cat; // [cat row,  cat col]
+  let mouse; // [mouse row, mouse col]
 
   
   // check position in map
-  C = getPosition(map,'C'); 
-  m= getPosition(map,'m');
+  cat = getPosition(map,'C'); 
+  mouse = getPosition(map,'m');
 
   
   //cat has to move |C[0]-m[0]| + |C[1]-m[1]| to get to mouse
-  moves -= Math.abs(C[0]-m[0]) + Math.abs(C[1]-m[1]);
+  moves -= Math.abs(cat[0]-mouse[0]) + Math.abs(cat[1]-mouse[1]);
   
   if (moves < 0){
     return 'Escaped!'
