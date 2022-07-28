@@ -120,18 +120,17 @@ function countWords(str) {
 // console.log(countWords(string));
 
 // Task 9 - https://www.codewars.com/kata/find-the-odd-int/
-
 function findOdd(A) {
-  A.sort();
+  let mainArr = A.sort();
   let elements = [];
   let elementsRepeat = [];
   let counter = 1;
 
-  for (let i = 0; i < A.length; i++) {
-    if (A[i + 1] === A[i]) {
+  for (let i = 0; i < mainArr.length; i++) {
+    if (mainArr[i + 1] === A[i]) {
       counter++;
     } else {
-      elements.push(A[i]);
+      elements.push(mainArr[i]);
       elementsRepeat.push(counter);
       counter = 1;
     }
