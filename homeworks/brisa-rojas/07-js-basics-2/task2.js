@@ -3,9 +3,9 @@
 //Codewars tasks
 // 1 - https://www.codewars.com/kata/5715eaedb436cf5606000381
 function positiveSum(arr) {
-  let accumulator = 0;
-  arr.forEach((x) => (accumulator += x * (x > 0)));
-  return accumulator;
+  let sum;
+  sum = arr.reduce((sum, current) => sum + current * (current > 0), 0);
+  return sum;
 }
 
 // 2 - https://www.codewars.com/kata/5a3e1319b6486ac96f000049
@@ -101,7 +101,7 @@ function gimme(triplet) {
   bound = Math.max.apply(null, triplet); // checks which element is the maximum
   maxIndex = triplet.indexOf(bound); // gets the index of the maximum
   indexes.splice(indexes.indexOf(maxIndex), 1); // deletes the element corresponding to the index of maximum in triplet
-  
+
   return indexes[0]; // return "middle number" index
 }
 
