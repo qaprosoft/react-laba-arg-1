@@ -153,12 +153,12 @@ function findOdd(A) {
 function findOutlier(integers) {
   let evenArr = [];
   let oddArr = [];
-
-  for (let i = 0; i < integers.length; i++) {
-    if (integers[i] % 2 === 0) {
-      evenArr.push(integers[i]);
+  let integersArray = integers;
+  for (let i = 0; i < integersArray.length; i++) {
+    if (integersArray[i] % 2 === 0) {
+      evenArr.push(integersArray[i]);
     } else {
-      oddArr.push(integers[i]);
+      oddArr.push(integersArray[i]);
     }
   }
   if (evenArr.length > oddArr.length) {
