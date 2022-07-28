@@ -49,11 +49,8 @@ function rentalCarCost(d) {
 
 function getMiddle(s) {
   if (s.length % 2 === 0) {
-    //Check if is the length of the string is even
     const evenLength = s.length;
-    // Divide the length in half
     const evenHalfLength = evenLength / 2;
-    //1st param: index start. 2nd param: the length of characters I want to select.
     const evenIndex = s.substr(evenHalfLength - 1, 2);
     return evenIndex;
   } else {
@@ -158,12 +155,8 @@ function findOutlier(integers) {
 
   for (let i = 0; i < integers.length; i++) {
     if (integers[i] % 2 === 0) {
-      //Check through the arr if an item is even
-
-      //if it is, is pushed into the evenArray
       evenArr.push(integers[i]);
     } else {
-      //if is odd, is pushed into the oddArray
       oddArr.push(integers[i]);
     }
   }
@@ -178,11 +171,9 @@ function findOutlier(integers) {
 // Task 12 - https://www.codewars.com/kata/filter-the-number
 
 var FilterString = function (value) {
-  //Array of each character of the string
   let split = value.split('');
 
   let map = split.map((el) => {
-    // Map each el of the arr and check if there is a number and is parsed
     if (!isNaN(parseInt(el))) {
       return el;
     }
@@ -249,7 +240,7 @@ function duplicateEncode(word) {
 // Mexican Wave
 
 function wave(str) {
-  let strLower = str.toLowerCase(); // To convert all characters in lower case in case there are some upper
+  let strLower = str.toLowerCase();
   strLower.trim();
   let arr = [];
 
