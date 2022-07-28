@@ -1,5 +1,5 @@
 /*
-to do -> 5, 7, 11, 13, 14, 15, 16
+to do -> 11, 13, 14, 15, 16
 */
 
 //1 -> http://www.codewars.com/kata/opposite-number
@@ -59,7 +59,20 @@ function getMiddle(s)
 }
 
 //7 -> http://www.codewars.com/kata/partition-on
-function partitionOn(pred, items) {
+function partitionOn(predicate, arr) {
+    let b = -1;
+    for (let i = 0; i < arr.length; i++) {
+      if (predicate(arr[i])) continue;
+      
+      b++;
+
+      if (b === i) continue;
+  
+      let val = arr[i];
+      arr.splice(i, 1);
+      arr.splice(b, 0, val);
+    }
+    return b + 1;
 }
 
 //8 ->   https://www.codewars.com/kata/570cc83df616a85944001315
