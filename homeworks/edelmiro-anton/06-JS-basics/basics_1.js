@@ -172,17 +172,12 @@ function findOutlier(integers) {
 // Task 12 - https://www.codewars.com/kata/filter-the-number
 
 var FilterString = function (value) {
+  //Array of each character of the string
   let split = value.split('');
 
-  let map = split.map((el) => {
-    if (!isNaN(parseInt(el))) {
-      return el;
-    }
-  });
-
-  let numbers = map.filter((el) => {
+  let numbers = split.filter((el) => {
     // Removes undefined from array
-    return el != undefined;
+    return !isNaN(parseInt(el));
   });
 
   return parseInt(numbers.join(''));
