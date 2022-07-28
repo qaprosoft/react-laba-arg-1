@@ -85,7 +85,7 @@ function mathExpression(number, mathOperator){
 // KATA 6. http://www.codewars.com/kata/get-the-middle-character
 function getMiddle(s) {
   let middleChar = ""; //initialize empty string
-  len = s.length;
+  let len = s.length;
   if ( (len % 2) == 0) { // if it's even
     middleChar += s[len / 2 -1];
     middleChar += s[len /2];
