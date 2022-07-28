@@ -1,5 +1,5 @@
 /*
-
+to do -> 5, 7, 11, 13, 14, 15, 16
 */
 
 //1 -> http://www.codewars.com/kata/opposite-number
@@ -33,21 +33,21 @@ function rentalCarCost(d) {
 }
 
 //5 ->  http://www.codewars.com/kata/calculating-with-functions
-function zero() {}
-function one() {}
-function two() {}
-function three() {}
-function four() {}
-function five() {}
-function six() {}
-function seven() {}
-function eight() {}
-function nine() {}
+function zero(func)   { return func ? func(0) : 0; };
+function one(func)    { return func ? func(1) : 1; };
+function two(func)    { return func ? func(2) : 2; };
+function three(func)  { return func ? func(3) : 3; };
+function four(func)   { return func ? func(4) : 4; };
+function five(func)   { return func ? func(5) : 5; };
+function six(func)    { return func ? func(6) : 6; };
+function seven(func)  { return func ? func(7) : 7; };
+function eight(func)  { return func ? func(8) : 8; };
+function nine(func)   { return func ? func(9) : 9; };
 
-function plus() {}
-function minus() {}
-function times() {}
-function dividedBy() {}
+function plus(b)      { return function(a) { return a + b; }; };
+function minus(b)     { return function(a) { return a - b; }; };
+function times(b)     { return function(a) { return a * b; }; };
+function dividedBy(b) { return function(a) { return Math.floor(a / b); }; };
 
 //6 -> http://www.codewars.com/kata/get-the-middle-character
 function getMiddle(s)
@@ -147,7 +147,7 @@ function nthFibo(n) {
 //14 -> https://www.codewars.com/kata/cat-and-mouse-2d-version/
 
 
-//15 -> https://www.codewars.com/kata/duplicate-encoder   TO DO again
+//15 -> https://www.codewars.com/kata/duplicate-encoder
 function duplicateEncode(word){
     let result = "";
     for (let i = 0; i < word.length; i++) {
