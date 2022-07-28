@@ -89,16 +89,20 @@ function evenChars(string) {
 function gimme(triplet) {
   let bound;
   let indexes = [0, 1, 2];
+  let minIndex;
+  let maxIndex;
 
   // delete min index from indexes
-  bound = Math.min.apply(null, triplet);
-  
-  indexes.splice(indexes.indexOf(triplet.indexOf(bound)), 1);
+  bound = Math.min.apply(null, triplet); // checks which element is the minimum
+  minIndex = triplet.indexOf(bound); // gets the index of the minimum
+  indexes.splice(indexes.indexOf(minIndex), 1); // deletes the element corresponding to the index of minimum in triplet
 
   //delete max index from indexes
-  bound = Math.max.apply(null, triplet);
-  indexes.splice(indexes.indexOf(triplet.indexOf(bound)), 1);
-  return indexes[0];
+  bound = Math.max.apply(null, triplet); // checks which element is the maximum
+  maxIndex = triplet.indexOf(bound); // gets the index of the maximum
+  indexes.splice(indexes.indexOf(maxIndex), 1); // deletes the element corresponding to the index of maximum in triplet
+  
+  return indexes[0]; // return "middle number" index
 }
 
 // 8 - https://www.codewars.com/kata/578553c3a1b8d5c40300037c
