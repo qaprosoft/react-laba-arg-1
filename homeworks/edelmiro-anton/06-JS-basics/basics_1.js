@@ -48,16 +48,18 @@ function rentalCarCost(d) {
 // Task 6 - http://www.codewars.com/kata/get-the-middle-character
 
 function getMiddle(s) {
-  if (s.length % 2 === 0) {
-    const evenLength = s.length;
+  let anyString = s;
+
+  if (anyString.length % 2 === 0) {
+    const evenLength = anyString.length;
     const evenHalfLength = evenLength / 2;
-    const evenIndex = s.substr(evenHalfLength - 1, 2);
+    const evenIndex = anyString.substr(evenHalfLength - 1, 2);
     return evenIndex;
   } else {
     //The same above but for odd
-    const oddLength = s.length;
+    const oddLength = anyString.length;
     const oddHalfLength = Math.trunc(oddLength / 2);
-    const oddIndex = s.charAt(oddHalfLength);
+    const oddIndex = anyString.charAt(oddHalfLength);
     return oddIndex;
   }
 }
