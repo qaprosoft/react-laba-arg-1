@@ -385,12 +385,13 @@ function stringBreakers(n, string){
 }
 // KATA 20.	https://www.codewars.com/kata/514a024011ea4fb54200004b
 function domainName(url){
+  let domain = url;
   // strings that could be before domain name
-  url = url.replace("www.", '');
-  url = url.replace("https://", '');
-  url = url.replace("http://", '');
+  domain = domain.replace("www.", '');
+  domain = domain.replace("https://", '');
+  domain = domain.replace("http://", '');
   
-  return url.split('.')[0]; // after replacing, domain name is the thing before 1st '.'
+  return domain.split('.')[0]; // after replacing, domain name is the thing before 1st '.'
 }
 
 
