@@ -334,16 +334,6 @@ function towerBuilder(nFloors) {
 }
 
 // KATA 18.	https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
-function makeLetterStand(word, pos){
-  //pos is index of the letter that's going to be uppercase
-  word = word.split('')
-  if (word[pos] == ' ' || word[pos]== "\n" || word[pos] == ''){ // if character is not a letter (there may be other cases)
-    return "?"; //arbitrary symbol to represent non-letter
-  }
-  word[pos] = word[pos].toUpperCase();
-  word = word.join('');
-  return word;
-}
 function wave(str){
   let wavedWord = [];
   
@@ -353,6 +343,17 @@ function wave(str){
     }
   }
   return wavedWord;
+}
+
+function makeLetterStand(word, pos){
+  //pos is index of the letter that's going to be uppercase
+  word = word.split('')
+  if (word[pos] == ' ' || word[pos]== "\n" || word[pos] == ''){ // if character is not a letter (there may be other cases)
+    return "?"; //arbitrary symbol to represent non-letter
+  }
+  word[pos] = word[pos].toUpperCase();
+  word = word.join('');
+  return word;
 }
 // KATA 19.	https://www.codewars.com/kata/59d398bb86a6fdf100000031
 function stringBreakers(n, string){
