@@ -71,7 +71,6 @@ function offset(date) {
 //4. Random dates
 //Using moment() from task #3
 function randomDate(date1, date2) {
-  let arr = ["YYYY"];
   return new Date(Math.random() * (date2 - date1) + date1.getTime());
 }
 
