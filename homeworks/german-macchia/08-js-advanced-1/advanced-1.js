@@ -26,44 +26,79 @@ function clone(obj) {
 }
 
 //3. "A long time ago"
-function moment(date, format){
-	let arr = [ 'YYYY', 'MM','DD', 'hh', 'mm', 'ss' ]
-	let objFormat = {}
-	arr.forEach( (e) => {
-			let index = format.indexOf(e)
-			objFormat[e] = date.substr(index, e.length)
-		})
-	return new Date(objFormat['YYYY'], objFormat['MM'] - 1, objFormat['DD'], objFormat['hh'], objFormat['mm'], objFormat['ss'])
-}	
+function moment(date, format) {
+  let arr = format.split(/[/ :]/g);
+  let objFormat = {};
+  arr.forEach((e) => {
+    let index = format.indexOf(e);
+    objFormat[e] = date.substr(index, e.length);
+  });
+  return new Date(
+    objFormat["YYYY"],
+    objFormat["MM"] - 1,
+    objFormat["DD"],
+    objFormat["hh"] ?? 0,
+    objFormat["mm"] ?? 0,
+    objFormat["ss"] ?? 0
+  );
+}
 
-function offset(date){
-	let response;
-	const MMS_IN_MIN = 1000 * 60
-	const MIN_IN_HOUR = 60
-	const MIN_IN_DAY = 60 * 24
-	const NOW = new Date()
-	const DIFF_TIME_MMS = Math.abs(NOW - date);
-	const DIFF_MIN = Math.floor(DIFF_TIME_MMS / MMS_IN_MIN)
+function offset(date) {
+  let response;
+  const MMS_IN_MIN = 1000 * 60;
+  const MIN_IN_HOUR = 60;
+  const MIN_IN_DAY = 60 * 24;
+  const NOW = new Date();
+  const DIFF_TIME_MMS = Math.abs(NOW - date);
+  const DIFF_MIN = Math.floor(DIFF_TIME_MMS / MMS_IN_MIN);
 
-	if(DIFF_MIN < MIN_IN_HOUR){
-		response = DIFF_MIN + ' minutes ago'
-	}
-	if(DIFF_MIN >= MIN_IN_HOUR){
-		response = Math.floor(DIFF_MIN / MIN_IN_HOUR) + ' hours ' + Math.floor(DIFF_MIN % MIN_IN_HOUR) + ' min ago'
-	}
-	if(DIFF_MIN > MIN_IN_DAY){
-		response = Math.floor(DIFF_MIN / MIN_IN_DAY) + ' days ago'
-	}
-	return response
+  if (DIFF_MIN < MIN_IN_HOUR) {
+    response = DIFF_MIN + " minutes ago";
+  }
+  if (DIFF_MIN >= MIN_IN_HOUR) {
+    response =
+      Math.floor(DIFF_MIN / MIN_IN_HOUR) +
+      " hours " +
+      Math.floor(DIFF_MIN % MIN_IN_HOUR) +
+      " minutes ago";
+  }
+  if (DIFF_MIN > MIN_IN_DAY) {
+    response = Math.floor(DIFF_MIN / MIN_IN_DAY) + " days ago";
+  }
+  return response;
 }
 
 //4. Random dates
+//Using moment() from task #3
+function randomDate(date1, date2) {
+  let arr = ["YYYY"];
+  return new Date(Math.random() * (date2 - date1) + date1.getTime());
+}
+
+Date.prototype.format = (format) => {
+  let dateItems = ["YYYY", "YY", "MM", "DD", "hh", "mm", "ss"];
+  let entries = {
+    DD: date.getDate(),
+    MM: date.getMonth() + 1,
+    YYYY: date.getFullYear(),
+    YY: date.getFullYear().toString().substring(2),
+    hh: date.getHours(),
+    mm: date.getMinutes(),
+    ss: date.getSeconds(),
+  };
+
+  for (e of dateItems) {
+    format = format.replace(e, entries[e]);
+  }
+
+  return format;
+};
 
 //## Code Wars
 
 //5. Merged Objects https://www.codewars.com/kata/515bb423de843ea99400000a
-function objConcat(objectsArray){
-  return Object.assign({}, ...objectsArray)
+function objConcat(objectsArray) {
+  return Object.assign({}, ...objectsArray);
 }
 
 //6. "this" is an other problem https://www.codewars.com/kata/547f1a8d4a437abdf800055c
