@@ -71,11 +71,12 @@ function offset(date) {
 //4. Random dates
 //Using moment() from task #3
 function randomDate(date1, date2) {
-  return new Date(Math.random() * (date2 - date1) + date1.getTime());
+  this.date = new Date(Math.random() * (date2 - date1) + date1.getTime());
+  return this.date
 }
 
 Date.prototype.format = (format) => {
-  let dateItems = ["YYYY", "YY", "MM", "DD", "hh", "mm", "ss"];
+  const DATE_ITEMS = ["YYYY", "YY", "MM", "DD", "hh", "mm", "ss"];
   let entries = {
     DD: date.getDate(),
     MM: date.getMonth() + 1,
@@ -86,7 +87,7 @@ Date.prototype.format = (format) => {
     ss: date.getSeconds(),
   };
 
-  for (e of dateItems) {
+  for (e of DATE_ITEMS) {
     format = format.replace(e, entries[e]);
   }
 
