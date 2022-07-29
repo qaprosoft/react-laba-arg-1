@@ -158,49 +158,32 @@ function findUniq(arr) {
 
 // Task 11 - https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 
-// ordenar ascendentemente los impares (odd) y a los pares dejarlos en el mismo lugar
-// 1.obtener los impares de mi array en un nuevo array
-// 2. los ordeno de menor a mayor
-// 3. ya tengo un array ordenado de mis impares
-// 4. comparo este array de impares con cada elemento de mi array original. Si cuando los comparo, son impares
-// ver si son iguales
+function sortArray(array) {
+  let evenIndex = 0;
+  let oddIndex = 0;
+  let oddArr = [];
+  let evenArr = [];
+  let finalArr = [];
 
-let arr = [-11, -30, 6, 3, 4, 1];
+  array.forEach((el) => {
+    if (el % 2 !== 0) {
+      oddArr.push(el);
+    } else {
+      evenArr.push(el);
+    }
+  });
 
-let indexOf = [];
-let oddArr = [];
+  oddArr.sort((a, b) => a - b);
 
-// indexOf de cada elemento impar y negativo encontrado
-arr.forEach((el) => {
-  if (el % 2 !== 0) {
-    indexOf.push(arr.indexOf(el));
+  for (i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      finalArr.push(evenArr[evenIndex]);
+      evenIndex++;
+    } else if (array[i] % 2 !== 0) {
+      finalArr.push(oddArr[oddIndex]);
+      oddIndex++;
+    }
   }
-});
 
-indexOf; // OK
-
-arr.forEach((el) => {
-  if (el % 2 !== 0) {
-    oddArr.push(el);
-  }
-});
-
-oddArr;
-
-oddArr = oddArr.sort((a, b) => a - b);
-
-oddArr;
-
-// si el indice de ODDARR  es = al indice de INDEXOF, pusheo el ODDARR[EL] del index a arr
-
-let index = 0;
-
-for (i = 0; i < arr.length; i++) {
-  if (arr[i] % 2 == 0) {
-    continue;
-  } else if (oddArr.indexOf(oddArr[i]) === indexOf.indexOf(indexOf[i])) {
-    arr.splice(i, 1, oddArr[index]);
-    index = index + 1;
-  }
+  return finalArr;
 }
-arr;
