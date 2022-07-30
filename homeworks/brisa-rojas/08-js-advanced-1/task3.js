@@ -100,6 +100,14 @@ console.log(person.fullName); // Disaster happens [when given a 3 words or longe
 
 
 // OPTIONAL KATAS
+// "THIS" IS AN OTHER SOLUTION https://www.codewars.com/kata/54834b3559e638b39d0009a2/javascript
+function OnceNamedOne(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+  this.fullName = first + ' ' + last;
+  Object.freeze(this);
+}
+
 // HUMAN READABLE TIME https://www.codewars.com/kata/human-readable-time
 function humanReadable (seconds) {
   let humanReadableTime= '';
