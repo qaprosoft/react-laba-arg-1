@@ -46,6 +46,25 @@ function gimme(triplet) {
 
 //task 8 https://www.codewars.com/kata/578553c3a1b8d5c40300037c
 
+const binaryArrayToNumber = (arr) => {
+  let num = 0;
+  let index = arr.length - 1;
+
+  for (let i = index; i >= 0; i--) {
+    let item = arr[i];
+    let exp = index - i;
+    num += item * 2 ** exp;
+  }
+  return num;
+};
+
+//below, you can find the most commonly used solution to convert binary to integer
+/* 
+const binaryArrayToNumber = (arr) => {
+  return parseInt(arr.join(''), 2);
+};
+*/
+
 //task 9 https://www.codewars.com/kata/585d7d5adb20cf33cb000235
 
 function findUniq(arr) {
