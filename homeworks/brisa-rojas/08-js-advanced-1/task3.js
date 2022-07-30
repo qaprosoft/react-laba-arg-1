@@ -55,7 +55,7 @@ clonedUser.preferences.sound.maxValue = 70; // change the value of the sound.max
 
 console.log(user.preferences.sound.maxValue === clonedUser.preferences.sound.maxValue); // false
 
-// 5 - MERGED OBJECTS 
+// 5 - MERGED OBJECTS https://www.codewars.com/kata/merged-objects
 function objConcat(arr){
   let obj = {};
   for (let i = 0; i < arr.length; i++){
@@ -97,3 +97,48 @@ person.lastName = 'a Multi Word String';
 console.log(person.fullName); // I used a Multi Word String
 person.fullName = 'Disaster happens when given a 3 words or longer name for full name';
 console.log(person.fullName); // Disaster happens [when given a 3 words or longer name for full name is missing]
+
+
+// OPTIONAL KATAS
+// HUMAN READABLE TIME https://www.codewars.com/kata/human-readable-time
+function humanReadable (seconds) {
+  let humanReadableTime= '';
+  let hours;
+  let minutes;
+  
+  //set hours
+  hours = Math.floor(seconds/3600);
+  if (hours < 10){
+      humanReadableTime += '0' + hours;
+  }
+  else {
+      humanReadableTime += hours;
+  }
+
+  seconds -= hours * 3600; // remove seconds corresponding to hours 
+  
+  humanReadableTime += ':'; // formating
+
+  //set minutes
+  minutes = Math.floor(seconds/60);
+  if (minutes < 10){
+      humanReadableTime += '0' + minutes;
+  }
+  else {
+      humanReadableTime += minutes;
+  }
+  seconds -= minutes * 60; // remove seconds corresponding to minutes 
+  
+  humanReadableTime += ':'; // formating
+
+  if (seconds < 10){
+      humanReadableTime += '0' + seconds;
+  }
+  else {
+      humanReadableTime += seconds;
+  } //remaining should be below 60 secs
+
+  return humanReadableTime;
+}
+
+console.log(humanReadable(360)); 
