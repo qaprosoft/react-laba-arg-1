@@ -80,6 +80,17 @@ function findUniq(arr) {
 
 //task 2 https://www.codewars.com/kata/52597aa56021e91c93000cb0
 
+function moveZeros(arr) {
+  let zeros = [];
+  let elements = [];
+
+  arr.forEach((item) => {
+    item === 0 ? zeros.push(item) : elements.push(item);
+  });
+
+  return elements.concat(zeros);
+}
+
 //task 3 https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3
 
 //task 4 https://www.codewars.com/kata/5296bc77afba8baa690002d7
