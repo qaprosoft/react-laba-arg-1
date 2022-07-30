@@ -55,6 +55,17 @@ clonedUser.preferences.sound.maxValue = 70; // change the value of the sound.max
 
 console.log(user.preferences.sound.maxValue === clonedUser.preferences.sound.maxValue); // false
 
+// 5 - MERGED OBJECTS 
+function objConcat(arr){
+  let obj = {};
+  for (let i = 0; i < arr.length; i++){
+    for (let key in arr[i]){
+      obj[key] = (arr[i])[key];
+    }
+  }
+  return obj;
+}
+
 // 6 - NAMED ONE https://www.codewars.com/kata/547f1a8d4a437abdf800055c/train/javascript 
 function NamedOne(first, last) {
   this.firstName = first;
@@ -75,7 +86,7 @@ function NamedOne(first, last) {
   });
 }
 
-// this implementation passed all tests in codewars but testing it locally I found that allows for empty strings or multi word strings for 1st and last names (although it works as expected for single word strings), for example
+// this implementation passed all tests in codewars but testing it locally I found that allows for situations that should be invalid, for example
 
 let person = new NamedOne('John', 'Doe');
 console.log(person.fullName); // John Doe
