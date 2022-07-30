@@ -1,4 +1,4 @@
-// VARIABLE DECLARATIONS
+'use strict';
 
 // Object for pluck and clone functions
 const user = {
@@ -10,15 +10,6 @@ const user = {
     },
   },
 };
-// for pluck function
-const randomValue = Math.random();
-const nullValue = null;
-
-// for clone function
-let clonedUser = clone(user);
-clonedUser.preferences.sound.maxValue = 70; // change the value of the sound.maxValue property of the cloned object
-
-
 
 // 1 - PLUCK
 // Create a function to access the properties of an object.
@@ -40,6 +31,9 @@ function pluck(obj, key) {
   return searchedValue;
 }
 
+const randomValue = Math.random();
+const nullValue = null;
+
 console.log(pluck(user, 'preferences.sound.value')); // 30
 console.log(pluck(user, 'unknown.key')); // null
 console.log(pluck(randomValue, 'unknown.key')); // null
@@ -56,4 +50,39 @@ function clone(obj){
     // user obj is small enough to be cloned with JSON.parse/JSON.stringify approach
 }
 
+let clonedUser = clone(user);
+clonedUser.preferences.sound.maxValue = 70; // change the value of the sound.maxValue property of the cloned object
+
 console.log(user.preferences.sound.maxValue === clonedUser.preferences.sound.maxValue); // false
+
+// 6 - NAMED ONE https://www.codewars.com/kata/547f1a8d4a437abdf800055c/train/javascript 
+function NamedOne(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+
+  Object.defineProperty(this, "fullName", {
+    get: function () {
+      return this.firstName + " " + this.lastName;
+    },
+    set(full) {
+      if (full.includes(' ')){
+        full = full.split(' ');
+        this.firstName =  full[0];
+        this.lastName =  full [1];
+        full = full.join(' ');
+      }
+    },
+  });
+}
+
+// this implementation passed all tests in codewars but testing it locally I found that allows for empty strings or multi word strings for 1st and last names (although it works as expected for single word strings), for example
+
+let person = new NamedOne('John', 'Doe');
+console.log(person.fullName); // John Doe
+person.firstName = '';
+console.log(person.fullName); // Doe
+person.firstName = 'I used';
+person.lastName = 'a Multi Word String';
+console.log(person.fullName); // I used a Multi Word String
+person.fullName = 'Disaster happens when given a 3 words or longer name for full name';
+console.log(person.fullName); // Disaster happens [when given a 3 words or longer name for full name is missing]
