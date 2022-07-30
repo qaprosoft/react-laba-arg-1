@@ -187,3 +187,23 @@ function sortArray(array) {
 
   return finalArr;
 }
+
+// OPTIONAL 2 - https://www.codewars.com/kata/52597aa56021e91c93000cb0
+
+function moveZeros(arr) {
+  let zeros = [];
+  let newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+      zeros.push(0);
+    } else {
+      newArr.push(arr[i]);
+    }
+  }
+  zeros.forEach((el) => {
+    newArr.push(el);
+  });
+
+  return newArr;
+}
