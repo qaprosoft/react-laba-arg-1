@@ -182,6 +182,25 @@ function towerBuilder(nFloors) {
 
 //task 19 https://www.codewars.com/kata/59d398bb86a6fdf100000031
 
+function stringBreakers(n, string) {
+  let str = string.split(' ').join('');
+  let length = str.length;
+  let words = Math.ceil(length / n);
+
+  let result = '';
+  let n1 = 0;
+  let n2 = n;
+
+  for (let i = 1; i <= words; i++) {
+    let word = str.slice(n1, n2);
+    result += word + '\n';
+    n1 = n2;
+    n2 = n2 + n;
+  }
+
+  return result.slice(0, result.length - 1);
+}
+
 //task 20 https://www.codewars.com/kata/514a024011ea4fb54200004b
 
 function domainName(url) {
