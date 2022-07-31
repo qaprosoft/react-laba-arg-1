@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/qaprosoft/react-laba-arg-1#readme",
   "dependencies": {
+    "moment": "^2.29.4",
     "prettier": "^2.7.1"
   }
 }
